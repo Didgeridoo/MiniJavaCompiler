@@ -1,4 +1,4 @@
 MiniJavaCompiler
 ================
 
-MiniJava Compiler Project for .NET
+MiniJava Compiler Project for .NET Framework
