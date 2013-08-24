@@ -1,0 +1,11 @@
+// parser exception
+class Program {
+	public static void main(String[] a) {
+		int x = 12;
+		System.out.println(x);
+		int y = 45;
+		// error here
+		x = y +/ 5;
+		System.out.println(x);
+	}
+}

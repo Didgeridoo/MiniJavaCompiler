@@ -1,0 +1,839 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Lexer>
+  <Token Text="class" TokenIndex="0" Type="8" Line="1" CharPositionInLine="0" StartIndex="0" StopIndex="4" />
+  <Token Text=" " TokenIndex="1" Type="74" Line="1" CharPositionInLine="5" StartIndex="5" StopIndex="5" />
+  <Token Text="LinearSearch" TokenIndex="2" Type="26" Line="1" CharPositionInLine="6" StartIndex="6" StopIndex="17" />
+  <Token Text="{" TokenIndex="3" Type="32" Line="1" CharPositionInLine="18" StartIndex="18" StopIndex="18" />
+  <Token Text="\n" TokenIndex="4" Type="74" Line="1" CharPositionInLine="19" StartIndex="19" StopIndex="19" />
+  <Token Text=" " TokenIndex="5" Type="74" Line="2" CharPositionInLine="0" StartIndex="20" StopIndex="20" />
+  <Token Text=" " TokenIndex="6" Type="74" Line="2" CharPositionInLine="1" StartIndex="21" StopIndex="21" />
+  <Token Text=" " TokenIndex="7" Type="74" Line="2" CharPositionInLine="2" StartIndex="22" StopIndex="22" />
+  <Token Text=" " TokenIndex="8" Type="74" Line="2" CharPositionInLine="3" StartIndex="23" StopIndex="23" />
+  <Token Text="public" TokenIndex="9" Type="56" Line="2" CharPositionInLine="4" StartIndex="24" StopIndex="29" />
+  <Token Text=" " TokenIndex="10" Type="74" Line="2" CharPositionInLine="10" StartIndex="30" StopIndex="30" />
+  <Token Text="static" TokenIndex="11" Type="64" Line="2" CharPositionInLine="11" StartIndex="31" StopIndex="36" />
+  <Token Text=" " TokenIndex="12" Type="74" Line="2" CharPositionInLine="17" StartIndex="37" StopIndex="37" />
+  <Token Text="void" TokenIndex="13" Type="72" Line="2" CharPositionInLine="18" StartIndex="38" StopIndex="41" />
+  <Token Text=" " TokenIndex="14" Type="74" Line="2" CharPositionInLine="22" StartIndex="42" StopIndex="42" />
+  <Token Text="main" TokenIndex="15" Type="41" Line="2" CharPositionInLine="23" StartIndex="43" StopIndex="46" />
+  <Token Text="(" TokenIndex="16" Type="40" Line="2" CharPositionInLine="27" StartIndex="47" StopIndex="47" />
+  <Token Text="String" TokenIndex="17" Type="66" Line="2" CharPositionInLine="28" StartIndex="48" StopIndex="53" />
+  <Token Text="[" TokenIndex="18" Type="31" Line="2" CharPositionInLine="34" StartIndex="54" StopIndex="54" />
+  <Token Text="]" TokenIndex="19" Type="57" Line="2" CharPositionInLine="35" StartIndex="55" StopIndex="55" />
+  <Token Text=" " TokenIndex="20" Type="74" Line="2" CharPositionInLine="36" StartIndex="56" StopIndex="56" />
+  <Token Text="a" TokenIndex="21" Type="26" Line="2" CharPositionInLine="37" StartIndex="57" StopIndex="57" />
+  <Token Text=")" TokenIndex="22" Type="60" Line="2" CharPositionInLine="38" StartIndex="58" StopIndex="58" />
+  <Token Text="{" TokenIndex="23" Type="32" Line="2" CharPositionInLine="39" StartIndex="59" StopIndex="59" />
+  <Token Text="\n" TokenIndex="24" Type="74" Line="2" CharPositionInLine="40" StartIndex="60" StopIndex="60" />
+  <Token Text="\t" TokenIndex="25" Type="74" Line="3" CharPositionInLine="0" StartIndex="61" StopIndex="61" />
+  <Token Text="System.out.println" TokenIndex="26" Type="54" Line="3" CharPositionInLine="1" StartIndex="62" StopIndex="79" />
+  <Token Text="(" TokenIndex="27" Type="40" Line="3" CharPositionInLine="19" StartIndex="80" StopIndex="80" />
+  <Token Text="new" TokenIndex="28" Type="50" Line="3" CharPositionInLine="20" StartIndex="81" StopIndex="83" />
+  <Token Text=" " TokenIndex="29" Type="74" Line="3" CharPositionInLine="23" StartIndex="84" StopIndex="84" />
+  <Token Text="LS" TokenIndex="30" Type="26" Line="3" CharPositionInLine="24" StartIndex="85" StopIndex="86" />
+  <Token Text="(" TokenIndex="31" Type="40" Line="3" CharPositionInLine="26" StartIndex="87" StopIndex="87" />
+  <Token Text=")" TokenIndex="32" Type="60" Line="3" CharPositionInLine="27" StartIndex="88" StopIndex="88" />
+  <Token Text="." TokenIndex="33" Type="15" Line="3" CharPositionInLine="28" StartIndex="89" StopIndex="89" />
+  <Token Text="Start" TokenIndex="34" Type="26" Line="3" CharPositionInLine="29" StartIndex="90" StopIndex="94" />
+  <Token Text="(" TokenIndex="35" Type="40" Line="3" CharPositionInLine="34" StartIndex="95" StopIndex="95" />
+  <Token Text="10" TokenIndex="36" Type="29" Line="3" CharPositionInLine="35" StartIndex="96" StopIndex="97" />
+  <Token Text=")" TokenIndex="37" Type="60" Line="3" CharPositionInLine="37" StartIndex="98" StopIndex="98" />
+  <Token Text=")" TokenIndex="38" Type="60" Line="3" CharPositionInLine="38" StartIndex="99" StopIndex="99" />
+  <Token Text=";" TokenIndex="39" Type="61" Line="3" CharPositionInLine="39" StartIndex="100" StopIndex="100" />
+  <Token Text="\n" TokenIndex="40" Type="74" Line="3" CharPositionInLine="40" StartIndex="101" StopIndex="101" />
+  <Token Text=" " TokenIndex="41" Type="74" Line="4" CharPositionInLine="0" StartIndex="102" StopIndex="102" />
+  <Token Text=" " TokenIndex="42" Type="74" Line="4" CharPositionInLine="1" StartIndex="103" StopIndex="103" />
+  <Token Text=" " TokenIndex="43" Type="74" Line="4" CharPositionInLine="2" StartIndex="104" StopIndex="104" />
+  <Token Text=" " TokenIndex="44" Type="74" Line="4" CharPositionInLine="3" StartIndex="105" StopIndex="105" />
+  <Token Text="}" TokenIndex="45" Type="58" Line="4" CharPositionInLine="4" StartIndex="106" StopIndex="106" />
+  <Token Text="\n" TokenIndex="46" Type="74" Line="4" CharPositionInLine="5" StartIndex="107" StopIndex="107" />
+  <Token Text="}" TokenIndex="47" Type="58" Line="5" CharPositionInLine="0" StartIndex="108" StopIndex="108" />
+  <Token Text="\n" TokenIndex="48" Type="74" Line="5" CharPositionInLine="1" StartIndex="109" StopIndex="109" />
+  <Token Text="\n" TokenIndex="49" Type="74" Line="6" CharPositionInLine="0" StartIndex="110" StopIndex="110" />
+  <Token Text="\n" TokenIndex="50" Type="74" Line="7" CharPositionInLine="0" StartIndex="111" StopIndex="111" />
+  <Token Text="// This class contains an array of integers and&#xA;" TokenIndex="51" Type="37" Line="8" CharPositionInLine="0" StartIndex="112" StopIndex="159" />
+  <Token Text="// methods to initialize, print and search the array&#xA;" TokenIndex="52" Type="37" Line="9" CharPositionInLine="0" StartIndex="160" StopIndex="212" />
+  <Token Text="// using Linear Search&#xA;" TokenIndex="53" Type="37" Line="10" CharPositionInLine="0" StartIndex="213" StopIndex="235" />
+  <Token Text="class" TokenIndex="54" Type="8" Line="11" CharPositionInLine="0" StartIndex="236" StopIndex="240" />
+  <Token Text=" " TokenIndex="55" Type="74" Line="11" CharPositionInLine="5" StartIndex="241" StopIndex="241" />
+  <Token Text="LS" TokenIndex="56" Type="26" Line="11" CharPositionInLine="6" StartIndex="242" StopIndex="243" />
+  <Token Text=" " TokenIndex="57" Type="74" Line="11" CharPositionInLine="8" StartIndex="244" StopIndex="244" />
+  <Token Text="{" TokenIndex="58" Type="32" Line="11" CharPositionInLine="9" StartIndex="245" StopIndex="245" />
+  <Token Text="\n" TokenIndex="59" Type="74" Line="11" CharPositionInLine="10" StartIndex="246" StopIndex="246" />
+  <Token Text=" " TokenIndex="60" Type="74" Line="12" CharPositionInLine="0" StartIndex="247" StopIndex="247" />
+  <Token Text=" " TokenIndex="61" Type="74" Line="12" CharPositionInLine="1" StartIndex="248" StopIndex="248" />
+  <Token Text=" " TokenIndex="62" Type="74" Line="12" CharPositionInLine="2" StartIndex="249" StopIndex="249" />
+  <Token Text=" " TokenIndex="63" Type="74" Line="12" CharPositionInLine="3" StartIndex="250" StopIndex="250" />
+  <Token Text="int" TokenIndex="64" Type="28" Line="12" CharPositionInLine="4" StartIndex="251" StopIndex="253" />
+  <Token Text="[" TokenIndex="65" Type="31" Line="12" CharPositionInLine="7" StartIndex="254" StopIndex="254" />
+  <Token Text="]" TokenIndex="66" Type="57" Line="12" CharPositionInLine="8" StartIndex="255" StopIndex="255" />
+  <Token Text=" " TokenIndex="67" Type="74" Line="12" CharPositionInLine="9" StartIndex="256" StopIndex="256" />
+  <Token Text="number" TokenIndex="68" Type="26" Line="12" CharPositionInLine="10" StartIndex="257" StopIndex="262" />
+  <Token Text=" " TokenIndex="69" Type="74" Line="12" CharPositionInLine="16" StartIndex="263" StopIndex="263" />
+  <Token Text=";" TokenIndex="70" Type="61" Line="12" CharPositionInLine="17" StartIndex="264" StopIndex="264" />
+  <Token Text="\n" TokenIndex="71" Type="74" Line="12" CharPositionInLine="18" StartIndex="265" StopIndex="265" />
+  <Token Text=" " TokenIndex="72" Type="74" Line="13" CharPositionInLine="0" StartIndex="266" StopIndex="266" />
+  <Token Text=" " TokenIndex="73" Type="74" Line="13" CharPositionInLine="1" StartIndex="267" StopIndex="267" />
+  <Token Text=" " TokenIndex="74" Type="74" Line="13" CharPositionInLine="2" StartIndex="268" StopIndex="268" />
+  <Token Text=" " TokenIndex="75" Type="74" Line="13" CharPositionInLine="3" StartIndex="269" StopIndex="269" />
+  <Token Text="int" TokenIndex="76" Type="28" Line="13" CharPositionInLine="4" StartIndex="270" StopIndex="272" />
+  <Token Text=" " TokenIndex="77" Type="74" Line="13" CharPositionInLine="7" StartIndex="273" StopIndex="273" />
+  <Token Text="size" TokenIndex="78" Type="26" Line="13" CharPositionInLine="8" StartIndex="274" StopIndex="277" />
+  <Token Text=" " TokenIndex="79" Type="74" Line="13" CharPositionInLine="12" StartIndex="278" StopIndex="278" />
+  <Token Text=";" TokenIndex="80" Type="61" Line="13" CharPositionInLine="13" StartIndex="279" StopIndex="279" />
+  <Token Text="\n" TokenIndex="81" Type="74" Line="13" CharPositionInLine="14" StartIndex="280" StopIndex="280" />
+  <Token Text=" " TokenIndex="82" Type="74" Line="14" CharPositionInLine="0" StartIndex="281" StopIndex="281" />
+  <Token Text=" " TokenIndex="83" Type="74" Line="14" CharPositionInLine="1" StartIndex="282" StopIndex="282" />
+  <Token Text=" " TokenIndex="84" Type="74" Line="14" CharPositionInLine="2" StartIndex="283" StopIndex="283" />
+  <Token Text=" " TokenIndex="85" Type="74" Line="14" CharPositionInLine="3" StartIndex="284" StopIndex="284" />
+  <Token Text="\n" TokenIndex="86" Type="74" Line="14" CharPositionInLine="4" StartIndex="285" StopIndex="285" />
+  <Token Text=" " TokenIndex="87" Type="74" Line="15" CharPositionInLine="0" StartIndex="286" StopIndex="286" />
+  <Token Text=" " TokenIndex="88" Type="74" Line="15" CharPositionInLine="1" StartIndex="287" StopIndex="287" />
+  <Token Text=" " TokenIndex="89" Type="74" Line="15" CharPositionInLine="2" StartIndex="288" StopIndex="288" />
+  <Token Text=" " TokenIndex="90" Type="74" Line="15" CharPositionInLine="3" StartIndex="289" StopIndex="289" />
+  <Token Text="// Invoke methods to initialize, print and search&#xA;" TokenIndex="91" Type="37" Line="15" CharPositionInLine="4" StartIndex="290" StopIndex="339" />
+  <Token Text=" " TokenIndex="92" Type="74" Line="16" CharPositionInLine="0" StartIndex="340" StopIndex="340" />
+  <Token Text=" " TokenIndex="93" Type="74" Line="16" CharPositionInLine="1" StartIndex="341" StopIndex="341" />
+  <Token Text=" " TokenIndex="94" Type="74" Line="16" CharPositionInLine="2" StartIndex="342" StopIndex="342" />
+  <Token Text=" " TokenIndex="95" Type="74" Line="16" CharPositionInLine="3" StartIndex="343" StopIndex="343" />
+  <Token Text="// for elements on the array&#xA;" TokenIndex="96" Type="37" Line="16" CharPositionInLine="4" StartIndex="344" StopIndex="372" />
+  <Token Text=" " TokenIndex="97" Type="74" Line="17" CharPositionInLine="0" StartIndex="373" StopIndex="373" />
+  <Token Text=" " TokenIndex="98" Type="74" Line="17" CharPositionInLine="1" StartIndex="374" StopIndex="374" />
+  <Token Text=" " TokenIndex="99" Type="74" Line="17" CharPositionInLine="2" StartIndex="375" StopIndex="375" />
+  <Token Text=" " TokenIndex="100" Type="74" Line="17" CharPositionInLine="3" StartIndex="376" StopIndex="376" />
+  <Token Text="public" TokenIndex="101" Type="56" Line="17" CharPositionInLine="4" StartIndex="377" StopIndex="382" />
+  <Token Text=" " TokenIndex="102" Type="74" Line="17" CharPositionInLine="10" StartIndex="383" StopIndex="383" />
+  <Token Text="int" TokenIndex="103" Type="28" Line="17" CharPositionInLine="11" StartIndex="384" StopIndex="386" />
+  <Token Text=" " TokenIndex="104" Type="74" Line="17" CharPositionInLine="14" StartIndex="387" StopIndex="387" />
+  <Token Text="Start" TokenIndex="105" Type="26" Line="17" CharPositionInLine="15" StartIndex="388" StopIndex="392" />
+  <Token Text="(" TokenIndex="106" Type="40" Line="17" CharPositionInLine="20" StartIndex="393" StopIndex="393" />
+  <Token Text="int" TokenIndex="107" Type="28" Line="17" CharPositionInLine="21" StartIndex="394" StopIndex="396" />
+  <Token Text=" " TokenIndex="108" Type="74" Line="17" CharPositionInLine="24" StartIndex="397" StopIndex="397" />
+  <Token Text="sz" TokenIndex="109" Type="26" Line="17" CharPositionInLine="25" StartIndex="398" StopIndex="399" />
+  <Token Text=")" TokenIndex="110" Type="60" Line="17" CharPositionInLine="27" StartIndex="400" StopIndex="400" />
+  <Token Text="{" TokenIndex="111" Type="32" Line="17" CharPositionInLine="28" StartIndex="401" StopIndex="401" />
+  <Token Text="\n" TokenIndex="112" Type="74" Line="17" CharPositionInLine="29" StartIndex="402" StopIndex="402" />
+  <Token Text="\t" TokenIndex="113" Type="74" Line="18" CharPositionInLine="0" StartIndex="403" StopIndex="403" />
+  <Token Text="int" TokenIndex="114" Type="28" Line="18" CharPositionInLine="1" StartIndex="404" StopIndex="406" />
+  <Token Text=" " TokenIndex="115" Type="74" Line="18" CharPositionInLine="4" StartIndex="407" StopIndex="407" />
+  <Token Text="aux012" TokenIndex="116" Type="26" Line="18" CharPositionInLine="5" StartIndex="408" StopIndex="413" />
+  <Token Text=" " TokenIndex="117" Type="74" Line="18" CharPositionInLine="11" StartIndex="414" StopIndex="414" />
+  <Token Text=";" TokenIndex="118" Type="61" Line="18" CharPositionInLine="12" StartIndex="415" StopIndex="415" />
+  <Token Text="\n" TokenIndex="119" Type="74" Line="18" CharPositionInLine="13" StartIndex="416" StopIndex="416" />
+  <Token Text="\t" TokenIndex="120" Type="74" Line="19" CharPositionInLine="0" StartIndex="417" StopIndex="417" />
+  <Token Text="int" TokenIndex="121" Type="28" Line="19" CharPositionInLine="1" StartIndex="418" StopIndex="420" />
+  <Token Text=" " TokenIndex="122" Type="74" Line="19" CharPositionInLine="4" StartIndex="421" StopIndex="421" />
+  <Token Text="aux022" TokenIndex="123" Type="26" Line="19" CharPositionInLine="5" StartIndex="422" StopIndex="427" />
+  <Token Text=" " TokenIndex="124" Type="74" Line="19" CharPositionInLine="11" StartIndex="428" StopIndex="428" />
+  <Token Text=";" TokenIndex="125" Type="61" Line="19" CharPositionInLine="12" StartIndex="429" StopIndex="429" />
+  <Token Text="\n" TokenIndex="126" Type="74" Line="19" CharPositionInLine="13" StartIndex="430" StopIndex="430" />
+  <Token Text="\n" TokenIndex="127" Type="74" Line="20" CharPositionInLine="0" StartIndex="431" StopIndex="431" />
+  <Token Text="\t" TokenIndex="128" Type="74" Line="21" CharPositionInLine="0" StartIndex="432" StopIndex="432" />
+  <Token Text="aux012" TokenIndex="129" Type="26" Line="21" CharPositionInLine="1" StartIndex="433" StopIndex="438" />
+  <Token Text=" " TokenIndex="130" Type="74" Line="21" CharPositionInLine="7" StartIndex="439" StopIndex="439" />
+  <Token Text="=" TokenIndex="131" Type="4" Line="21" CharPositionInLine="8" StartIndex="440" StopIndex="440" />
+  <Token Text=" " TokenIndex="132" Type="74" Line="21" CharPositionInLine="9" StartIndex="441" StopIndex="441" />
+  <Token Text="this" TokenIndex="133" Type="26" Line="21" CharPositionInLine="10" StartIndex="442" StopIndex="445" />
+  <Token Text="." TokenIndex="134" Type="15" Line="21" CharPositionInLine="14" StartIndex="446" StopIndex="446" />
+  <Token Text="Init" TokenIndex="135" Type="26" Line="21" CharPositionInLine="15" StartIndex="447" StopIndex="450" />
+  <Token Text="(" TokenIndex="136" Type="40" Line="21" CharPositionInLine="19" StartIndex="451" StopIndex="451" />
+  <Token Text="sz" TokenIndex="137" Type="26" Line="21" CharPositionInLine="20" StartIndex="452" StopIndex="453" />
+  <Token Text=")" TokenIndex="138" Type="60" Line="21" CharPositionInLine="22" StartIndex="454" StopIndex="454" />
+  <Token Text=";" TokenIndex="139" Type="61" Line="21" CharPositionInLine="23" StartIndex="455" StopIndex="455" />
+  <Token Text="\n" TokenIndex="140" Type="74" Line="21" CharPositionInLine="24" StartIndex="456" StopIndex="456" />
+  <Token Text="\t" TokenIndex="141" Type="74" Line="22" CharPositionInLine="0" StartIndex="457" StopIndex="457" />
+  <Token Text="aux022" TokenIndex="142" Type="26" Line="22" CharPositionInLine="1" StartIndex="458" StopIndex="463" />
+  <Token Text=" " TokenIndex="143" Type="74" Line="22" CharPositionInLine="7" StartIndex="464" StopIndex="464" />
+  <Token Text="=" TokenIndex="144" Type="4" Line="22" CharPositionInLine="8" StartIndex="465" StopIndex="465" />
+  <Token Text=" " TokenIndex="145" Type="74" Line="22" CharPositionInLine="9" StartIndex="466" StopIndex="466" />
+  <Token Text="this" TokenIndex="146" Type="26" Line="22" CharPositionInLine="10" StartIndex="467" StopIndex="470" />
+  <Token Text="." TokenIndex="147" Type="15" Line="22" CharPositionInLine="14" StartIndex="471" StopIndex="471" />
+  <Token Text="Print" TokenIndex="148" Type="26" Line="22" CharPositionInLine="15" StartIndex="472" StopIndex="476" />
+  <Token Text="(" TokenIndex="149" Type="40" Line="22" CharPositionInLine="20" StartIndex="477" StopIndex="477" />
+  <Token Text=")" TokenIndex="150" Type="60" Line="22" CharPositionInLine="21" StartIndex="478" StopIndex="478" />
+  <Token Text=";" TokenIndex="151" Type="61" Line="22" CharPositionInLine="22" StartIndex="479" StopIndex="479" />
+  <Token Text="\n" TokenIndex="152" Type="74" Line="22" CharPositionInLine="23" StartIndex="480" StopIndex="480" />
+  <Token Text="\t" TokenIndex="153" Type="74" Line="23" CharPositionInLine="0" StartIndex="481" StopIndex="481" />
+  <Token Text="System.out.println" TokenIndex="154" Type="54" Line="23" CharPositionInLine="1" StartIndex="482" StopIndex="499" />
+  <Token Text="(" TokenIndex="155" Type="40" Line="23" CharPositionInLine="19" StartIndex="500" StopIndex="500" />
+  <Token Text="9999" TokenIndex="156" Type="29" Line="23" CharPositionInLine="20" StartIndex="501" StopIndex="504" />
+  <Token Text=")" TokenIndex="157" Type="60" Line="23" CharPositionInLine="24" StartIndex="505" StopIndex="505" />
+  <Token Text=";" TokenIndex="158" Type="61" Line="23" CharPositionInLine="25" StartIndex="506" StopIndex="506" />
+  <Token Text="\n" TokenIndex="159" Type="74" Line="23" CharPositionInLine="26" StartIndex="507" StopIndex="507" />
+  <Token Text="\t" TokenIndex="160" Type="74" Line="24" CharPositionInLine="0" StartIndex="508" StopIndex="508" />
+  <Token Text="System.out.println" TokenIndex="161" Type="54" Line="24" CharPositionInLine="1" StartIndex="509" StopIndex="526" />
+  <Token Text="(" TokenIndex="162" Type="40" Line="24" CharPositionInLine="19" StartIndex="527" StopIndex="527" />
+  <Token Text="this" TokenIndex="163" Type="26" Line="24" CharPositionInLine="20" StartIndex="528" StopIndex="531" />
+  <Token Text="." TokenIndex="164" Type="15" Line="24" CharPositionInLine="24" StartIndex="532" StopIndex="532" />
+  <Token Text="Search" TokenIndex="165" Type="26" Line="24" CharPositionInLine="25" StartIndex="533" StopIndex="538" />
+  <Token Text="(" TokenIndex="166" Type="40" Line="24" CharPositionInLine="31" StartIndex="539" StopIndex="539" />
+  <Token Text="8" TokenIndex="167" Type="29" Line="24" CharPositionInLine="32" StartIndex="540" StopIndex="540" />
+  <Token Text=")" TokenIndex="168" Type="60" Line="24" CharPositionInLine="33" StartIndex="541" StopIndex="541" />
+  <Token Text=")" TokenIndex="169" Type="60" Line="24" CharPositionInLine="34" StartIndex="542" StopIndex="542" />
+  <Token Text=";" TokenIndex="170" Type="61" Line="24" CharPositionInLine="35" StartIndex="543" StopIndex="543" />
+  <Token Text="\n" TokenIndex="171" Type="74" Line="24" CharPositionInLine="36" StartIndex="544" StopIndex="544" />
+  <Token Text="\t" TokenIndex="172" Type="74" Line="25" CharPositionInLine="0" StartIndex="545" StopIndex="545" />
+  <Token Text="System.out.println" TokenIndex="173" Type="54" Line="25" CharPositionInLine="1" StartIndex="546" StopIndex="563" />
+  <Token Text="(" TokenIndex="174" Type="40" Line="25" CharPositionInLine="19" StartIndex="564" StopIndex="564" />
+  <Token Text="this" TokenIndex="175" Type="26" Line="25" CharPositionInLine="20" StartIndex="565" StopIndex="568" />
+  <Token Text="." TokenIndex="176" Type="15" Line="25" CharPositionInLine="24" StartIndex="569" StopIndex="569" />
+  <Token Text="Search" TokenIndex="177" Type="26" Line="25" CharPositionInLine="25" StartIndex="570" StopIndex="575" />
+  <Token Text="(" TokenIndex="178" Type="40" Line="25" CharPositionInLine="31" StartIndex="576" StopIndex="576" />
+  <Token Text="12" TokenIndex="179" Type="29" Line="25" CharPositionInLine="32" StartIndex="577" StopIndex="578" />
+  <Token Text=")" TokenIndex="180" Type="60" Line="25" CharPositionInLine="34" StartIndex="579" StopIndex="579" />
+  <Token Text=")" TokenIndex="181" Type="60" Line="25" CharPositionInLine="35" StartIndex="580" StopIndex="580" />
+  <Token Text=" " TokenIndex="182" Type="74" Line="25" CharPositionInLine="36" StartIndex="581" StopIndex="581" />
+  <Token Text=";" TokenIndex="183" Type="61" Line="25" CharPositionInLine="37" StartIndex="582" StopIndex="582" />
+  <Token Text="\n" TokenIndex="184" Type="74" Line="25" CharPositionInLine="38" StartIndex="583" StopIndex="583" />
+  <Token Text="\t" TokenIndex="185" Type="74" Line="26" CharPositionInLine="0" StartIndex="584" StopIndex="584" />
+  <Token Text="System.out.println" TokenIndex="186" Type="54" Line="26" CharPositionInLine="1" StartIndex="585" StopIndex="602" />
+  <Token Text="(" TokenIndex="187" Type="40" Line="26" CharPositionInLine="19" StartIndex="603" StopIndex="603" />
+  <Token Text="this" TokenIndex="188" Type="26" Line="26" CharPositionInLine="20" StartIndex="604" StopIndex="607" />
+  <Token Text="." TokenIndex="189" Type="15" Line="26" CharPositionInLine="24" StartIndex="608" StopIndex="608" />
+  <Token Text="Search" TokenIndex="190" Type="26" Line="26" CharPositionInLine="25" StartIndex="609" StopIndex="614" />
+  <Token Text="(" TokenIndex="191" Type="40" Line="26" CharPositionInLine="31" StartIndex="615" StopIndex="615" />
+  <Token Text="17" TokenIndex="192" Type="29" Line="26" CharPositionInLine="32" StartIndex="616" StopIndex="617" />
+  <Token Text=")" TokenIndex="193" Type="60" Line="26" CharPositionInLine="34" StartIndex="618" StopIndex="618" />
+  <Token Text=")" TokenIndex="194" Type="60" Line="26" CharPositionInLine="35" StartIndex="619" StopIndex="619" />
+  <Token Text=" " TokenIndex="195" Type="74" Line="26" CharPositionInLine="36" StartIndex="620" StopIndex="620" />
+  <Token Text=";" TokenIndex="196" Type="61" Line="26" CharPositionInLine="37" StartIndex="621" StopIndex="621" />
+  <Token Text="\n" TokenIndex="197" Type="74" Line="26" CharPositionInLine="38" StartIndex="622" StopIndex="622" />
+  <Token Text="\t" TokenIndex="198" Type="74" Line="27" CharPositionInLine="0" StartIndex="623" StopIndex="623" />
+  <Token Text="System.out.println" TokenIndex="199" Type="54" Line="27" CharPositionInLine="1" StartIndex="624" StopIndex="641" />
+  <Token Text="(" TokenIndex="200" Type="40" Line="27" CharPositionInLine="19" StartIndex="642" StopIndex="642" />
+  <Token Text="this" TokenIndex="201" Type="26" Line="27" CharPositionInLine="20" StartIndex="643" StopIndex="646" />
+  <Token Text="." TokenIndex="202" Type="15" Line="27" CharPositionInLine="24" StartIndex="647" StopIndex="647" />
+  <Token Text="Search" TokenIndex="203" Type="26" Line="27" CharPositionInLine="25" StartIndex="648" StopIndex="653" />
+  <Token Text="(" TokenIndex="204" Type="40" Line="27" CharPositionInLine="31" StartIndex="654" StopIndex="654" />
+  <Token Text="50" TokenIndex="205" Type="29" Line="27" CharPositionInLine="32" StartIndex="655" StopIndex="656" />
+  <Token Text=")" TokenIndex="206" Type="60" Line="27" CharPositionInLine="34" StartIndex="657" StopIndex="657" />
+  <Token Text=")" TokenIndex="207" Type="60" Line="27" CharPositionInLine="35" StartIndex="658" StopIndex="658" />
+  <Token Text=" " TokenIndex="208" Type="74" Line="27" CharPositionInLine="36" StartIndex="659" StopIndex="659" />
+  <Token Text=";" TokenIndex="209" Type="61" Line="27" CharPositionInLine="37" StartIndex="660" StopIndex="660" />
+  <Token Text="\n" TokenIndex="210" Type="74" Line="27" CharPositionInLine="38" StartIndex="661" StopIndex="661" />
+  <Token Text="\t" TokenIndex="211" Type="74" Line="28" CharPositionInLine="0" StartIndex="662" StopIndex="662" />
+  <Token Text="return" TokenIndex="212" Type="59" Line="28" CharPositionInLine="1" StartIndex="663" StopIndex="668" />
+  <Token Text=" " TokenIndex="213" Type="74" Line="28" CharPositionInLine="7" StartIndex="669" StopIndex="669" />
+  <Token Text="55" TokenIndex="214" Type="29" Line="28" CharPositionInLine="8" StartIndex="670" StopIndex="671" />
+  <Token Text=" " TokenIndex="215" Type="74" Line="28" CharPositionInLine="10" StartIndex="672" StopIndex="672" />
+  <Token Text=";" TokenIndex="216" Type="61" Line="28" CharPositionInLine="11" StartIndex="673" StopIndex="673" />
+  <Token Text="\n" TokenIndex="217" Type="74" Line="28" CharPositionInLine="12" StartIndex="674" StopIndex="674" />
+  <Token Text=" " TokenIndex="218" Type="74" Line="29" CharPositionInLine="0" StartIndex="675" StopIndex="675" />
+  <Token Text=" " TokenIndex="219" Type="74" Line="29" CharPositionInLine="1" StartIndex="676" StopIndex="676" />
+  <Token Text=" " TokenIndex="220" Type="74" Line="29" CharPositionInLine="2" StartIndex="677" StopIndex="677" />
+  <Token Text=" " TokenIndex="221" Type="74" Line="29" CharPositionInLine="3" StartIndex="678" StopIndex="678" />
+  <Token Text="}" TokenIndex="222" Type="58" Line="29" CharPositionInLine="4" StartIndex="679" StopIndex="679" />
+  <Token Text="\n" TokenIndex="223" Type="74" Line="29" CharPositionInLine="5" StartIndex="680" StopIndex="680" />
+  <Token Text="\n" TokenIndex="224" Type="74" Line="30" CharPositionInLine="0" StartIndex="681" StopIndex="681" />
+  <Token Text=" " TokenIndex="225" Type="74" Line="31" CharPositionInLine="0" StartIndex="682" StopIndex="682" />
+  <Token Text=" " TokenIndex="226" Type="74" Line="31" CharPositionInLine="1" StartIndex="683" StopIndex="683" />
+  <Token Text=" " TokenIndex="227" Type="74" Line="31" CharPositionInLine="2" StartIndex="684" StopIndex="684" />
+  <Token Text=" " TokenIndex="228" Type="74" Line="31" CharPositionInLine="3" StartIndex="685" StopIndex="685" />
+  <Token Text="// Print array of integers&#xA;" TokenIndex="229" Type="37" Line="31" CharPositionInLine="4" StartIndex="686" StopIndex="712" />
+  <Token Text=" " TokenIndex="230" Type="74" Line="32" CharPositionInLine="0" StartIndex="713" StopIndex="713" />
+  <Token Text=" " TokenIndex="231" Type="74" Line="32" CharPositionInLine="1" StartIndex="714" StopIndex="714" />
+  <Token Text=" " TokenIndex="232" Type="74" Line="32" CharPositionInLine="2" StartIndex="715" StopIndex="715" />
+  <Token Text=" " TokenIndex="233" Type="74" Line="32" CharPositionInLine="3" StartIndex="716" StopIndex="716" />
+  <Token Text="public" TokenIndex="234" Type="56" Line="32" CharPositionInLine="4" StartIndex="717" StopIndex="722" />
+  <Token Text=" " TokenIndex="235" Type="74" Line="32" CharPositionInLine="10" StartIndex="723" StopIndex="723" />
+  <Token Text="int" TokenIndex="236" Type="28" Line="32" CharPositionInLine="11" StartIndex="724" StopIndex="726" />
+  <Token Text=" " TokenIndex="237" Type="74" Line="32" CharPositionInLine="14" StartIndex="727" StopIndex="727" />
+  <Token Text="Print" TokenIndex="238" Type="26" Line="32" CharPositionInLine="15" StartIndex="728" StopIndex="732" />
+  <Token Text="(" TokenIndex="239" Type="40" Line="32" CharPositionInLine="20" StartIndex="733" StopIndex="733" />
+  <Token Text=")" TokenIndex="240" Type="60" Line="32" CharPositionInLine="21" StartIndex="734" StopIndex="734" />
+  <Token Text="{" TokenIndex="241" Type="32" Line="32" CharPositionInLine="22" StartIndex="735" StopIndex="735" />
+  <Token Text="\n" TokenIndex="242" Type="74" Line="32" CharPositionInLine="23" StartIndex="736" StopIndex="736" />
+  <Token Text="\t" TokenIndex="243" Type="74" Line="33" CharPositionInLine="0" StartIndex="737" StopIndex="737" />
+  <Token Text="int" TokenIndex="244" Type="28" Line="33" CharPositionInLine="1" StartIndex="738" StopIndex="740" />
+  <Token Text=" " TokenIndex="245" Type="74" Line="33" CharPositionInLine="4" StartIndex="741" StopIndex="741" />
+  <Token Text="j2" TokenIndex="246" Type="26" Line="33" CharPositionInLine="5" StartIndex="742" StopIndex="743" />
+  <Token Text=" " TokenIndex="247" Type="74" Line="33" CharPositionInLine="7" StartIndex="744" StopIndex="744" />
+  <Token Text=";" TokenIndex="248" Type="61" Line="33" CharPositionInLine="8" StartIndex="745" StopIndex="745" />
+  <Token Text="\n" TokenIndex="249" Type="74" Line="33" CharPositionInLine="9" StartIndex="746" StopIndex="746" />
+  <Token Text="\n" TokenIndex="250" Type="74" Line="34" CharPositionInLine="0" StartIndex="747" StopIndex="747" />
+  <Token Text="\t" TokenIndex="251" Type="74" Line="35" CharPositionInLine="0" StartIndex="748" StopIndex="748" />
+  <Token Text="j2" TokenIndex="252" Type="26" Line="35" CharPositionInLine="1" StartIndex="749" StopIndex="750" />
+  <Token Text=" " TokenIndex="253" Type="74" Line="35" CharPositionInLine="3" StartIndex="751" StopIndex="751" />
+  <Token Text="=" TokenIndex="254" Type="4" Line="35" CharPositionInLine="4" StartIndex="752" StopIndex="752" />
+  <Token Text=" " TokenIndex="255" Type="74" Line="35" CharPositionInLine="5" StartIndex="753" StopIndex="753" />
+  <Token Text="1" TokenIndex="256" Type="29" Line="35" CharPositionInLine="6" StartIndex="754" StopIndex="754" />
+  <Token Text=" " TokenIndex="257" Type="74" Line="35" CharPositionInLine="7" StartIndex="755" StopIndex="755" />
+  <Token Text=";" TokenIndex="258" Type="61" Line="35" CharPositionInLine="8" StartIndex="756" StopIndex="756" />
+  <Token Text="\n" TokenIndex="259" Type="74" Line="35" CharPositionInLine="9" StartIndex="757" StopIndex="757" />
+  <Token Text="\t" TokenIndex="260" Type="74" Line="36" CharPositionInLine="0" StartIndex="758" StopIndex="758" />
+  <Token Text="while" TokenIndex="261" Type="73" Line="36" CharPositionInLine="1" StartIndex="759" StopIndex="763" />
+  <Token Text=" " TokenIndex="262" Type="74" Line="36" CharPositionInLine="6" StartIndex="764" StopIndex="764" />
+  <Token Text="(" TokenIndex="263" Type="40" Line="36" CharPositionInLine="7" StartIndex="765" StopIndex="765" />
+  <Token Text="j2" TokenIndex="264" Type="26" Line="36" CharPositionInLine="8" StartIndex="766" StopIndex="767" />
+  <Token Text=" " TokenIndex="265" Type="74" Line="36" CharPositionInLine="10" StartIndex="768" StopIndex="768" />
+  <Token Text="&lt;" TokenIndex="266" Type="34" Line="36" CharPositionInLine="11" StartIndex="769" StopIndex="769" />
+  <Token Text=" " TokenIndex="267" Type="74" Line="36" CharPositionInLine="12" StartIndex="770" StopIndex="770" />
+  <Token Text="(" TokenIndex="268" Type="40" Line="36" CharPositionInLine="13" StartIndex="771" StopIndex="771" />
+  <Token Text="size" TokenIndex="269" Type="26" Line="36" CharPositionInLine="14" StartIndex="772" StopIndex="775" />
+  <Token Text=")" TokenIndex="270" Type="60" Line="36" CharPositionInLine="18" StartIndex="776" StopIndex="776" />
+  <Token Text=")" TokenIndex="271" Type="60" Line="36" CharPositionInLine="19" StartIndex="777" StopIndex="777" />
+  <Token Text=" " TokenIndex="272" Type="74" Line="36" CharPositionInLine="20" StartIndex="778" StopIndex="778" />
+  <Token Text="{" TokenIndex="273" Type="32" Line="36" CharPositionInLine="21" StartIndex="779" StopIndex="779" />
+  <Token Text="\n" TokenIndex="274" Type="74" Line="36" CharPositionInLine="22" StartIndex="780" StopIndex="780" />
+  <Token Text="\t" TokenIndex="275" Type="74" Line="37" CharPositionInLine="0" StartIndex="781" StopIndex="781" />
+  <Token Text=" " TokenIndex="276" Type="74" Line="37" CharPositionInLine="1" StartIndex="782" StopIndex="782" />
+  <Token Text=" " TokenIndex="277" Type="74" Line="37" CharPositionInLine="2" StartIndex="783" StopIndex="783" />
+  <Token Text=" " TokenIndex="278" Type="74" Line="37" CharPositionInLine="3" StartIndex="784" StopIndex="784" />
+  <Token Text=" " TokenIndex="279" Type="74" Line="37" CharPositionInLine="4" StartIndex="785" StopIndex="785" />
+  <Token Text="System.out.println" TokenIndex="280" Type="54" Line="37" CharPositionInLine="5" StartIndex="786" StopIndex="803" />
+  <Token Text="(" TokenIndex="281" Type="40" Line="37" CharPositionInLine="23" StartIndex="804" StopIndex="804" />
+  <Token Text="number" TokenIndex="282" Type="26" Line="37" CharPositionInLine="24" StartIndex="805" StopIndex="810" />
+  <Token Text="[" TokenIndex="283" Type="31" Line="37" CharPositionInLine="30" StartIndex="811" StopIndex="811" />
+  <Token Text="j2" TokenIndex="284" Type="26" Line="37" CharPositionInLine="31" StartIndex="812" StopIndex="813" />
+  <Token Text="]" TokenIndex="285" Type="57" Line="37" CharPositionInLine="33" StartIndex="814" StopIndex="814" />
+  <Token Text=")" TokenIndex="286" Type="60" Line="37" CharPositionInLine="34" StartIndex="815" StopIndex="815" />
+  <Token Text=";" TokenIndex="287" Type="61" Line="37" CharPositionInLine="35" StartIndex="816" StopIndex="816" />
+  <Token Text="\n" TokenIndex="288" Type="74" Line="37" CharPositionInLine="36" StartIndex="817" StopIndex="817" />
+  <Token Text="\t" TokenIndex="289" Type="74" Line="38" CharPositionInLine="0" StartIndex="818" StopIndex="818" />
+  <Token Text=" " TokenIndex="290" Type="74" Line="38" CharPositionInLine="1" StartIndex="819" StopIndex="819" />
+  <Token Text=" " TokenIndex="291" Type="74" Line="38" CharPositionInLine="2" StartIndex="820" StopIndex="820" />
+  <Token Text=" " TokenIndex="292" Type="74" Line="38" CharPositionInLine="3" StartIndex="821" StopIndex="821" />
+  <Token Text=" " TokenIndex="293" Type="74" Line="38" CharPositionInLine="4" StartIndex="822" StopIndex="822" />
+  <Token Text="j2" TokenIndex="294" Type="26" Line="38" CharPositionInLine="5" StartIndex="823" StopIndex="824" />
+  <Token Text=" " TokenIndex="295" Type="74" Line="38" CharPositionInLine="7" StartIndex="825" StopIndex="825" />
+  <Token Text="=" TokenIndex="296" Type="4" Line="38" CharPositionInLine="8" StartIndex="826" StopIndex="826" />
+  <Token Text=" " TokenIndex="297" Type="74" Line="38" CharPositionInLine="9" StartIndex="827" StopIndex="827" />
+  <Token Text="j2" TokenIndex="298" Type="26" Line="38" CharPositionInLine="10" StartIndex="828" StopIndex="829" />
+  <Token Text=" " TokenIndex="299" Type="74" Line="38" CharPositionInLine="12" StartIndex="830" StopIndex="830" />
+  <Token Text="+" TokenIndex="300" Type="52" Line="38" CharPositionInLine="13" StartIndex="831" StopIndex="831" />
+  <Token Text=" " TokenIndex="301" Type="74" Line="38" CharPositionInLine="14" StartIndex="832" StopIndex="832" />
+  <Token Text="1" TokenIndex="302" Type="29" Line="38" CharPositionInLine="15" StartIndex="833" StopIndex="833" />
+  <Token Text=" " TokenIndex="303" Type="74" Line="38" CharPositionInLine="16" StartIndex="834" StopIndex="834" />
+  <Token Text=";" TokenIndex="304" Type="61" Line="38" CharPositionInLine="17" StartIndex="835" StopIndex="835" />
+  <Token Text="\n" TokenIndex="305" Type="74" Line="38" CharPositionInLine="18" StartIndex="836" StopIndex="836" />
+  <Token Text="\t" TokenIndex="306" Type="74" Line="39" CharPositionInLine="0" StartIndex="837" StopIndex="837" />
+  <Token Text="}" TokenIndex="307" Type="58" Line="39" CharPositionInLine="1" StartIndex="838" StopIndex="838" />
+  <Token Text="\n" TokenIndex="308" Type="74" Line="39" CharPositionInLine="2" StartIndex="839" StopIndex="839" />
+  <Token Text="\t" TokenIndex="309" Type="74" Line="40" CharPositionInLine="0" StartIndex="840" StopIndex="840" />
+  <Token Text="return" TokenIndex="310" Type="59" Line="40" CharPositionInLine="1" StartIndex="841" StopIndex="846" />
+  <Token Text=" " TokenIndex="311" Type="74" Line="40" CharPositionInLine="7" StartIndex="847" StopIndex="847" />
+  <Token Text="0" TokenIndex="312" Type="29" Line="40" CharPositionInLine="8" StartIndex="848" StopIndex="848" />
+  <Token Text=" " TokenIndex="313" Type="74" Line="40" CharPositionInLine="9" StartIndex="849" StopIndex="849" />
+  <Token Text=";" TokenIndex="314" Type="61" Line="40" CharPositionInLine="10" StartIndex="850" StopIndex="850" />
+  <Token Text="\n" TokenIndex="315" Type="74" Line="40" CharPositionInLine="11" StartIndex="851" StopIndex="851" />
+  <Token Text=" " TokenIndex="316" Type="74" Line="41" CharPositionInLine="0" StartIndex="852" StopIndex="852" />
+  <Token Text=" " TokenIndex="317" Type="74" Line="41" CharPositionInLine="1" StartIndex="853" StopIndex="853" />
+  <Token Text=" " TokenIndex="318" Type="74" Line="41" CharPositionInLine="2" StartIndex="854" StopIndex="854" />
+  <Token Text=" " TokenIndex="319" Type="74" Line="41" CharPositionInLine="3" StartIndex="855" StopIndex="855" />
+  <Token Text="}" TokenIndex="320" Type="58" Line="41" CharPositionInLine="4" StartIndex="856" StopIndex="856" />
+  <Token Text="\n" TokenIndex="321" Type="74" Line="41" CharPositionInLine="5" StartIndex="857" StopIndex="857" />
+  <Token Text="\n" TokenIndex="322" Type="74" Line="42" CharPositionInLine="0" StartIndex="858" StopIndex="858" />
+  <Token Text=" " TokenIndex="323" Type="74" Line="43" CharPositionInLine="0" StartIndex="859" StopIndex="859" />
+  <Token Text=" " TokenIndex="324" Type="74" Line="43" CharPositionInLine="1" StartIndex="860" StopIndex="860" />
+  <Token Text=" " TokenIndex="325" Type="74" Line="43" CharPositionInLine="2" StartIndex="861" StopIndex="861" />
+  <Token Text=" " TokenIndex="326" Type="74" Line="43" CharPositionInLine="3" StartIndex="862" StopIndex="862" />
+  <Token Text="// Search for a specific value (num) using&#xA;" TokenIndex="327" Type="37" Line="43" CharPositionInLine="4" StartIndex="863" StopIndex="905" />
+  <Token Text=" " TokenIndex="328" Type="74" Line="44" CharPositionInLine="0" StartIndex="906" StopIndex="906" />
+  <Token Text=" " TokenIndex="329" Type="74" Line="44" CharPositionInLine="1" StartIndex="907" StopIndex="907" />
+  <Token Text=" " TokenIndex="330" Type="74" Line="44" CharPositionInLine="2" StartIndex="908" StopIndex="908" />
+  <Token Text=" " TokenIndex="331" Type="74" Line="44" CharPositionInLine="3" StartIndex="909" StopIndex="909" />
+  <Token Text="// linear search&#xA;" TokenIndex="332" Type="37" Line="44" CharPositionInLine="4" StartIndex="910" StopIndex="926" />
+  <Token Text=" " TokenIndex="333" Type="74" Line="45" CharPositionInLine="0" StartIndex="927" StopIndex="927" />
+  <Token Text=" " TokenIndex="334" Type="74" Line="45" CharPositionInLine="1" StartIndex="928" StopIndex="928" />
+  <Token Text=" " TokenIndex="335" Type="74" Line="45" CharPositionInLine="2" StartIndex="929" StopIndex="929" />
+  <Token Text=" " TokenIndex="336" Type="74" Line="45" CharPositionInLine="3" StartIndex="930" StopIndex="930" />
+  <Token Text="public" TokenIndex="337" Type="56" Line="45" CharPositionInLine="4" StartIndex="931" StopIndex="936" />
+  <Token Text=" " TokenIndex="338" Type="74" Line="45" CharPositionInLine="10" StartIndex="937" StopIndex="937" />
+  <Token Text="int" TokenIndex="339" Type="28" Line="45" CharPositionInLine="11" StartIndex="938" StopIndex="940" />
+  <Token Text=" " TokenIndex="340" Type="74" Line="45" CharPositionInLine="14" StartIndex="941" StopIndex="941" />
+  <Token Text="Search" TokenIndex="341" Type="26" Line="45" CharPositionInLine="15" StartIndex="942" StopIndex="947" />
+  <Token Text="(" TokenIndex="342" Type="40" Line="45" CharPositionInLine="21" StartIndex="948" StopIndex="948" />
+  <Token Text="int" TokenIndex="343" Type="28" Line="45" CharPositionInLine="22" StartIndex="949" StopIndex="951" />
+  <Token Text=" " TokenIndex="344" Type="74" Line="45" CharPositionInLine="25" StartIndex="952" StopIndex="952" />
+  <Token Text="num" TokenIndex="345" Type="26" Line="45" CharPositionInLine="26" StartIndex="953" StopIndex="955" />
+  <Token Text=")" TokenIndex="346" Type="60" Line="45" CharPositionInLine="29" StartIndex="956" StopIndex="956" />
+  <Token Text="{" TokenIndex="347" Type="32" Line="45" CharPositionInLine="30" StartIndex="957" StopIndex="957" />
+  <Token Text="\n" TokenIndex="348" Type="74" Line="45" CharPositionInLine="31" StartIndex="958" StopIndex="958" />
+  <Token Text="\t" TokenIndex="349" Type="74" Line="46" CharPositionInLine="0" StartIndex="959" StopIndex="959" />
+  <Token Text="int" TokenIndex="350" Type="28" Line="46" CharPositionInLine="1" StartIndex="960" StopIndex="962" />
+  <Token Text=" " TokenIndex="351" Type="74" Line="46" CharPositionInLine="4" StartIndex="963" StopIndex="963" />
+  <Token Text="j" TokenIndex="352" Type="26" Line="46" CharPositionInLine="5" StartIndex="964" StopIndex="964" />
+  <Token Text=" " TokenIndex="353" Type="74" Line="46" CharPositionInLine="6" StartIndex="965" StopIndex="965" />
+  <Token Text=";" TokenIndex="354" Type="61" Line="46" CharPositionInLine="7" StartIndex="966" StopIndex="966" />
+  <Token Text="\n" TokenIndex="355" Type="74" Line="46" CharPositionInLine="8" StartIndex="967" StopIndex="967" />
+  <Token Text="\t" TokenIndex="356" Type="74" Line="47" CharPositionInLine="0" StartIndex="968" StopIndex="968" />
+  <Token Text="boolean" TokenIndex="357" Type="7" Line="47" CharPositionInLine="1" StartIndex="969" StopIndex="975" />
+  <Token Text=" " TokenIndex="358" Type="74" Line="47" CharPositionInLine="8" StartIndex="976" StopIndex="976" />
+  <Token Text="ls01" TokenIndex="359" Type="26" Line="47" CharPositionInLine="9" StartIndex="977" StopIndex="980" />
+  <Token Text=" " TokenIndex="360" Type="74" Line="47" CharPositionInLine="13" StartIndex="981" StopIndex="981" />
+  <Token Text=";" TokenIndex="361" Type="61" Line="47" CharPositionInLine="14" StartIndex="982" StopIndex="982" />
+  <Token Text="\n" TokenIndex="362" Type="74" Line="47" CharPositionInLine="15" StartIndex="983" StopIndex="983" />
+  <Token Text="\t" TokenIndex="363" Type="74" Line="48" CharPositionInLine="0" StartIndex="984" StopIndex="984" />
+  <Token Text="int" TokenIndex="364" Type="28" Line="48" CharPositionInLine="1" StartIndex="985" StopIndex="987" />
+  <Token Text=" " TokenIndex="365" Type="74" Line="48" CharPositionInLine="4" StartIndex="988" StopIndex="988" />
+  <Token Text="ifound" TokenIndex="366" Type="26" Line="48" CharPositionInLine="5" StartIndex="989" StopIndex="994" />
+  <Token Text=" " TokenIndex="367" Type="74" Line="48" CharPositionInLine="11" StartIndex="995" StopIndex="995" />
+  <Token Text=";" TokenIndex="368" Type="61" Line="48" CharPositionInLine="12" StartIndex="996" StopIndex="996" />
+  <Token Text="\n" TokenIndex="369" Type="74" Line="48" CharPositionInLine="13" StartIndex="997" StopIndex="997" />
+  <Token Text="\t" TokenIndex="370" Type="74" Line="49" CharPositionInLine="0" StartIndex="998" StopIndex="998" />
+  <Token Text="int" TokenIndex="371" Type="28" Line="49" CharPositionInLine="1" StartIndex="999" StopIndex="1001" />
+  <Token Text=" " TokenIndex="372" Type="74" Line="49" CharPositionInLine="4" StartIndex="1002" StopIndex="1002" />
+  <Token Text="aux01" TokenIndex="373" Type="26" Line="49" CharPositionInLine="5" StartIndex="1003" StopIndex="1007" />
+  <Token Text=" " TokenIndex="374" Type="74" Line="49" CharPositionInLine="10" StartIndex="1008" StopIndex="1008" />
+  <Token Text=";" TokenIndex="375" Type="61" Line="49" CharPositionInLine="11" StartIndex="1009" StopIndex="1009" />
+  <Token Text="\n" TokenIndex="376" Type="74" Line="49" CharPositionInLine="12" StartIndex="1010" StopIndex="1010" />
+  <Token Text="\t" TokenIndex="377" Type="74" Line="50" CharPositionInLine="0" StartIndex="1011" StopIndex="1011" />
+  <Token Text="int" TokenIndex="378" Type="28" Line="50" CharPositionInLine="1" StartIndex="1012" StopIndex="1014" />
+  <Token Text=" " TokenIndex="379" Type="74" Line="50" CharPositionInLine="4" StartIndex="1015" StopIndex="1015" />
+  <Token Text="aux02" TokenIndex="380" Type="26" Line="50" CharPositionInLine="5" StartIndex="1016" StopIndex="1020" />
+  <Token Text=" " TokenIndex="381" Type="74" Line="50" CharPositionInLine="10" StartIndex="1021" StopIndex="1021" />
+  <Token Text=";" TokenIndex="382" Type="61" Line="50" CharPositionInLine="11" StartIndex="1022" StopIndex="1022" />
+  <Token Text="\n" TokenIndex="383" Type="74" Line="50" CharPositionInLine="12" StartIndex="1023" StopIndex="1023" />
+  <Token Text="\t" TokenIndex="384" Type="74" Line="51" CharPositionInLine="0" StartIndex="1024" StopIndex="1024" />
+  <Token Text="int" TokenIndex="385" Type="28" Line="51" CharPositionInLine="1" StartIndex="1025" StopIndex="1027" />
+  <Token Text=" " TokenIndex="386" Type="74" Line="51" CharPositionInLine="4" StartIndex="1028" StopIndex="1028" />
+  <Token Text="nt" TokenIndex="387" Type="26" Line="51" CharPositionInLine="5" StartIndex="1029" StopIndex="1030" />
+  <Token Text=" " TokenIndex="388" Type="74" Line="51" CharPositionInLine="7" StartIndex="1031" StopIndex="1031" />
+  <Token Text=";" TokenIndex="389" Type="61" Line="51" CharPositionInLine="8" StartIndex="1032" StopIndex="1032" />
+  <Token Text="\n" TokenIndex="390" Type="74" Line="51" CharPositionInLine="9" StartIndex="1033" StopIndex="1033" />
+  <Token Text="\n" TokenIndex="391" Type="74" Line="52" CharPositionInLine="0" StartIndex="1034" StopIndex="1034" />
+  <Token Text="\t" TokenIndex="392" Type="74" Line="53" CharPositionInLine="0" StartIndex="1035" StopIndex="1035" />
+  <Token Text="j" TokenIndex="393" Type="26" Line="53" CharPositionInLine="1" StartIndex="1036" StopIndex="1036" />
+  <Token Text=" " TokenIndex="394" Type="74" Line="53" CharPositionInLine="2" StartIndex="1037" StopIndex="1037" />
+  <Token Text="=" TokenIndex="395" Type="4" Line="53" CharPositionInLine="3" StartIndex="1038" StopIndex="1038" />
+  <Token Text=" " TokenIndex="396" Type="74" Line="53" CharPositionInLine="4" StartIndex="1039" StopIndex="1039" />
+  <Token Text="1" TokenIndex="397" Type="29" Line="53" CharPositionInLine="5" StartIndex="1040" StopIndex="1040" />
+  <Token Text=" " TokenIndex="398" Type="74" Line="53" CharPositionInLine="6" StartIndex="1041" StopIndex="1041" />
+  <Token Text=";" TokenIndex="399" Type="61" Line="53" CharPositionInLine="7" StartIndex="1042" StopIndex="1042" />
+  <Token Text="\n" TokenIndex="400" Type="74" Line="53" CharPositionInLine="8" StartIndex="1043" StopIndex="1043" />
+  <Token Text="\t" TokenIndex="401" Type="74" Line="54" CharPositionInLine="0" StartIndex="1044" StopIndex="1044" />
+  <Token Text="ls01" TokenIndex="402" Type="26" Line="54" CharPositionInLine="1" StartIndex="1045" StopIndex="1048" />
+  <Token Text=" " TokenIndex="403" Type="74" Line="54" CharPositionInLine="5" StartIndex="1049" StopIndex="1049" />
+  <Token Text="=" TokenIndex="404" Type="4" Line="54" CharPositionInLine="6" StartIndex="1050" StopIndex="1050" />
+  <Token Text=" " TokenIndex="405" Type="74" Line="54" CharPositionInLine="7" StartIndex="1051" StopIndex="1051" />
+  <Token Text="false" TokenIndex="406" Type="22" Line="54" CharPositionInLine="8" StartIndex="1052" StopIndex="1056" />
+  <Token Text=" " TokenIndex="407" Type="74" Line="54" CharPositionInLine="13" StartIndex="1057" StopIndex="1057" />
+  <Token Text=";" TokenIndex="408" Type="61" Line="54" CharPositionInLine="14" StartIndex="1058" StopIndex="1058" />
+  <Token Text="\n" TokenIndex="409" Type="74" Line="54" CharPositionInLine="15" StartIndex="1059" StopIndex="1059" />
+  <Token Text="\t" TokenIndex="410" Type="74" Line="55" CharPositionInLine="0" StartIndex="1060" StopIndex="1060" />
+  <Token Text="ifound" TokenIndex="411" Type="26" Line="55" CharPositionInLine="1" StartIndex="1061" StopIndex="1066" />
+  <Token Text=" " TokenIndex="412" Type="74" Line="55" CharPositionInLine="7" StartIndex="1067" StopIndex="1067" />
+  <Token Text="=" TokenIndex="413" Type="4" Line="55" CharPositionInLine="8" StartIndex="1068" StopIndex="1068" />
+  <Token Text=" " TokenIndex="414" Type="74" Line="55" CharPositionInLine="9" StartIndex="1069" StopIndex="1069" />
+  <Token Text="0" TokenIndex="415" Type="29" Line="55" CharPositionInLine="10" StartIndex="1070" StopIndex="1070" />
+  <Token Text=" " TokenIndex="416" Type="74" Line="55" CharPositionInLine="11" StartIndex="1071" StopIndex="1071" />
+  <Token Text=";" TokenIndex="417" Type="61" Line="55" CharPositionInLine="12" StartIndex="1072" StopIndex="1072" />
+  <Token Text="\n" TokenIndex="418" Type="74" Line="55" CharPositionInLine="13" StartIndex="1073" StopIndex="1073" />
+  <Token Text="\t" TokenIndex="419" Type="74" Line="56" CharPositionInLine="0" StartIndex="1074" StopIndex="1074" />
+  <Token Text="\n" TokenIndex="420" Type="74" Line="56" CharPositionInLine="1" StartIndex="1075" StopIndex="1075" />
+  <Token Text="\t" TokenIndex="421" Type="74" Line="57" CharPositionInLine="0" StartIndex="1076" StopIndex="1076" />
+  <Token Text="//System.out.println(num);&#xA;" TokenIndex="422" Type="37" Line="57" CharPositionInLine="1" StartIndex="1077" StopIndex="1103" />
+  <Token Text="\t" TokenIndex="423" Type="74" Line="58" CharPositionInLine="0" StartIndex="1104" StopIndex="1104" />
+  <Token Text="while" TokenIndex="424" Type="73" Line="58" CharPositionInLine="1" StartIndex="1105" StopIndex="1109" />
+  <Token Text=" " TokenIndex="425" Type="74" Line="58" CharPositionInLine="6" StartIndex="1110" StopIndex="1110" />
+  <Token Text="(" TokenIndex="426" Type="40" Line="58" CharPositionInLine="7" StartIndex="1111" StopIndex="1111" />
+  <Token Text="j" TokenIndex="427" Type="26" Line="58" CharPositionInLine="8" StartIndex="1112" StopIndex="1112" />
+  <Token Text=" " TokenIndex="428" Type="74" Line="58" CharPositionInLine="9" StartIndex="1113" StopIndex="1113" />
+  <Token Text="&lt;" TokenIndex="429" Type="34" Line="58" CharPositionInLine="10" StartIndex="1114" StopIndex="1114" />
+  <Token Text=" " TokenIndex="430" Type="74" Line="58" CharPositionInLine="11" StartIndex="1115" StopIndex="1115" />
+  <Token Text="(" TokenIndex="431" Type="40" Line="58" CharPositionInLine="12" StartIndex="1116" StopIndex="1116" />
+  <Token Text="size" TokenIndex="432" Type="26" Line="58" CharPositionInLine="13" StartIndex="1117" StopIndex="1120" />
+  <Token Text=")" TokenIndex="433" Type="60" Line="58" CharPositionInLine="17" StartIndex="1121" StopIndex="1121" />
+  <Token Text=")" TokenIndex="434" Type="60" Line="58" CharPositionInLine="18" StartIndex="1122" StopIndex="1122" />
+  <Token Text=" " TokenIndex="435" Type="74" Line="58" CharPositionInLine="19" StartIndex="1123" StopIndex="1123" />
+  <Token Text="{" TokenIndex="436" Type="32" Line="58" CharPositionInLine="20" StartIndex="1124" StopIndex="1124" />
+  <Token Text="\n" TokenIndex="437" Type="74" Line="58" CharPositionInLine="21" StartIndex="1125" StopIndex="1125" />
+  <Token Text="\t" TokenIndex="438" Type="74" Line="59" CharPositionInLine="0" StartIndex="1126" StopIndex="1126" />
+  <Token Text=" " TokenIndex="439" Type="74" Line="59" CharPositionInLine="1" StartIndex="1127" StopIndex="1127" />
+  <Token Text=" " TokenIndex="440" Type="74" Line="59" CharPositionInLine="2" StartIndex="1128" StopIndex="1128" />
+  <Token Text=" " TokenIndex="441" Type="74" Line="59" CharPositionInLine="3" StartIndex="1129" StopIndex="1129" />
+  <Token Text=" " TokenIndex="442" Type="74" Line="59" CharPositionInLine="4" StartIndex="1130" StopIndex="1130" />
+  <Token Text="aux01" TokenIndex="443" Type="26" Line="59" CharPositionInLine="5" StartIndex="1131" StopIndex="1135" />
+  <Token Text=" " TokenIndex="444" Type="74" Line="59" CharPositionInLine="10" StartIndex="1136" StopIndex="1136" />
+  <Token Text="=" TokenIndex="445" Type="4" Line="59" CharPositionInLine="11" StartIndex="1137" StopIndex="1137" />
+  <Token Text=" " TokenIndex="446" Type="74" Line="59" CharPositionInLine="12" StartIndex="1138" StopIndex="1138" />
+  <Token Text="number" TokenIndex="447" Type="26" Line="59" CharPositionInLine="13" StartIndex="1139" StopIndex="1144" />
+  <Token Text="[" TokenIndex="448" Type="31" Line="59" CharPositionInLine="19" StartIndex="1145" StopIndex="1145" />
+  <Token Text="j" TokenIndex="449" Type="26" Line="59" CharPositionInLine="20" StartIndex="1146" StopIndex="1146" />
+  <Token Text="]" TokenIndex="450" Type="57" Line="59" CharPositionInLine="21" StartIndex="1147" StopIndex="1147" />
+  <Token Text=" " TokenIndex="451" Type="74" Line="59" CharPositionInLine="22" StartIndex="1148" StopIndex="1148" />
+  <Token Text=";" TokenIndex="452" Type="61" Line="59" CharPositionInLine="23" StartIndex="1149" StopIndex="1149" />
+  <Token Text="\n" TokenIndex="453" Type="74" Line="59" CharPositionInLine="24" StartIndex="1150" StopIndex="1150" />
+  <Token Text="\t" TokenIndex="454" Type="74" Line="60" CharPositionInLine="0" StartIndex="1151" StopIndex="1151" />
+  <Token Text=" " TokenIndex="455" Type="74" Line="60" CharPositionInLine="1" StartIndex="1152" StopIndex="1152" />
+  <Token Text=" " TokenIndex="456" Type="74" Line="60" CharPositionInLine="2" StartIndex="1153" StopIndex="1153" />
+  <Token Text=" " TokenIndex="457" Type="74" Line="60" CharPositionInLine="3" StartIndex="1154" StopIndex="1154" />
+  <Token Text=" " TokenIndex="458" Type="74" Line="60" CharPositionInLine="4" StartIndex="1155" StopIndex="1155" />
+  <Token Text="aux02" TokenIndex="459" Type="26" Line="60" CharPositionInLine="5" StartIndex="1156" StopIndex="1160" />
+  <Token Text=" " TokenIndex="460" Type="74" Line="60" CharPositionInLine="10" StartIndex="1161" StopIndex="1161" />
+  <Token Text="=" TokenIndex="461" Type="4" Line="60" CharPositionInLine="11" StartIndex="1162" StopIndex="1162" />
+  <Token Text=" " TokenIndex="462" Type="74" Line="60" CharPositionInLine="12" StartIndex="1163" StopIndex="1163" />
+  <Token Text="num" TokenIndex="463" Type="26" Line="60" CharPositionInLine="13" StartIndex="1164" StopIndex="1166" />
+  <Token Text=" " TokenIndex="464" Type="74" Line="60" CharPositionInLine="16" StartIndex="1167" StopIndex="1167" />
+  <Token Text="+" TokenIndex="465" Type="52" Line="60" CharPositionInLine="17" StartIndex="1168" StopIndex="1168" />
+  <Token Text=" " TokenIndex="466" Type="74" Line="60" CharPositionInLine="18" StartIndex="1169" StopIndex="1169" />
+  <Token Text="1" TokenIndex="467" Type="29" Line="60" CharPositionInLine="19" StartIndex="1170" StopIndex="1170" />
+  <Token Text=" " TokenIndex="468" Type="74" Line="60" CharPositionInLine="20" StartIndex="1171" StopIndex="1171" />
+  <Token Text=";" TokenIndex="469" Type="61" Line="60" CharPositionInLine="21" StartIndex="1172" StopIndex="1172" />
+  <Token Text="\n" TokenIndex="470" Type="74" Line="60" CharPositionInLine="22" StartIndex="1173" StopIndex="1173" />
+  <Token Text="\t" TokenIndex="471" Type="74" Line="61" CharPositionInLine="0" StartIndex="1174" StopIndex="1174" />
+  <Token Text=" " TokenIndex="472" Type="74" Line="61" CharPositionInLine="1" StartIndex="1175" StopIndex="1175" />
+  <Token Text=" " TokenIndex="473" Type="74" Line="61" CharPositionInLine="2" StartIndex="1176" StopIndex="1176" />
+  <Token Text=" " TokenIndex="474" Type="74" Line="61" CharPositionInLine="3" StartIndex="1177" StopIndex="1177" />
+  <Token Text=" " TokenIndex="475" Type="74" Line="61" CharPositionInLine="4" StartIndex="1178" StopIndex="1178" />
+  <Token Text="if" TokenIndex="476" Type="27" Line="61" CharPositionInLine="5" StartIndex="1179" StopIndex="1180" />
+  <Token Text=" " TokenIndex="477" Type="74" Line="61" CharPositionInLine="7" StartIndex="1181" StopIndex="1181" />
+  <Token Text="(" TokenIndex="478" Type="40" Line="61" CharPositionInLine="8" StartIndex="1182" StopIndex="1182" />
+  <Token Text="aux01" TokenIndex="479" Type="26" Line="61" CharPositionInLine="9" StartIndex="1183" StopIndex="1187" />
+  <Token Text=" " TokenIndex="480" Type="74" Line="61" CharPositionInLine="14" StartIndex="1188" StopIndex="1188" />
+  <Token Text="&lt;" TokenIndex="481" Type="34" Line="61" CharPositionInLine="15" StartIndex="1189" StopIndex="1189" />
+  <Token Text=" " TokenIndex="482" Type="74" Line="61" CharPositionInLine="16" StartIndex="1190" StopIndex="1190" />
+  <Token Text="num" TokenIndex="483" Type="26" Line="61" CharPositionInLine="17" StartIndex="1191" StopIndex="1193" />
+  <Token Text=")" TokenIndex="484" Type="60" Line="61" CharPositionInLine="20" StartIndex="1194" StopIndex="1194" />
+  <Token Text=" " TokenIndex="485" Type="74" Line="61" CharPositionInLine="21" StartIndex="1195" StopIndex="1195" />
+  <Token Text="nt" TokenIndex="486" Type="26" Line="61" CharPositionInLine="22" StartIndex="1196" StopIndex="1197" />
+  <Token Text=" " TokenIndex="487" Type="74" Line="61" CharPositionInLine="24" StartIndex="1198" StopIndex="1198" />
+  <Token Text="=" TokenIndex="488" Type="4" Line="61" CharPositionInLine="25" StartIndex="1199" StopIndex="1199" />
+  <Token Text=" " TokenIndex="489" Type="74" Line="61" CharPositionInLine="26" StartIndex="1200" StopIndex="1200" />
+  <Token Text="0" TokenIndex="490" Type="29" Line="61" CharPositionInLine="27" StartIndex="1201" StopIndex="1201" />
+  <Token Text=" " TokenIndex="491" Type="74" Line="61" CharPositionInLine="28" StartIndex="1202" StopIndex="1202" />
+  <Token Text=";" TokenIndex="492" Type="61" Line="61" CharPositionInLine="29" StartIndex="1203" StopIndex="1203" />
+  <Token Text="\n" TokenIndex="493" Type="74" Line="61" CharPositionInLine="30" StartIndex="1204" StopIndex="1204" />
+  <Token Text="\t" TokenIndex="494" Type="74" Line="62" CharPositionInLine="0" StartIndex="1205" StopIndex="1205" />
+  <Token Text=" " TokenIndex="495" Type="74" Line="62" CharPositionInLine="1" StartIndex="1206" StopIndex="1206" />
+  <Token Text=" " TokenIndex="496" Type="74" Line="62" CharPositionInLine="2" StartIndex="1207" StopIndex="1207" />
+  <Token Text=" " TokenIndex="497" Type="74" Line="62" CharPositionInLine="3" StartIndex="1208" StopIndex="1208" />
+  <Token Text=" " TokenIndex="498" Type="74" Line="62" CharPositionInLine="4" StartIndex="1209" StopIndex="1209" />
+  <Token Text="else" TokenIndex="499" Type="18" Line="62" CharPositionInLine="5" StartIndex="1210" StopIndex="1213" />
+  <Token Text=" " TokenIndex="500" Type="74" Line="62" CharPositionInLine="9" StartIndex="1214" StopIndex="1214" />
+  <Token Text="if" TokenIndex="501" Type="27" Line="62" CharPositionInLine="10" StartIndex="1215" StopIndex="1216" />
+  <Token Text=" " TokenIndex="502" Type="74" Line="62" CharPositionInLine="12" StartIndex="1217" StopIndex="1217" />
+  <Token Text="(" TokenIndex="503" Type="40" Line="62" CharPositionInLine="13" StartIndex="1218" StopIndex="1218" />
+  <Token Text="!" TokenIndex="504" Type="38" Line="62" CharPositionInLine="14" StartIndex="1219" StopIndex="1219" />
+  <Token Text="(" TokenIndex="505" Type="40" Line="62" CharPositionInLine="15" StartIndex="1220" StopIndex="1220" />
+  <Token Text="aux01" TokenIndex="506" Type="26" Line="62" CharPositionInLine="16" StartIndex="1221" StopIndex="1225" />
+  <Token Text=" " TokenIndex="507" Type="74" Line="62" CharPositionInLine="21" StartIndex="1226" StopIndex="1226" />
+  <Token Text="&lt;" TokenIndex="508" Type="34" Line="62" CharPositionInLine="22" StartIndex="1227" StopIndex="1227" />
+  <Token Text=" " TokenIndex="509" Type="74" Line="62" CharPositionInLine="23" StartIndex="1228" StopIndex="1228" />
+  <Token Text="aux02" TokenIndex="510" Type="26" Line="62" CharPositionInLine="24" StartIndex="1229" StopIndex="1233" />
+  <Token Text=")" TokenIndex="511" Type="60" Line="62" CharPositionInLine="29" StartIndex="1234" StopIndex="1234" />
+  <Token Text=")" TokenIndex="512" Type="60" Line="62" CharPositionInLine="30" StartIndex="1235" StopIndex="1235" />
+  <Token Text=" " TokenIndex="513" Type="74" Line="62" CharPositionInLine="31" StartIndex="1236" StopIndex="1236" />
+  <Token Text="nt" TokenIndex="514" Type="26" Line="62" CharPositionInLine="32" StartIndex="1237" StopIndex="1238" />
+  <Token Text=" " TokenIndex="515" Type="74" Line="62" CharPositionInLine="34" StartIndex="1239" StopIndex="1239" />
+  <Token Text="=" TokenIndex="516" Type="4" Line="62" CharPositionInLine="35" StartIndex="1240" StopIndex="1240" />
+  <Token Text=" " TokenIndex="517" Type="74" Line="62" CharPositionInLine="36" StartIndex="1241" StopIndex="1241" />
+  <Token Text="0" TokenIndex="518" Type="29" Line="62" CharPositionInLine="37" StartIndex="1242" StopIndex="1242" />
+  <Token Text=" " TokenIndex="519" Type="74" Line="62" CharPositionInLine="38" StartIndex="1243" StopIndex="1243" />
+  <Token Text=";" TokenIndex="520" Type="61" Line="62" CharPositionInLine="39" StartIndex="1244" StopIndex="1244" />
+  <Token Text="\n" TokenIndex="521" Type="74" Line="62" CharPositionInLine="40" StartIndex="1245" StopIndex="1245" />
+  <Token Text="\t" TokenIndex="522" Type="74" Line="63" CharPositionInLine="0" StartIndex="1246" StopIndex="1246" />
+  <Token Text=" " TokenIndex="523" Type="74" Line="63" CharPositionInLine="1" StartIndex="1247" StopIndex="1247" />
+  <Token Text=" " TokenIndex="524" Type="74" Line="63" CharPositionInLine="2" StartIndex="1248" StopIndex="1248" />
+  <Token Text=" " TokenIndex="525" Type="74" Line="63" CharPositionInLine="3" StartIndex="1249" StopIndex="1249" />
+  <Token Text=" " TokenIndex="526" Type="74" Line="63" CharPositionInLine="4" StartIndex="1250" StopIndex="1250" />
+  <Token Text="else" TokenIndex="527" Type="18" Line="63" CharPositionInLine="5" StartIndex="1251" StopIndex="1254" />
+  <Token Text=" " TokenIndex="528" Type="74" Line="63" CharPositionInLine="9" StartIndex="1255" StopIndex="1255" />
+  <Token Text="{" TokenIndex="529" Type="32" Line="63" CharPositionInLine="10" StartIndex="1256" StopIndex="1256" />
+  <Token Text="\n" TokenIndex="530" Type="74" Line="63" CharPositionInLine="11" StartIndex="1257" StopIndex="1257" />
+  <Token Text="\t" TokenIndex="531" Type="74" Line="64" CharPositionInLine="0" StartIndex="1258" StopIndex="1258" />
+  <Token Text="\t" TokenIndex="532" Type="74" Line="64" CharPositionInLine="1" StartIndex="1259" StopIndex="1259" />
+  <Token Text="ls01" TokenIndex="533" Type="26" Line="64" CharPositionInLine="2" StartIndex="1260" StopIndex="1263" />
+  <Token Text=" " TokenIndex="534" Type="74" Line="64" CharPositionInLine="6" StartIndex="1264" StopIndex="1264" />
+  <Token Text="=" TokenIndex="535" Type="4" Line="64" CharPositionInLine="7" StartIndex="1265" StopIndex="1265" />
+  <Token Text=" " TokenIndex="536" Type="74" Line="64" CharPositionInLine="8" StartIndex="1266" StopIndex="1266" />
+  <Token Text="true" TokenIndex="537" Type="68" Line="64" CharPositionInLine="9" StartIndex="1267" StopIndex="1270" />
+  <Token Text=" " TokenIndex="538" Type="74" Line="64" CharPositionInLine="13" StartIndex="1271" StopIndex="1271" />
+  <Token Text=";" TokenIndex="539" Type="61" Line="64" CharPositionInLine="14" StartIndex="1272" StopIndex="1272" />
+  <Token Text="\n" TokenIndex="540" Type="74" Line="64" CharPositionInLine="15" StartIndex="1273" StopIndex="1273" />
+  <Token Text="\t" TokenIndex="541" Type="74" Line="65" CharPositionInLine="0" StartIndex="1274" StopIndex="1274" />
+  <Token Text="\t" TokenIndex="542" Type="74" Line="65" CharPositionInLine="1" StartIndex="1275" StopIndex="1275" />
+  <Token Text="ifound" TokenIndex="543" Type="26" Line="65" CharPositionInLine="2" StartIndex="1276" StopIndex="1281" />
+  <Token Text=" " TokenIndex="544" Type="74" Line="65" CharPositionInLine="8" StartIndex="1282" StopIndex="1282" />
+  <Token Text="=" TokenIndex="545" Type="4" Line="65" CharPositionInLine="9" StartIndex="1283" StopIndex="1283" />
+  <Token Text=" " TokenIndex="546" Type="74" Line="65" CharPositionInLine="10" StartIndex="1284" StopIndex="1284" />
+  <Token Text="1" TokenIndex="547" Type="29" Line="65" CharPositionInLine="11" StartIndex="1285" StopIndex="1285" />
+  <Token Text=" " TokenIndex="548" Type="74" Line="65" CharPositionInLine="12" StartIndex="1286" StopIndex="1286" />
+  <Token Text=";" TokenIndex="549" Type="61" Line="65" CharPositionInLine="13" StartIndex="1287" StopIndex="1287" />
+  <Token Text="\n" TokenIndex="550" Type="74" Line="65" CharPositionInLine="14" StartIndex="1288" StopIndex="1288" />
+  <Token Text="\t" TokenIndex="551" Type="74" Line="66" CharPositionInLine="0" StartIndex="1289" StopIndex="1289" />
+  <Token Text="\t" TokenIndex="552" Type="74" Line="66" CharPositionInLine="1" StartIndex="1290" StopIndex="1290" />
+  <Token Text="j" TokenIndex="553" Type="26" Line="66" CharPositionInLine="2" StartIndex="1291" StopIndex="1291" />
+  <Token Text=" " TokenIndex="554" Type="74" Line="66" CharPositionInLine="3" StartIndex="1292" StopIndex="1292" />
+  <Token Text="=" TokenIndex="555" Type="4" Line="66" CharPositionInLine="4" StartIndex="1293" StopIndex="1293" />
+  <Token Text=" " TokenIndex="556" Type="74" Line="66" CharPositionInLine="5" StartIndex="1294" StopIndex="1294" />
+  <Token Text="size" TokenIndex="557" Type="26" Line="66" CharPositionInLine="6" StartIndex="1295" StopIndex="1298" />
+  <Token Text=" " TokenIndex="558" Type="74" Line="66" CharPositionInLine="10" StartIndex="1299" StopIndex="1299" />
+  <Token Text=";" TokenIndex="559" Type="61" Line="66" CharPositionInLine="11" StartIndex="1300" StopIndex="1300" />
+  <Token Text="\n" TokenIndex="560" Type="74" Line="66" CharPositionInLine="12" StartIndex="1301" StopIndex="1301" />
+  <Token Text="\t" TokenIndex="561" Type="74" Line="67" CharPositionInLine="0" StartIndex="1302" StopIndex="1302" />
+  <Token Text=" " TokenIndex="562" Type="74" Line="67" CharPositionInLine="1" StartIndex="1303" StopIndex="1303" />
+  <Token Text=" " TokenIndex="563" Type="74" Line="67" CharPositionInLine="2" StartIndex="1304" StopIndex="1304" />
+  <Token Text=" " TokenIndex="564" Type="74" Line="67" CharPositionInLine="3" StartIndex="1305" StopIndex="1305" />
+  <Token Text=" " TokenIndex="565" Type="74" Line="67" CharPositionInLine="4" StartIndex="1306" StopIndex="1306" />
+  <Token Text="}" TokenIndex="566" Type="58" Line="67" CharPositionInLine="5" StartIndex="1307" StopIndex="1307" />
+  <Token Text="\n" TokenIndex="567" Type="74" Line="67" CharPositionInLine="6" StartIndex="1308" StopIndex="1308" />
+  <Token Text="\t" TokenIndex="568" Type="74" Line="68" CharPositionInLine="0" StartIndex="1309" StopIndex="1309" />
+  <Token Text=" " TokenIndex="569" Type="74" Line="68" CharPositionInLine="1" StartIndex="1310" StopIndex="1310" />
+  <Token Text=" " TokenIndex="570" Type="74" Line="68" CharPositionInLine="2" StartIndex="1311" StopIndex="1311" />
+  <Token Text=" " TokenIndex="571" Type="74" Line="68" CharPositionInLine="3" StartIndex="1312" StopIndex="1312" />
+  <Token Text=" " TokenIndex="572" Type="74" Line="68" CharPositionInLine="4" StartIndex="1313" StopIndex="1313" />
+  <Token Text="j" TokenIndex="573" Type="26" Line="68" CharPositionInLine="5" StartIndex="1314" StopIndex="1314" />
+  <Token Text=" " TokenIndex="574" Type="74" Line="68" CharPositionInLine="6" StartIndex="1315" StopIndex="1315" />
+  <Token Text="=" TokenIndex="575" Type="4" Line="68" CharPositionInLine="7" StartIndex="1316" StopIndex="1316" />
+  <Token Text=" " TokenIndex="576" Type="74" Line="68" CharPositionInLine="8" StartIndex="1317" StopIndex="1317" />
+  <Token Text="j" TokenIndex="577" Type="26" Line="68" CharPositionInLine="9" StartIndex="1318" StopIndex="1318" />
+  <Token Text=" " TokenIndex="578" Type="74" Line="68" CharPositionInLine="10" StartIndex="1319" StopIndex="1319" />
+  <Token Text="+" TokenIndex="579" Type="52" Line="68" CharPositionInLine="11" StartIndex="1320" StopIndex="1320" />
+  <Token Text=" " TokenIndex="580" Type="74" Line="68" CharPositionInLine="12" StartIndex="1321" StopIndex="1321" />
+  <Token Text="1" TokenIndex="581" Type="29" Line="68" CharPositionInLine="13" StartIndex="1322" StopIndex="1322" />
+  <Token Text=" " TokenIndex="582" Type="74" Line="68" CharPositionInLine="14" StartIndex="1323" StopIndex="1323" />
+  <Token Text=";" TokenIndex="583" Type="61" Line="68" CharPositionInLine="15" StartIndex="1324" StopIndex="1324" />
+  <Token Text="\n" TokenIndex="584" Type="74" Line="68" CharPositionInLine="16" StartIndex="1325" StopIndex="1325" />
+  <Token Text="\t" TokenIndex="585" Type="74" Line="69" CharPositionInLine="0" StartIndex="1326" StopIndex="1326" />
+  <Token Text="}" TokenIndex="586" Type="58" Line="69" CharPositionInLine="1" StartIndex="1327" StopIndex="1327" />
+  <Token Text="\n" TokenIndex="587" Type="74" Line="69" CharPositionInLine="2" StartIndex="1328" StopIndex="1328" />
+  <Token Text="\n" TokenIndex="588" Type="74" Line="70" CharPositionInLine="0" StartIndex="1329" StopIndex="1329" />
+  <Token Text="\t" TokenIndex="589" Type="74" Line="71" CharPositionInLine="0" StartIndex="1330" StopIndex="1330" />
+  <Token Text="return" TokenIndex="590" Type="59" Line="71" CharPositionInLine="1" StartIndex="1331" StopIndex="1336" />
+  <Token Text=" " TokenIndex="591" Type="74" Line="71" CharPositionInLine="7" StartIndex="1337" StopIndex="1337" />
+  <Token Text="ifound" TokenIndex="592" Type="26" Line="71" CharPositionInLine="8" StartIndex="1338" StopIndex="1343" />
+  <Token Text=" " TokenIndex="593" Type="74" Line="71" CharPositionInLine="14" StartIndex="1344" StopIndex="1344" />
+  <Token Text=";" TokenIndex="594" Type="61" Line="71" CharPositionInLine="15" StartIndex="1345" StopIndex="1345" />
+  <Token Text="\n" TokenIndex="595" Type="74" Line="71" CharPositionInLine="16" StartIndex="1346" StopIndex="1346" />
+  <Token Text=" " TokenIndex="596" Type="74" Line="72" CharPositionInLine="0" StartIndex="1347" StopIndex="1347" />
+  <Token Text=" " TokenIndex="597" Type="74" Line="72" CharPositionInLine="1" StartIndex="1348" StopIndex="1348" />
+  <Token Text=" " TokenIndex="598" Type="74" Line="72" CharPositionInLine="2" StartIndex="1349" StopIndex="1349" />
+  <Token Text=" " TokenIndex="599" Type="74" Line="72" CharPositionInLine="3" StartIndex="1350" StopIndex="1350" />
+  <Token Text="}" TokenIndex="600" Type="58" Line="72" CharPositionInLine="4" StartIndex="1351" StopIndex="1351" />
+  <Token Text="\n" TokenIndex="601" Type="74" Line="72" CharPositionInLine="5" StartIndex="1352" StopIndex="1352" />
+  <Token Text="\n" TokenIndex="602" Type="74" Line="73" CharPositionInLine="0" StartIndex="1353" StopIndex="1353" />
+  <Token Text="\n" TokenIndex="603" Type="74" Line="74" CharPositionInLine="0" StartIndex="1354" StopIndex="1354" />
+  <Token Text=" " TokenIndex="604" Type="74" Line="75" CharPositionInLine="0" StartIndex="1355" StopIndex="1355" />
+  <Token Text=" " TokenIndex="605" Type="74" Line="75" CharPositionInLine="1" StartIndex="1356" StopIndex="1356" />
+  <Token Text=" " TokenIndex="606" Type="74" Line="75" CharPositionInLine="2" StartIndex="1357" StopIndex="1357" />
+  <Token Text=" " TokenIndex="607" Type="74" Line="75" CharPositionInLine="3" StartIndex="1358" StopIndex="1358" />
+  <Token Text="\n" TokenIndex="608" Type="74" Line="75" CharPositionInLine="4" StartIndex="1359" StopIndex="1359" />
+  <Token Text=" " TokenIndex="609" Type="74" Line="76" CharPositionInLine="0" StartIndex="1360" StopIndex="1360" />
+  <Token Text=" " TokenIndex="610" Type="74" Line="76" CharPositionInLine="1" StartIndex="1361" StopIndex="1361" />
+  <Token Text=" " TokenIndex="611" Type="74" Line="76" CharPositionInLine="2" StartIndex="1362" StopIndex="1362" />
+  <Token Text=" " TokenIndex="612" Type="74" Line="76" CharPositionInLine="3" StartIndex="1363" StopIndex="1363" />
+  <Token Text="// initialize array of integers with some&#xA;" TokenIndex="613" Type="37" Line="76" CharPositionInLine="4" StartIndex="1364" StopIndex="1405" />
+  <Token Text=" " TokenIndex="614" Type="74" Line="77" CharPositionInLine="0" StartIndex="1406" StopIndex="1406" />
+  <Token Text=" " TokenIndex="615" Type="74" Line="77" CharPositionInLine="1" StartIndex="1407" StopIndex="1407" />
+  <Token Text=" " TokenIndex="616" Type="74" Line="77" CharPositionInLine="2" StartIndex="1408" StopIndex="1408" />
+  <Token Text=" " TokenIndex="617" Type="74" Line="77" CharPositionInLine="3" StartIndex="1409" StopIndex="1409" />
+  <Token Text="// some sequence&#xA;" TokenIndex="618" Type="37" Line="77" CharPositionInLine="4" StartIndex="1410" StopIndex="1426" />
+  <Token Text=" " TokenIndex="619" Type="74" Line="78" CharPositionInLine="0" StartIndex="1427" StopIndex="1427" />
+  <Token Text=" " TokenIndex="620" Type="74" Line="78" CharPositionInLine="1" StartIndex="1428" StopIndex="1428" />
+  <Token Text=" " TokenIndex="621" Type="74" Line="78" CharPositionInLine="2" StartIndex="1429" StopIndex="1429" />
+  <Token Text=" " TokenIndex="622" Type="74" Line="78" CharPositionInLine="3" StartIndex="1430" StopIndex="1430" />
+  <Token Text="public" TokenIndex="623" Type="56" Line="78" CharPositionInLine="4" StartIndex="1431" StopIndex="1436" />
+  <Token Text=" " TokenIndex="624" Type="74" Line="78" CharPositionInLine="10" StartIndex="1437" StopIndex="1437" />
+  <Token Text="int" TokenIndex="625" Type="28" Line="78" CharPositionInLine="11" StartIndex="1438" StopIndex="1440" />
+  <Token Text=" " TokenIndex="626" Type="74" Line="78" CharPositionInLine="14" StartIndex="1441" StopIndex="1441" />
+  <Token Text="Init" TokenIndex="627" Type="26" Line="78" CharPositionInLine="15" StartIndex="1442" StopIndex="1445" />
+  <Token Text="(" TokenIndex="628" Type="40" Line="78" CharPositionInLine="19" StartIndex="1446" StopIndex="1446" />
+  <Token Text="int" TokenIndex="629" Type="28" Line="78" CharPositionInLine="20" StartIndex="1447" StopIndex="1449" />
+  <Token Text=" " TokenIndex="630" Type="74" Line="78" CharPositionInLine="23" StartIndex="1450" StopIndex="1450" />
+  <Token Text="sz" TokenIndex="631" Type="26" Line="78" CharPositionInLine="24" StartIndex="1451" StopIndex="1452" />
+  <Token Text=")" TokenIndex="632" Type="60" Line="78" CharPositionInLine="26" StartIndex="1453" StopIndex="1453" />
+  <Token Text="{" TokenIndex="633" Type="32" Line="78" CharPositionInLine="27" StartIndex="1454" StopIndex="1454" />
+  <Token Text="\n" TokenIndex="634" Type="74" Line="78" CharPositionInLine="28" StartIndex="1455" StopIndex="1455" />
+  <Token Text="\t" TokenIndex="635" Type="74" Line="79" CharPositionInLine="0" StartIndex="1456" StopIndex="1456" />
+  <Token Text="int" TokenIndex="636" Type="28" Line="79" CharPositionInLine="1" StartIndex="1457" StopIndex="1459" />
+  <Token Text=" " TokenIndex="637" Type="74" Line="79" CharPositionInLine="4" StartIndex="1460" StopIndex="1460" />
+  <Token Text="j1" TokenIndex="638" Type="26" Line="79" CharPositionInLine="5" StartIndex="1461" StopIndex="1462" />
+  <Token Text=" " TokenIndex="639" Type="74" Line="79" CharPositionInLine="7" StartIndex="1463" StopIndex="1463" />
+  <Token Text=";" TokenIndex="640" Type="61" Line="79" CharPositionInLine="8" StartIndex="1464" StopIndex="1464" />
+  <Token Text="\n" TokenIndex="641" Type="74" Line="79" CharPositionInLine="9" StartIndex="1465" StopIndex="1465" />
+  <Token Text="\t" TokenIndex="642" Type="74" Line="80" CharPositionInLine="0" StartIndex="1466" StopIndex="1466" />
+  <Token Text="int" TokenIndex="643" Type="28" Line="80" CharPositionInLine="1" StartIndex="1467" StopIndex="1469" />
+  <Token Text=" " TokenIndex="644" Type="74" Line="80" CharPositionInLine="4" StartIndex="1470" StopIndex="1470" />
+  <Token Text="k" TokenIndex="645" Type="26" Line="80" CharPositionInLine="5" StartIndex="1471" StopIndex="1471" />
+  <Token Text=" " TokenIndex="646" Type="74" Line="80" CharPositionInLine="6" StartIndex="1472" StopIndex="1472" />
+  <Token Text=";" TokenIndex="647" Type="61" Line="80" CharPositionInLine="7" StartIndex="1473" StopIndex="1473" />
+  <Token Text="\n" TokenIndex="648" Type="74" Line="80" CharPositionInLine="8" StartIndex="1474" StopIndex="1474" />
+  <Token Text="\t" TokenIndex="649" Type="74" Line="81" CharPositionInLine="0" StartIndex="1475" StopIndex="1475" />
+  <Token Text="int" TokenIndex="650" Type="28" Line="81" CharPositionInLine="1" StartIndex="1476" StopIndex="1478" />
+  <Token Text=" " TokenIndex="651" Type="74" Line="81" CharPositionInLine="4" StartIndex="1479" StopIndex="1479" />
+  <Token Text="aux011" TokenIndex="652" Type="26" Line="81" CharPositionInLine="5" StartIndex="1480" StopIndex="1485" />
+  <Token Text=" " TokenIndex="653" Type="74" Line="81" CharPositionInLine="11" StartIndex="1486" StopIndex="1486" />
+  <Token Text=";" TokenIndex="654" Type="61" Line="81" CharPositionInLine="12" StartIndex="1487" StopIndex="1487" />
+  <Token Text="\n" TokenIndex="655" Type="74" Line="81" CharPositionInLine="13" StartIndex="1488" StopIndex="1488" />
+  <Token Text="\t" TokenIndex="656" Type="74" Line="82" CharPositionInLine="0" StartIndex="1489" StopIndex="1489" />
+  <Token Text="int" TokenIndex="657" Type="28" Line="82" CharPositionInLine="1" StartIndex="1490" StopIndex="1492" />
+  <Token Text=" " TokenIndex="658" Type="74" Line="82" CharPositionInLine="4" StartIndex="1493" StopIndex="1493" />
+  <Token Text="aux021" TokenIndex="659" Type="26" Line="82" CharPositionInLine="5" StartIndex="1494" StopIndex="1499" />
+  <Token Text=" " TokenIndex="660" Type="74" Line="82" CharPositionInLine="11" StartIndex="1500" StopIndex="1500" />
+  <Token Text=";" TokenIndex="661" Type="61" Line="82" CharPositionInLine="12" StartIndex="1501" StopIndex="1501" />
+  <Token Text="\n" TokenIndex="662" Type="74" Line="82" CharPositionInLine="13" StartIndex="1502" StopIndex="1502" />
+  <Token Text="\n" TokenIndex="663" Type="74" Line="83" CharPositionInLine="0" StartIndex="1503" StopIndex="1503" />
+  <Token Text="\t" TokenIndex="664" Type="74" Line="84" CharPositionInLine="0" StartIndex="1504" StopIndex="1504" />
+  <Token Text="size" TokenIndex="665" Type="26" Line="84" CharPositionInLine="1" StartIndex="1505" StopIndex="1508" />
+  <Token Text=" " TokenIndex="666" Type="74" Line="84" CharPositionInLine="5" StartIndex="1509" StopIndex="1509" />
+  <Token Text="=" TokenIndex="667" Type="4" Line="84" CharPositionInLine="6" StartIndex="1510" StopIndex="1510" />
+  <Token Text=" " TokenIndex="668" Type="74" Line="84" CharPositionInLine="7" StartIndex="1511" StopIndex="1511" />
+  <Token Text="sz" TokenIndex="669" Type="26" Line="84" CharPositionInLine="8" StartIndex="1512" StopIndex="1513" />
+  <Token Text=" " TokenIndex="670" Type="74" Line="84" CharPositionInLine="10" StartIndex="1514" StopIndex="1514" />
+  <Token Text=";" TokenIndex="671" Type="61" Line="84" CharPositionInLine="11" StartIndex="1515" StopIndex="1515" />
+  <Token Text="\n" TokenIndex="672" Type="74" Line="84" CharPositionInLine="12" StartIndex="1516" StopIndex="1516" />
+  <Token Text="\t" TokenIndex="673" Type="74" Line="85" CharPositionInLine="0" StartIndex="1517" StopIndex="1517" />
+  <Token Text="number" TokenIndex="674" Type="26" Line="85" CharPositionInLine="1" StartIndex="1518" StopIndex="1523" />
+  <Token Text=" " TokenIndex="675" Type="74" Line="85" CharPositionInLine="7" StartIndex="1524" StopIndex="1524" />
+  <Token Text="=" TokenIndex="676" Type="4" Line="85" CharPositionInLine="8" StartIndex="1525" StopIndex="1525" />
+  <Token Text=" " TokenIndex="677" Type="74" Line="85" CharPositionInLine="9" StartIndex="1526" StopIndex="1526" />
+  <Token Text="new" TokenIndex="678" Type="50" Line="85" CharPositionInLine="10" StartIndex="1527" StopIndex="1529" />
+  <Token Text=" " TokenIndex="679" Type="74" Line="85" CharPositionInLine="13" StartIndex="1530" StopIndex="1530" />
+  <Token Text="int" TokenIndex="680" Type="28" Line="85" CharPositionInLine="14" StartIndex="1531" StopIndex="1533" />
+  <Token Text="[" TokenIndex="681" Type="31" Line="85" CharPositionInLine="17" StartIndex="1534" StopIndex="1534" />
+  <Token Text="sz" TokenIndex="682" Type="26" Line="85" CharPositionInLine="18" StartIndex="1535" StopIndex="1536" />
+  <Token Text="]" TokenIndex="683" Type="57" Line="85" CharPositionInLine="20" StartIndex="1537" StopIndex="1537" />
+  <Token Text=" " TokenIndex="684" Type="74" Line="85" CharPositionInLine="21" StartIndex="1538" StopIndex="1538" />
+  <Token Text=";" TokenIndex="685" Type="61" Line="85" CharPositionInLine="22" StartIndex="1539" StopIndex="1539" />
+  <Token Text="\n" TokenIndex="686" Type="74" Line="85" CharPositionInLine="23" StartIndex="1540" StopIndex="1540" />
+  <Token Text="\t" TokenIndex="687" Type="74" Line="86" CharPositionInLine="0" StartIndex="1541" StopIndex="1541" />
+  <Token Text="\n" TokenIndex="688" Type="74" Line="86" CharPositionInLine="1" StartIndex="1542" StopIndex="1542" />
+  <Token Text="\t" TokenIndex="689" Type="74" Line="87" CharPositionInLine="0" StartIndex="1543" StopIndex="1543" />
+  <Token Text="j1" TokenIndex="690" Type="26" Line="87" CharPositionInLine="1" StartIndex="1544" StopIndex="1545" />
+  <Token Text=" " TokenIndex="691" Type="74" Line="87" CharPositionInLine="3" StartIndex="1546" StopIndex="1546" />
+  <Token Text="=" TokenIndex="692" Type="4" Line="87" CharPositionInLine="4" StartIndex="1547" StopIndex="1547" />
+  <Token Text=" " TokenIndex="693" Type="74" Line="87" CharPositionInLine="5" StartIndex="1548" StopIndex="1548" />
+  <Token Text="1" TokenIndex="694" Type="29" Line="87" CharPositionInLine="6" StartIndex="1549" StopIndex="1549" />
+  <Token Text=" " TokenIndex="695" Type="74" Line="87" CharPositionInLine="7" StartIndex="1550" StopIndex="1550" />
+  <Token Text=";" TokenIndex="696" Type="61" Line="87" CharPositionInLine="8" StartIndex="1551" StopIndex="1551" />
+  <Token Text="\n" TokenIndex="697" Type="74" Line="87" CharPositionInLine="9" StartIndex="1552" StopIndex="1552" />
+  <Token Text="\t" TokenIndex="698" Type="74" Line="88" CharPositionInLine="0" StartIndex="1553" StopIndex="1553" />
+  <Token Text="k" TokenIndex="699" Type="26" Line="88" CharPositionInLine="1" StartIndex="1554" StopIndex="1554" />
+  <Token Text=" " TokenIndex="700" Type="74" Line="88" CharPositionInLine="2" StartIndex="1555" StopIndex="1555" />
+  <Token Text="=" TokenIndex="701" Type="4" Line="88" CharPositionInLine="3" StartIndex="1556" StopIndex="1556" />
+  <Token Text=" " TokenIndex="702" Type="74" Line="88" CharPositionInLine="4" StartIndex="1557" StopIndex="1557" />
+  <Token Text="size" TokenIndex="703" Type="26" Line="88" CharPositionInLine="5" StartIndex="1558" StopIndex="1561" />
+  <Token Text=" " TokenIndex="704" Type="74" Line="88" CharPositionInLine="9" StartIndex="1562" StopIndex="1562" />
+  <Token Text="+" TokenIndex="705" Type="52" Line="88" CharPositionInLine="10" StartIndex="1563" StopIndex="1563" />
+  <Token Text=" " TokenIndex="706" Type="74" Line="88" CharPositionInLine="11" StartIndex="1564" StopIndex="1564" />
+  <Token Text="1" TokenIndex="707" Type="29" Line="88" CharPositionInLine="12" StartIndex="1565" StopIndex="1565" />
+  <Token Text=" " TokenIndex="708" Type="74" Line="88" CharPositionInLine="13" StartIndex="1566" StopIndex="1566" />
+  <Token Text=";" TokenIndex="709" Type="61" Line="88" CharPositionInLine="14" StartIndex="1567" StopIndex="1567" />
+  <Token Text="\n" TokenIndex="710" Type="74" Line="88" CharPositionInLine="15" StartIndex="1568" StopIndex="1568" />
+  <Token Text="\t" TokenIndex="711" Type="74" Line="89" CharPositionInLine="0" StartIndex="1569" StopIndex="1569" />
+  <Token Text="while" TokenIndex="712" Type="73" Line="89" CharPositionInLine="1" StartIndex="1570" StopIndex="1574" />
+  <Token Text=" " TokenIndex="713" Type="74" Line="89" CharPositionInLine="6" StartIndex="1575" StopIndex="1575" />
+  <Token Text="(" TokenIndex="714" Type="40" Line="89" CharPositionInLine="7" StartIndex="1576" StopIndex="1576" />
+  <Token Text="j1" TokenIndex="715" Type="26" Line="89" CharPositionInLine="8" StartIndex="1577" StopIndex="1578" />
+  <Token Text=" " TokenIndex="716" Type="74" Line="89" CharPositionInLine="10" StartIndex="1579" StopIndex="1579" />
+  <Token Text="&lt;" TokenIndex="717" Type="34" Line="89" CharPositionInLine="11" StartIndex="1580" StopIndex="1580" />
+  <Token Text=" " TokenIndex="718" Type="74" Line="89" CharPositionInLine="12" StartIndex="1581" StopIndex="1581" />
+  <Token Text="(" TokenIndex="719" Type="40" Line="89" CharPositionInLine="13" StartIndex="1582" StopIndex="1582" />
+  <Token Text="size" TokenIndex="720" Type="26" Line="89" CharPositionInLine="14" StartIndex="1583" StopIndex="1586" />
+  <Token Text=")" TokenIndex="721" Type="60" Line="89" CharPositionInLine="18" StartIndex="1587" StopIndex="1587" />
+  <Token Text=")" TokenIndex="722" Type="60" Line="89" CharPositionInLine="19" StartIndex="1588" StopIndex="1588" />
+  <Token Text=" " TokenIndex="723" Type="74" Line="89" CharPositionInLine="20" StartIndex="1589" StopIndex="1589" />
+  <Token Text="{" TokenIndex="724" Type="32" Line="89" CharPositionInLine="21" StartIndex="1590" StopIndex="1590" />
+  <Token Text="\n" TokenIndex="725" Type="74" Line="89" CharPositionInLine="22" StartIndex="1591" StopIndex="1591" />
+  <Token Text="\t" TokenIndex="726" Type="74" Line="90" CharPositionInLine="0" StartIndex="1592" StopIndex="1592" />
+  <Token Text=" " TokenIndex="727" Type="74" Line="90" CharPositionInLine="1" StartIndex="1593" StopIndex="1593" />
+  <Token Text=" " TokenIndex="728" Type="74" Line="90" CharPositionInLine="2" StartIndex="1594" StopIndex="1594" />
+  <Token Text=" " TokenIndex="729" Type="74" Line="90" CharPositionInLine="3" StartIndex="1595" StopIndex="1595" />
+  <Token Text=" " TokenIndex="730" Type="74" Line="90" CharPositionInLine="4" StartIndex="1596" StopIndex="1596" />
+  <Token Text="aux011" TokenIndex="731" Type="26" Line="90" CharPositionInLine="5" StartIndex="1597" StopIndex="1602" />
+  <Token Text=" " TokenIndex="732" Type="74" Line="90" CharPositionInLine="11" StartIndex="1603" StopIndex="1603" />
+  <Token Text="=" TokenIndex="733" Type="4" Line="90" CharPositionInLine="12" StartIndex="1604" StopIndex="1604" />
+  <Token Text=" " TokenIndex="734" Type="74" Line="90" CharPositionInLine="13" StartIndex="1605" StopIndex="1605" />
+  <Token Text="2" TokenIndex="735" Type="29" Line="90" CharPositionInLine="14" StartIndex="1606" StopIndex="1606" />
+  <Token Text=" " TokenIndex="736" Type="74" Line="90" CharPositionInLine="15" StartIndex="1607" StopIndex="1607" />
+  <Token Text="*" TokenIndex="737" Type="63" Line="90" CharPositionInLine="16" StartIndex="1608" StopIndex="1608" />
+  <Token Text=" " TokenIndex="738" Type="74" Line="90" CharPositionInLine="17" StartIndex="1609" StopIndex="1609" />
+  <Token Text="j1" TokenIndex="739" Type="26" Line="90" CharPositionInLine="18" StartIndex="1610" StopIndex="1611" />
+  <Token Text=" " TokenIndex="740" Type="74" Line="90" CharPositionInLine="20" StartIndex="1612" StopIndex="1612" />
+  <Token Text=";" TokenIndex="741" Type="61" Line="90" CharPositionInLine="21" StartIndex="1613" StopIndex="1613" />
+  <Token Text="\n" TokenIndex="742" Type="74" Line="90" CharPositionInLine="22" StartIndex="1614" StopIndex="1614" />
+  <Token Text="\t" TokenIndex="743" Type="74" Line="91" CharPositionInLine="0" StartIndex="1615" StopIndex="1615" />
+  <Token Text=" " TokenIndex="744" Type="74" Line="91" CharPositionInLine="1" StartIndex="1616" StopIndex="1616" />
+  <Token Text=" " TokenIndex="745" Type="74" Line="91" CharPositionInLine="2" StartIndex="1617" StopIndex="1617" />
+  <Token Text=" " TokenIndex="746" Type="74" Line="91" CharPositionInLine="3" StartIndex="1618" StopIndex="1618" />
+  <Token Text=" " TokenIndex="747" Type="74" Line="91" CharPositionInLine="4" StartIndex="1619" StopIndex="1619" />
+  <Token Text="aux021" TokenIndex="748" Type="26" Line="91" CharPositionInLine="5" StartIndex="1620" StopIndex="1625" />
+  <Token Text=" " TokenIndex="749" Type="74" Line="91" CharPositionInLine="11" StartIndex="1626" StopIndex="1626" />
+  <Token Text="=" TokenIndex="750" Type="4" Line="91" CharPositionInLine="12" StartIndex="1627" StopIndex="1627" />
+  <Token Text=" " TokenIndex="751" Type="74" Line="91" CharPositionInLine="13" StartIndex="1628" StopIndex="1628" />
+  <Token Text="k" TokenIndex="752" Type="26" Line="91" CharPositionInLine="14" StartIndex="1629" StopIndex="1629" />
+  <Token Text=" " TokenIndex="753" Type="74" Line="91" CharPositionInLine="15" StartIndex="1630" StopIndex="1630" />
+  <Token Text="-" TokenIndex="754" Type="46" Line="91" CharPositionInLine="16" StartIndex="1631" StopIndex="1631" />
+  <Token Text=" " TokenIndex="755" Type="74" Line="91" CharPositionInLine="17" StartIndex="1632" StopIndex="1632" />
+  <Token Text="3" TokenIndex="756" Type="29" Line="91" CharPositionInLine="18" StartIndex="1633" StopIndex="1633" />
+  <Token Text=" " TokenIndex="757" Type="74" Line="91" CharPositionInLine="19" StartIndex="1634" StopIndex="1634" />
+  <Token Text=";" TokenIndex="758" Type="61" Line="91" CharPositionInLine="20" StartIndex="1635" StopIndex="1635" />
+  <Token Text="\n" TokenIndex="759" Type="74" Line="91" CharPositionInLine="21" StartIndex="1636" StopIndex="1636" />
+  <Token Text="\t" TokenIndex="760" Type="74" Line="92" CharPositionInLine="0" StartIndex="1637" StopIndex="1637" />
+  <Token Text=" " TokenIndex="761" Type="74" Line="92" CharPositionInLine="1" StartIndex="1638" StopIndex="1638" />
+  <Token Text=" " TokenIndex="762" Type="74" Line="92" CharPositionInLine="2" StartIndex="1639" StopIndex="1639" />
+  <Token Text=" " TokenIndex="763" Type="74" Line="92" CharPositionInLine="3" StartIndex="1640" StopIndex="1640" />
+  <Token Text=" " TokenIndex="764" Type="74" Line="92" CharPositionInLine="4" StartIndex="1641" StopIndex="1641" />
+  <Token Text="number" TokenIndex="765" Type="26" Line="92" CharPositionInLine="5" StartIndex="1642" StopIndex="1647" />
+  <Token Text="[" TokenIndex="766" Type="31" Line="92" CharPositionInLine="11" StartIndex="1648" StopIndex="1648" />
+  <Token Text="j1" TokenIndex="767" Type="26" Line="92" CharPositionInLine="12" StartIndex="1649" StopIndex="1650" />
+  <Token Text="]" TokenIndex="768" Type="57" Line="92" CharPositionInLine="14" StartIndex="1651" StopIndex="1651" />
+  <Token Text=" " TokenIndex="769" Type="74" Line="92" CharPositionInLine="15" StartIndex="1652" StopIndex="1652" />
+  <Token Text="=" TokenIndex="770" Type="4" Line="92" CharPositionInLine="16" StartIndex="1653" StopIndex="1653" />
+  <Token Text=" " TokenIndex="771" Type="74" Line="92" CharPositionInLine="17" StartIndex="1654" StopIndex="1654" />
+  <Token Text="aux011" TokenIndex="772" Type="26" Line="92" CharPositionInLine="18" StartIndex="1655" StopIndex="1660" />
+  <Token Text=" " TokenIndex="773" Type="74" Line="92" CharPositionInLine="24" StartIndex="1661" StopIndex="1661" />
+  <Token Text="+" TokenIndex="774" Type="52" Line="92" CharPositionInLine="25" StartIndex="1662" StopIndex="1662" />
+  <Token Text=" " TokenIndex="775" Type="74" Line="92" CharPositionInLine="26" StartIndex="1663" StopIndex="1663" />
+  <Token Text="aux021" TokenIndex="776" Type="26" Line="92" CharPositionInLine="27" StartIndex="1664" StopIndex="1669" />
+  <Token Text=" " TokenIndex="777" Type="74" Line="92" CharPositionInLine="33" StartIndex="1670" StopIndex="1670" />
+  <Token Text=";" TokenIndex="778" Type="61" Line="92" CharPositionInLine="34" StartIndex="1671" StopIndex="1671" />
+  <Token Text="\n" TokenIndex="779" Type="74" Line="92" CharPositionInLine="35" StartIndex="1672" StopIndex="1672" />
+  <Token Text="\t" TokenIndex="780" Type="74" Line="93" CharPositionInLine="0" StartIndex="1673" StopIndex="1673" />
+  <Token Text=" " TokenIndex="781" Type="74" Line="93" CharPositionInLine="1" StartIndex="1674" StopIndex="1674" />
+  <Token Text=" " TokenIndex="782" Type="74" Line="93" CharPositionInLine="2" StartIndex="1675" StopIndex="1675" />
+  <Token Text=" " TokenIndex="783" Type="74" Line="93" CharPositionInLine="3" StartIndex="1676" StopIndex="1676" />
+  <Token Text=" " TokenIndex="784" Type="74" Line="93" CharPositionInLine="4" StartIndex="1677" StopIndex="1677" />
+  <Token Text="j1" TokenIndex="785" Type="26" Line="93" CharPositionInLine="5" StartIndex="1678" StopIndex="1679" />
+  <Token Text=" " TokenIndex="786" Type="74" Line="93" CharPositionInLine="7" StartIndex="1680" StopIndex="1680" />
+  <Token Text="=" TokenIndex="787" Type="4" Line="93" CharPositionInLine="8" StartIndex="1681" StopIndex="1681" />
+  <Token Text=" " TokenIndex="788" Type="74" Line="93" CharPositionInLine="9" StartIndex="1682" StopIndex="1682" />
+  <Token Text="j1" TokenIndex="789" Type="26" Line="93" CharPositionInLine="10" StartIndex="1683" StopIndex="1684" />
+  <Token Text=" " TokenIndex="790" Type="74" Line="93" CharPositionInLine="12" StartIndex="1685" StopIndex="1685" />
+  <Token Text="+" TokenIndex="791" Type="52" Line="93" CharPositionInLine="13" StartIndex="1686" StopIndex="1686" />
+  <Token Text=" " TokenIndex="792" Type="74" Line="93" CharPositionInLine="14" StartIndex="1687" StopIndex="1687" />
+  <Token Text="1" TokenIndex="793" Type="29" Line="93" CharPositionInLine="15" StartIndex="1688" StopIndex="1688" />
+  <Token Text=" " TokenIndex="794" Type="74" Line="93" CharPositionInLine="16" StartIndex="1689" StopIndex="1689" />
+  <Token Text=";" TokenIndex="795" Type="61" Line="93" CharPositionInLine="17" StartIndex="1690" StopIndex="1690" />
+  <Token Text="\n" TokenIndex="796" Type="74" Line="93" CharPositionInLine="18" StartIndex="1691" StopIndex="1691" />
+  <Token Text="\t" TokenIndex="797" Type="74" Line="94" CharPositionInLine="0" StartIndex="1692" StopIndex="1692" />
+  <Token Text=" " TokenIndex="798" Type="74" Line="94" CharPositionInLine="1" StartIndex="1693" StopIndex="1693" />
+  <Token Text=" " TokenIndex="799" Type="74" Line="94" CharPositionInLine="2" StartIndex="1694" StopIndex="1694" />
+  <Token Text=" " TokenIndex="800" Type="74" Line="94" CharPositionInLine="3" StartIndex="1695" StopIndex="1695" />
+  <Token Text=" " TokenIndex="801" Type="74" Line="94" CharPositionInLine="4" StartIndex="1696" StopIndex="1696" />
+  <Token Text="k" TokenIndex="802" Type="26" Line="94" CharPositionInLine="5" StartIndex="1697" StopIndex="1697" />
+  <Token Text=" " TokenIndex="803" Type="74" Line="94" CharPositionInLine="6" StartIndex="1698" StopIndex="1698" />
+  <Token Text="=" TokenIndex="804" Type="4" Line="94" CharPositionInLine="7" StartIndex="1699" StopIndex="1699" />
+  <Token Text=" " TokenIndex="805" Type="74" Line="94" CharPositionInLine="8" StartIndex="1700" StopIndex="1700" />
+  <Token Text="k" TokenIndex="806" Type="26" Line="94" CharPositionInLine="9" StartIndex="1701" StopIndex="1701" />
+  <Token Text=" " TokenIndex="807" Type="74" Line="94" CharPositionInLine="10" StartIndex="1702" StopIndex="1702" />
+  <Token Text="-" TokenIndex="808" Type="46" Line="94" CharPositionInLine="11" StartIndex="1703" StopIndex="1703" />
+  <Token Text=" " TokenIndex="809" Type="74" Line="94" CharPositionInLine="12" StartIndex="1704" StopIndex="1704" />
+  <Token Text="1" TokenIndex="810" Type="29" Line="94" CharPositionInLine="13" StartIndex="1705" StopIndex="1705" />
+  <Token Text=" " TokenIndex="811" Type="74" Line="94" CharPositionInLine="14" StartIndex="1706" StopIndex="1706" />
+  <Token Text=";" TokenIndex="812" Type="61" Line="94" CharPositionInLine="15" StartIndex="1707" StopIndex="1707" />
+  <Token Text="\n" TokenIndex="813" Type="74" Line="94" CharPositionInLine="16" StartIndex="1708" StopIndex="1708" />
+  <Token Text="\t" TokenIndex="814" Type="74" Line="95" CharPositionInLine="0" StartIndex="1709" StopIndex="1709" />
+  <Token Text="}" TokenIndex="815" Type="58" Line="95" CharPositionInLine="1" StartIndex="1710" StopIndex="1710" />
+  <Token Text="\n" TokenIndex="816" Type="74" Line="95" CharPositionInLine="2" StartIndex="1711" StopIndex="1711" />
+  <Token Text="\t" TokenIndex="817" Type="74" Line="96" CharPositionInLine="0" StartIndex="1712" StopIndex="1712" />
+  <Token Text="return" TokenIndex="818" Type="59" Line="96" CharPositionInLine="1" StartIndex="1713" StopIndex="1718" />
+  <Token Text=" " TokenIndex="819" Type="74" Line="96" CharPositionInLine="7" StartIndex="1719" StopIndex="1719" />
+  <Token Text="0" TokenIndex="820" Type="29" Line="96" CharPositionInLine="8" StartIndex="1720" StopIndex="1720" />
+  <Token Text=" " TokenIndex="821" Type="74" Line="96" CharPositionInLine="9" StartIndex="1721" StopIndex="1721" />
+  <Token Text=";" TokenIndex="822" Type="61" Line="96" CharPositionInLine="10" StartIndex="1722" StopIndex="1722" />
+  <Token Text="\t" TokenIndex="823" Type="74" Line="96" CharPositionInLine="11" StartIndex="1723" StopIndex="1723" />
+  <Token Text="\n" TokenIndex="824" Type="74" Line="96" CharPositionInLine="12" StartIndex="1724" StopIndex="1724" />
+  <Token Text=" " TokenIndex="825" Type="74" Line="97" CharPositionInLine="0" StartIndex="1725" StopIndex="1725" />
+  <Token Text=" " TokenIndex="826" Type="74" Line="97" CharPositionInLine="1" StartIndex="1726" StopIndex="1726" />
+  <Token Text=" " TokenIndex="827" Type="74" Line="97" CharPositionInLine="2" StartIndex="1727" StopIndex="1727" />
+  <Token Text=" " TokenIndex="828" Type="74" Line="97" CharPositionInLine="3" StartIndex="1728" StopIndex="1728" />
+  <Token Text="}" TokenIndex="829" Type="58" Line="97" CharPositionInLine="4" StartIndex="1729" StopIndex="1729" />
+  <Token Text="\n" TokenIndex="830" Type="74" Line="97" CharPositionInLine="5" StartIndex="1730" StopIndex="1730" />
+  <Token Text="\n" TokenIndex="831" Type="74" Line="98" CharPositionInLine="0" StartIndex="1731" StopIndex="1731" />
+  <Token Text="}" TokenIndex="832" Type="58" Line="99" CharPositionInLine="0" StartIndex="1732" StopIndex="1732" />
+  <Token Text="\n" TokenIndex="833" Type="74" Line="99" CharPositionInLine="1" StartIndex="1733" StopIndex="1733" />
+  <Token Text="&lt;EOF&gt;" TokenIndex="834" Type="-1" Line="100" CharPositionInLine="0" StartIndex="1734" StopIndex="1734" />
+  <Token Text="&lt;EOF&gt;" TokenIndex="835" Type="-1" Line="100" CharPositionInLine="0" StartIndex="1734" StopIndex="1734" />
+</Lexer>

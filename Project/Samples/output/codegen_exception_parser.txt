@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Program>
+  <MainClass>
+    <ID Value="Program" />
+    <VarStatement>
+      <Variable>
+        <INT />
+        <ID Value="x" />
+      </Variable>
+      <INTEGER Value="12" />
+    </VarStatement>
+    <PrintStatement>
+      <ID Value="x" />
+    </PrintStatement>
+    <VarStatement>
+      <Variable>
+        <INT />
+        <ID Value="y" />
+      </Variable>
+      <INTEGER Value="45" />
+    </VarStatement>
+    <IdStatement>
+      <ID Value="x" />
+      <DivisionExpression>
+        <ID Value="yy" />
+        <ID Value="y" />
+      </DivisionExpression>
+    </IdStatement>
+    <PrintStatement>
+      <ID Value="x" />
+    </PrintStatement>
+  </MainClass>
+</Program>

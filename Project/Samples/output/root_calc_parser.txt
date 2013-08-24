@@ -1,0 +1,105 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Program>
+  <MainClass>
+    <ID Value="Program" />
+    <VarStatement>
+      <Variable>
+        <FLOAT />
+        <ID Value="EPS" />
+      </Variable>
+      <FLOAT Value="0.0001" />
+    </VarStatement>
+    <VarStatement>
+      <Variable>
+        <FLOAT />
+        <ID Value="l" />
+      </Variable>
+      <INTEGER Value="0" />
+    </VarStatement>
+    <VarStatement>
+      <Variable>
+        <FLOAT />
+        <ID Value="r" />
+      </Variable>
+      <INTEGER Value="2" />
+    </VarStatement>
+    <VarStatement>
+      <Variable>
+        <FLOAT />
+        <ID Value="c" />
+      </Variable>
+    </VarStatement>
+    <WhileStatement>
+      <MoreExpression>
+        <MinusExpression>
+          <ID Value="r" />
+          <ID Value="l" />
+        </MinusExpression>
+        <ID Value="EPS" />
+      </MoreExpression>
+      <StatementList>
+        <IdStatement>
+          <ID Value="c" />
+          <DivisionExpression>
+            <PlusExpression>
+              <ID Value="l" />
+              <ID Value="r" />
+            </PlusExpression>
+            <INTEGER Value="2" />
+          </DivisionExpression>
+        </IdStatement>
+        <PrintStatement>
+          <DivisionExpression>
+            <PlusExpression>
+              <ID Value="l" />
+              <ID Value="r" />
+            </PlusExpression>
+            <INTEGER Value="2" />
+          </DivisionExpression>
+        </PrintStatement>
+        <IfElseStatement>
+          <LessExpression>
+            <MultiplyExpression>
+              <MinusExpression>
+                <MultiplyExpression>
+                  <ID Value="c" />
+                  <ID Value="c" />
+                </MultiplyExpression>
+                <FLOAT Value="1.69" />
+              </MinusExpression>
+              <MinusExpression>
+                <MultiplyExpression>
+                  <ID Value="r" />
+                  <ID Value="r" />
+                </MultiplyExpression>
+                <FLOAT Value="1.69" />
+              </MinusExpression>
+            </MultiplyExpression>
+            <INTEGER Value="0" />
+          </LessExpression>
+          <StatementList>
+            <IdStatement>
+              <ID Value="l" />
+              <ID Value="c" />
+            </IdStatement>
+          </StatementList>
+          <StatementList>
+            <IdStatement>
+              <ID Value="r" />
+              <ID Value="c" />
+            </IdStatement>
+          </StatementList>
+        </IfElseStatement>
+      </StatementList>
+    </WhileStatement>
+    <PrintStatement>
+      <DivisionExpression>
+        <PlusExpression>
+          <ID Value="l" />
+          <ID Value="r" />
+        </PlusExpression>
+        <INTEGER Value="2" />
+      </DivisionExpression>
+    </PrintStatement>
+  </MainClass>
+</Program>

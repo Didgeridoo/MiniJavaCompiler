@@ -1,0 +1,124 @@
+Генерирование классов и сигнатур методов
+Класс BBS
+ Метод Start System.Int32
+ Метод Sort System.Int32
+ Метод Print System.Int32
+ Метод Init System.Int32
+
+Генерация инструкций для Program
+Генерация инструкций для MainClass
+В данном блоке не встречаются локальные переменные
+Генерация инструкций для PrintStatement
+Генерация инструкций для MethodCallExpression
+Генерация инструкций для NewStatement
+Генерация инструкций для Class
+Генерация инструкций для ClassVarDecl
+Генерация инструкций для ClassVarDecl
+Генерация инструкций для Method
+Обновлен список текущих аргументов метода
+sz
+Добавлены переменные для блока
+aux01
+Генерация инструкций для StatementList
+Генерация инструкций для VarStatement
+Генерация инструкций для IdStatement
+Генерация инструкций для MethodThisCallExpression
+Генерация инструкций для IdStatement
+Генерация инструкций для MethodThisCallExpression
+Генерация инструкций для PrintStatement
+Генерация инструкций для IdStatement
+Генерация инструкций для MethodThisCallExpression
+Генерация инструкций для IdStatement
+Генерация инструкций для MethodThisCallExpression
+Удалены переменные 
+aux01
+Генерация инструкций для Method
+Добавлены переменные для блока
+nt, i, aux02, aux04, aux05, aux06, aux07, j, t
+Генерация инструкций для StatementList
+Генерация инструкций для VarStatement
+Генерация инструкций для VarStatement
+Генерация инструкций для VarStatement
+Генерация инструкций для VarStatement
+Генерация инструкций для VarStatement
+Генерация инструкций для VarStatement
+Генерация инструкций для VarStatement
+Генерация инструкций для VarStatement
+Генерация инструкций для VarStatement
+Генерация инструкций для IdStatement
+Генерация инструкций для MinusExpression
+Генерация инструкций для IdStatement
+Генерация инструкций для MinusExpression
+Генерация инструкций для WhileStatement
+В данном блоке не встречаются локальные переменные
+Генерация инструкций для LessExpression
+Генерация инструкций для StatementList
+Генерация инструкций для IdStatement
+Генерация инструкций для WhileStatement
+В данном блоке не встречаются локальные переменные
+Генерация инструкций для LessExpression
+Генерация инструкций для PlusExpression
+Генерация инструкций для StatementList
+Генерация инструкций для IdStatement
+Генерация инструкций для MinusExpression
+Генерация инструкций для IdStatement
+Генерация инструкций для ArrayIndiciesStatement
+Генерация инструкций для IdStatement
+Генерация инструкций для ArrayIndiciesStatement
+Генерация инструкций для IfElseStatement
+Генерация инструкций для LessExpression
+В данном блоке не встречаются локальные переменные
+Генерация инструкций для StatementList
+Генерация инструкций для IdStatement
+Генерация инструкций для MinusExpression
+Генерация инструкций для IdStatement
+Генерация инструкций для ArrayIndiciesStatement
+Генерация инструкций для ArrayIdStatement
+Генерация инструкций для ArrayIndiciesStatement
+Генерация инструкций для ArrayIdStatement
+В данном блоке не встречаются локальные переменные
+Генерация инструкций для IdStatement
+Генерация инструкций для IdStatement
+Генерация инструкций для PlusExpression
+Генерация инструкций для LessExpression
+Генерация инструкций для PlusExpression
+Генерация инструкций для IdStatement
+Генерация инструкций для MinusExpression
+Генерация инструкций для LessExpression
+Удалены переменные 
+nt, i, aux02, aux04, aux05, aux06, aux07, j, t
+Генерация инструкций для Method
+Добавлены переменные для блока
+jj
+Генерация инструкций для StatementList
+Генерация инструкций для VarStatement
+Генерация инструкций для IdStatement
+Генерация инструкций для WhileStatement
+В данном блоке не встречаются локальные переменные
+Генерация инструкций для LessExpression
+Генерация инструкций для StatementList
+Генерация инструкций для PrintStatement
+Генерация инструкций для ArrayIndiciesStatement
+Генерация инструкций для IdStatement
+Генерация инструкций для PlusExpression
+Генерация инструкций для LessExpression
+Удалены переменные 
+jj
+Генерация инструкций для Method
+Обновлен список текущих аргументов метода
+sz
+В данном блоке не встречаются локальные переменные
+Генерация инструкций для StatementList
+Генерация инструкций для IdStatement
+Генерация инструкций для IdStatement
+Генерация инструкций для NewArrayStatement
+Генерация инструкций для ArrayIdStatement
+Генерация инструкций для ArrayIdStatement
+Генерация инструкций для ArrayIdStatement
+Генерация инструкций для ArrayIdStatement
+Генерация инструкций для ArrayIdStatement
+Генерация инструкций для ArrayIdStatement
+Генерация инструкций для ArrayIdStatement
+Генерация инструкций для ArrayIdStatement
+Генерация инструкций для ArrayIdStatement
+Генерация инструкций для ArrayIdStatement

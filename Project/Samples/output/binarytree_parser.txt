@@ -1,0 +1,1379 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Program>
+  <MainClass>
+    <ID Value="BinaryTree" />
+    <PrintStatement>
+      <MethodCallExpression>
+        <NewStatement>
+          <ID Value="BT" />
+        </NewStatement>
+        <ID Value="Start" />
+        <ArgumentListExpression />
+      </MethodCallExpression>
+    </PrintStatement>
+  </MainClass>
+  <Class>
+    <ID Value="BT" />
+    <Method>
+      <INT />
+      <ID Value="Start" />
+      <FormalArgumentList />
+      <StatementList>
+        <VarStatement>
+          <Variable>
+            <ID Value="Tree" />
+            <ID Value="root" />
+          </Variable>
+        </VarStatement>
+        <VarStatement>
+          <Variable>
+            <BOOLEAN />
+            <ID Value="ntb" />
+          </Variable>
+        </VarStatement>
+        <VarStatement>
+          <Variable>
+            <INT />
+            <ID Value="nti" />
+          </Variable>
+        </VarStatement>
+        <IdStatement>
+          <ID Value="root" />
+          <NewStatement>
+            <ID Value="Tree" />
+          </NewStatement>
+        </IdStatement>
+        <IdStatement>
+          <ID Value="ntb" />
+          <MethodCallExpression>
+            <ID Value="root" />
+            <ID Value="Init" />
+            <ArgumentListExpression>
+              <INTEGER Value="16" />
+            </ArgumentListExpression>
+          </MethodCallExpression>
+        </IdStatement>
+        <IdStatement>
+          <ID Value="ntb" />
+          <MethodCallExpression>
+            <ID Value="root" />
+            <ID Value="Print" />
+            <ArgumentListExpression />
+          </MethodCallExpression>
+        </IdStatement>
+        <PrintStatement>
+          <INTEGER Value="100000000" />
+        </PrintStatement>
+        <IdStatement>
+          <ID Value="ntb" />
+          <MethodCallExpression>
+            <ID Value="root" />
+            <ID Value="Insert" />
+            <ArgumentListExpression>
+              <INTEGER Value="8" />
+            </ArgumentListExpression>
+          </MethodCallExpression>
+        </IdStatement>
+        <IdStatement>
+          <ID Value="ntb" />
+          <MethodCallExpression>
+            <ID Value="root" />
+            <ID Value="Print" />
+            <ArgumentListExpression />
+          </MethodCallExpression>
+        </IdStatement>
+        <IdStatement>
+          <ID Value="ntb" />
+          <MethodCallExpression>
+            <ID Value="root" />
+            <ID Value="Insert" />
+            <ArgumentListExpression>
+              <INTEGER Value="24" />
+            </ArgumentListExpression>
+          </MethodCallExpression>
+        </IdStatement>
+        <IdStatement>
+          <ID Value="ntb" />
+          <MethodCallExpression>
+            <ID Value="root" />
+            <ID Value="Insert" />
+            <ArgumentListExpression>
+              <INTEGER Value="4" />
+            </ArgumentListExpression>
+          </MethodCallExpression>
+        </IdStatement>
+        <IdStatement>
+          <ID Value="ntb" />
+          <MethodCallExpression>
+            <ID Value="root" />
+            <ID Value="Insert" />
+            <ArgumentListExpression>
+              <INTEGER Value="12" />
+            </ArgumentListExpression>
+          </MethodCallExpression>
+        </IdStatement>
+        <IdStatement>
+          <ID Value="ntb" />
+          <MethodCallExpression>
+            <ID Value="root" />
+            <ID Value="Insert" />
+            <ArgumentListExpression>
+              <INTEGER Value="20" />
+            </ArgumentListExpression>
+          </MethodCallExpression>
+        </IdStatement>
+        <IdStatement>
+          <ID Value="ntb" />
+          <MethodCallExpression>
+            <ID Value="root" />
+            <ID Value="Insert" />
+            <ArgumentListExpression>
+              <INTEGER Value="28" />
+            </ArgumentListExpression>
+          </MethodCallExpression>
+        </IdStatement>
+        <IdStatement>
+          <ID Value="ntb" />
+          <MethodCallExpression>
+            <ID Value="root" />
+            <ID Value="Insert" />
+            <ArgumentListExpression>
+              <INTEGER Value="14" />
+            </ArgumentListExpression>
+          </MethodCallExpression>
+        </IdStatement>
+        <IdStatement>
+          <ID Value="ntb" />
+          <MethodCallExpression>
+            <ID Value="root" />
+            <ID Value="Print" />
+            <ArgumentListExpression />
+          </MethodCallExpression>
+        </IdStatement>
+        <PrintStatement>
+          <MethodCallExpression>
+            <ID Value="root" />
+            <ID Value="Search" />
+            <ArgumentListExpression>
+              <INTEGER Value="24" />
+            </ArgumentListExpression>
+          </MethodCallExpression>
+        </PrintStatement>
+        <PrintStatement>
+          <MethodCallExpression>
+            <ID Value="root" />
+            <ID Value="Search" />
+            <ArgumentListExpression>
+              <INTEGER Value="12" />
+            </ArgumentListExpression>
+          </MethodCallExpression>
+        </PrintStatement>
+        <PrintStatement>
+          <MethodCallExpression>
+            <ID Value="root" />
+            <ID Value="Search" />
+            <ArgumentListExpression>
+              <INTEGER Value="16" />
+            </ArgumentListExpression>
+          </MethodCallExpression>
+        </PrintStatement>
+        <PrintStatement>
+          <MethodCallExpression>
+            <ID Value="root" />
+            <ID Value="Search" />
+            <ArgumentListExpression>
+              <INTEGER Value="50" />
+            </ArgumentListExpression>
+          </MethodCallExpression>
+        </PrintStatement>
+        <PrintStatement>
+          <MethodCallExpression>
+            <ID Value="root" />
+            <ID Value="Search" />
+            <ArgumentListExpression>
+              <INTEGER Value="12" />
+            </ArgumentListExpression>
+          </MethodCallExpression>
+        </PrintStatement>
+        <IdStatement>
+          <ID Value="ntb" />
+          <MethodCallExpression>
+            <ID Value="root" />
+            <ID Value="Print" />
+            <ArgumentListExpression />
+          </MethodCallExpression>
+        </IdStatement>
+        <PrintStatement>
+          <MethodCallExpression>
+            <ID Value="root" />
+            <ID Value="Search" />
+            <ArgumentListExpression>
+              <INTEGER Value="12" />
+            </ArgumentListExpression>
+          </MethodCallExpression>
+        </PrintStatement>
+      </StatementList>
+      <INTEGER Value="0" />
+    </Method>
+  </Class>
+  <Class>
+    <ID Value="Tree" />
+    <ClassVarDecl>
+      <ID Value="Tree" />
+      <ID Value="left" />
+    </ClassVarDecl>
+    <ClassVarDecl>
+      <ID Value="Tree" />
+      <ID Value="right" />
+    </ClassVarDecl>
+    <ClassVarDecl>
+      <INT />
+      <ID Value="key" />
+    </ClassVarDecl>
+    <ClassVarDecl>
+      <BOOLEAN />
+      <ID Value="has_left" />
+    </ClassVarDecl>
+    <ClassVarDecl>
+      <BOOLEAN />
+      <ID Value="has_right" />
+    </ClassVarDecl>
+    <ClassVarDecl>
+      <ID Value="Tree" />
+      <ID Value="my_null" />
+    </ClassVarDecl>
+    <Method>
+      <BOOLEAN />
+      <ID Value="Init" />
+      <FormalArgumentList>
+        <Variable>
+          <INT />
+          <ID Value="v_key" />
+        </Variable>
+      </FormalArgumentList>
+      <StatementList>
+        <IdStatement>
+          <ID Value="key" />
+          <ID Value="v_key" />
+        </IdStatement>
+        <IdStatement>
+          <ID Value="has_left" />
+          <BOOL Value="false" />
+        </IdStatement>
+        <IdStatement>
+          <ID Value="has_right" />
+          <BOOL Value="false" />
+        </IdStatement>
+      </StatementList>
+      <BOOL Value="true" />
+    </Method>
+    <Method>
+      <BOOLEAN />
+      <ID Value="SetRight" />
+      <FormalArgumentList>
+        <Variable>
+          <ID Value="Tree" />
+          <ID Value="rn" />
+        </Variable>
+      </FormalArgumentList>
+      <StatementList>
+        <IdStatement>
+          <ID Value="right" />
+          <ID Value="rn" />
+        </IdStatement>
+      </StatementList>
+      <BOOL Value="true" />
+    </Method>
+    <Method>
+      <BOOLEAN />
+      <ID Value="SetLeft" />
+      <FormalArgumentList>
+        <Variable>
+          <ID Value="Tree" />
+          <ID Value="ln" />
+        </Variable>
+      </FormalArgumentList>
+      <StatementList>
+        <IdStatement>
+          <ID Value="left" />
+          <ID Value="ln" />
+        </IdStatement>
+      </StatementList>
+      <BOOL Value="true" />
+    </Method>
+    <Method>
+      <ID Value="Tree" />
+      <ID Value="GetRight" />
+      <FormalArgumentList />
+      <StatementList />
+      <ID Value="right" />
+    </Method>
+    <Method>
+      <ID Value="Tree" />
+      <ID Value="GetLeft" />
+      <FormalArgumentList />
+      <StatementList />
+      <ID Value="left" />
+    </Method>
+    <Method>
+      <INT />
+      <ID Value="GetKey" />
+      <FormalArgumentList />
+      <StatementList />
+      <ID Value="key" />
+    </Method>
+    <Method>
+      <BOOLEAN />
+      <ID Value="SetKey" />
+      <FormalArgumentList>
+        <Variable>
+          <INT />
+          <ID Value="v_key" />
+        </Variable>
+      </FormalArgumentList>
+      <StatementList>
+        <IdStatement>
+          <ID Value="key" />
+          <ID Value="v_key" />
+        </IdStatement>
+      </StatementList>
+      <BOOL Value="true" />
+    </Method>
+    <Method>
+      <BOOLEAN />
+      <ID Value="GetHas_Right" />
+      <FormalArgumentList />
+      <StatementList />
+      <ID Value="has_right" />
+    </Method>
+    <Method>
+      <BOOLEAN />
+      <ID Value="GetHas_Left" />
+      <FormalArgumentList />
+      <StatementList />
+      <ID Value="has_left" />
+    </Method>
+    <Method>
+      <BOOLEAN />
+      <ID Value="SetHas_Left" />
+      <FormalArgumentList>
+        <Variable>
+          <BOOLEAN />
+          <ID Value="val" />
+        </Variable>
+      </FormalArgumentList>
+      <StatementList>
+        <IdStatement>
+          <ID Value="has_left" />
+          <ID Value="val" />
+        </IdStatement>
+      </StatementList>
+      <BOOL Value="true" />
+    </Method>
+    <Method>
+      <BOOLEAN />
+      <ID Value="SetHas_Right" />
+      <FormalArgumentList>
+        <Variable>
+          <BOOLEAN />
+          <ID Value="val" />
+        </Variable>
+      </FormalArgumentList>
+      <StatementList>
+        <IdStatement>
+          <ID Value="has_right" />
+          <ID Value="val" />
+        </IdStatement>
+      </StatementList>
+      <BOOL Value="true" />
+    </Method>
+    <Method>
+      <BOOLEAN />
+      <ID Value="Compare" />
+      <FormalArgumentList>
+        <Variable>
+          <INT />
+          <ID Value="num1" />
+        </Variable>
+        <Variable>
+          <INT />
+          <ID Value="num2" />
+        </Variable>
+      </FormalArgumentList>
+      <StatementList>
+        <VarStatement>
+          <Variable>
+            <BOOLEAN />
+            <ID Value="ntb" />
+          </Variable>
+        </VarStatement>
+        <VarStatement>
+          <Variable>
+            <INT />
+            <ID Value="nti" />
+          </Variable>
+        </VarStatement>
+        <IdStatement>
+          <ID Value="ntb" />
+          <BOOL Value="false" />
+        </IdStatement>
+        <IdStatement>
+          <ID Value="nti" />
+          <PlusExpression>
+            <ID Value="num2" />
+            <INTEGER Value="1" />
+          </PlusExpression>
+        </IdStatement>
+        <IfElseStatement>
+          <LessExpression>
+            <ID Value="num1" />
+            <ID Value="num2" />
+          </LessExpression>
+          <IdStatement>
+            <ID Value="ntb" />
+            <BOOL Value="false" />
+          </IdStatement>
+          <IfElseStatement>
+            <UnaryNotExpression>
+              <LessExpression>
+                <ID Value="num1" />
+                <ID Value="nti" />
+              </LessExpression>
+            </UnaryNotExpression>
+            <IdStatement>
+              <ID Value="ntb" />
+              <BOOL Value="false" />
+            </IdStatement>
+            <IdStatement>
+              <ID Value="ntb" />
+              <BOOL Value="true" />
+            </IdStatement>
+          </IfElseStatement>
+        </IfElseStatement>
+      </StatementList>
+      <ID Value="ntb" />
+    </Method>
+    <Method>
+      <BOOLEAN />
+      <ID Value="Insert" />
+      <FormalArgumentList>
+        <Variable>
+          <INT />
+          <ID Value="v_key" />
+        </Variable>
+      </FormalArgumentList>
+      <StatementList>
+        <VarStatement>
+          <Variable>
+            <ID Value="Tree" />
+            <ID Value="new_node" />
+          </Variable>
+        </VarStatement>
+        <VarStatement>
+          <Variable>
+            <BOOLEAN />
+            <ID Value="ntb" />
+          </Variable>
+        </VarStatement>
+        <VarStatement>
+          <Variable>
+            <BOOLEAN />
+            <ID Value="cont" />
+          </Variable>
+        </VarStatement>
+        <VarStatement>
+          <Variable>
+            <INT />
+            <ID Value="key_aux" />
+          </Variable>
+        </VarStatement>
+        <VarStatement>
+          <Variable>
+            <ID Value="Tree" />
+            <ID Value="current_node" />
+          </Variable>
+        </VarStatement>
+        <IdStatement>
+          <ID Value="new_node" />
+          <NewStatement>
+            <ID Value="Tree" />
+          </NewStatement>
+        </IdStatement>
+        <IdStatement>
+          <ID Value="ntb" />
+          <MethodCallExpression>
+            <ID Value="new_node" />
+            <ID Value="Init" />
+            <ArgumentListExpression>
+              <ID Value="v_key" />
+            </ArgumentListExpression>
+          </MethodCallExpression>
+        </IdStatement>
+        <IdStatement>
+          <ID Value="current_node" />
+          <ID Value="this" />
+        </IdStatement>
+        <IdStatement>
+          <ID Value="cont" />
+          <BOOL Value="true" />
+        </IdStatement>
+        <WhileStatement>
+          <ID Value="cont" />
+          <StatementList>
+            <IdStatement>
+              <ID Value="key_aux" />
+              <MethodCallExpression>
+                <ID Value="current_node" />
+                <ID Value="GetKey" />
+                <ArgumentListExpression />
+              </MethodCallExpression>
+            </IdStatement>
+            <IfElseStatement>
+              <LessExpression>
+                <ID Value="v_key" />
+                <ID Value="key_aux" />
+              </LessExpression>
+              <StatementList>
+                <IfElseStatement>
+                  <MethodCallExpression>
+                    <ID Value="current_node" />
+                    <ID Value="GetHas_Left" />
+                    <ArgumentListExpression />
+                  </MethodCallExpression>
+                  <IdStatement>
+                    <ID Value="current_node" />
+                    <MethodCallExpression>
+                      <ID Value="current_node" />
+                      <ID Value="GetLeft" />
+                      <ArgumentListExpression />
+                    </MethodCallExpression>
+                  </IdStatement>
+                  <StatementList>
+                    <IdStatement>
+                      <ID Value="cont" />
+                      <BOOL Value="false" />
+                    </IdStatement>
+                    <IdStatement>
+                      <ID Value="ntb" />
+                      <MethodCallExpression>
+                        <ID Value="current_node" />
+                        <ID Value="SetHas_Left" />
+                        <ArgumentListExpression>
+                          <BOOL Value="true" />
+                        </ArgumentListExpression>
+                      </MethodCallExpression>
+                    </IdStatement>
+                    <IdStatement>
+                      <ID Value="ntb" />
+                      <MethodCallExpression>
+                        <ID Value="current_node" />
+                        <ID Value="SetLeft" />
+                        <ArgumentListExpression>
+                          <ID Value="new_node" />
+                        </ArgumentListExpression>
+                      </MethodCallExpression>
+                    </IdStatement>
+                  </StatementList>
+                </IfElseStatement>
+              </StatementList>
+              <StatementList>
+                <IfElseStatement>
+                  <MethodCallExpression>
+                    <ID Value="current_node" />
+                    <ID Value="GetHas_Right" />
+                    <ArgumentListExpression />
+                  </MethodCallExpression>
+                  <IdStatement>
+                    <ID Value="current_node" />
+                    <MethodCallExpression>
+                      <ID Value="current_node" />
+                      <ID Value="GetRight" />
+                      <ArgumentListExpression />
+                    </MethodCallExpression>
+                  </IdStatement>
+                  <StatementList>
+                    <IdStatement>
+                      <ID Value="cont" />
+                      <BOOL Value="false" />
+                    </IdStatement>
+                    <IdStatement>
+                      <ID Value="ntb" />
+                      <MethodCallExpression>
+                        <ID Value="current_node" />
+                        <ID Value="SetHas_Right" />
+                        <ArgumentListExpression>
+                          <BOOL Value="true" />
+                        </ArgumentListExpression>
+                      </MethodCallExpression>
+                    </IdStatement>
+                    <IdStatement>
+                      <ID Value="ntb" />
+                      <MethodCallExpression>
+                        <ID Value="current_node" />
+                        <ID Value="SetRight" />
+                        <ArgumentListExpression>
+                          <ID Value="new_node" />
+                        </ArgumentListExpression>
+                      </MethodCallExpression>
+                    </IdStatement>
+                  </StatementList>
+                </IfElseStatement>
+              </StatementList>
+            </IfElseStatement>
+          </StatementList>
+        </WhileStatement>
+      </StatementList>
+      <BOOL Value="true" />
+    </Method>
+    <Method>
+      <BOOLEAN />
+      <ID Value="Delete" />
+      <FormalArgumentList>
+        <Variable>
+          <INT />
+          <ID Value="v_key" />
+        </Variable>
+      </FormalArgumentList>
+      <StatementList>
+        <VarStatement>
+          <Variable>
+            <ID Value="Tree" />
+            <ID Value="current_node" />
+          </Variable>
+        </VarStatement>
+        <VarStatement>
+          <Variable>
+            <ID Value="Tree" />
+            <ID Value="parent_node" />
+          </Variable>
+        </VarStatement>
+        <VarStatement>
+          <Variable>
+            <BOOLEAN />
+            <ID Value="cont" />
+          </Variable>
+        </VarStatement>
+        <VarStatement>
+          <Variable>
+            <BOOLEAN />
+            <ID Value="found" />
+          </Variable>
+        </VarStatement>
+        <VarStatement>
+          <Variable>
+            <BOOLEAN />
+            <ID Value="is_root" />
+          </Variable>
+        </VarStatement>
+        <VarStatement>
+          <Variable>
+            <INT />
+            <ID Value="key_aux" />
+          </Variable>
+        </VarStatement>
+        <VarStatement>
+          <Variable>
+            <BOOLEAN />
+            <ID Value="ntb" />
+          </Variable>
+        </VarStatement>
+        <IdStatement>
+          <ID Value="current_node" />
+          <ID Value="this" />
+        </IdStatement>
+        <IdStatement>
+          <ID Value="parent_node" />
+          <ID Value="this" />
+        </IdStatement>
+        <IdStatement>
+          <ID Value="cont" />
+          <BOOL Value="true" />
+        </IdStatement>
+        <IdStatement>
+          <ID Value="found" />
+          <BOOL Value="false" />
+        </IdStatement>
+        <IdStatement>
+          <ID Value="is_root" />
+          <BOOL Value="true" />
+        </IdStatement>
+        <WhileStatement>
+          <ID Value="cont" />
+          <StatementList>
+            <IdStatement>
+              <ID Value="key_aux" />
+              <MethodCallExpression>
+                <ID Value="current_node" />
+                <ID Value="GetKey" />
+                <ArgumentListExpression />
+              </MethodCallExpression>
+            </IdStatement>
+            <IfElseStatement>
+              <LessExpression>
+                <ID Value="v_key" />
+                <ID Value="key_aux" />
+              </LessExpression>
+              <IfElseStatement>
+                <MethodCallExpression>
+                  <ID Value="current_node" />
+                  <ID Value="GetHas_Left" />
+                  <ArgumentListExpression />
+                </MethodCallExpression>
+                <StatementList>
+                  <IdStatement>
+                    <ID Value="parent_node" />
+                    <ID Value="current_node" />
+                  </IdStatement>
+                  <IdStatement>
+                    <ID Value="current_node" />
+                    <MethodCallExpression>
+                      <ID Value="current_node" />
+                      <ID Value="GetLeft" />
+                      <ArgumentListExpression />
+                    </MethodCallExpression>
+                  </IdStatement>
+                </StatementList>
+                <IdStatement>
+                  <ID Value="cont" />
+                  <BOOL Value="false" />
+                </IdStatement>
+              </IfElseStatement>
+              <IfElseStatement>
+                <LessExpression>
+                  <ID Value="key_aux" />
+                  <ID Value="v_key" />
+                </LessExpression>
+                <IfElseStatement>
+                  <MethodCallExpression>
+                    <ID Value="current_node" />
+                    <ID Value="GetHas_Right" />
+                    <ArgumentListExpression />
+                  </MethodCallExpression>
+                  <StatementList>
+                    <IdStatement>
+                      <ID Value="parent_node" />
+                      <ID Value="current_node" />
+                    </IdStatement>
+                    <IdStatement>
+                      <ID Value="current_node" />
+                      <MethodCallExpression>
+                        <ID Value="current_node" />
+                        <ID Value="GetRight" />
+                        <ArgumentListExpression />
+                      </MethodCallExpression>
+                    </IdStatement>
+                  </StatementList>
+                  <IdStatement>
+                    <ID Value="cont" />
+                    <BOOL Value="false" />
+                  </IdStatement>
+                </IfElseStatement>
+                <StatementList>
+                  <IfElseStatement>
+                    <ID Value="is_root" />
+                    <IfElseStatement>
+                      <LogicalAndExpression>
+                        <UnaryNotExpression>
+                          <MethodCallExpression>
+                            <ID Value="current_node" />
+                            <ID Value="GetHas_Right" />
+                            <ArgumentListExpression />
+                          </MethodCallExpression>
+                        </UnaryNotExpression>
+                        <UnaryNotExpression>
+                          <MethodCallExpression>
+                            <ID Value="current_node" />
+                            <ID Value="GetHas_Left" />
+                            <ArgumentListExpression />
+                          </MethodCallExpression>
+                        </UnaryNotExpression>
+                      </LogicalAndExpression>
+                      <IdStatement>
+                        <ID Value="ntb" />
+                        <BOOL Value="true" />
+                      </IdStatement>
+                      <IdStatement>
+                        <ID Value="ntb" />
+                        <MethodThisCallExpression>
+                          <ID Value="Remove" />
+                          <ArgumentListExpression>
+                            <ID Value="parent_node" />
+                            <ID Value="current_node" />
+                          </ArgumentListExpression>
+                        </MethodThisCallExpression>
+                      </IdStatement>
+                    </IfElseStatement>
+                    <IdStatement>
+                      <ID Value="ntb" />
+                      <MethodThisCallExpression>
+                        <ID Value="Remove" />
+                        <ArgumentListExpression>
+                          <ID Value="parent_node" />
+                          <ID Value="current_node" />
+                        </ArgumentListExpression>
+                      </MethodThisCallExpression>
+                    </IdStatement>
+                  </IfElseStatement>
+                  <IdStatement>
+                    <ID Value="found" />
+                    <BOOL Value="true" />
+                  </IdStatement>
+                  <IdStatement>
+                    <ID Value="cont" />
+                    <BOOL Value="false" />
+                  </IdStatement>
+                </StatementList>
+              </IfElseStatement>
+            </IfElseStatement>
+            <IdStatement>
+              <ID Value="is_root" />
+              <BOOL Value="false" />
+            </IdStatement>
+          </StatementList>
+        </WhileStatement>
+      </StatementList>
+      <ID Value="found" />
+    </Method>
+    <Method>
+      <BOOLEAN />
+      <ID Value="Remove" />
+      <FormalArgumentList>
+        <Variable>
+          <ID Value="Tree" />
+          <ID Value="p_node" />
+        </Variable>
+        <Variable>
+          <ID Value="Tree" />
+          <ID Value="c_node" />
+        </Variable>
+      </FormalArgumentList>
+      <StatementList>
+        <VarStatement>
+          <Variable>
+            <BOOLEAN />
+            <ID Value="ntb" />
+          </Variable>
+        </VarStatement>
+        <VarStatement>
+          <Variable>
+            <INT />
+            <ID Value="auxkey1" />
+          </Variable>
+        </VarStatement>
+        <VarStatement>
+          <Variable>
+            <INT />
+            <ID Value="auxkey2" />
+          </Variable>
+        </VarStatement>
+        <IfElseStatement>
+          <MethodCallExpression>
+            <ID Value="c_node" />
+            <ID Value="GetHas_Left" />
+            <ArgumentListExpression />
+          </MethodCallExpression>
+          <IdStatement>
+            <ID Value="ntb" />
+            <MethodThisCallExpression>
+              <ID Value="RemoveLeft" />
+              <ArgumentListExpression>
+                <ID Value="p_node" />
+                <ID Value="c_node" />
+              </ArgumentListExpression>
+            </MethodThisCallExpression>
+          </IdStatement>
+          <IfElseStatement>
+            <MethodCallExpression>
+              <ID Value="c_node" />
+              <ID Value="GetHas_Right" />
+              <ArgumentListExpression />
+            </MethodCallExpression>
+            <IdStatement>
+              <ID Value="ntb" />
+              <MethodThisCallExpression>
+                <ID Value="RemoveRight" />
+                <ArgumentListExpression>
+                  <ID Value="p_node" />
+                  <ID Value="c_node" />
+                </ArgumentListExpression>
+              </MethodThisCallExpression>
+            </IdStatement>
+            <StatementList>
+              <IdStatement>
+                <ID Value="auxkey1" />
+                <MethodCallExpression>
+                  <ID Value="c_node" />
+                  <ID Value="GetKey" />
+                  <ArgumentListExpression />
+                </MethodCallExpression>
+              </IdStatement>
+              <IdStatement>
+                <ID Value="auxkey2" />
+                <MethodCallExpression>
+                  <MethodCallExpression>
+                    <ID Value="p_node" />
+                    <ID Value="GetLeft" />
+                    <ArgumentListExpression />
+                  </MethodCallExpression>
+                  <ID Value="GetKey" />
+                  <ArgumentListExpression />
+                </MethodCallExpression>
+              </IdStatement>
+              <IfElseStatement>
+                <MethodThisCallExpression>
+                  <ID Value="Compare" />
+                  <ArgumentListExpression>
+                    <ID Value="auxkey1" />
+                    <ID Value="auxkey2" />
+                  </ArgumentListExpression>
+                </MethodThisCallExpression>
+                <StatementList>
+                  <IdStatement>
+                    <ID Value="ntb" />
+                    <MethodCallExpression>
+                      <ID Value="p_node" />
+                      <ID Value="SetLeft" />
+                      <ArgumentListExpression>
+                        <ID Value="my_null" />
+                      </ArgumentListExpression>
+                    </MethodCallExpression>
+                  </IdStatement>
+                  <IdStatement>
+                    <ID Value="ntb" />
+                    <MethodCallExpression>
+                      <ID Value="p_node" />
+                      <ID Value="SetHas_Left" />
+                      <ArgumentListExpression>
+                        <BOOL Value="false" />
+                      </ArgumentListExpression>
+                    </MethodCallExpression>
+                  </IdStatement>
+                </StatementList>
+                <StatementList>
+                  <IdStatement>
+                    <ID Value="ntb" />
+                    <MethodCallExpression>
+                      <ID Value="p_node" />
+                      <ID Value="SetRight" />
+                      <ArgumentListExpression>
+                        <ID Value="my_null" />
+                      </ArgumentListExpression>
+                    </MethodCallExpression>
+                  </IdStatement>
+                  <IdStatement>
+                    <ID Value="ntb" />
+                    <MethodCallExpression>
+                      <ID Value="p_node" />
+                      <ID Value="SetHas_Right" />
+                      <ArgumentListExpression>
+                        <BOOL Value="false" />
+                      </ArgumentListExpression>
+                    </MethodCallExpression>
+                  </IdStatement>
+                </StatementList>
+              </IfElseStatement>
+            </StatementList>
+          </IfElseStatement>
+        </IfElseStatement>
+      </StatementList>
+      <BOOL Value="true" />
+    </Method>
+    <Method>
+      <BOOLEAN />
+      <ID Value="RemoveRight" />
+      <FormalArgumentList>
+        <Variable>
+          <ID Value="Tree" />
+          <ID Value="p_node" />
+        </Variable>
+        <Variable>
+          <ID Value="Tree" />
+          <ID Value="c_node" />
+        </Variable>
+      </FormalArgumentList>
+      <StatementList>
+        <VarStatement>
+          <Variable>
+            <BOOLEAN />
+            <ID Value="ntb" />
+          </Variable>
+        </VarStatement>
+        <WhileStatement>
+          <MethodCallExpression>
+            <ID Value="c_node" />
+            <ID Value="GetHas_Right" />
+            <ArgumentListExpression />
+          </MethodCallExpression>
+          <StatementList>
+            <IdStatement>
+              <ID Value="ntb" />
+              <MethodCallExpression>
+                <ID Value="c_node" />
+                <ID Value="SetKey" />
+                <ArgumentListExpression>
+                  <MethodCallExpression>
+                    <MethodCallExpression>
+                      <ID Value="c_node" />
+                      <ID Value="GetRight" />
+                      <ArgumentListExpression />
+                    </MethodCallExpression>
+                    <ID Value="GetKey" />
+                    <ArgumentListExpression />
+                  </MethodCallExpression>
+                </ArgumentListExpression>
+              </MethodCallExpression>
+            </IdStatement>
+            <IdStatement>
+              <ID Value="p_node" />
+              <ID Value="c_node" />
+            </IdStatement>
+            <IdStatement>
+              <ID Value="c_node" />
+              <MethodCallExpression>
+                <ID Value="c_node" />
+                <ID Value="GetRight" />
+                <ArgumentListExpression />
+              </MethodCallExpression>
+            </IdStatement>
+          </StatementList>
+        </WhileStatement>
+        <IdStatement>
+          <ID Value="ntb" />
+          <MethodCallExpression>
+            <ID Value="p_node" />
+            <ID Value="SetRight" />
+            <ArgumentListExpression>
+              <ID Value="my_null" />
+            </ArgumentListExpression>
+          </MethodCallExpression>
+        </IdStatement>
+        <IdStatement>
+          <ID Value="ntb" />
+          <MethodCallExpression>
+            <ID Value="p_node" />
+            <ID Value="SetHas_Right" />
+            <ArgumentListExpression>
+              <BOOL Value="false" />
+            </ArgumentListExpression>
+          </MethodCallExpression>
+        </IdStatement>
+      </StatementList>
+      <BOOL Value="true" />
+    </Method>
+    <Method>
+      <BOOLEAN />
+      <ID Value="RemoveLeft" />
+      <FormalArgumentList>
+        <Variable>
+          <ID Value="Tree" />
+          <ID Value="p_node" />
+        </Variable>
+        <Variable>
+          <ID Value="Tree" />
+          <ID Value="c_node" />
+        </Variable>
+      </FormalArgumentList>
+      <StatementList>
+        <VarStatement>
+          <Variable>
+            <BOOLEAN />
+            <ID Value="ntb" />
+          </Variable>
+        </VarStatement>
+        <WhileStatement>
+          <MethodCallExpression>
+            <ID Value="c_node" />
+            <ID Value="GetHas_Left" />
+            <ArgumentListExpression />
+          </MethodCallExpression>
+          <StatementList>
+            <IdStatement>
+              <ID Value="ntb" />
+              <MethodCallExpression>
+                <ID Value="c_node" />
+                <ID Value="SetKey" />
+                <ArgumentListExpression>
+                  <MethodCallExpression>
+                    <MethodCallExpression>
+                      <ID Value="c_node" />
+                      <ID Value="GetLeft" />
+                      <ArgumentListExpression />
+                    </MethodCallExpression>
+                    <ID Value="GetKey" />
+                    <ArgumentListExpression />
+                  </MethodCallExpression>
+                </ArgumentListExpression>
+              </MethodCallExpression>
+            </IdStatement>
+            <IdStatement>
+              <ID Value="p_node" />
+              <ID Value="c_node" />
+            </IdStatement>
+            <IdStatement>
+              <ID Value="c_node" />
+              <MethodCallExpression>
+                <ID Value="c_node" />
+                <ID Value="GetLeft" />
+                <ArgumentListExpression />
+              </MethodCallExpression>
+            </IdStatement>
+          </StatementList>
+        </WhileStatement>
+        <IdStatement>
+          <ID Value="ntb" />
+          <MethodCallExpression>
+            <ID Value="p_node" />
+            <ID Value="SetLeft" />
+            <ArgumentListExpression>
+              <ID Value="my_null" />
+            </ArgumentListExpression>
+          </MethodCallExpression>
+        </IdStatement>
+        <IdStatement>
+          <ID Value="ntb" />
+          <MethodCallExpression>
+            <ID Value="p_node" />
+            <ID Value="SetHas_Left" />
+            <ArgumentListExpression>
+              <BOOL Value="false" />
+            </ArgumentListExpression>
+          </MethodCallExpression>
+        </IdStatement>
+      </StatementList>
+      <BOOL Value="true" />
+    </Method>
+    <Method>
+      <INT />
+      <ID Value="Search" />
+      <FormalArgumentList>
+        <Variable>
+          <INT />
+          <ID Value="v_key" />
+        </Variable>
+      </FormalArgumentList>
+      <StatementList>
+        <VarStatement>
+          <Variable>
+            <BOOLEAN />
+            <ID Value="cont" />
+          </Variable>
+        </VarStatement>
+        <VarStatement>
+          <Variable>
+            <INT />
+            <ID Value="ifound" />
+          </Variable>
+        </VarStatement>
+        <VarStatement>
+          <Variable>
+            <ID Value="Tree" />
+            <ID Value="current_node" />
+          </Variable>
+        </VarStatement>
+        <VarStatement>
+          <Variable>
+            <INT />
+            <ID Value="key_aux" />
+          </Variable>
+        </VarStatement>
+        <IdStatement>
+          <ID Value="current_node" />
+          <ID Value="this" />
+        </IdStatement>
+        <IdStatement>
+          <ID Value="cont" />
+          <BOOL Value="true" />
+        </IdStatement>
+        <IdStatement>
+          <ID Value="ifound" />
+          <INTEGER Value="0" />
+        </IdStatement>
+        <WhileStatement>
+          <ID Value="cont" />
+          <StatementList>
+            <IdStatement>
+              <ID Value="key_aux" />
+              <MethodCallExpression>
+                <ID Value="current_node" />
+                <ID Value="GetKey" />
+                <ArgumentListExpression />
+              </MethodCallExpression>
+            </IdStatement>
+            <IfElseStatement>
+              <LessExpression>
+                <ID Value="v_key" />
+                <ID Value="key_aux" />
+              </LessExpression>
+              <IfElseStatement>
+                <MethodCallExpression>
+                  <ID Value="current_node" />
+                  <ID Value="GetHas_Left" />
+                  <ArgumentListExpression />
+                </MethodCallExpression>
+                <IdStatement>
+                  <ID Value="current_node" />
+                  <MethodCallExpression>
+                    <ID Value="current_node" />
+                    <ID Value="GetLeft" />
+                    <ArgumentListExpression />
+                  </MethodCallExpression>
+                </IdStatement>
+                <IdStatement>
+                  <ID Value="cont" />
+                  <BOOL Value="false" />
+                </IdStatement>
+              </IfElseStatement>
+              <IfElseStatement>
+                <LessExpression>
+                  <ID Value="key_aux" />
+                  <ID Value="v_key" />
+                </LessExpression>
+                <IfElseStatement>
+                  <MethodCallExpression>
+                    <ID Value="current_node" />
+                    <ID Value="GetHas_Right" />
+                    <ArgumentListExpression />
+                  </MethodCallExpression>
+                  <IdStatement>
+                    <ID Value="current_node" />
+                    <MethodCallExpression>
+                      <ID Value="current_node" />
+                      <ID Value="GetRight" />
+                      <ArgumentListExpression />
+                    </MethodCallExpression>
+                  </IdStatement>
+                  <IdStatement>
+                    <ID Value="cont" />
+                    <BOOL Value="false" />
+                  </IdStatement>
+                </IfElseStatement>
+                <StatementList>
+                  <IdStatement>
+                    <ID Value="ifound" />
+                    <INTEGER Value="1" />
+                  </IdStatement>
+                  <IdStatement>
+                    <ID Value="cont" />
+                    <BOOL Value="false" />
+                  </IdStatement>
+                </StatementList>
+              </IfElseStatement>
+            </IfElseStatement>
+          </StatementList>
+        </WhileStatement>
+      </StatementList>
+      <ID Value="ifound" />
+    </Method>
+    <Method>
+      <BOOLEAN />
+      <ID Value="Print" />
+      <FormalArgumentList />
+      <StatementList>
+        <VarStatement>
+          <Variable>
+            <ID Value="Tree" />
+            <ID Value="current_node" />
+          </Variable>
+        </VarStatement>
+        <VarStatement>
+          <Variable>
+            <BOOLEAN />
+            <ID Value="ntb" />
+          </Variable>
+        </VarStatement>
+        <IdStatement>
+          <ID Value="current_node" />
+          <ID Value="this" />
+        </IdStatement>
+        <IdStatement>
+          <ID Value="ntb" />
+          <MethodThisCallExpression>
+            <ID Value="RecPrint" />
+            <ArgumentListExpression>
+              <ID Value="current_node" />
+            </ArgumentListExpression>
+          </MethodThisCallExpression>
+        </IdStatement>
+      </StatementList>
+      <BOOL Value="true" />
+    </Method>
+    <Method>
+      <BOOLEAN />
+      <ID Value="RecPrint" />
+      <FormalArgumentList>
+        <Variable>
+          <ID Value="Tree" />
+          <ID Value="node" />
+        </Variable>
+      </FormalArgumentList>
+      <StatementList>
+        <VarStatement>
+          <Variable>
+            <BOOLEAN />
+            <ID Value="ntb" />
+          </Variable>
+        </VarStatement>
+        <IfElseStatement>
+          <MethodCallExpression>
+            <ID Value="node" />
+            <ID Value="GetHas_Left" />
+            <ArgumentListExpression />
+          </MethodCallExpression>
+          <StatementList>
+            <IdStatement>
+              <ID Value="ntb" />
+              <MethodThisCallExpression>
+                <ID Value="RecPrint" />
+                <ArgumentListExpression>
+                  <MethodCallExpression>
+                    <ID Value="node" />
+                    <ID Value="GetLeft" />
+                    <ArgumentListExpression />
+                  </MethodCallExpression>
+                </ArgumentListExpression>
+              </MethodThisCallExpression>
+            </IdStatement>
+          </StatementList>
+          <IdStatement>
+            <ID Value="ntb" />
+            <BOOL Value="true" />
+          </IdStatement>
+        </IfElseStatement>
+        <PrintStatement>
+          <MethodCallExpression>
+            <ID Value="node" />
+            <ID Value="GetKey" />
+            <ArgumentListExpression />
+          </MethodCallExpression>
+        </PrintStatement>
+        <IfElseStatement>
+          <MethodCallExpression>
+            <ID Value="node" />
+            <ID Value="GetHas_Right" />
+            <ArgumentListExpression />
+          </MethodCallExpression>
+          <StatementList>
+            <IdStatement>
+              <ID Value="ntb" />
+              <MethodThisCallExpression>
+                <ID Value="RecPrint" />
+                <ArgumentListExpression>
+                  <MethodCallExpression>
+                    <ID Value="node" />
+                    <ID Value="GetRight" />
+                    <ArgumentListExpression />
+                  </MethodCallExpression>
+                </ArgumentListExpression>
+              </MethodThisCallExpression>
+            </IdStatement>
+          </StatementList>
+          <IdStatement>
+            <ID Value="ntb" />
+            <BOOL Value="true" />
+          </IdStatement>
+        </IfElseStatement>
+      </StatementList>
+      <BOOL Value="true" />
+    </Method>
+  </Class>
+</Program>

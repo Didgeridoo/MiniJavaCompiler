@@ -1,0 +1,372 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Program>
+  <MainClass>
+    <ID Value="LinearSearch" />
+    <PrintStatement>
+      <MethodCallExpression>
+        <NewStatement>
+          <ID Value="LS" />
+        </NewStatement>
+        <ID Value="Start" />
+        <ArgumentListExpression>
+          <INTEGER Value="10" />
+        </ArgumentListExpression>
+      </MethodCallExpression>
+    </PrintStatement>
+  </MainClass>
+  <Class>
+    <ID Value="LS" />
+    <ClassVarDecl>
+      <INT />
+      <ID Value="number" />
+    </ClassVarDecl>
+    <ClassVarDecl>
+      <INT />
+      <ID Value="size" />
+    </ClassVarDecl>
+    <Method>
+      <INT />
+      <ID Value="Start" />
+      <FormalArgumentList>
+        <Variable>
+          <INT />
+          <ID Value="sz" />
+        </Variable>
+      </FormalArgumentList>
+      <StatementList>
+        <VarStatement>
+          <Variable>
+            <INT />
+            <ID Value="aux012" />
+          </Variable>
+        </VarStatement>
+        <VarStatement>
+          <Variable>
+            <INT />
+            <ID Value="aux022" />
+          </Variable>
+        </VarStatement>
+        <IdStatement>
+          <ID Value="aux012" />
+          <MethodThisCallExpression>
+            <ID Value="Init" />
+            <ArgumentListExpression>
+              <ID Value="sz" />
+            </ArgumentListExpression>
+          </MethodThisCallExpression>
+        </IdStatement>
+        <IdStatement>
+          <ID Value="aux022" />
+          <MethodThisCallExpression>
+            <ID Value="Print" />
+            <ArgumentListExpression />
+          </MethodThisCallExpression>
+        </IdStatement>
+        <PrintStatement>
+          <INTEGER Value="9999" />
+        </PrintStatement>
+        <PrintStatement>
+          <MethodThisCallExpression>
+            <ID Value="Search" />
+            <ArgumentListExpression>
+              <INTEGER Value="8" />
+            </ArgumentListExpression>
+          </MethodThisCallExpression>
+        </PrintStatement>
+        <PrintStatement>
+          <MethodThisCallExpression>
+            <ID Value="Search" />
+            <ArgumentListExpression>
+              <INTEGER Value="12" />
+            </ArgumentListExpression>
+          </MethodThisCallExpression>
+        </PrintStatement>
+        <PrintStatement>
+          <MethodThisCallExpression>
+            <ID Value="Search" />
+            <ArgumentListExpression>
+              <INTEGER Value="17" />
+            </ArgumentListExpression>
+          </MethodThisCallExpression>
+        </PrintStatement>
+        <PrintStatement>
+          <MethodThisCallExpression>
+            <ID Value="Search" />
+            <ArgumentListExpression>
+              <INTEGER Value="50" />
+            </ArgumentListExpression>
+          </MethodThisCallExpression>
+        </PrintStatement>
+      </StatementList>
+      <INTEGER Value="55" />
+    </Method>
+    <Method>
+      <INT />
+      <ID Value="Print" />
+      <FormalArgumentList />
+      <StatementList>
+        <VarStatement>
+          <Variable>
+            <INT />
+            <ID Value="j2" />
+          </Variable>
+        </VarStatement>
+        <IdStatement>
+          <ID Value="j2" />
+          <INTEGER Value="1" />
+        </IdStatement>
+        <WhileStatement>
+          <LessExpression>
+            <ID Value="j2" />
+            <ID Value="size" />
+          </LessExpression>
+          <StatementList>
+            <PrintStatement>
+              <ArrayIndiciesStatement>
+                <ID Value="number" />
+                <ID Value="j2" />
+              </ArrayIndiciesStatement>
+            </PrintStatement>
+            <IdStatement>
+              <ID Value="j2" />
+              <PlusExpression>
+                <ID Value="j2" />
+                <INTEGER Value="1" />
+              </PlusExpression>
+            </IdStatement>
+          </StatementList>
+        </WhileStatement>
+      </StatementList>
+      <INTEGER Value="0" />
+    </Method>
+    <Method>
+      <INT />
+      <ID Value="Search" />
+      <FormalArgumentList>
+        <Variable>
+          <INT />
+          <ID Value="num" />
+        </Variable>
+      </FormalArgumentList>
+      <StatementList>
+        <VarStatement>
+          <Variable>
+            <INT />
+            <ID Value="j" />
+          </Variable>
+        </VarStatement>
+        <VarStatement>
+          <Variable>
+            <BOOLEAN />
+            <ID Value="ls01" />
+          </Variable>
+        </VarStatement>
+        <VarStatement>
+          <Variable>
+            <INT />
+            <ID Value="ifound" />
+          </Variable>
+        </VarStatement>
+        <VarStatement>
+          <Variable>
+            <INT />
+            <ID Value="aux01" />
+          </Variable>
+        </VarStatement>
+        <VarStatement>
+          <Variable>
+            <INT />
+            <ID Value="aux02" />
+          </Variable>
+        </VarStatement>
+        <VarStatement>
+          <Variable>
+            <INT />
+            <ID Value="nt" />
+          </Variable>
+        </VarStatement>
+        <IdStatement>
+          <ID Value="j" />
+          <INTEGER Value="1" />
+        </IdStatement>
+        <IdStatement>
+          <ID Value="ls01" />
+          <BOOL Value="false" />
+        </IdStatement>
+        <IdStatement>
+          <ID Value="ifound" />
+          <INTEGER Value="0" />
+        </IdStatement>
+        <WhileStatement>
+          <LessExpression>
+            <ID Value="j" />
+            <ID Value="size" />
+          </LessExpression>
+          <StatementList>
+            <IdStatement>
+              <ID Value="aux01" />
+              <ArrayIndiciesStatement>
+                <ID Value="number" />
+                <ID Value="j" />
+              </ArrayIndiciesStatement>
+            </IdStatement>
+            <IdStatement>
+              <ID Value="aux02" />
+              <PlusExpression>
+                <ID Value="num" />
+                <INTEGER Value="1" />
+              </PlusExpression>
+            </IdStatement>
+            <IfElseStatement>
+              <LessExpression>
+                <ID Value="aux01" />
+                <ID Value="num" />
+              </LessExpression>
+              <IdStatement>
+                <ID Value="nt" />
+                <INTEGER Value="0" />
+              </IdStatement>
+              <IfElseStatement>
+                <UnaryNotExpression>
+                  <LessExpression>
+                    <ID Value="aux01" />
+                    <ID Value="aux02" />
+                  </LessExpression>
+                </UnaryNotExpression>
+                <IdStatement>
+                  <ID Value="nt" />
+                  <INTEGER Value="0" />
+                </IdStatement>
+                <StatementList>
+                  <IdStatement>
+                    <ID Value="ls01" />
+                    <BOOL Value="true" />
+                  </IdStatement>
+                  <IdStatement>
+                    <ID Value="ifound" />
+                    <INTEGER Value="1" />
+                  </IdStatement>
+                  <IdStatement>
+                    <ID Value="j" />
+                    <ID Value="size" />
+                  </IdStatement>
+                </StatementList>
+              </IfElseStatement>
+            </IfElseStatement>
+            <IdStatement>
+              <ID Value="j" />
+              <PlusExpression>
+                <ID Value="j" />
+                <INTEGER Value="1" />
+              </PlusExpression>
+            </IdStatement>
+          </StatementList>
+        </WhileStatement>
+      </StatementList>
+      <ID Value="ifound" />
+    </Method>
+    <Method>
+      <INT />
+      <ID Value="Init" />
+      <FormalArgumentList>
+        <Variable>
+          <INT />
+          <ID Value="sz" />
+        </Variable>
+      </FormalArgumentList>
+      <StatementList>
+        <VarStatement>
+          <Variable>
+            <INT />
+            <ID Value="j1" />
+          </Variable>
+        </VarStatement>
+        <VarStatement>
+          <Variable>
+            <INT />
+            <ID Value="k" />
+          </Variable>
+        </VarStatement>
+        <VarStatement>
+          <Variable>
+            <INT />
+            <ID Value="aux011" />
+          </Variable>
+        </VarStatement>
+        <VarStatement>
+          <Variable>
+            <INT />
+            <ID Value="aux021" />
+          </Variable>
+        </VarStatement>
+        <IdStatement>
+          <ID Value="size" />
+          <ID Value="sz" />
+        </IdStatement>
+        <IdStatement>
+          <ID Value="number" />
+          <NewArrayStatement>
+            <INT />
+            <ID Value="sz" />
+          </NewArrayStatement>
+        </IdStatement>
+        <IdStatement>
+          <ID Value="j1" />
+          <INTEGER Value="1" />
+        </IdStatement>
+        <IdStatement>
+          <ID Value="k" />
+          <PlusExpression>
+            <ID Value="size" />
+            <INTEGER Value="1" />
+          </PlusExpression>
+        </IdStatement>
+        <WhileStatement>
+          <LessExpression>
+            <ID Value="j1" />
+            <ID Value="size" />
+          </LessExpression>
+          <StatementList>
+            <IdStatement>
+              <ID Value="aux011" />
+              <MultiplyExpression>
+                <INTEGER Value="2" />
+                <ID Value="j1" />
+              </MultiplyExpression>
+            </IdStatement>
+            <IdStatement>
+              <ID Value="aux021" />
+              <MinusExpression>
+                <ID Value="k" />
+                <INTEGER Value="3" />
+              </MinusExpression>
+            </IdStatement>
+            <ArrayIdStatement>
+              <ID Value="number" />
+              <PlusExpression>
+                <ID Value="aux011" />
+                <ID Value="aux021" />
+              </PlusExpression>
+              <ID Value="j1" />
+            </ArrayIdStatement>
+            <IdStatement>
+              <ID Value="j1" />
+              <PlusExpression>
+                <ID Value="j1" />
+                <INTEGER Value="1" />
+              </PlusExpression>
+            </IdStatement>
+            <IdStatement>
+              <ID Value="k" />
+              <MinusExpression>
+                <ID Value="k" />
+                <INTEGER Value="1" />
+              </MinusExpression>
+            </IdStatement>
+          </StatementList>
+        </WhileStatement>
+      </StatementList>
+      <INTEGER Value="0" />
+    </Method>
+  </Class>
+</Program>

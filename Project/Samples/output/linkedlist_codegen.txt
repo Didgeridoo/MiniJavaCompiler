@@ -1,0 +1,374 @@
+Генерирование классов и сигнатур методов
+Класс Element
+ Метод Init System.Boolean
+ Метод GetAge System.Int32
+ Метод GetSalary System.Int32
+ Метод GetMarried System.Boolean
+ Метод Equal System.Boolean
+ Метод Compare System.Boolean
+Класс List
+ Метод Init System.Boolean
+ Метод InitNew System.Boolean
+ Метод Insert List
+ Метод SetNext System.Boolean
+ Метод Delete List
+ Метод Search System.Int32
+ Метод GetEnd System.Boolean
+ Метод GetElem Element
+ Метод GetNext List
+ Метод Print System.Boolean
+Класс LL
+ Метод Start System.Int32
+
+Генерация инструкций для Program
+Генерация инструкций для MainClass
+В данном блоке не встречаются локальные переменные
+Генерация инструкций для PrintStatement
+Генерация инструкций для MethodCallExpression
+Генерация инструкций для NewStatement
+Генерация инструкций для Class
+Генерация инструкций для ClassVarDecl
+Генерация инструкций для ClassVarDecl
+Генерация инструкций для ClassVarDecl
+Генерация инструкций для Method
+Обновлен список текущих аргументов метода
+v_Age, v_Salary, v_Married
+В данном блоке не встречаются локальные переменные
+Генерация инструкций для StatementList
+Генерация инструкций для IdStatement
+Генерация инструкций для IdStatement
+Генерация инструкций для IdStatement
+Генерация инструкций для Method
+В данном блоке не встречаются локальные переменные
+Генерация инструкций для StatementList
+Генерация инструкций для Method
+В данном блоке не встречаются локальные переменные
+Генерация инструкций для StatementList
+Генерация инструкций для Method
+В данном блоке не встречаются локальные переменные
+Генерация инструкций для StatementList
+Генерация инструкций для Method
+Обновлен список текущих аргументов метода
+other
+Добавлены переменные для блока
+ret_val, aux01, aux02, nt
+Генерация инструкций для StatementList
+Генерация инструкций для VarStatement
+Генерация инструкций для VarStatement
+Генерация инструкций для VarStatement
+Генерация инструкций для VarStatement
+Генерация инструкций для IdStatement
+Генерация инструкций для IdStatement
+Генерация инструкций для MethodCallExpression
+Генерация инструкций для IfElseStatement
+Генерация инструкций для UnaryNotExpression
+Генерация инструкций для MethodThisCallExpression
+В данном блоке не встречаются локальные переменные
+Генерация инструкций для IdStatement
+В данном блоке не встречаются локальные переменные
+Генерация инструкций для StatementList
+Генерация инструкций для IdStatement
+Генерация инструкций для MethodCallExpression
+Генерация инструкций для IfElseStatement
+Генерация инструкций для UnaryNotExpression
+Генерация инструкций для MethodThisCallExpression
+В данном блоке не встречаются локальные переменные
+Генерация инструкций для IdStatement
+В данном блоке не встречаются локальные переменные
+Генерация инструкций для IfElseStatement
+В данном блоке не встречаются локальные переменные
+Генерация инструкций для IfElseStatement
+Генерация инструкций для UnaryNotExpression
+Генерация инструкций для MethodCallExpression
+В данном блоке не встречаются локальные переменные
+Генерация инструкций для IdStatement
+В данном блоке не встречаются локальные переменные
+Генерация инструкций для IdStatement
+В данном блоке не встречаются локальные переменные
+Генерация инструкций для IfElseStatement
+Генерация инструкций для MethodCallExpression
+В данном блоке не встречаются локальные переменные
+Генерация инструкций для IdStatement
+В данном блоке не встречаются локальные переменные
+Генерация инструкций для IdStatement
+Удалены переменные 
+ret_val, aux01, aux02, nt
+Генерация инструкций для Method
+Обновлен список текущих аргументов метода
+num1, num2
+Добавлены переменные для блока
+retval, aux02
+Генерация инструкций для StatementList
+Генерация инструкций для VarStatement
+Генерация инструкций для VarStatement
+Генерация инструкций для IdStatement
+Генерация инструкций для IdStatement
+Генерация инструкций для PlusExpression
+Генерация инструкций для IfElseStatement
+Генерация инструкций для LessExpression
+В данном блоке не встречаются локальные переменные
+Генерация инструкций для IdStatement
+В данном блоке не встречаются локальные переменные
+Генерация инструкций для IfElseStatement
+Генерация инструкций для UnaryNotExpression
+Генерация инструкций для LessExpression
+В данном блоке не встречаются локальные переменные
+Генерация инструкций для IdStatement
+В данном блоке не встречаются локальные переменные
+Генерация инструкций для IdStatement
+Удалены переменные 
+retval, aux02
+Генерация инструкций для Class
+Генерация инструкций для ClassVarDecl
+Генерация инструкций для ClassVarDecl
+Генерация инструкций для ClassVarDecl
+Генерация инструкций для Method
+В данном блоке не встречаются локальные переменные
+Генерация инструкций для StatementList
+Генерация инструкций для IdStatement
+Генерация инструкций для Method
+Обновлен список текущих аргументов метода
+v_elem, v_next, v_end
+В данном блоке не встречаются локальные переменные
+Генерация инструкций для StatementList
+Генерация инструкций для IdStatement
+Генерация инструкций для IdStatement
+Генерация инструкций для IdStatement
+Генерация инструкций для Method
+Обновлен список текущих аргументов метода
+new_elem
+Добавлены переменные для блока
+ret_val, aux03, aux02
+Генерация инструкций для StatementList
+Генерация инструкций для VarStatement
+Генерация инструкций для VarStatement
+Генерация инструкций для VarStatement
+Генерация инструкций для IdStatement
+Генерация инструкций для IdStatement
+Генерация инструкций для NewStatement
+Генерация инструкций для IdStatement
+Генерация инструкций для MethodCallExpression
+Удалены переменные 
+ret_val, aux03, aux02
+Генерация инструкций для Method
+Обновлен список текущих аргументов метода
+v_next
+В данном блоке не встречаются локальные переменные
+Генерация инструкций для StatementList
+Генерация инструкций для IdStatement
+Генерация инструкций для Method
+Обновлен список текущих аргументов метода
+e
+Добавлены переменные для блока
+my_head, ret_val, aux05, aux01, prev, var_end, var_elem, aux04, nt
+Генерация инструкций для StatementList
+Генерация инструкций для VarStatement
+Генерация инструкций для VarStatement
+Генерация инструкций для VarStatement
+Генерация инструкций для VarStatement
+Генерация инструкций для VarStatement
+Генерация инструкций для VarStatement
+Генерация инструкций для VarStatement
+Генерация инструкций для VarStatement
+Генерация инструкций для VarStatement
+Генерация инструкций для IdStatement
+Генерация инструкций для IdStatement
+Генерация инструкций для IdStatement
+Генерация инструкций для MinusExpression
+Генерация инструкций для IdStatement
+Генерация инструкций для IdStatement
+Генерация инструкций для IdStatement
+Генерация инструкций для IdStatement
+Генерация инструкций для WhileStatement
+В данном блоке не встречаются локальные переменные
+Генерация инструкций для LogicalAndExpression
+Генерация инструкций для UnaryNotExpression
+Генерация инструкций для UnaryNotExpression
+Генерация инструкций для StatementList
+Генерация инструкций для IfElseStatement
+Генерация инструкций для MethodCallExpression
+В данном блоке не встречаются локальные переменные
+Генерация инструкций для StatementList
+Генерация инструкций для IdStatement
+Генерация инструкций для IfElseStatement
+Генерация инструкций для LessExpression
+В данном блоке не встречаются локальные переменные
+Генерация инструкций для StatementList
+Генерация инструкций для IdStatement
+Генерация инструкций для MethodCallExpression
+В данном блоке не встречаются локальные переменные
+Генерация инструкций для StatementList
+Генерация инструкций для PrintStatement
+Генерация инструкций для MinusExpression
+Генерация инструкций для IdStatement
+Генерация инструкций для MethodCallExpression
+Генерация инструкций для MethodCallExpression
+Генерация инструкций для PrintStatement
+Генерация инструкций для MinusExpression
+В данном блоке не встречаются локальные переменные
+Генерация инструкций для IdStatement
+Генерация инструкций для IfElseStatement
+Генерация инструкций для UnaryNotExpression
+В данном блоке не встречаются локальные переменные
+Генерация инструкций для StatementList
+Генерация инструкций для IdStatement
+Генерация инструкций для IdStatement
+Генерация инструкций для MethodCallExpression
+Генерация инструкций для IdStatement
+Генерация инструкций для MethodCallExpression
+Генерация инструкций для IdStatement
+Генерация инструкций для MethodCallExpression
+Генерация инструкций для IdStatement
+В данном блоке не встречаются локальные переменные
+Генерация инструкций для IdStatement
+Генерация инструкций для LogicalAndExpression
+Генерация инструкций для UnaryNotExpression
+Генерация инструкций для UnaryNotExpression
+Удалены переменные 
+my_head, ret_val, aux05, aux01, prev, var_end, var_elem, aux04, nt
+Генерация инструкций для Method
+Обновлен список текущих аргументов метода
+e
+Добавлены переменные для блока
+int_ret_val, aux01, var_elem, var_end, nt
+Генерация инструкций для StatementList
+Генерация инструкций для VarStatement
+Генерация инструкций для VarStatement
+Генерация инструкций для VarStatement
+Генерация инструкций для VarStatement
+Генерация инструкций для VarStatement
+Генерация инструкций для IdStatement
+Генерация инструкций для IdStatement
+Генерация инструкций для IdStatement
+Генерация инструкций для IdStatement
+Генерация инструкций для WhileStatement
+В данном блоке не встречаются локальные переменные
+Генерация инструкций для UnaryNotExpression
+Генерация инструкций для StatementList
+Генерация инструкций для IfElseStatement
+Генерация инструкций для MethodCallExpression
+В данном блоке не встречаются локальные переменные
+Генерация инструкций для StatementList
+Генерация инструкций для IdStatement
+В данном блоке не встречаются локальные переменные
+Генерация инструкций для IdStatement
+Генерация инструкций для IdStatement
+Генерация инструкций для MethodCallExpression
+Генерация инструкций для IdStatement
+Генерация инструкций для MethodCallExpression
+Генерация инструкций для IdStatement
+Генерация инструкций для MethodCallExpression
+Генерация инструкций для UnaryNotExpression
+Удалены переменные 
+int_ret_val, aux01, var_elem, var_end, nt
+Генерация инструкций для Method
+В данном блоке не встречаются локальные переменные
+Генерация инструкций для StatementList
+Генерация инструкций для Method
+В данном блоке не встречаются локальные переменные
+Генерация инструкций для StatementList
+Генерация инструкций для Method
+В данном блоке не встречаются локальные переменные
+Генерация инструкций для StatementList
+Генерация инструкций для Method
+Добавлены переменные для блока
+aux01, var_end, var_elem
+Генерация инструкций для StatementList
+Генерация инструкций для VarStatement
+Генерация инструкций для VarStatement
+Генерация инструкций для VarStatement
+Генерация инструкций для IdStatement
+Генерация инструкций для IdStatement
+Генерация инструкций для IdStatement
+Генерация инструкций для WhileStatement
+В данном блоке не встречаются локальные переменные
+Генерация инструкций для UnaryNotExpression
+Генерация инструкций для StatementList
+Генерация инструкций для PrintStatement
+Генерация инструкций для MethodCallExpression
+Генерация инструкций для IdStatement
+Генерация инструкций для MethodCallExpression
+Генерация инструкций для IdStatement
+Генерация инструкций для MethodCallExpression
+Генерация инструкций для IdStatement
+Генерация инструкций для MethodCallExpression
+Генерация инструкций для UnaryNotExpression
+Удалены переменные 
+aux01, var_end, var_elem
+Генерация инструкций для Class
+Генерация инструкций для Method
+Добавлены переменные для блока
+head, last_elem, aux01, el01, el02, el03
+Генерация инструкций для StatementList
+Генерация инструкций для VarStatement
+Генерация инструкций для VarStatement
+Генерация инструкций для VarStatement
+Генерация инструкций для VarStatement
+Генерация инструкций для VarStatement
+Генерация инструкций для VarStatement
+Генерация инструкций для IdStatement
+Генерация инструкций для NewStatement
+Генерация инструкций для IdStatement
+Генерация инструкций для MethodCallExpression
+Генерация инструкций для IdStatement
+Генерация инструкций для IdStatement
+Генерация инструкций для MethodCallExpression
+Генерация инструкций для IdStatement
+Генерация инструкций для MethodCallExpression
+Генерация инструкций для IdStatement
+Генерация инструкций для NewStatement
+Генерация инструкций для IdStatement
+Генерация инструкций для MethodCallExpression
+Генерация инструкций для IdStatement
+Генерация инструкций для MethodCallExpression
+Генерация инструкций для IdStatement
+Генерация инструкций для MethodCallExpression
+Генерация инструкций для PrintStatement
+Генерация инструкций для IdStatement
+Генерация инструкций для NewStatement
+Генерация инструкций для IdStatement
+Генерация инструкций для MethodCallExpression
+Генерация инструкций для IdStatement
+Генерация инструкций для IdStatement
+Генерация инструкций для MethodCallExpression
+Генерация инструкций для IdStatement
+Генерация инструкций для MethodCallExpression
+Генерация инструкций для PrintStatement
+Генерация инструкций для IdStatement
+Генерация инструкций для NewStatement
+Генерация инструкций для IdStatement
+Генерация инструкций для MethodCallExpression
+Генерация инструкций для IdStatement
+Генерация инструкций для MethodCallExpression
+Генерация инструкций для IdStatement
+Генерация инструкций для MethodCallExpression
+Генерация инструкций для IdStatement
+Генерация инструкций для NewStatement
+Генерация инструкций для IdStatement
+Генерация инструкций для MethodCallExpression
+Генерация инструкций для PrintStatement
+Генерация инструкций для MethodCallExpression
+Генерация инструкций для PrintStatement
+Генерация инструкций для MethodCallExpression
+Генерация инструкций для PrintStatement
+Генерация инструкций для IdStatement
+Генерация инструкций для NewStatement
+Генерация инструкций для IdStatement
+Генерация инструкций для MethodCallExpression
+Генерация инструкций для IdStatement
+Генерация инструкций для MethodCallExpression
+Генерация инструкций для IdStatement
+Генерация инструкций для MethodCallExpression
+Генерация инструкций для PrintStatement
+Генерация инструкций для IdStatement
+Генерация инструкций для MethodCallExpression
+Генерация инструкций для IdStatement
+Генерация инструкций для MethodCallExpression
+Генерация инструкций для PrintStatement
+Генерация инструкций для IdStatement
+Генерация инструкций для MethodCallExpression
+Генерация инструкций для IdStatement
+Генерация инструкций для MethodCallExpression
+Генерация инструкций для PrintStatement
+Удалены переменные 
+head, last_elem, aux01, el01, el02, el03

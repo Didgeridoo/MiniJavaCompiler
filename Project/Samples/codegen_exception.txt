@@ -1,0 +1,11 @@
+// code generation exception
+class Program {
+	public static void main(String[] a) {
+		int x = 12;
+		System.out.println(x);
+		int y = 45;
+		// error here
+		x = yy / y;
+		System.out.println(x);
+	}
+}

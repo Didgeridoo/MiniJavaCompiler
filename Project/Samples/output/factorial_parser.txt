@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Program>
+  <MainClass>
+    <ID Value="Factorial" />
+    <PrintStatement>
+      <MethodCallExpression>
+        <NewStatement>
+          <ID Value="Fac" />
+        </NewStatement>
+        <ID Value="ComputeFac" />
+        <ArgumentListExpression>
+          <INTEGER Value="10" />
+        </ArgumentListExpression>
+      </MethodCallExpression>
+    </PrintStatement>
+  </MainClass>
+  <Class>
+    <ID Value="Fac" />
+    <Method>
+      <INT />
+      <ID Value="ComputeFac" />
+      <FormalArgumentList>
+        <Variable>
+          <INT />
+          <ID Value="num" />
+        </Variable>
+      </FormalArgumentList>
+      <StatementList>
+        <VarStatement>
+          <Variable>
+            <INT />
+            <ID Value="num_aux" />
+          </Variable>
+        </VarStatement>
+        <IfElseStatement>
+          <LessExpression>
+            <ID Value="num" />
+            <INTEGER Value="1" />
+          </LessExpression>
+          <IdStatement>
+            <ID Value="num_aux" />
+            <INTEGER Value="1" />
+          </IdStatement>
+          <IdStatement>
+            <ID Value="num_aux" />
+            <MultiplyExpression>
+              <ID Value="num" />
+              <MethodThisCallExpression>
+                <ID Value="ComputeFac" />
+                <ArgumentListExpression>
+                  <MinusExpression>
+                    <ID Value="num" />
+                    <INTEGER Value="1" />
+                  </MinusExpression>
+                </ArgumentListExpression>
+              </MethodThisCallExpression>
+            </MultiplyExpression>
+          </IdStatement>
+        </IfElseStatement>
+      </StatementList>
+      <ID Value="num_aux" />
+    </Method>
+  </Class>
+</Program>

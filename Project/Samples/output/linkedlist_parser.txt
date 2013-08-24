@@ -1,0 +1,1145 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Program>
+  <MainClass>
+    <ID Value="LinkedList" />
+    <PrintStatement>
+      <MethodCallExpression>
+        <NewStatement>
+          <ID Value="LL" />
+        </NewStatement>
+        <ID Value="Start" />
+        <ArgumentListExpression />
+      </MethodCallExpression>
+    </PrintStatement>
+  </MainClass>
+  <Class>
+    <ID Value="Element" />
+    <ClassVarDecl>
+      <INT />
+      <ID Value="Age" />
+    </ClassVarDecl>
+    <ClassVarDecl>
+      <INT />
+      <ID Value="Salary" />
+    </ClassVarDecl>
+    <ClassVarDecl>
+      <BOOLEAN />
+      <ID Value="Married" />
+    </ClassVarDecl>
+    <Method>
+      <BOOLEAN />
+      <ID Value="Init" />
+      <FormalArgumentList>
+        <Variable>
+          <INT />
+          <ID Value="v_Age" />
+        </Variable>
+        <Variable>
+          <INT />
+          <ID Value="v_Salary" />
+        </Variable>
+        <Variable>
+          <BOOLEAN />
+          <ID Value="v_Married" />
+        </Variable>
+      </FormalArgumentList>
+      <StatementList>
+        <IdStatement>
+          <ID Value="Age" />
+          <ID Value="v_Age" />
+        </IdStatement>
+        <IdStatement>
+          <ID Value="Salary" />
+          <ID Value="v_Salary" />
+        </IdStatement>
+        <IdStatement>
+          <ID Value="Married" />
+          <ID Value="v_Married" />
+        </IdStatement>
+      </StatementList>
+      <BOOL Value="true" />
+    </Method>
+    <Method>
+      <INT />
+      <ID Value="GetAge" />
+      <FormalArgumentList />
+      <StatementList />
+      <ID Value="Age" />
+    </Method>
+    <Method>
+      <INT />
+      <ID Value="GetSalary" />
+      <FormalArgumentList />
+      <StatementList />
+      <ID Value="Salary" />
+    </Method>
+    <Method>
+      <BOOLEAN />
+      <ID Value="GetMarried" />
+      <FormalArgumentList />
+      <StatementList />
+      <ID Value="Married" />
+    </Method>
+    <Method>
+      <BOOLEAN />
+      <ID Value="Equal" />
+      <FormalArgumentList>
+        <Variable>
+          <ID Value="Element" />
+          <ID Value="other" />
+        </Variable>
+      </FormalArgumentList>
+      <StatementList>
+        <VarStatement>
+          <Variable>
+            <BOOLEAN />
+            <ID Value="ret_val" />
+          </Variable>
+        </VarStatement>
+        <VarStatement>
+          <Variable>
+            <INT />
+            <ID Value="aux01" />
+          </Variable>
+        </VarStatement>
+        <VarStatement>
+          <Variable>
+            <INT />
+            <ID Value="aux02" />
+          </Variable>
+        </VarStatement>
+        <VarStatement>
+          <Variable>
+            <INT />
+            <ID Value="nt" />
+          </Variable>
+        </VarStatement>
+        <IdStatement>
+          <ID Value="ret_val" />
+          <BOOL Value="true" />
+        </IdStatement>
+        <IdStatement>
+          <ID Value="aux01" />
+          <MethodCallExpression>
+            <ID Value="other" />
+            <ID Value="GetAge" />
+            <ArgumentListExpression />
+          </MethodCallExpression>
+        </IdStatement>
+        <IfElseStatement>
+          <UnaryNotExpression>
+            <MethodThisCallExpression>
+              <ID Value="Compare" />
+              <ArgumentListExpression>
+                <ID Value="aux01" />
+                <ID Value="Age" />
+              </ArgumentListExpression>
+            </MethodThisCallExpression>
+          </UnaryNotExpression>
+          <IdStatement>
+            <ID Value="ret_val" />
+            <BOOL Value="false" />
+          </IdStatement>
+          <StatementList>
+            <IdStatement>
+              <ID Value="aux02" />
+              <MethodCallExpression>
+                <ID Value="other" />
+                <ID Value="GetSalary" />
+                <ArgumentListExpression />
+              </MethodCallExpression>
+            </IdStatement>
+            <IfElseStatement>
+              <UnaryNotExpression>
+                <MethodThisCallExpression>
+                  <ID Value="Compare" />
+                  <ArgumentListExpression>
+                    <ID Value="aux02" />
+                    <ID Value="Salary" />
+                  </ArgumentListExpression>
+                </MethodThisCallExpression>
+              </UnaryNotExpression>
+              <IdStatement>
+                <ID Value="ret_val" />
+                <BOOL Value="false" />
+              </IdStatement>
+              <IfElseStatement>
+                <ID Value="Married" />
+                <IfElseStatement>
+                  <UnaryNotExpression>
+                    <MethodCallExpression>
+                      <ID Value="other" />
+                      <ID Value="GetMarried" />
+                      <ArgumentListExpression />
+                    </MethodCallExpression>
+                  </UnaryNotExpression>
+                  <IdStatement>
+                    <ID Value="ret_val" />
+                    <BOOL Value="false" />
+                  </IdStatement>
+                  <IdStatement>
+                    <ID Value="nt" />
+                    <INTEGER Value="0" />
+                  </IdStatement>
+                </IfElseStatement>
+                <IfElseStatement>
+                  <MethodCallExpression>
+                    <ID Value="other" />
+                    <ID Value="GetMarried" />
+                    <ArgumentListExpression />
+                  </MethodCallExpression>
+                  <IdStatement>
+                    <ID Value="ret_val" />
+                    <BOOL Value="false" />
+                  </IdStatement>
+                  <IdStatement>
+                    <ID Value="nt" />
+                    <INTEGER Value="0" />
+                  </IdStatement>
+                </IfElseStatement>
+              </IfElseStatement>
+            </IfElseStatement>
+          </StatementList>
+        </IfElseStatement>
+      </StatementList>
+      <ID Value="ret_val" />
+    </Method>
+    <Method>
+      <BOOLEAN />
+      <ID Value="Compare" />
+      <FormalArgumentList>
+        <Variable>
+          <INT />
+          <ID Value="num1" />
+        </Variable>
+        <Variable>
+          <INT />
+          <ID Value="num2" />
+        </Variable>
+      </FormalArgumentList>
+      <StatementList>
+        <VarStatement>
+          <Variable>
+            <BOOLEAN />
+            <ID Value="retval" />
+          </Variable>
+        </VarStatement>
+        <VarStatement>
+          <Variable>
+            <INT />
+            <ID Value="aux02" />
+          </Variable>
+        </VarStatement>
+        <IdStatement>
+          <ID Value="retval" />
+          <BOOL Value="false" />
+        </IdStatement>
+        <IdStatement>
+          <ID Value="aux02" />
+          <PlusExpression>
+            <ID Value="num2" />
+            <INTEGER Value="1" />
+          </PlusExpression>
+        </IdStatement>
+        <IfElseStatement>
+          <LessExpression>
+            <ID Value="num1" />
+            <ID Value="num2" />
+          </LessExpression>
+          <IdStatement>
+            <ID Value="retval" />
+            <BOOL Value="false" />
+          </IdStatement>
+          <IfElseStatement>
+            <UnaryNotExpression>
+              <LessExpression>
+                <ID Value="num1" />
+                <ID Value="aux02" />
+              </LessExpression>
+            </UnaryNotExpression>
+            <IdStatement>
+              <ID Value="retval" />
+              <BOOL Value="false" />
+            </IdStatement>
+            <IdStatement>
+              <ID Value="retval" />
+              <BOOL Value="true" />
+            </IdStatement>
+          </IfElseStatement>
+        </IfElseStatement>
+      </StatementList>
+      <ID Value="retval" />
+    </Method>
+  </Class>
+  <Class>
+    <ID Value="List" />
+    <ClassVarDecl>
+      <ID Value="Element" />
+      <ID Value="elem" />
+    </ClassVarDecl>
+    <ClassVarDecl>
+      <ID Value="List" />
+      <ID Value="next" />
+    </ClassVarDecl>
+    <ClassVarDecl>
+      <BOOLEAN />
+      <ID Value="end" />
+    </ClassVarDecl>
+    <Method>
+      <BOOLEAN />
+      <ID Value="Init" />
+      <FormalArgumentList />
+      <StatementList>
+        <IdStatement>
+          <ID Value="end" />
+          <BOOL Value="true" />
+        </IdStatement>
+      </StatementList>
+      <BOOL Value="true" />
+    </Method>
+    <Method>
+      <BOOLEAN />
+      <ID Value="InitNew" />
+      <FormalArgumentList>
+        <Variable>
+          <ID Value="Element" />
+          <ID Value="v_elem" />
+        </Variable>
+        <Variable>
+          <ID Value="List" />
+          <ID Value="v_next" />
+        </Variable>
+        <Variable>
+          <BOOLEAN />
+          <ID Value="v_end" />
+        </Variable>
+      </FormalArgumentList>
+      <StatementList>
+        <IdStatement>
+          <ID Value="end" />
+          <ID Value="v_end" />
+        </IdStatement>
+        <IdStatement>
+          <ID Value="elem" />
+          <ID Value="v_elem" />
+        </IdStatement>
+        <IdStatement>
+          <ID Value="next" />
+          <ID Value="v_next" />
+        </IdStatement>
+      </StatementList>
+      <BOOL Value="true" />
+    </Method>
+    <Method>
+      <ID Value="List" />
+      <ID Value="Insert" />
+      <FormalArgumentList>
+        <Variable>
+          <ID Value="Element" />
+          <ID Value="new_elem" />
+        </Variable>
+      </FormalArgumentList>
+      <StatementList>
+        <VarStatement>
+          <Variable>
+            <BOOLEAN />
+            <ID Value="ret_val" />
+          </Variable>
+        </VarStatement>
+        <VarStatement>
+          <Variable>
+            <ID Value="List" />
+            <ID Value="aux03" />
+          </Variable>
+        </VarStatement>
+        <VarStatement>
+          <Variable>
+            <ID Value="List" />
+            <ID Value="aux02" />
+          </Variable>
+        </VarStatement>
+        <IdStatement>
+          <ID Value="aux03" />
+          <ID Value="this" />
+        </IdStatement>
+        <IdStatement>
+          <ID Value="aux02" />
+          <NewStatement>
+            <ID Value="List" />
+          </NewStatement>
+        </IdStatement>
+        <IdStatement>
+          <ID Value="ret_val" />
+          <MethodCallExpression>
+            <ID Value="aux02" />
+            <ID Value="InitNew" />
+            <ArgumentListExpression>
+              <ID Value="new_elem" />
+              <ID Value="aux03" />
+              <BOOL Value="false" />
+            </ArgumentListExpression>
+          </MethodCallExpression>
+        </IdStatement>
+      </StatementList>
+      <ID Value="aux02" />
+    </Method>
+    <Method>
+      <BOOLEAN />
+      <ID Value="SetNext" />
+      <FormalArgumentList>
+        <Variable>
+          <ID Value="List" />
+          <ID Value="v_next" />
+        </Variable>
+      </FormalArgumentList>
+      <StatementList>
+        <IdStatement>
+          <ID Value="next" />
+          <ID Value="v_next" />
+        </IdStatement>
+      </StatementList>
+      <BOOL Value="true" />
+    </Method>
+    <Method>
+      <ID Value="List" />
+      <ID Value="Delete" />
+      <FormalArgumentList>
+        <Variable>
+          <ID Value="Element" />
+          <ID Value="e" />
+        </Variable>
+      </FormalArgumentList>
+      <StatementList>
+        <VarStatement>
+          <Variable>
+            <ID Value="List" />
+            <ID Value="my_head" />
+          </Variable>
+        </VarStatement>
+        <VarStatement>
+          <Variable>
+            <BOOLEAN />
+            <ID Value="ret_val" />
+          </Variable>
+        </VarStatement>
+        <VarStatement>
+          <Variable>
+            <BOOLEAN />
+            <ID Value="aux05" />
+          </Variable>
+        </VarStatement>
+        <VarStatement>
+          <Variable>
+            <ID Value="List" />
+            <ID Value="aux01" />
+          </Variable>
+        </VarStatement>
+        <VarStatement>
+          <Variable>
+            <ID Value="List" />
+            <ID Value="prev" />
+          </Variable>
+        </VarStatement>
+        <VarStatement>
+          <Variable>
+            <BOOLEAN />
+            <ID Value="var_end" />
+          </Variable>
+        </VarStatement>
+        <VarStatement>
+          <Variable>
+            <ID Value="Element" />
+            <ID Value="var_elem" />
+          </Variable>
+        </VarStatement>
+        <VarStatement>
+          <Variable>
+            <INT />
+            <ID Value="aux04" />
+          </Variable>
+        </VarStatement>
+        <VarStatement>
+          <Variable>
+            <INT />
+            <ID Value="nt" />
+          </Variable>
+        </VarStatement>
+        <IdStatement>
+          <ID Value="my_head" />
+          <ID Value="this" />
+        </IdStatement>
+        <IdStatement>
+          <ID Value="ret_val" />
+          <BOOL Value="false" />
+        </IdStatement>
+        <IdStatement>
+          <ID Value="aux04" />
+          <MinusExpression>
+            <INTEGER Value="0" />
+            <INTEGER Value="1" />
+          </MinusExpression>
+        </IdStatement>
+        <IdStatement>
+          <ID Value="aux01" />
+          <ID Value="this" />
+        </IdStatement>
+        <IdStatement>
+          <ID Value="prev" />
+          <ID Value="this" />
+        </IdStatement>
+        <IdStatement>
+          <ID Value="var_end" />
+          <ID Value="end" />
+        </IdStatement>
+        <IdStatement>
+          <ID Value="var_elem" />
+          <ID Value="elem" />
+        </IdStatement>
+        <WhileStatement>
+          <LogicalAndExpression>
+            <UnaryNotExpression>
+              <ID Value="var_end" />
+            </UnaryNotExpression>
+            <UnaryNotExpression>
+              <ID Value="ret_val" />
+            </UnaryNotExpression>
+          </LogicalAndExpression>
+          <StatementList>
+            <IfElseStatement>
+              <MethodCallExpression>
+                <ID Value="e" />
+                <ID Value="Equal" />
+                <ArgumentListExpression>
+                  <ID Value="var_elem" />
+                </ArgumentListExpression>
+              </MethodCallExpression>
+              <StatementList>
+                <IdStatement>
+                  <ID Value="ret_val" />
+                  <BOOL Value="true" />
+                </IdStatement>
+                <IfElseStatement>
+                  <LessExpression>
+                    <ID Value="aux04" />
+                    <INTEGER Value="0" />
+                  </LessExpression>
+                  <StatementList>
+                    <IdStatement>
+                      <ID Value="my_head" />
+                      <MethodCallExpression>
+                        <ID Value="aux01" />
+                        <ID Value="GetNext" />
+                        <ArgumentListExpression />
+                      </MethodCallExpression>
+                    </IdStatement>
+                  </StatementList>
+                  <StatementList>
+                    <PrintStatement>
+                      <MinusExpression>
+                        <INTEGER Value="0" />
+                        <INTEGER Value="555" />
+                      </MinusExpression>
+                    </PrintStatement>
+                    <IdStatement>
+                      <ID Value="aux05" />
+                      <MethodCallExpression>
+                        <ID Value="prev" />
+                        <ID Value="SetNext" />
+                        <ArgumentListExpression>
+                          <MethodCallExpression>
+                            <ID Value="aux01" />
+                            <ID Value="GetNext" />
+                            <ArgumentListExpression />
+                          </MethodCallExpression>
+                        </ArgumentListExpression>
+                      </MethodCallExpression>
+                    </IdStatement>
+                    <PrintStatement>
+                      <MinusExpression>
+                        <INTEGER Value="0" />
+                        <INTEGER Value="555" />
+                      </MinusExpression>
+                    </PrintStatement>
+                  </StatementList>
+                </IfElseStatement>
+              </StatementList>
+              <IdStatement>
+                <ID Value="nt" />
+                <INTEGER Value="0" />
+              </IdStatement>
+            </IfElseStatement>
+            <IfElseStatement>
+              <UnaryNotExpression>
+                <ID Value="ret_val" />
+              </UnaryNotExpression>
+              <StatementList>
+                <IdStatement>
+                  <ID Value="prev" />
+                  <ID Value="aux01" />
+                </IdStatement>
+                <IdStatement>
+                  <ID Value="aux01" />
+                  <MethodCallExpression>
+                    <ID Value="aux01" />
+                    <ID Value="GetNext" />
+                    <ArgumentListExpression />
+                  </MethodCallExpression>
+                </IdStatement>
+                <IdStatement>
+                  <ID Value="var_end" />
+                  <MethodCallExpression>
+                    <ID Value="aux01" />
+                    <ID Value="GetEnd" />
+                    <ArgumentListExpression />
+                  </MethodCallExpression>
+                </IdStatement>
+                <IdStatement>
+                  <ID Value="var_elem" />
+                  <MethodCallExpression>
+                    <ID Value="aux01" />
+                    <ID Value="GetElem" />
+                    <ArgumentListExpression />
+                  </MethodCallExpression>
+                </IdStatement>
+                <IdStatement>
+                  <ID Value="aux04" />
+                  <INTEGER Value="1" />
+                </IdStatement>
+              </StatementList>
+              <IdStatement>
+                <ID Value="nt" />
+                <INTEGER Value="0" />
+              </IdStatement>
+            </IfElseStatement>
+          </StatementList>
+        </WhileStatement>
+      </StatementList>
+      <ID Value="my_head" />
+    </Method>
+    <Method>
+      <INT />
+      <ID Value="Search" />
+      <FormalArgumentList>
+        <Variable>
+          <ID Value="Element" />
+          <ID Value="e" />
+        </Variable>
+      </FormalArgumentList>
+      <StatementList>
+        <VarStatement>
+          <Variable>
+            <INT />
+            <ID Value="int_ret_val" />
+          </Variable>
+        </VarStatement>
+        <VarStatement>
+          <Variable>
+            <ID Value="List" />
+            <ID Value="aux01" />
+          </Variable>
+        </VarStatement>
+        <VarStatement>
+          <Variable>
+            <ID Value="Element" />
+            <ID Value="var_elem" />
+          </Variable>
+        </VarStatement>
+        <VarStatement>
+          <Variable>
+            <BOOLEAN />
+            <ID Value="var_end" />
+          </Variable>
+        </VarStatement>
+        <VarStatement>
+          <Variable>
+            <INT />
+            <ID Value="nt" />
+          </Variable>
+        </VarStatement>
+        <IdStatement>
+          <ID Value="int_ret_val" />
+          <INTEGER Value="0" />
+        </IdStatement>
+        <IdStatement>
+          <ID Value="aux01" />
+          <ID Value="this" />
+        </IdStatement>
+        <IdStatement>
+          <ID Value="var_end" />
+          <ID Value="end" />
+        </IdStatement>
+        <IdStatement>
+          <ID Value="var_elem" />
+          <ID Value="elem" />
+        </IdStatement>
+        <WhileStatement>
+          <UnaryNotExpression>
+            <ID Value="var_end" />
+          </UnaryNotExpression>
+          <StatementList>
+            <IfElseStatement>
+              <MethodCallExpression>
+                <ID Value="e" />
+                <ID Value="Equal" />
+                <ArgumentListExpression>
+                  <ID Value="var_elem" />
+                </ArgumentListExpression>
+              </MethodCallExpression>
+              <StatementList>
+                <IdStatement>
+                  <ID Value="int_ret_val" />
+                  <INTEGER Value="1" />
+                </IdStatement>
+              </StatementList>
+              <IdStatement>
+                <ID Value="nt" />
+                <INTEGER Value="0" />
+              </IdStatement>
+            </IfElseStatement>
+            <IdStatement>
+              <ID Value="aux01" />
+              <MethodCallExpression>
+                <ID Value="aux01" />
+                <ID Value="GetNext" />
+                <ArgumentListExpression />
+              </MethodCallExpression>
+            </IdStatement>
+            <IdStatement>
+              <ID Value="var_end" />
+              <MethodCallExpression>
+                <ID Value="aux01" />
+                <ID Value="GetEnd" />
+                <ArgumentListExpression />
+              </MethodCallExpression>
+            </IdStatement>
+            <IdStatement>
+              <ID Value="var_elem" />
+              <MethodCallExpression>
+                <ID Value="aux01" />
+                <ID Value="GetElem" />
+                <ArgumentListExpression />
+              </MethodCallExpression>
+            </IdStatement>
+          </StatementList>
+        </WhileStatement>
+      </StatementList>
+      <ID Value="int_ret_val" />
+    </Method>
+    <Method>
+      <BOOLEAN />
+      <ID Value="GetEnd" />
+      <FormalArgumentList />
+      <StatementList />
+      <ID Value="end" />
+    </Method>
+    <Method>
+      <ID Value="Element" />
+      <ID Value="GetElem" />
+      <FormalArgumentList />
+      <StatementList />
+      <ID Value="elem" />
+    </Method>
+    <Method>
+      <ID Value="List" />
+      <ID Value="GetNext" />
+      <FormalArgumentList />
+      <StatementList />
+      <ID Value="next" />
+    </Method>
+    <Method>
+      <BOOLEAN />
+      <ID Value="Print" />
+      <FormalArgumentList />
+      <StatementList>
+        <VarStatement>
+          <Variable>
+            <ID Value="List" />
+            <ID Value="aux01" />
+          </Variable>
+        </VarStatement>
+        <VarStatement>
+          <Variable>
+            <BOOLEAN />
+            <ID Value="var_end" />
+          </Variable>
+        </VarStatement>
+        <VarStatement>
+          <Variable>
+            <ID Value="Element" />
+            <ID Value="var_elem" />
+          </Variable>
+        </VarStatement>
+        <IdStatement>
+          <ID Value="aux01" />
+          <ID Value="this" />
+        </IdStatement>
+        <IdStatement>
+          <ID Value="var_end" />
+          <ID Value="end" />
+        </IdStatement>
+        <IdStatement>
+          <ID Value="var_elem" />
+          <ID Value="elem" />
+        </IdStatement>
+        <WhileStatement>
+          <UnaryNotExpression>
+            <ID Value="var_end" />
+          </UnaryNotExpression>
+          <StatementList>
+            <PrintStatement>
+              <MethodCallExpression>
+                <ID Value="var_elem" />
+                <ID Value="GetAge" />
+                <ArgumentListExpression />
+              </MethodCallExpression>
+            </PrintStatement>
+            <IdStatement>
+              <ID Value="aux01" />
+              <MethodCallExpression>
+                <ID Value="aux01" />
+                <ID Value="GetNext" />
+                <ArgumentListExpression />
+              </MethodCallExpression>
+            </IdStatement>
+            <IdStatement>
+              <ID Value="var_end" />
+              <MethodCallExpression>
+                <ID Value="aux01" />
+                <ID Value="GetEnd" />
+                <ArgumentListExpression />
+              </MethodCallExpression>
+            </IdStatement>
+            <IdStatement>
+              <ID Value="var_elem" />
+              <MethodCallExpression>
+                <ID Value="aux01" />
+                <ID Value="GetElem" />
+                <ArgumentListExpression />
+              </MethodCallExpression>
+            </IdStatement>
+          </StatementList>
+        </WhileStatement>
+      </StatementList>
+      <BOOL Value="true" />
+    </Method>
+  </Class>
+  <Class>
+    <ID Value="LL" />
+    <Method>
+      <INT />
+      <ID Value="Start" />
+      <FormalArgumentList />
+      <StatementList>
+        <VarStatement>
+          <Variable>
+            <ID Value="List" />
+            <ID Value="head" />
+          </Variable>
+        </VarStatement>
+        <VarStatement>
+          <Variable>
+            <ID Value="List" />
+            <ID Value="last_elem" />
+          </Variable>
+        </VarStatement>
+        <VarStatement>
+          <Variable>
+            <BOOLEAN />
+            <ID Value="aux01" />
+          </Variable>
+        </VarStatement>
+        <VarStatement>
+          <Variable>
+            <ID Value="Element" />
+            <ID Value="el01" />
+          </Variable>
+        </VarStatement>
+        <VarStatement>
+          <Variable>
+            <ID Value="Element" />
+            <ID Value="el02" />
+          </Variable>
+        </VarStatement>
+        <VarStatement>
+          <Variable>
+            <ID Value="Element" />
+            <ID Value="el03" />
+          </Variable>
+        </VarStatement>
+        <IdStatement>
+          <ID Value="last_elem" />
+          <NewStatement>
+            <ID Value="List" />
+          </NewStatement>
+        </IdStatement>
+        <IdStatement>
+          <ID Value="aux01" />
+          <MethodCallExpression>
+            <ID Value="last_elem" />
+            <ID Value="Init" />
+            <ArgumentListExpression />
+          </MethodCallExpression>
+        </IdStatement>
+        <IdStatement>
+          <ID Value="head" />
+          <ID Value="last_elem" />
+        </IdStatement>
+        <IdStatement>
+          <ID Value="aux01" />
+          <MethodCallExpression>
+            <ID Value="head" />
+            <ID Value="Init" />
+            <ArgumentListExpression />
+          </MethodCallExpression>
+        </IdStatement>
+        <IdStatement>
+          <ID Value="aux01" />
+          <MethodCallExpression>
+            <ID Value="head" />
+            <ID Value="Print" />
+            <ArgumentListExpression />
+          </MethodCallExpression>
+        </IdStatement>
+        <IdStatement>
+          <ID Value="el01" />
+          <NewStatement>
+            <ID Value="Element" />
+          </NewStatement>
+        </IdStatement>
+        <IdStatement>
+          <ID Value="aux01" />
+          <MethodCallExpression>
+            <ID Value="el01" />
+            <ID Value="Init" />
+            <ArgumentListExpression>
+              <INTEGER Value="25" />
+              <INTEGER Value="37000" />
+              <BOOL Value="false" />
+            </ArgumentListExpression>
+          </MethodCallExpression>
+        </IdStatement>
+        <IdStatement>
+          <ID Value="head" />
+          <MethodCallExpression>
+            <ID Value="head" />
+            <ID Value="Insert" />
+            <ArgumentListExpression>
+              <ID Value="el01" />
+            </ArgumentListExpression>
+          </MethodCallExpression>
+        </IdStatement>
+        <IdStatement>
+          <ID Value="aux01" />
+          <MethodCallExpression>
+            <ID Value="head" />
+            <ID Value="Print" />
+            <ArgumentListExpression />
+          </MethodCallExpression>
+        </IdStatement>
+        <PrintStatement>
+          <INTEGER Value="10000000" />
+        </PrintStatement>
+        <IdStatement>
+          <ID Value="el01" />
+          <NewStatement>
+            <ID Value="Element" />
+          </NewStatement>
+        </IdStatement>
+        <IdStatement>
+          <ID Value="aux01" />
+          <MethodCallExpression>
+            <ID Value="el01" />
+            <ID Value="Init" />
+            <ArgumentListExpression>
+              <INTEGER Value="39" />
+              <INTEGER Value="42000" />
+              <BOOL Value="true" />
+            </ArgumentListExpression>
+          </MethodCallExpression>
+        </IdStatement>
+        <IdStatement>
+          <ID Value="el02" />
+          <ID Value="el01" />
+        </IdStatement>
+        <IdStatement>
+          <ID Value="head" />
+          <MethodCallExpression>
+            <ID Value="head" />
+            <ID Value="Insert" />
+            <ArgumentListExpression>
+              <ID Value="el01" />
+            </ArgumentListExpression>
+          </MethodCallExpression>
+        </IdStatement>
+        <IdStatement>
+          <ID Value="aux01" />
+          <MethodCallExpression>
+            <ID Value="head" />
+            <ID Value="Print" />
+            <ArgumentListExpression />
+          </MethodCallExpression>
+        </IdStatement>
+        <PrintStatement>
+          <INTEGER Value="10000000" />
+        </PrintStatement>
+        <IdStatement>
+          <ID Value="el01" />
+          <NewStatement>
+            <ID Value="Element" />
+          </NewStatement>
+        </IdStatement>
+        <IdStatement>
+          <ID Value="aux01" />
+          <MethodCallExpression>
+            <ID Value="el01" />
+            <ID Value="Init" />
+            <ArgumentListExpression>
+              <INTEGER Value="22" />
+              <INTEGER Value="34000" />
+              <BOOL Value="false" />
+            </ArgumentListExpression>
+          </MethodCallExpression>
+        </IdStatement>
+        <IdStatement>
+          <ID Value="head" />
+          <MethodCallExpression>
+            <ID Value="head" />
+            <ID Value="Insert" />
+            <ArgumentListExpression>
+              <ID Value="el01" />
+            </ArgumentListExpression>
+          </MethodCallExpression>
+        </IdStatement>
+        <IdStatement>
+          <ID Value="aux01" />
+          <MethodCallExpression>
+            <ID Value="head" />
+            <ID Value="Print" />
+            <ArgumentListExpression />
+          </MethodCallExpression>
+        </IdStatement>
+        <IdStatement>
+          <ID Value="el03" />
+          <NewStatement>
+            <ID Value="Element" />
+          </NewStatement>
+        </IdStatement>
+        <IdStatement>
+          <ID Value="aux01" />
+          <MethodCallExpression>
+            <ID Value="el03" />
+            <ID Value="Init" />
+            <ArgumentListExpression>
+              <INTEGER Value="27" />
+              <INTEGER Value="34000" />
+              <BOOL Value="false" />
+            </ArgumentListExpression>
+          </MethodCallExpression>
+        </IdStatement>
+        <PrintStatement>
+          <MethodCallExpression>
+            <ID Value="head" />
+            <ID Value="Search" />
+            <ArgumentListExpression>
+              <ID Value="el02" />
+            </ArgumentListExpression>
+          </MethodCallExpression>
+        </PrintStatement>
+        <PrintStatement>
+          <MethodCallExpression>
+            <ID Value="head" />
+            <ID Value="Search" />
+            <ArgumentListExpression>
+              <ID Value="el03" />
+            </ArgumentListExpression>
+          </MethodCallExpression>
+        </PrintStatement>
+        <PrintStatement>
+          <INTEGER Value="10000000" />
+        </PrintStatement>
+        <IdStatement>
+          <ID Value="el01" />
+          <NewStatement>
+            <ID Value="Element" />
+          </NewStatement>
+        </IdStatement>
+        <IdStatement>
+          <ID Value="aux01" />
+          <MethodCallExpression>
+            <ID Value="el01" />
+            <ID Value="Init" />
+            <ArgumentListExpression>
+              <INTEGER Value="28" />
+              <INTEGER Value="35000" />
+              <BOOL Value="false" />
+            </ArgumentListExpression>
+          </MethodCallExpression>
+        </IdStatement>
+        <IdStatement>
+          <ID Value="head" />
+          <MethodCallExpression>
+            <ID Value="head" />
+            <ID Value="Insert" />
+            <ArgumentListExpression>
+              <ID Value="el01" />
+            </ArgumentListExpression>
+          </MethodCallExpression>
+        </IdStatement>
+        <IdStatement>
+          <ID Value="aux01" />
+          <MethodCallExpression>
+            <ID Value="head" />
+            <ID Value="Print" />
+            <ArgumentListExpression />
+          </MethodCallExpression>
+        </IdStatement>
+        <PrintStatement>
+          <INTEGER Value="2220000" />
+        </PrintStatement>
+        <IdStatement>
+          <ID Value="head" />
+          <MethodCallExpression>
+            <ID Value="head" />
+            <ID Value="Delete" />
+            <ArgumentListExpression>
+              <ID Value="el02" />
+            </ArgumentListExpression>
+          </MethodCallExpression>
+        </IdStatement>
+        <IdStatement>
+          <ID Value="aux01" />
+          <MethodCallExpression>
+            <ID Value="head" />
+            <ID Value="Print" />
+            <ArgumentListExpression />
+          </MethodCallExpression>
+        </IdStatement>
+        <PrintStatement>
+          <INTEGER Value="33300000" />
+        </PrintStatement>
+        <IdStatement>
+          <ID Value="head" />
+          <MethodCallExpression>
+            <ID Value="head" />
+            <ID Value="Delete" />
+            <ArgumentListExpression>
+              <ID Value="el01" />
+            </ArgumentListExpression>
+          </MethodCallExpression>
+        </IdStatement>
+        <IdStatement>
+          <ID Value="aux01" />
+          <MethodCallExpression>
+            <ID Value="head" />
+            <ID Value="Print" />
+            <ArgumentListExpression />
+          </MethodCallExpression>
+        </IdStatement>
+        <PrintStatement>
+          <INTEGER Value="44440000" />
+        </PrintStatement>
+      </StatementList>
+      <INTEGER Value="0" />
+    </Method>
+  </Class>
+</Program>

@@ -1,0 +1,11 @@
+// runtime exception
+class Program {
+	public static void main(String[] a) {
+		int x = 12;
+		System.out.println(x);
+		int y = 0;
+		// error here
+		x = x / y;
+		System.out.println(x);
+	}
+}
