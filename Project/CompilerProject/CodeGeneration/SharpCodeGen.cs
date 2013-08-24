@@ -194,6 +194,11 @@ namespace CompilerProject.CodeGeneration
 
         #region Init methods for preparing to compiling
 
+        /// <summary>
+        /// Загрузка всех классов (наследование не учитывается).
+        /// </summary>
+        /// <param name="root">Базовый символ</param>
+        /// <param name="ag">Сборка</param>
         private void LoadClasses(BaseSymbol root, AssemblyGen ag)
         {
             root.Symbols.ForEach(s =>
@@ -204,7 +209,8 @@ namespace CompilerProject.CodeGeneration
                         switch (nonTerm.TypeNonTerm)
                         {
                             case NonTermType.Class:
-                                Token termClassId = nonTerm.Symbols[0] as Token;
+                                Token termClassId;
+                                NonTermFactory.GetClassId(nonTerm, out termClassId);
                                 string classId = termClassId.Value;
                                 TypeGen cl = ag.Class(classId);
                                 _classesTable.Add(cl.Name, cl);
@@ -217,7 +223,7 @@ namespace CompilerProject.CodeGeneration
 
 
         /// <summary>
-        /// Загрузка всех классов.
+        /// Загрузка всех классов (наследование учитывается).
         /// Допущение - классы-наследники должны располагаться после базовых классов 
         /// и иерархий наследования должно быть не более 1.
         /// </summary>
@@ -233,8 +239,8 @@ namespace CompilerProject.CodeGeneration
                         switch (nonTerm.TypeNonTerm)
                         {
                             case NonTermType.Class:
-                                Token termClassId; //= nonTerm.Symbols[0] as Token;
-                                NonTerm extends; //= nonTerm.Symbols[1] as NonTerm;
+                                Token termClassId;
+                                NonTerm extends;
                                 NonTermFactory.GetClassDecl(nonTerm, out termClassId, out extends);
                                 string classId = termClassId.Value;
                                 if (extends == null)
@@ -244,11 +250,10 @@ namespace CompilerProject.CodeGeneration
                                 }
                                 else
                                 {
-                                    string baseClassId = extends.Symbols[0].Value;
-                                    TypeGen cl = _classesTable[baseClassId];
-                                    ///cl = _classesTable[classId].Class(classId, cl);
+                                    Token baseClassId;
+                                    NonTermFactory.GetClassId(extends, out baseClassId);
+                                    TypeGen cl = _classesTable[baseClassId.Value];
                                     cl = ag.Class(classId, cl);
-                                    ///_classesTable[cl.Name] = cl;
                                     _classesTable.Add(cl.Name, cl);
                                 }
 
@@ -270,17 +275,20 @@ namespace CompilerProject.CodeGeneration
                         switch (nonTerm.TypeNonTerm)
                         {
                             case NonTermType.Class:
-                                Token termClassId = nonTerm.Symbols[0] as Token;
+                                Token termClassId;
+                                List<BaseSymbol> declarations;
+                                NonTermFactory.GetClassDecl(nonTerm, out termClassId, out declarations);
+
                                 string classId = termClassId.Value;
 
                                 TypeGen cl = _classesTable[classId];
                                 Dictionary<string, MethodGen> methodsDictionary = new Dictionary<string, MethodGen>();
 
-                                for (int i = 2; i < nonTerm.Symbols.Count; i++)
+                                foreach (var declaration in declarations)
                                 {
-                                    if ((nonTerm.Symbols[i] as NonTerm).TypeNonTerm == NonTermType.Method)
+                                    if ((declaration as NonTerm).TypeNonTerm == NonTermType.Method)
                                     {
-                                        KeyValuePair<string, MethodGen> method = GenerateMethodSignature(cl, nonTerm.Symbols[i], ag);
+                                        KeyValuePair<string, MethodGen> method = GenerateMethodSignature(cl, declaration, ag);
                                         methodsDictionary.Add(method.Key, method.Value);
                                     }
                                 }
@@ -296,24 +304,23 @@ namespace CompilerProject.CodeGeneration
 
         private KeyValuePair<string, MethodGen> GenerateMethodSignature(TypeGen classDeclaration, BaseSymbol nonTerm, AssemblyGen ag)
         {
-            BaseSymbol typeMethodDecl = nonTerm.Symbols[0];
-            Token typeMethodDeclSimple = typeMethodDecl as Token;
-
-            Token methodName = nonTerm.Symbols[1] as Token;
-            IEnumerable<BaseSymbol> formalParametersList = nonTerm.Symbols[2].Symbols;
+            Token typeMethodDeclSimple;
+            Token methodName;
+            List<BaseSymbol> formalParametersList;
+            NonTermFactory.GetMethodSignature(nonTerm, out typeMethodDeclSimple, out methodName, out formalParametersList);
 
             Type methodReturnType = GetVariableType(typeMethodDeclSimple);
             MethodGen method = classDeclaration.Public.Method(methodReturnType, methodName.Value);
 
             foreach (BaseSymbol symbol in formalParametersList)
             {
-                Token type = symbol.Symbols[0] as Token;
-                Token id = symbol.Symbols[1] as Token;
+                Token type;
+                Token id;
+                NonTermFactory.GetFormalArgumentDeclaration(symbol, out type, out id);
                 method.Parameter(GetVariableType(type), id.Value);
             }
 
             //_compilerLogger.PrintAddtFormalArgumentList(formalParametersList.Select(s => s.Symbols[1].Value).ToList());
-
 
             return new KeyValuePair<string, MethodGen>(methodName.Value, method);
         }
@@ -505,10 +512,9 @@ namespace CompilerProject.CodeGeneration
                     case NonTermType.Variable:
                     case NonTermType.ArrayVariable:
 
-                        BaseSymbol typeDecl = nonTerm.Symbols[0];
-                        Token typeDeclSimple = typeDecl as Token;
-
-                        Token idVar = nonTerm.Symbols[1] as Token;
+                        Token typeDeclSimple;
+                        Token idVar;
+                        NonTermFactory.GetVarDecl(nonTerm, out typeDeclSimple, out idVar);
 
                         _currentOperand = _g.Local(GetVariableType(typeDeclSimple));
 
@@ -556,16 +562,14 @@ namespace CompilerProject.CodeGeneration
         /// <summary>
         /// Вычисление параметров индекса массива
         /// </summary>
-        /// <param name="nonTerm"></param>
-        /// <param name="initIndex">начальный индекс nonTerm.Symbols, с которого будут перебираться параметры</param>
+        /// <param name="bracketExpressionList">Выражения в скобках</param>
         /// <returns></returns>
-        private List<Operand> GenerateArrayIndiciesExpression(NonTerm nonTerm, int initIndex)
+        private List<Operand> GenerateArrayIndiciesExpression(List<BaseSymbol> bracketExpressionList)
         {
             List<Operand> arrayIndicesExpressions = new List<Operand>();
 
-            for (int i = initIndex; i < nonTerm.Symbols.Count; i++)
+            foreach (var expressionSymbol in bracketExpressionList)
             {
-                BaseSymbol expressionSymbol = nonTerm.Symbols[i];
                 string nameArrayIndexTempVariable = AddArrayLocalVariable();
                 Operand expr = EmitExpression(expressionSymbol, typeof(int), nameArrayIndexTempVariable);
                 arrayIndicesExpressions.Add(expr);
@@ -751,7 +755,7 @@ namespace CompilerProject.CodeGeneration
 
             Operand tempOperand = _currentOperandTempResult;
 
-            List<Operand> arrayIndicesExpressions = GenerateArrayIndiciesExpression(nonTerm, 1);
+            List<Operand> arrayIndicesExpressions = GenerateArrayIndiciesExpression(bracketExpressionList);
 
             _currentOperandTempResult = tempOperand;
             try
@@ -773,7 +777,7 @@ namespace CompilerProject.CodeGeneration
             List<BaseSymbol> bracketExpressionList;
             NonTermFactory.GetArrayAssignIdStatement(nonTerm, out arrayIdToken, out expression, out bracketExpressionList);
 
-            List<Operand> arrayIndicesExpressions = GenerateArrayIndiciesExpression(nonTerm, 2);
+            List<Operand> arrayIndicesExpressions = GenerateArrayIndiciesExpression(bracketExpressionList);
 
             _currentOperandTempResult = EmitExpression(expression,
                 GetOperandValue(arrayIdToken.Value, arrayIdToken)[arrayIndicesExpressions.ToArray()].Type, arrayIdToken.Value);
@@ -856,41 +860,37 @@ namespace CompilerProject.CodeGeneration
 
         private void EmitMethodCallExpression(NonTerm nonTerm)
         {
-            Token idVariable = null;
-            Token idMethodName = null;
-            BaseSymbol methodArguments = null;
+            Token idMethodName;
+            List<BaseSymbol> methodArguments;
             string nameIdVariable = string.Empty;
-            // BaseSymbol arrayIndicesList = nonTerm.Symbols[1];
 
             if (nonTerm.TypeNonTerm == NonTermType.MethodCallExpression)
             {
-                if (nonTerm.Symbols[0] is Token)
+                BaseSymbol symbol;
+                NonTermFactory.GetMethodCallExpression(nonTerm, out symbol, out idMethodName, out methodArguments);
+                if (symbol is Token)
                 {
-                    idVariable = nonTerm.Symbols[0] as Token;
+                    Token idVariable = symbol as Token;
                     nameIdVariable = idVariable.Value;
                 }
                 else
                 {
-                    NonTerm nonTermVariable = nonTerm.Symbols[0] as NonTerm;
+                    NonTerm nonTermVariable = symbol as NonTerm;
                     Generate(nonTermVariable);
                     string nameNew = AddTempLocalVariable(_currentOperandTempResult.Type);
                     _localVariablesTable[nameNew] = _currentOperandTempResult;
                     nameIdVariable = nameNew;
                 }
-                idMethodName = nonTerm.Symbols[1] as Token;
-                methodArguments = nonTerm.Symbols[2];
             }
             else
             {
-                idMethodName = nonTerm.Symbols[0] as Token;
-                methodArguments = nonTerm.Symbols[1];
+                NonTermFactory.GetMethodCallExpression(nonTerm, out idMethodName, out methodArguments);
             }
 
             List<Operand> methodArgumentsExpressions = new List<Operand>();
 
-            for (int i = 0; i < methodArguments.Symbols.Count; i++)
+            foreach (var expressionSymbol in methodArguments)
             {
-                BaseSymbol expressionSymbol = methodArguments.Symbols[i];
                 string nameTempVariable = AddTempLocalVariable();
                 Operand expr = EmitExpression(expressionSymbol, typeof(object), nameTempVariable);
                 methodArgumentsExpressions.Add(expr);

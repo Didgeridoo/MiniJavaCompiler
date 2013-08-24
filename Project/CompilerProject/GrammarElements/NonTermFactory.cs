@@ -52,16 +52,21 @@ namespace CompilerProject.GrammarElements
             return new NonTerm(NonTermType.Class, declarations);
         }
 
-        public static void GetClassDecl(NonTerm nonTerm, out Token classId, /*out BaseSymbol extendsClause, */out List<BaseSymbol> declarations)
+        public static void GetClassId(NonTerm nonTerm, out Token classId)
         {
             classId = nonTerm.Symbols[0] as Token;
+        }
+
+        public static void GetClassDecl(NonTerm nonTerm, out Token classId, /*out BaseSymbol extendsClause, */out List<BaseSymbol> declarations)
+        {
+            GetClassId(nonTerm, out classId);
             //extendsClause = nonTerm.Symbols[1];
             declarations = nonTerm.Symbols.Skip(2).ToList();
         }
 
         public static void GetClassDecl(NonTerm nonTerm, out Token classId, out NonTerm extendsClause)
         {
-            classId = nonTerm.Symbols[0] as Token;
+            GetClassId(nonTerm, out classId);
             extendsClause = nonTerm.Symbols[1] as NonTerm;
         }
 
@@ -77,12 +82,18 @@ namespace CompilerProject.GrammarElements
             return new NonTerm(NonTermType.Method, declarations);
         }
 
-        public static void GetMethodDecl(NonTerm nonTerm, out Token typeDeclaration, out Token methodId,
-                                         out List<BaseSymbol> variables, out BaseSymbol statements, out BaseSymbol returnExpression)
+
+        public static void GetMethodSignature(BaseSymbol nonTerm, out Token typeDeclaration, out Token methodId, out List<BaseSymbol> variables)
         {
             typeDeclaration = nonTerm.Symbols[0] as Token;
             methodId = nonTerm.Symbols[1] as Token;
             variables = nonTerm.Symbols[2].Symbols;
+        }
+
+        public static void GetMethodDecl(BaseSymbol nonTerm, out Token typeDeclaration, out Token methodId,
+                                         out List<BaseSymbol> variables, out BaseSymbol statements, out BaseSymbol returnExpression)
+        {
+            GetMethodSignature(nonTerm, out typeDeclaration, out methodId, out variables);
             statements = nonTerm.Symbols[3];
             returnExpression = nonTerm.Symbols[4];
         }
@@ -276,6 +287,22 @@ namespace CompilerProject.GrammarElements
             List<BaseSymbol> declarations = new List<BaseSymbol>() { id, methodArguments };
             return new NonTerm(NonTermType.MethodThisCallExpression, declarations);
         }
+
+
+        public static void GetMethodCallExpression(NonTerm nonTerm, out BaseSymbol symbol, out Token idMethodName, out List<BaseSymbol> methodArguments)
+        {
+            symbol = nonTerm.Symbols[0];
+            idMethodName = nonTerm.Symbols[1] as Token;
+            methodArguments = nonTerm.Symbols[2].Symbols;
+        }
+
+        public static void GetMethodCallExpression(NonTerm nonTerm, out Token idMethodName, out List<BaseSymbol> methodArguments)
+        {
+            idMethodName = nonTerm.Symbols[0] as Token;
+            methodArguments = nonTerm.Symbols[1].Symbols;
+        }
+
+
 
         public static BaseSymbol CreateLogicalOrExpression(List<BaseSymbol> expressions)
         {
