@@ -60,8 +60,8 @@
     <Compile Include="Lexer.cs" />
     <Compile Include="Logs\CompilerLogger.cs" />
     <Compile Include="Logs\ICompilerLogger.cs" />
-    <Compile Include="minijava2Lexer.cs" />
-    <Compile Include="minijava2Parser.cs" />
+    <Compile Include="MiniJavaLexer.cs" />
+    <Compile Include="MiniJavaParser.cs" />
     <Compile Include="GrammarElements\NonTerm.cs" />
     <Compile Include="GrammarElements\NonTermFactory.cs" />
     <Compile Include="GrammarElements\NonTermType.cs" />

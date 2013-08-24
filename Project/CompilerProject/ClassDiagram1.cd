@@ -210,18 +210,18 @@
     </TypeIdentifier>
     <Lollipop Position="0.2" Collapsed="true" />
   </Class>
-  <Class Name="MiniJavaSyntax.minijava2Lexer" Collapsed="true">
+  <Class Name="MiniJavaSyntax.MiniJavaLexer" Collapsed="true">
     <Position X="36" Y="1.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>zRO9M3wWbQ///8b9+/vi7s/1ebGtvtiXW3uor4WL1Y4=</HashCode>
-      <FileName>minijava2Lexer.cs</FileName>
+      <FileName>MiniJavaLexer.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="MiniJavaSyntax.minijava2Parser" Collapsed="true">
+  <Class Name="MiniJavaSyntax.MiniJavaParser" Collapsed="true">
     <Position X="37.75" Y="1.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>qYI9A1ZWzGolrgaU1XuuTNNl+fdNronfSzioKRkIYtk=</HashCode>
-      <FileName>minijava2Parser.cs</FileName>
+      <FileName>MiniJavaParser.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="CompilerProject.Variables.DummyVariable" Collapsed="true">

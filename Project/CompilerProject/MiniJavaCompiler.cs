@@ -98,7 +98,7 @@ namespace CompilerProject
 
                 Console.WriteLine(MessagesHelper.InfoLexer);
 
-                minijava2Parser parser = new minijava2Parser(grammarLexer.TokenStream);
+                MiniJavaParser parser = new MiniJavaParser(grammarLexer.TokenStream);
                 //Antlr.Runtime.Tree.CommonTree tree = parser.program().Tree;
                 //Console.WriteLine();
                 //Console.WriteLine(tree.ToStringTree());

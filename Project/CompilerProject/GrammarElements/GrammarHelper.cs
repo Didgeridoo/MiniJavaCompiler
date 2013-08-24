@@ -10,19 +10,19 @@ namespace CompilerProject.GrammarElements
     public static class GrammarHelper
     {
         public static Dictionary<int, NonTermType> TokenTypeToNonTermDictionary = new Dictionary<int, NonTermType>() { 
-            {minijava2Parser.EQUAL, NonTermType.EqualExpression},
-            {minijava2Parser.NEQUAL, NonTermType.NotEqualExpression},
+            {MiniJavaParser.EQUAL, NonTermType.EqualExpression},
+            {MiniJavaParser.NEQUAL, NonTermType.NotEqualExpression},
 
-            {minijava2Parser.LESS, NonTermType.LessExpression},
-            {minijava2Parser.LESSEQ, NonTermType.LessEqExpression},
-            {minijava2Parser.MORE, NonTermType.MoreExpression},
-            {minijava2Parser.MOREEQ, NonTermType.MoreEqExpression},
+            {MiniJavaParser.LESS, NonTermType.LessExpression},
+            {MiniJavaParser.LESSEQ, NonTermType.LessEqExpression},
+            {MiniJavaParser.MORE, NonTermType.MoreExpression},
+            {MiniJavaParser.MOREEQ, NonTermType.MoreEqExpression},
 
-            {minijava2Parser.PLUS, NonTermType.PlusExpression},
-            {minijava2Parser.MINUS, NonTermType.MinusExpression},
+            {MiniJavaParser.PLUS, NonTermType.PlusExpression},
+            {MiniJavaParser.MINUS, NonTermType.MinusExpression},
 
-            {minijava2Parser.STAR, NonTermType.MultiplyExpression},
-            {minijava2Parser.DIV, NonTermType.DivisionExpression},
+            {MiniJavaParser.STAR, NonTermType.MultiplyExpression},
+            {MiniJavaParser.DIV, NonTermType.DivisionExpression},
 
         };
 

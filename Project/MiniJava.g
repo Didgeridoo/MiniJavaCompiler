@@ -1,4 +1,4 @@
-grammar minijava2;
+grammar MiniJava;
 
 options {
 	language = CSharp3;

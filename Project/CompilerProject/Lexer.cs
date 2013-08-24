@@ -23,7 +23,7 @@ namespace CompilerProject
         public Lexer(string fileName)
         {
             Antlr.Runtime.ANTLRFileStream fileStream = new Antlr.Runtime.ANTLRFileStream(fileName);
-            minijava2Lexer lexer = new minijava2Lexer(fileStream);
+            MiniJavaLexer lexer = new MiniJavaLexer(fileStream);
             TokenStream = new Antlr.Runtime.CommonTokenStream(lexer);
             //SaveToFile("lexer1.txt");
         }

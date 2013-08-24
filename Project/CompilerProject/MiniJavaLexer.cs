@@ -22,7 +22,7 @@ namespace  MiniJavaSyntax
 {
 [System.CodeDom.Compiler.GeneratedCode("ANTLR", "3.3.1.7705")]
 [System.CLSCompliant(false)]
-public partial class minijava2Lexer : Antlr.Runtime.Lexer
+public partial class MiniJavaLexer : Antlr.Runtime.Lexer
 {
 	public const int EOF=-1;
 	public const int ASSIGN=4;
@@ -100,24 +100,24 @@ public partial class minijava2Lexer : Antlr.Runtime.Lexer
     // delegates
     // delegators
 
-	public minijava2Lexer()
+	public MiniJavaLexer()
 	{
 		OnCreated();
 	}
 
-	public minijava2Lexer(ICharStream input )
+	public MiniJavaLexer(ICharStream input )
 		: this(input, new RecognizerSharedState())
 	{
 	}
 
-	public minijava2Lexer(ICharStream input, RecognizerSharedState state)
+	public MiniJavaLexer(ICharStream input, RecognizerSharedState state)
 		: base(input, state)
 	{
 
 
 		OnCreated();
 	}
-	public override string GrammarFileName { get { return "D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\minijava2.g"; } }
+	public override string GrammarFileName { get { return "D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\MiniJava.g"; } }
 
 
 	partial void OnCreated();
@@ -138,9 +138,9 @@ public partial class minijava2Lexer : Antlr.Runtime.Lexer
 		{
 			int _type = CLASS;
 			int _channel = DefaultTokenChannel;
-			// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\minijava2.g:809:7: ( 'class' )
+			// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\MiniJava.g:809:7: ( 'class' )
 			DebugEnterAlt(1);
-			// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\minijava2.g:809:9: 'class'
+			// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\MiniJava.g:809:9: 'class'
 			{
 			DebugLocation(809, 9);
 			Match("class"); if (state.failed) return;
@@ -174,9 +174,9 @@ public partial class minijava2Lexer : Antlr.Runtime.Lexer
 		{
 			int _type = PUBLIC;
 			int _channel = DefaultTokenChannel;
-			// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\minijava2.g:810:8: ( 'public' )
+			// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\MiniJava.g:810:8: ( 'public' )
 			DebugEnterAlt(1);
-			// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\minijava2.g:810:10: 'public'
+			// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\MiniJava.g:810:10: 'public'
 			{
 			DebugLocation(810, 10);
 			Match("public"); if (state.failed) return;
@@ -210,9 +210,9 @@ public partial class minijava2Lexer : Antlr.Runtime.Lexer
 		{
 			int _type = STATIC;
 			int _channel = DefaultTokenChannel;
-			// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\minijava2.g:811:8: ( 'static' )
+			// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\MiniJava.g:811:8: ( 'static' )
 			DebugEnterAlt(1);
-			// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\minijava2.g:811:10: 'static'
+			// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\MiniJava.g:811:10: 'static'
 			{
 			DebugLocation(811, 10);
 			Match("static"); if (state.failed) return;
@@ -246,9 +246,9 @@ public partial class minijava2Lexer : Antlr.Runtime.Lexer
 		{
 			int _type = EXTENDS;
 			int _channel = DefaultTokenChannel;
-			// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\minijava2.g:812:9: ( 'extends' )
+			// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\MiniJava.g:812:9: ( 'extends' )
 			DebugEnterAlt(1);
-			// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\minijava2.g:812:11: 'extends'
+			// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\MiniJava.g:812:11: 'extends'
 			{
 			DebugLocation(812, 11);
 			Match("extends"); if (state.failed) return;
@@ -282,9 +282,9 @@ public partial class minijava2Lexer : Antlr.Runtime.Lexer
 		{
 			int _type = VOID;
 			int _channel = DefaultTokenChannel;
-			// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\minijava2.g:813:6: ( 'void' )
+			// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\MiniJava.g:813:6: ( 'void' )
 			DebugEnterAlt(1);
-			// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\minijava2.g:813:8: 'void'
+			// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\MiniJava.g:813:8: 'void'
 			{
 			DebugLocation(813, 8);
 			Match("void"); if (state.failed) return;
@@ -318,9 +318,9 @@ public partial class minijava2Lexer : Antlr.Runtime.Lexer
 		{
 			int _type = INT;
 			int _channel = DefaultTokenChannel;
-			// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\minijava2.g:814:5: ( 'int' )
+			// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\MiniJava.g:814:5: ( 'int' )
 			DebugEnterAlt(1);
-			// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\minijava2.g:814:7: 'int'
+			// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\MiniJava.g:814:7: 'int'
 			{
 			DebugLocation(814, 7);
 			Match("int"); if (state.failed) return;
@@ -354,9 +354,9 @@ public partial class minijava2Lexer : Antlr.Runtime.Lexer
 		{
 			int _type = DOUBLE;
 			int _channel = DefaultTokenChannel;
-			// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\minijava2.g:815:8: ( 'double' )
+			// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\MiniJava.g:815:8: ( 'double' )
 			DebugEnterAlt(1);
-			// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\minijava2.g:815:10: 'double'
+			// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\MiniJava.g:815:10: 'double'
 			{
 			DebugLocation(815, 10);
 			Match("double"); if (state.failed) return;
@@ -390,9 +390,9 @@ public partial class minijava2Lexer : Antlr.Runtime.Lexer
 		{
 			int _type = BOOLEAN;
 			int _channel = DefaultTokenChannel;
-			// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\minijava2.g:816:9: ( 'boolean' )
+			// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\MiniJava.g:816:9: ( 'boolean' )
 			DebugEnterAlt(1);
-			// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\minijava2.g:816:11: 'boolean'
+			// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\MiniJava.g:816:11: 'boolean'
 			{
 			DebugLocation(816, 11);
 			Match("boolean"); if (state.failed) return;
@@ -426,9 +426,9 @@ public partial class minijava2Lexer : Antlr.Runtime.Lexer
 		{
 			int _type = IF;
 			int _channel = DefaultTokenChannel;
-			// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\minijava2.g:817:4: ( 'if' )
+			// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\MiniJava.g:817:4: ( 'if' )
 			DebugEnterAlt(1);
-			// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\minijava2.g:817:6: 'if'
+			// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\MiniJava.g:817:6: 'if'
 			{
 			DebugLocation(817, 6);
 			Match("if"); if (state.failed) return;
@@ -462,9 +462,9 @@ public partial class minijava2Lexer : Antlr.Runtime.Lexer
 		{
 			int _type = ELSE;
 			int _channel = DefaultTokenChannel;
-			// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\minijava2.g:818:6: ( 'else' )
+			// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\MiniJava.g:818:6: ( 'else' )
 			DebugEnterAlt(1);
-			// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\minijava2.g:818:8: 'else'
+			// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\MiniJava.g:818:8: 'else'
 			{
 			DebugLocation(818, 8);
 			Match("else"); if (state.failed) return;
@@ -498,9 +498,9 @@ public partial class minijava2Lexer : Antlr.Runtime.Lexer
 		{
 			int _type = WHILE;
 			int _channel = DefaultTokenChannel;
-			// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\minijava2.g:819:7: ( 'while' )
+			// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\MiniJava.g:819:7: ( 'while' )
 			DebugEnterAlt(1);
-			// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\minijava2.g:819:9: 'while'
+			// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\MiniJava.g:819:9: 'while'
 			{
 			DebugLocation(819, 9);
 			Match("while"); if (state.failed) return;
@@ -534,9 +534,9 @@ public partial class minijava2Lexer : Antlr.Runtime.Lexer
 		{
 			int _type = RETURN;
 			int _channel = DefaultTokenChannel;
-			// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\minijava2.g:820:8: ( 'return' )
+			// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\MiniJava.g:820:8: ( 'return' )
 			DebugEnterAlt(1);
-			// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\minijava2.g:820:10: 'return'
+			// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\MiniJava.g:820:10: 'return'
 			{
 			DebugLocation(820, 10);
 			Match("return"); if (state.failed) return;
@@ -570,9 +570,9 @@ public partial class minijava2Lexer : Antlr.Runtime.Lexer
 		{
 			int _type = NULL;
 			int _channel = DefaultTokenChannel;
-			// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\minijava2.g:821:6: ( 'null' )
+			// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\MiniJava.g:821:6: ( 'null' )
 			DebugEnterAlt(1);
-			// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\minijava2.g:821:8: 'null'
+			// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\MiniJava.g:821:8: 'null'
 			{
 			DebugLocation(821, 8);
 			Match("null"); if (state.failed) return;
@@ -606,9 +606,9 @@ public partial class minijava2Lexer : Antlr.Runtime.Lexer
 		{
 			int _type = TRUE;
 			int _channel = DefaultTokenChannel;
-			// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\minijava2.g:822:6: ( 'true' )
+			// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\MiniJava.g:822:6: ( 'true' )
 			DebugEnterAlt(1);
-			// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\minijava2.g:822:8: 'true'
+			// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\MiniJava.g:822:8: 'true'
 			{
 			DebugLocation(822, 8);
 			Match("true"); if (state.failed) return;
@@ -642,9 +642,9 @@ public partial class minijava2Lexer : Antlr.Runtime.Lexer
 		{
 			int _type = FALSE;
 			int _channel = DefaultTokenChannel;
-			// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\minijava2.g:823:7: ( 'false' )
+			// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\MiniJava.g:823:7: ( 'false' )
 			DebugEnterAlt(1);
-			// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\minijava2.g:823:9: 'false'
+			// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\MiniJava.g:823:9: 'false'
 			{
 			DebugLocation(823, 9);
 			Match("false"); if (state.failed) return;
@@ -676,9 +676,9 @@ public partial class minijava2Lexer : Antlr.Runtime.Lexer
 		TraceIn("THIS", 16);
 		try
 		{
-			// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\minijava2.g:826:6: ( 'this' )
+			// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\MiniJava.g:826:6: ( 'this' )
 			DebugEnterAlt(1);
-			// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\minijava2.g:826:8: 'this'
+			// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\MiniJava.g:826:8: 'this'
 			{
 			DebugLocation(826, 8);
 			Match("this"); if (state.failed) return;
@@ -710,9 +710,9 @@ public partial class minijava2Lexer : Antlr.Runtime.Lexer
 		{
 			int _type = NEW;
 			int _channel = DefaultTokenChannel;
-			// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\minijava2.g:826:5: ( 'new' )
+			// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\MiniJava.g:826:5: ( 'new' )
 			DebugEnterAlt(1);
-			// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\minijava2.g:826:7: 'new'
+			// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\MiniJava.g:826:7: 'new'
 			{
 			DebugLocation(826, 7);
 			Match("new"); if (state.failed) return;
@@ -746,9 +746,9 @@ public partial class minijava2Lexer : Antlr.Runtime.Lexer
 		{
 			int _type = STRING;
 			int _channel = DefaultTokenChannel;
-			// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\minijava2.g:827:8: ( 'String' )
+			// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\MiniJava.g:827:8: ( 'String' )
 			DebugEnterAlt(1);
-			// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\minijava2.g:827:10: 'String'
+			// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\MiniJava.g:827:10: 'String'
 			{
 			DebugLocation(827, 10);
 			Match("String"); if (state.failed) return;
@@ -782,9 +782,9 @@ public partial class minijava2Lexer : Antlr.Runtime.Lexer
 		{
 			int _type = MAIN;
 			int _channel = DefaultTokenChannel;
-			// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\minijava2.g:828:6: ( 'main' )
+			// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\MiniJava.g:828:6: ( 'main' )
 			DebugEnterAlt(1);
-			// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\minijava2.g:828:8: 'main'
+			// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\MiniJava.g:828:8: 'main'
 			{
 			DebugLocation(828, 8);
 			Match("main"); if (state.failed) return;
@@ -818,9 +818,9 @@ public partial class minijava2Lexer : Antlr.Runtime.Lexer
 		{
 			int _type = PRINT;
 			int _channel = DefaultTokenChannel;
-			// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\minijava2.g:829:7: ( 'printf' )
+			// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\MiniJava.g:829:7: ( 'printf' )
 			DebugEnterAlt(1);
-			// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\minijava2.g:829:9: 'printf'
+			// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\MiniJava.g:829:9: 'printf'
 			{
 			DebugLocation(829, 9);
 			Match("printf"); if (state.failed) return;
@@ -854,9 +854,9 @@ public partial class minijava2Lexer : Antlr.Runtime.Lexer
 		{
 			int _type = PRINT2;
 			int _channel = DefaultTokenChannel;
-			// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\minijava2.g:830:8: ( 'System.out.println' )
+			// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\MiniJava.g:830:8: ( 'System.out.println' )
 			DebugEnterAlt(1);
-			// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\minijava2.g:830:10: 'System.out.println'
+			// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\MiniJava.g:830:10: 'System.out.println'
 			{
 			DebugLocation(830, 10);
 			Match("System.out.println"); if (state.failed) return;
@@ -888,9 +888,9 @@ public partial class minijava2Lexer : Antlr.Runtime.Lexer
 		TraceIn("LENGTH", 22);
 		try
 		{
-			// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\minijava2.g:834:8: ( 'length' )
+			// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\MiniJava.g:834:8: ( 'length' )
 			DebugEnterAlt(1);
-			// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\minijava2.g:834:10: 'length'
+			// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\MiniJava.g:834:10: 'length'
 			{
 			DebugLocation(834, 10);
 			Match("length"); if (state.failed) return;
@@ -922,9 +922,9 @@ public partial class minijava2Lexer : Antlr.Runtime.Lexer
 		{
 			int _type = PLUS;
 			int _channel = DefaultTokenChannel;
-			// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\minijava2.g:844:9: ( '+' )
+			// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\MiniJava.g:844:9: ( '+' )
 			DebugEnterAlt(1);
-			// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\minijava2.g:844:11: '+'
+			// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\MiniJava.g:844:11: '+'
 			{
 			DebugLocation(844, 11);
 			Match('+'); if (state.failed) return;
@@ -957,9 +957,9 @@ public partial class minijava2Lexer : Antlr.Runtime.Lexer
 		{
 			int _type = MINUS;
 			int _channel = DefaultTokenChannel;
-			// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\minijava2.g:845:9: ( '-' )
+			// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\MiniJava.g:845:9: ( '-' )
 			DebugEnterAlt(1);
-			// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\minijava2.g:845:11: '-'
+			// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\MiniJava.g:845:11: '-'
 			{
 			DebugLocation(845, 11);
 			Match('-'); if (state.failed) return;
@@ -992,9 +992,9 @@ public partial class minijava2Lexer : Antlr.Runtime.Lexer
 		{
 			int _type = STAR;
 			int _channel = DefaultTokenChannel;
-			// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\minijava2.g:846:9: ( '*' )
+			// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\MiniJava.g:846:9: ( '*' )
 			DebugEnterAlt(1);
-			// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\minijava2.g:846:11: '*'
+			// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\MiniJava.g:846:11: '*'
 			{
 			DebugLocation(846, 11);
 			Match('*'); if (state.failed) return;
@@ -1027,9 +1027,9 @@ public partial class minijava2Lexer : Antlr.Runtime.Lexer
 		{
 			int _type = DIV;
 			int _channel = DefaultTokenChannel;
-			// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\minijava2.g:847:9: ( '/' )
+			// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\MiniJava.g:847:9: ( '/' )
 			DebugEnterAlt(1);
-			// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\minijava2.g:847:11: '/'
+			// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\MiniJava.g:847:11: '/'
 			{
 			DebugLocation(847, 11);
 			Match('/'); if (state.failed) return;
@@ -1062,9 +1062,9 @@ public partial class minijava2Lexer : Antlr.Runtime.Lexer
 		{
 			int _type = LESS;
 			int _channel = DefaultTokenChannel;
-			// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\minijava2.g:848:9: ( '<' )
+			// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\MiniJava.g:848:9: ( '<' )
 			DebugEnterAlt(1);
-			// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\minijava2.g:848:11: '<'
+			// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\MiniJava.g:848:11: '<'
 			{
 			DebugLocation(848, 11);
 			Match('<'); if (state.failed) return;
@@ -1097,9 +1097,9 @@ public partial class minijava2Lexer : Antlr.Runtime.Lexer
 		{
 			int _type = LESSEQ;
 			int _channel = DefaultTokenChannel;
-			// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\minijava2.g:849:9: ( '<=' )
+			// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\MiniJava.g:849:9: ( '<=' )
 			DebugEnterAlt(1);
-			// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\minijava2.g:849:11: '<='
+			// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\MiniJava.g:849:11: '<='
 			{
 			DebugLocation(849, 11);
 			Match("<="); if (state.failed) return;
@@ -1133,9 +1133,9 @@ public partial class minijava2Lexer : Antlr.Runtime.Lexer
 		{
 			int _type = MOREEQ;
 			int _channel = DefaultTokenChannel;
-			// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\minijava2.g:850:9: ( '>=' )
+			// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\MiniJava.g:850:9: ( '>=' )
 			DebugEnterAlt(1);
-			// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\minijava2.g:850:11: '>='
+			// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\MiniJava.g:850:11: '>='
 			{
 			DebugLocation(850, 11);
 			Match(">="); if (state.failed) return;
@@ -1169,9 +1169,9 @@ public partial class minijava2Lexer : Antlr.Runtime.Lexer
 		{
 			int _type = MORE;
 			int _channel = DefaultTokenChannel;
-			// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\minijava2.g:851:9: ( '>' )
+			// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\MiniJava.g:851:9: ( '>' )
 			DebugEnterAlt(1);
-			// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\minijava2.g:851:11: '>'
+			// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\MiniJava.g:851:11: '>'
 			{
 			DebugLocation(851, 11);
 			Match('>'); if (state.failed) return;
@@ -1204,9 +1204,9 @@ public partial class minijava2Lexer : Antlr.Runtime.Lexer
 		{
 			int _type = EQUAL;
 			int _channel = DefaultTokenChannel;
-			// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\minijava2.g:852:9: ( '==' )
+			// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\MiniJava.g:852:9: ( '==' )
 			DebugEnterAlt(1);
-			// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\minijava2.g:852:11: '=='
+			// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\MiniJava.g:852:11: '=='
 			{
 			DebugLocation(852, 11);
 			Match("=="); if (state.failed) return;
@@ -1240,9 +1240,9 @@ public partial class minijava2Lexer : Antlr.Runtime.Lexer
 		{
 			int _type = NEQUAL;
 			int _channel = DefaultTokenChannel;
-			// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\minijava2.g:853:9: ( '!=' )
+			// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\MiniJava.g:853:9: ( '!=' )
 			DebugEnterAlt(1);
-			// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\minijava2.g:853:11: '!='
+			// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\MiniJava.g:853:11: '!='
 			{
 			DebugLocation(853, 11);
 			Match("!="); if (state.failed) return;
@@ -1276,9 +1276,9 @@ public partial class minijava2Lexer : Antlr.Runtime.Lexer
 		{
 			int _type = LAND;
 			int _channel = DefaultTokenChannel;
-			// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\minijava2.g:854:9: ( '&&' )
+			// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\MiniJava.g:854:9: ( '&&' )
 			DebugEnterAlt(1);
-			// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\minijava2.g:854:11: '&&'
+			// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\MiniJava.g:854:11: '&&'
 			{
 			DebugLocation(854, 11);
 			Match("&&"); if (state.failed) return;
@@ -1312,9 +1312,9 @@ public partial class minijava2Lexer : Antlr.Runtime.Lexer
 		{
 			int _type = LOR;
 			int _channel = DefaultTokenChannel;
-			// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\minijava2.g:855:9: ( '||' )
+			// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\MiniJava.g:855:9: ( '||' )
 			DebugEnterAlt(1);
-			// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\minijava2.g:855:11: '||'
+			// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\MiniJava.g:855:11: '||'
 			{
 			DebugLocation(855, 11);
 			Match("||"); if (state.failed) return;
@@ -1348,9 +1348,9 @@ public partial class minijava2Lexer : Antlr.Runtime.Lexer
 		{
 			int _type = LNOT;
 			int _channel = DefaultTokenChannel;
-			// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\minijava2.g:856:9: ( '!' )
+			// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\MiniJava.g:856:9: ( '!' )
 			DebugEnterAlt(1);
-			// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\minijava2.g:856:11: '!'
+			// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\MiniJava.g:856:11: '!'
 			{
 			DebugLocation(856, 11);
 			Match('!'); if (state.failed) return;
@@ -1383,9 +1383,9 @@ public partial class minijava2Lexer : Antlr.Runtime.Lexer
 		{
 			int _type = SEMI;
 			int _channel = DefaultTokenChannel;
-			// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\minijava2.g:859:9: ( ';' )
+			// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\MiniJava.g:859:9: ( ';' )
 			DebugEnterAlt(1);
-			// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\minijava2.g:859:11: ';'
+			// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\MiniJava.g:859:11: ';'
 			{
 			DebugLocation(859, 11);
 			Match(';'); if (state.failed) return;
@@ -1418,9 +1418,9 @@ public partial class minijava2Lexer : Antlr.Runtime.Lexer
 		{
 			int _type = DOT;
 			int _channel = DefaultTokenChannel;
-			// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\minijava2.g:860:9: ( '.' )
+			// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\MiniJava.g:860:9: ( '.' )
 			DebugEnterAlt(1);
-			// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\minijava2.g:860:11: '.'
+			// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\MiniJava.g:860:11: '.'
 			{
 			DebugLocation(860, 11);
 			Match('.'); if (state.failed) return;
@@ -1453,9 +1453,9 @@ public partial class minijava2Lexer : Antlr.Runtime.Lexer
 		{
 			int _type = COMMA;
 			int _channel = DefaultTokenChannel;
-			// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\minijava2.g:861:9: ( ',' )
+			// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\MiniJava.g:861:9: ( ',' )
 			DebugEnterAlt(1);
-			// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\minijava2.g:861:11: ','
+			// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\MiniJava.g:861:11: ','
 			{
 			DebugLocation(861, 11);
 			Match(','); if (state.failed) return;
@@ -1488,9 +1488,9 @@ public partial class minijava2Lexer : Antlr.Runtime.Lexer
 		{
 			int _type = ASSIGN;
 			int _channel = DefaultTokenChannel;
-			// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\minijava2.g:862:9: ( '=' )
+			// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\MiniJava.g:862:9: ( '=' )
 			DebugEnterAlt(1);
-			// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\minijava2.g:862:11: '='
+			// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\MiniJava.g:862:11: '='
 			{
 			DebugLocation(862, 11);
 			Match('='); if (state.failed) return;
@@ -1523,9 +1523,9 @@ public partial class minijava2Lexer : Antlr.Runtime.Lexer
 		{
 			int _type = LPAREN;
 			int _channel = DefaultTokenChannel;
-			// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\minijava2.g:863:9: ( '(' )
+			// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\MiniJava.g:863:9: ( '(' )
 			DebugEnterAlt(1);
-			// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\minijava2.g:863:11: '('
+			// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\MiniJava.g:863:11: '('
 			{
 			DebugLocation(863, 11);
 			Match('('); if (state.failed) return;
@@ -1558,9 +1558,9 @@ public partial class minijava2Lexer : Antlr.Runtime.Lexer
 		{
 			int _type = RPAREN;
 			int _channel = DefaultTokenChannel;
-			// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\minijava2.g:864:9: ( ')' )
+			// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\MiniJava.g:864:9: ( ')' )
 			DebugEnterAlt(1);
-			// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\minijava2.g:864:11: ')'
+			// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\MiniJava.g:864:11: ')'
 			{
 			DebugLocation(864, 11);
 			Match(')'); if (state.failed) return;
@@ -1593,9 +1593,9 @@ public partial class minijava2Lexer : Antlr.Runtime.Lexer
 		{
 			int _type = LCURLY;
 			int _channel = DefaultTokenChannel;
-			// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\minijava2.g:865:9: ( '{' )
+			// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\MiniJava.g:865:9: ( '{' )
 			DebugEnterAlt(1);
-			// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\minijava2.g:865:11: '{'
+			// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\MiniJava.g:865:11: '{'
 			{
 			DebugLocation(865, 11);
 			Match('{'); if (state.failed) return;
@@ -1628,9 +1628,9 @@ public partial class minijava2Lexer : Antlr.Runtime.Lexer
 		{
 			int _type = RCURLY;
 			int _channel = DefaultTokenChannel;
-			// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\minijava2.g:866:9: ( '}' )
+			// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\MiniJava.g:866:9: ( '}' )
 			DebugEnterAlt(1);
-			// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\minijava2.g:866:11: '}'
+			// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\MiniJava.g:866:11: '}'
 			{
 			DebugLocation(866, 11);
 			Match('}'); if (state.failed) return;
@@ -1663,9 +1663,9 @@ public partial class minijava2Lexer : Antlr.Runtime.Lexer
 		{
 			int _type = LBRACK;
 			int _channel = DefaultTokenChannel;
-			// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\minijava2.g:867:9: ( '[' )
+			// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\MiniJava.g:867:9: ( '[' )
 			DebugEnterAlt(1);
-			// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\minijava2.g:867:11: '['
+			// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\MiniJava.g:867:11: '['
 			{
 			DebugLocation(867, 11);
 			Match('['); if (state.failed) return;
@@ -1698,9 +1698,9 @@ public partial class minijava2Lexer : Antlr.Runtime.Lexer
 		{
 			int _type = RBRACK;
 			int _channel = DefaultTokenChannel;
-			// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\minijava2.g:868:9: ( ']' )
+			// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\MiniJava.g:868:9: ( ']' )
 			DebugEnterAlt(1);
-			// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\minijava2.g:868:11: ']'
+			// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\MiniJava.g:868:11: ']'
 			{
 			DebugLocation(868, 11);
 			Match(']'); if (state.failed) return;
@@ -1731,9 +1731,9 @@ public partial class minijava2Lexer : Antlr.Runtime.Lexer
 		TraceIn("LETTER", 46);
 		try
 		{
-			// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\minijava2.g:874:7: ( ( 'a' .. 'z' | 'A' .. 'Z' | '_' ) )
+			// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\MiniJava.g:874:7: ( ( 'a' .. 'z' | 'A' .. 'Z' | '_' ) )
 			DebugEnterAlt(1);
-			// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\minijava2.g:
+			// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\MiniJava.g:
 			{
 			DebugLocation(874, 7);
 			if ((input.LA(1)>='A' && input.LA(1)<='Z')||input.LA(1)=='_'||(input.LA(1)>='a' && input.LA(1)<='z'))
@@ -1774,9 +1774,9 @@ public partial class minijava2Lexer : Antlr.Runtime.Lexer
 		TraceIn("DIGIT", 47);
 		try
 		{
-			// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\minijava2.g:879:6: ( ( '0' .. '9' ) )
+			// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\MiniJava.g:879:6: ( ( '0' .. '9' ) )
 			DebugEnterAlt(1);
-			// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\minijava2.g:
+			// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\MiniJava.g:
 			{
 			DebugLocation(879, 6);
 			if ((input.LA(1)>='0' && input.LA(1)<='9'))
@@ -1819,7 +1819,7 @@ public partial class minijava2Lexer : Antlr.Runtime.Lexer
 		{
 			int _type = ID;
 			int _channel = DefaultTokenChannel;
-			// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\minijava2.g:885:2: ( ( 'System.out.println' ~ ( 'a' .. 'z' | 'A' .. 'Z' | DIGIT ) )=> 'System.out.println' | ( ( LETTER ) ( LETTER | DIGIT )* ) )
+			// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\MiniJava.g:885:2: ( ( 'System.out.println' ~ ( 'a' .. 'z' | 'A' .. 'Z' | DIGIT ) )=> 'System.out.println' | ( ( LETTER ) ( LETTER | DIGIT )* ) )
 			int alt2=2;
 			try { DebugEnterDecision(2, false);
 			int LA2_0 = input.LA(1);
@@ -1848,7 +1848,7 @@ public partial class minijava2Lexer : Antlr.Runtime.Lexer
 								{
 									int LA2_7 = input.LA(7);
 
-									if ((LA2_7=='.') && (EvaluatePredicate(synpred1_minijava2_fragment)))
+									if ((LA2_7=='.') && (EvaluatePredicate(synpred1_MiniJava_fragment)))
 									{
 										alt2 = 1;
 									}
@@ -1892,7 +1892,7 @@ public partial class minijava2Lexer : Antlr.Runtime.Lexer
 			{
 			case 1:
 				DebugEnterAlt(1);
-				// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\minijava2.g:893:3: ( 'System.out.println' ~ ( 'a' .. 'z' | 'A' .. 'Z' | DIGIT ) )=> 'System.out.println'
+				// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\MiniJava.g:893:3: ( 'System.out.println' ~ ( 'a' .. 'z' | 'A' .. 'Z' | DIGIT ) )=> 'System.out.println'
 				{
 				DebugLocation(893, 61);
 				Match("System.out.println"); if (state.failed) return;
@@ -1902,18 +1902,18 @@ public partial class minijava2Lexer : Antlr.Runtime.Lexer
 				break;
 			case 2:
 				DebugEnterAlt(2);
-				// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\minijava2.g:895:3: ( ( LETTER ) ( LETTER | DIGIT )* )
+				// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\MiniJava.g:895:3: ( ( LETTER ) ( LETTER | DIGIT )* )
 				{
 				DebugLocation(895, 3);
-				// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\minijava2.g:895:3: ( ( LETTER ) ( LETTER | DIGIT )* )
+				// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\MiniJava.g:895:3: ( ( LETTER ) ( LETTER | DIGIT )* )
 				DebugEnterAlt(1);
-				// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\minijava2.g:895:6: ( LETTER ) ( LETTER | DIGIT )*
+				// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\MiniJava.g:895:6: ( LETTER ) ( LETTER | DIGIT )*
 				{
 				DebugLocation(895, 6);
 				input.Consume();
 				state.failed=false;
 				DebugLocation(895, 15);
-				// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\minijava2.g:895:15: ( LETTER | DIGIT )*
+				// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\MiniJava.g:895:15: ( LETTER | DIGIT )*
 				try { DebugEnterSubRule(1);
 				while (true)
 				{
@@ -1932,7 +1932,7 @@ public partial class minijava2Lexer : Antlr.Runtime.Lexer
 					{
 					case 1:
 						DebugEnterAlt(1);
-						// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\minijava2.g:
+						// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\MiniJava.g:
 						{
 						DebugLocation(895, 15);
 						input.Consume();
@@ -1985,12 +1985,12 @@ public partial class minijava2Lexer : Antlr.Runtime.Lexer
 		{
 			int _type = INTEGER;
 			int _channel = DefaultTokenChannel;
-			// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\minijava2.g:904:2: ( ( DIGIT )+ )
+			// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\MiniJava.g:904:2: ( ( DIGIT )+ )
 			DebugEnterAlt(1);
-			// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\minijava2.g:905:3: ( DIGIT )+
+			// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\MiniJava.g:905:3: ( DIGIT )+
 			{
 			DebugLocation(905, 3);
-			// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\minijava2.g:905:3: ( DIGIT )+
+			// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\MiniJava.g:905:3: ( DIGIT )+
 			int cnt3=0;
 			try { DebugEnterSubRule(3);
 			while (true)
@@ -2010,7 +2010,7 @@ public partial class minijava2Lexer : Antlr.Runtime.Lexer
 				{
 				case 1:
 					DebugEnterAlt(1);
-					// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\minijava2.g:
+					// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\MiniJava.g:
 					{
 					DebugLocation(905, 3);
 					input.Consume();
@@ -2064,7 +2064,7 @@ public partial class minijava2Lexer : Antlr.Runtime.Lexer
 		{
 			int _type = FLOAT;
 			int _channel = DefaultTokenChannel;
-			// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\minijava2.g:910:5: ( ( DIGIT )+ '.' ( DIGIT )* ( EXPONENT )? | '.' ( DIGIT )+ ( EXPONENT )? | ( DIGIT )+ EXPONENT )
+			// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\MiniJava.g:910:5: ( ( DIGIT )+ '.' ( DIGIT )* ( EXPONENT )? | '.' ( DIGIT )+ ( EXPONENT )? | ( DIGIT )+ EXPONENT )
 			int alt10=3;
 			try { DebugEnterDecision(10, false);
 			try
@@ -2081,10 +2081,10 @@ public partial class minijava2Lexer : Antlr.Runtime.Lexer
 			{
 			case 1:
 				DebugEnterAlt(1);
-				// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\minijava2.g:911:3: ( DIGIT )+ '.' ( DIGIT )* ( EXPONENT )?
+				// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\MiniJava.g:911:3: ( DIGIT )+ '.' ( DIGIT )* ( EXPONENT )?
 				{
 				DebugLocation(911, 3);
-				// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\minijava2.g:911:3: ( DIGIT )+
+				// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\MiniJava.g:911:3: ( DIGIT )+
 				int cnt4=0;
 				try { DebugEnterSubRule(4);
 				while (true)
@@ -2104,7 +2104,7 @@ public partial class minijava2Lexer : Antlr.Runtime.Lexer
 					{
 					case 1:
 						DebugEnterAlt(1);
-						// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\minijava2.g:
+						// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\MiniJava.g:
 						{
 						DebugLocation(911, 3);
 						input.Consume();
@@ -2132,7 +2132,7 @@ public partial class minijava2Lexer : Antlr.Runtime.Lexer
 				DebugLocation(911, 12);
 				Match('.'); if (state.failed) return;
 				DebugLocation(911, 16);
-				// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\minijava2.g:911:16: ( DIGIT )*
+				// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\MiniJava.g:911:16: ( DIGIT )*
 				try { DebugEnterSubRule(5);
 				while (true)
 				{
@@ -2151,7 +2151,7 @@ public partial class minijava2Lexer : Antlr.Runtime.Lexer
 					{
 					case 1:
 						DebugEnterAlt(1);
-						// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\minijava2.g:
+						// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\MiniJava.g:
 						{
 						DebugLocation(911, 16);
 						input.Consume();
@@ -2171,7 +2171,7 @@ public partial class minijava2Lexer : Antlr.Runtime.Lexer
 				} finally { DebugExitSubRule(5); }
 
 				DebugLocation(911, 25);
-				// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\minijava2.g:911:25: ( EXPONENT )?
+				// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\MiniJava.g:911:25: ( EXPONENT )?
 				int alt6=2;
 				try { DebugEnterSubRule(6);
 				try { DebugEnterDecision(6, false);
@@ -2186,7 +2186,7 @@ public partial class minijava2Lexer : Antlr.Runtime.Lexer
 				{
 				case 1:
 					DebugEnterAlt(1);
-					// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\minijava2.g:911:25: EXPONENT
+					// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\MiniJava.g:911:25: EXPONENT
 					{
 					DebugLocation(911, 25);
 					mEXPONENT(); if (state.failed) return;
@@ -2202,12 +2202,12 @@ public partial class minijava2Lexer : Antlr.Runtime.Lexer
 				break;
 			case 2:
 				DebugEnterAlt(2);
-				// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\minijava2.g:913:3: '.' ( DIGIT )+ ( EXPONENT )?
+				// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\MiniJava.g:913:3: '.' ( DIGIT )+ ( EXPONENT )?
 				{
 				DebugLocation(913, 3);
 				Match('.'); if (state.failed) return;
 				DebugLocation(913, 7);
-				// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\minijava2.g:913:7: ( DIGIT )+
+				// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\MiniJava.g:913:7: ( DIGIT )+
 				int cnt7=0;
 				try { DebugEnterSubRule(7);
 				while (true)
@@ -2227,7 +2227,7 @@ public partial class minijava2Lexer : Antlr.Runtime.Lexer
 					{
 					case 1:
 						DebugEnterAlt(1);
-						// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\minijava2.g:
+						// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\MiniJava.g:
 						{
 						DebugLocation(913, 7);
 						input.Consume();
@@ -2253,7 +2253,7 @@ public partial class minijava2Lexer : Antlr.Runtime.Lexer
 				} finally { DebugExitSubRule(7); }
 
 				DebugLocation(913, 16);
-				// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\minijava2.g:913:16: ( EXPONENT )?
+				// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\MiniJava.g:913:16: ( EXPONENT )?
 				int alt8=2;
 				try { DebugEnterSubRule(8);
 				try { DebugEnterDecision(8, false);
@@ -2268,7 +2268,7 @@ public partial class minijava2Lexer : Antlr.Runtime.Lexer
 				{
 				case 1:
 					DebugEnterAlt(1);
-					// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\minijava2.g:913:16: EXPONENT
+					// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\MiniJava.g:913:16: EXPONENT
 					{
 					DebugLocation(913, 16);
 					mEXPONENT(); if (state.failed) return;
@@ -2284,10 +2284,10 @@ public partial class minijava2Lexer : Antlr.Runtime.Lexer
 				break;
 			case 3:
 				DebugEnterAlt(3);
-				// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\minijava2.g:915:3: ( DIGIT )+ EXPONENT
+				// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\MiniJava.g:915:3: ( DIGIT )+ EXPONENT
 				{
 				DebugLocation(915, 3);
-				// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\minijava2.g:915:3: ( DIGIT )+
+				// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\MiniJava.g:915:3: ( DIGIT )+
 				int cnt9=0;
 				try { DebugEnterSubRule(9);
 				while (true)
@@ -2307,7 +2307,7 @@ public partial class minijava2Lexer : Antlr.Runtime.Lexer
 					{
 					case 1:
 						DebugEnterAlt(1);
-						// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\minijava2.g:
+						// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\MiniJava.g:
 						{
 						DebugLocation(915, 3);
 						input.Consume();
@@ -2363,9 +2363,9 @@ public partial class minijava2Lexer : Antlr.Runtime.Lexer
 		TraceIn("EXPONENT", 51);
 		try
 		{
-			// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\minijava2.g:921:10: ( ( 'e' | 'E' ) ( '+' | '-' )? ( DIGIT )+ )
+			// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\MiniJava.g:921:10: ( ( 'e' | 'E' ) ( '+' | '-' )? ( DIGIT )+ )
 			DebugEnterAlt(1);
-			// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\minijava2.g:921:12: ( 'e' | 'E' ) ( '+' | '-' )? ( DIGIT )+
+			// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\MiniJava.g:921:12: ( 'e' | 'E' ) ( '+' | '-' )? ( DIGIT )+
 			{
 			DebugLocation(921, 12);
 			if (input.LA(1)=='E'||input.LA(1)=='e')
@@ -2382,7 +2382,7 @@ public partial class minijava2Lexer : Antlr.Runtime.Lexer
 				throw mse;}
 
 			DebugLocation(921, 22);
-			// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\minijava2.g:921:22: ( '+' | '-' )?
+			// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\MiniJava.g:921:22: ( '+' | '-' )?
 			int alt11=2;
 			try { DebugEnterSubRule(11);
 			try { DebugEnterDecision(11, false);
@@ -2397,7 +2397,7 @@ public partial class minijava2Lexer : Antlr.Runtime.Lexer
 			{
 			case 1:
 				DebugEnterAlt(1);
-				// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\minijava2.g:
+				// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\MiniJava.g:
 				{
 				DebugLocation(921, 22);
 				input.Consume();
@@ -2410,7 +2410,7 @@ public partial class minijava2Lexer : Antlr.Runtime.Lexer
 			} finally { DebugExitSubRule(11); }
 
 			DebugLocation(921, 33);
-			// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\minijava2.g:921:33: ( DIGIT )+
+			// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\MiniJava.g:921:33: ( DIGIT )+
 			int cnt12=0;
 			try { DebugEnterSubRule(12);
 			while (true)
@@ -2430,7 +2430,7 @@ public partial class minijava2Lexer : Antlr.Runtime.Lexer
 				{
 				case 1:
 					DebugEnterAlt(1);
-					// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\minijava2.g:
+					// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\MiniJava.g:
 					{
 					DebugLocation(921, 33);
 					input.Consume();
@@ -2482,9 +2482,9 @@ public partial class minijava2Lexer : Antlr.Runtime.Lexer
 		{
 			int _type = WHITESPACE;
 			int _channel = DefaultTokenChannel;
-			// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\minijava2.g:924:2: ( ( ' ' | '\\t' | '\\r' | '\\n' ) )
+			// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\MiniJava.g:924:2: ( ( ' ' | '\\t' | '\\r' | '\\n' ) )
 			DebugEnterAlt(1);
-			// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\minijava2.g:925:5: ( ' ' | '\\t' | '\\r' | '\\n' )
+			// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\MiniJava.g:925:5: ( ' ' | '\\t' | '\\r' | '\\n' )
 			{
 			DebugLocation(925, 5);
 			if ((input.LA(1)>='\t' && input.LA(1)<='\n')||input.LA(1)=='\r'||input.LA(1)==' ')
@@ -2534,15 +2534,15 @@ public partial class minijava2Lexer : Antlr.Runtime.Lexer
 		{
 			int _type = LINE_COMMENT;
 			int _channel = DefaultTokenChannel;
-			// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\minijava2.g:933:2: ( '//' (~ ( '\\n' | '\\r' ) )* ( '\\r' )? '\\n' )
+			// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\MiniJava.g:933:2: ( '//' (~ ( '\\n' | '\\r' ) )* ( '\\r' )? '\\n' )
 			DebugEnterAlt(1);
-			// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\minijava2.g:934:3: '//' (~ ( '\\n' | '\\r' ) )* ( '\\r' )? '\\n'
+			// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\MiniJava.g:934:3: '//' (~ ( '\\n' | '\\r' ) )* ( '\\r' )? '\\n'
 			{
 			DebugLocation(934, 3);
 			Match("//"); if (state.failed) return;
 
 			DebugLocation(934, 8);
-			// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\minijava2.g:934:8: (~ ( '\\n' | '\\r' ) )*
+			// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\MiniJava.g:934:8: (~ ( '\\n' | '\\r' ) )*
 			try { DebugEnterSubRule(13);
 			while (true)
 			{
@@ -2561,7 +2561,7 @@ public partial class minijava2Lexer : Antlr.Runtime.Lexer
 				{
 				case 1:
 					DebugEnterAlt(1);
-					// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\minijava2.g:
+					// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\MiniJava.g:
 					{
 					DebugLocation(934, 8);
 					input.Consume();
@@ -2581,7 +2581,7 @@ public partial class minijava2Lexer : Antlr.Runtime.Lexer
 			} finally { DebugExitSubRule(13); }
 
 			DebugLocation(934, 22);
-			// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\minijava2.g:934:22: ( '\\r' )?
+			// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\MiniJava.g:934:22: ( '\\r' )?
 			int alt14=2;
 			try { DebugEnterSubRule(14);
 			try { DebugEnterDecision(14, false);
@@ -2596,7 +2596,7 @@ public partial class minijava2Lexer : Antlr.Runtime.Lexer
 			{
 			case 1:
 				DebugEnterAlt(1);
-				// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\minijava2.g:934:22: '\\r'
+				// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\MiniJava.g:934:22: '\\r'
 				{
 				DebugLocation(934, 22);
 				Match('\r'); if (state.failed) return;
@@ -2643,15 +2643,15 @@ public partial class minijava2Lexer : Antlr.Runtime.Lexer
 		{
 			int _type = BLOCK_COMMENT;
 			int _channel = DefaultTokenChannel;
-			// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\minijava2.g:938:2: ( '/*' ( options {greedy=false; } : . )* '*/' )
+			// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\MiniJava.g:938:2: ( '/*' ( options {greedy=false; } : . )* '*/' )
 			DebugEnterAlt(1);
-			// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\minijava2.g:939:3: '/*' ( options {greedy=false; } : . )* '*/'
+			// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\MiniJava.g:939:3: '/*' ( options {greedy=false; } : . )* '*/'
 			{
 			DebugLocation(939, 3);
 			Match("/*"); if (state.failed) return;
 
 			DebugLocation(939, 8);
-			// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\minijava2.g:939:8: ( options {greedy=false; } : . )*
+			// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\MiniJava.g:939:8: ( options {greedy=false; } : . )*
 			try { DebugEnterSubRule(15);
 			while (true)
 			{
@@ -2685,7 +2685,7 @@ public partial class minijava2Lexer : Antlr.Runtime.Lexer
 				{
 				case 1:
 					DebugEnterAlt(1);
-					// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\minijava2.g:939:36: .
+					// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\MiniJava.g:939:36: .
 					{
 					DebugLocation(939, 36);
 					MatchAny(); if (state.failed) return;
@@ -2728,7 +2728,7 @@ public partial class minijava2Lexer : Antlr.Runtime.Lexer
 
 	public override void mTokens()
 	{
-		// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\minijava2.g:1:8: ( CLASS | PUBLIC | STATIC | EXTENDS | VOID | INT | DOUBLE | BOOLEAN | IF | ELSE | WHILE | RETURN | NULL | TRUE | FALSE | NEW | STRING | MAIN | PRINT | PRINT2 | PLUS | MINUS | STAR | DIV | LESS | LESSEQ | MOREEQ | MORE | EQUAL | NEQUAL | LAND | LOR | LNOT | SEMI | DOT | COMMA | ASSIGN | LPAREN | RPAREN | LCURLY | RCURLY | LBRACK | RBRACK | ID | INTEGER | FLOAT | WHITESPACE | LINE_COMMENT | BLOCK_COMMENT )
+		// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\MiniJava.g:1:8: ( CLASS | PUBLIC | STATIC | EXTENDS | VOID | INT | DOUBLE | BOOLEAN | IF | ELSE | WHILE | RETURN | NULL | TRUE | FALSE | NEW | STRING | MAIN | PRINT | PRINT2 | PLUS | MINUS | STAR | DIV | LESS | LESSEQ | MOREEQ | MORE | EQUAL | NEQUAL | LAND | LOR | LNOT | SEMI | DOT | COMMA | ASSIGN | LPAREN | RPAREN | LCURLY | RCURLY | LBRACK | RBRACK | ID | INTEGER | FLOAT | WHITESPACE | LINE_COMMENT | BLOCK_COMMENT )
 		int alt16=49;
 		try { DebugEnterDecision(16, false);
 		try
@@ -2745,7 +2745,7 @@ public partial class minijava2Lexer : Antlr.Runtime.Lexer
 		{
 		case 1:
 			DebugEnterAlt(1);
-			// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\minijava2.g:1:10: CLASS
+			// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\MiniJava.g:1:10: CLASS
 			{
 			DebugLocation(1, 10);
 			mCLASS(); if (state.failed) return;
@@ -2754,7 +2754,7 @@ public partial class minijava2Lexer : Antlr.Runtime.Lexer
 			break;
 		case 2:
 			DebugEnterAlt(2);
-			// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\minijava2.g:1:16: PUBLIC
+			// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\MiniJava.g:1:16: PUBLIC
 			{
 			DebugLocation(1, 16);
 			mPUBLIC(); if (state.failed) return;
@@ -2763,7 +2763,7 @@ public partial class minijava2Lexer : Antlr.Runtime.Lexer
 			break;
 		case 3:
 			DebugEnterAlt(3);
-			// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\minijava2.g:1:23: STATIC
+			// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\MiniJava.g:1:23: STATIC
 			{
 			DebugLocation(1, 23);
 			mSTATIC(); if (state.failed) return;
@@ -2772,7 +2772,7 @@ public partial class minijava2Lexer : Antlr.Runtime.Lexer
 			break;
 		case 4:
 			DebugEnterAlt(4);
-			// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\minijava2.g:1:30: EXTENDS
+			// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\MiniJava.g:1:30: EXTENDS
 			{
 			DebugLocation(1, 30);
 			mEXTENDS(); if (state.failed) return;
@@ -2781,7 +2781,7 @@ public partial class minijava2Lexer : Antlr.Runtime.Lexer
 			break;
 		case 5:
 			DebugEnterAlt(5);
-			// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\minijava2.g:1:38: VOID
+			// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\MiniJava.g:1:38: VOID
 			{
 			DebugLocation(1, 38);
 			mVOID(); if (state.failed) return;
@@ -2790,7 +2790,7 @@ public partial class minijava2Lexer : Antlr.Runtime.Lexer
 			break;
 		case 6:
 			DebugEnterAlt(6);
-			// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\minijava2.g:1:43: INT
+			// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\MiniJava.g:1:43: INT
 			{
 			DebugLocation(1, 43);
 			mINT(); if (state.failed) return;
@@ -2799,7 +2799,7 @@ public partial class minijava2Lexer : Antlr.Runtime.Lexer
 			break;
 		case 7:
 			DebugEnterAlt(7);
-			// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\minijava2.g:1:47: DOUBLE
+			// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\MiniJava.g:1:47: DOUBLE
 			{
 			DebugLocation(1, 47);
 			mDOUBLE(); if (state.failed) return;
@@ -2808,7 +2808,7 @@ public partial class minijava2Lexer : Antlr.Runtime.Lexer
 			break;
 		case 8:
 			DebugEnterAlt(8);
-			// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\minijava2.g:1:54: BOOLEAN
+			// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\MiniJava.g:1:54: BOOLEAN
 			{
 			DebugLocation(1, 54);
 			mBOOLEAN(); if (state.failed) return;
@@ -2817,7 +2817,7 @@ public partial class minijava2Lexer : Antlr.Runtime.Lexer
 			break;
 		case 9:
 			DebugEnterAlt(9);
-			// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\minijava2.g:1:62: IF
+			// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\MiniJava.g:1:62: IF
 			{
 			DebugLocation(1, 62);
 			mIF(); if (state.failed) return;
@@ -2826,7 +2826,7 @@ public partial class minijava2Lexer : Antlr.Runtime.Lexer
 			break;
 		case 10:
 			DebugEnterAlt(10);
-			// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\minijava2.g:1:65: ELSE
+			// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\MiniJava.g:1:65: ELSE
 			{
 			DebugLocation(1, 65);
 			mELSE(); if (state.failed) return;
@@ -2835,7 +2835,7 @@ public partial class minijava2Lexer : Antlr.Runtime.Lexer
 			break;
 		case 11:
 			DebugEnterAlt(11);
-			// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\minijava2.g:1:70: WHILE
+			// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\MiniJava.g:1:70: WHILE
 			{
 			DebugLocation(1, 70);
 			mWHILE(); if (state.failed) return;
@@ -2844,7 +2844,7 @@ public partial class minijava2Lexer : Antlr.Runtime.Lexer
 			break;
 		case 12:
 			DebugEnterAlt(12);
-			// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\minijava2.g:1:76: RETURN
+			// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\MiniJava.g:1:76: RETURN
 			{
 			DebugLocation(1, 76);
 			mRETURN(); if (state.failed) return;
@@ -2853,7 +2853,7 @@ public partial class minijava2Lexer : Antlr.Runtime.Lexer
 			break;
 		case 13:
 			DebugEnterAlt(13);
-			// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\minijava2.g:1:83: NULL
+			// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\MiniJava.g:1:83: NULL
 			{
 			DebugLocation(1, 83);
 			mNULL(); if (state.failed) return;
@@ -2862,7 +2862,7 @@ public partial class minijava2Lexer : Antlr.Runtime.Lexer
 			break;
 		case 14:
 			DebugEnterAlt(14);
-			// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\minijava2.g:1:88: TRUE
+			// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\MiniJava.g:1:88: TRUE
 			{
 			DebugLocation(1, 88);
 			mTRUE(); if (state.failed) return;
@@ -2871,7 +2871,7 @@ public partial class minijava2Lexer : Antlr.Runtime.Lexer
 			break;
 		case 15:
 			DebugEnterAlt(15);
-			// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\minijava2.g:1:93: FALSE
+			// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\MiniJava.g:1:93: FALSE
 			{
 			DebugLocation(1, 93);
 			mFALSE(); if (state.failed) return;
@@ -2880,7 +2880,7 @@ public partial class minijava2Lexer : Antlr.Runtime.Lexer
 			break;
 		case 16:
 			DebugEnterAlt(16);
-			// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\minijava2.g:1:99: NEW
+			// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\MiniJava.g:1:99: NEW
 			{
 			DebugLocation(1, 99);
 			mNEW(); if (state.failed) return;
@@ -2889,7 +2889,7 @@ public partial class minijava2Lexer : Antlr.Runtime.Lexer
 			break;
 		case 17:
 			DebugEnterAlt(17);
-			// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\minijava2.g:1:103: STRING
+			// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\MiniJava.g:1:103: STRING
 			{
 			DebugLocation(1, 103);
 			mSTRING(); if (state.failed) return;
@@ -2898,7 +2898,7 @@ public partial class minijava2Lexer : Antlr.Runtime.Lexer
 			break;
 		case 18:
 			DebugEnterAlt(18);
-			// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\minijava2.g:1:110: MAIN
+			// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\MiniJava.g:1:110: MAIN
 			{
 			DebugLocation(1, 110);
 			mMAIN(); if (state.failed) return;
@@ -2907,7 +2907,7 @@ public partial class minijava2Lexer : Antlr.Runtime.Lexer
 			break;
 		case 19:
 			DebugEnterAlt(19);
-			// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\minijava2.g:1:115: PRINT
+			// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\MiniJava.g:1:115: PRINT
 			{
 			DebugLocation(1, 115);
 			mPRINT(); if (state.failed) return;
@@ -2916,7 +2916,7 @@ public partial class minijava2Lexer : Antlr.Runtime.Lexer
 			break;
 		case 20:
 			DebugEnterAlt(20);
-			// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\minijava2.g:1:121: PRINT2
+			// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\MiniJava.g:1:121: PRINT2
 			{
 			DebugLocation(1, 121);
 			mPRINT2(); if (state.failed) return;
@@ -2925,7 +2925,7 @@ public partial class minijava2Lexer : Antlr.Runtime.Lexer
 			break;
 		case 21:
 			DebugEnterAlt(21);
-			// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\minijava2.g:1:128: PLUS
+			// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\MiniJava.g:1:128: PLUS
 			{
 			DebugLocation(1, 128);
 			mPLUS(); if (state.failed) return;
@@ -2934,7 +2934,7 @@ public partial class minijava2Lexer : Antlr.Runtime.Lexer
 			break;
 		case 22:
 			DebugEnterAlt(22);
-			// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\minijava2.g:1:133: MINUS
+			// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\MiniJava.g:1:133: MINUS
 			{
 			DebugLocation(1, 133);
 			mMINUS(); if (state.failed) return;
@@ -2943,7 +2943,7 @@ public partial class minijava2Lexer : Antlr.Runtime.Lexer
 			break;
 		case 23:
 			DebugEnterAlt(23);
-			// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\minijava2.g:1:139: STAR
+			// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\MiniJava.g:1:139: STAR
 			{
 			DebugLocation(1, 139);
 			mSTAR(); if (state.failed) return;
@@ -2952,7 +2952,7 @@ public partial class minijava2Lexer : Antlr.Runtime.Lexer
 			break;
 		case 24:
 			DebugEnterAlt(24);
-			// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\minijava2.g:1:144: DIV
+			// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\MiniJava.g:1:144: DIV
 			{
 			DebugLocation(1, 144);
 			mDIV(); if (state.failed) return;
@@ -2961,7 +2961,7 @@ public partial class minijava2Lexer : Antlr.Runtime.Lexer
 			break;
 		case 25:
 			DebugEnterAlt(25);
-			// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\minijava2.g:1:148: LESS
+			// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\MiniJava.g:1:148: LESS
 			{
 			DebugLocation(1, 148);
 			mLESS(); if (state.failed) return;
@@ -2970,7 +2970,7 @@ public partial class minijava2Lexer : Antlr.Runtime.Lexer
 			break;
 		case 26:
 			DebugEnterAlt(26);
-			// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\minijava2.g:1:153: LESSEQ
+			// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\MiniJava.g:1:153: LESSEQ
 			{
 			DebugLocation(1, 153);
 			mLESSEQ(); if (state.failed) return;
@@ -2979,7 +2979,7 @@ public partial class minijava2Lexer : Antlr.Runtime.Lexer
 			break;
 		case 27:
 			DebugEnterAlt(27);
-			// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\minijava2.g:1:160: MOREEQ
+			// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\MiniJava.g:1:160: MOREEQ
 			{
 			DebugLocation(1, 160);
 			mMOREEQ(); if (state.failed) return;
@@ -2988,7 +2988,7 @@ public partial class minijava2Lexer : Antlr.Runtime.Lexer
 			break;
 		case 28:
 			DebugEnterAlt(28);
-			// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\minijava2.g:1:167: MORE
+			// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\MiniJava.g:1:167: MORE
 			{
 			DebugLocation(1, 167);
 			mMORE(); if (state.failed) return;
@@ -2997,7 +2997,7 @@ public partial class minijava2Lexer : Antlr.Runtime.Lexer
 			break;
 		case 29:
 			DebugEnterAlt(29);
-			// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\minijava2.g:1:172: EQUAL
+			// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\MiniJava.g:1:172: EQUAL
 			{
 			DebugLocation(1, 172);
 			mEQUAL(); if (state.failed) return;
@@ -3006,7 +3006,7 @@ public partial class minijava2Lexer : Antlr.Runtime.Lexer
 			break;
 		case 30:
 			DebugEnterAlt(30);
-			// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\minijava2.g:1:178: NEQUAL
+			// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\MiniJava.g:1:178: NEQUAL
 			{
 			DebugLocation(1, 178);
 			mNEQUAL(); if (state.failed) return;
@@ -3015,7 +3015,7 @@ public partial class minijava2Lexer : Antlr.Runtime.Lexer
 			break;
 		case 31:
 			DebugEnterAlt(31);
-			// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\minijava2.g:1:185: LAND
+			// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\MiniJava.g:1:185: LAND
 			{
 			DebugLocation(1, 185);
 			mLAND(); if (state.failed) return;
@@ -3024,7 +3024,7 @@ public partial class minijava2Lexer : Antlr.Runtime.Lexer
 			break;
 		case 32:
 			DebugEnterAlt(32);
-			// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\minijava2.g:1:190: LOR
+			// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\MiniJava.g:1:190: LOR
 			{
 			DebugLocation(1, 190);
 			mLOR(); if (state.failed) return;
@@ -3033,7 +3033,7 @@ public partial class minijava2Lexer : Antlr.Runtime.Lexer
 			break;
 		case 33:
 			DebugEnterAlt(33);
-			// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\minijava2.g:1:194: LNOT
+			// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\MiniJava.g:1:194: LNOT
 			{
 			DebugLocation(1, 194);
 			mLNOT(); if (state.failed) return;
@@ -3042,7 +3042,7 @@ public partial class minijava2Lexer : Antlr.Runtime.Lexer
 			break;
 		case 34:
 			DebugEnterAlt(34);
-			// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\minijava2.g:1:199: SEMI
+			// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\MiniJava.g:1:199: SEMI
 			{
 			DebugLocation(1, 199);
 			mSEMI(); if (state.failed) return;
@@ -3051,7 +3051,7 @@ public partial class minijava2Lexer : Antlr.Runtime.Lexer
 			break;
 		case 35:
 			DebugEnterAlt(35);
-			// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\minijava2.g:1:204: DOT
+			// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\MiniJava.g:1:204: DOT
 			{
 			DebugLocation(1, 204);
 			mDOT(); if (state.failed) return;
@@ -3060,7 +3060,7 @@ public partial class minijava2Lexer : Antlr.Runtime.Lexer
 			break;
 		case 36:
 			DebugEnterAlt(36);
-			// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\minijava2.g:1:208: COMMA
+			// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\MiniJava.g:1:208: COMMA
 			{
 			DebugLocation(1, 208);
 			mCOMMA(); if (state.failed) return;
@@ -3069,7 +3069,7 @@ public partial class minijava2Lexer : Antlr.Runtime.Lexer
 			break;
 		case 37:
 			DebugEnterAlt(37);
-			// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\minijava2.g:1:214: ASSIGN
+			// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\MiniJava.g:1:214: ASSIGN
 			{
 			DebugLocation(1, 214);
 			mASSIGN(); if (state.failed) return;
@@ -3078,7 +3078,7 @@ public partial class minijava2Lexer : Antlr.Runtime.Lexer
 			break;
 		case 38:
 			DebugEnterAlt(38);
-			// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\minijava2.g:1:221: LPAREN
+			// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\MiniJava.g:1:221: LPAREN
 			{
 			DebugLocation(1, 221);
 			mLPAREN(); if (state.failed) return;
@@ -3087,7 +3087,7 @@ public partial class minijava2Lexer : Antlr.Runtime.Lexer
 			break;
 		case 39:
 			DebugEnterAlt(39);
-			// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\minijava2.g:1:228: RPAREN
+			// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\MiniJava.g:1:228: RPAREN
 			{
 			DebugLocation(1, 228);
 			mRPAREN(); if (state.failed) return;
@@ -3096,7 +3096,7 @@ public partial class minijava2Lexer : Antlr.Runtime.Lexer
 			break;
 		case 40:
 			DebugEnterAlt(40);
-			// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\minijava2.g:1:235: LCURLY
+			// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\MiniJava.g:1:235: LCURLY
 			{
 			DebugLocation(1, 235);
 			mLCURLY(); if (state.failed) return;
@@ -3105,7 +3105,7 @@ public partial class minijava2Lexer : Antlr.Runtime.Lexer
 			break;
 		case 41:
 			DebugEnterAlt(41);
-			// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\minijava2.g:1:242: RCURLY
+			// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\MiniJava.g:1:242: RCURLY
 			{
 			DebugLocation(1, 242);
 			mRCURLY(); if (state.failed) return;
@@ -3114,7 +3114,7 @@ public partial class minijava2Lexer : Antlr.Runtime.Lexer
 			break;
 		case 42:
 			DebugEnterAlt(42);
-			// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\minijava2.g:1:249: LBRACK
+			// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\MiniJava.g:1:249: LBRACK
 			{
 			DebugLocation(1, 249);
 			mLBRACK(); if (state.failed) return;
@@ -3123,7 +3123,7 @@ public partial class minijava2Lexer : Antlr.Runtime.Lexer
 			break;
 		case 43:
 			DebugEnterAlt(43);
-			// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\minijava2.g:1:256: RBRACK
+			// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\MiniJava.g:1:256: RBRACK
 			{
 			DebugLocation(1, 256);
 			mRBRACK(); if (state.failed) return;
@@ -3132,7 +3132,7 @@ public partial class minijava2Lexer : Antlr.Runtime.Lexer
 			break;
 		case 44:
 			DebugEnterAlt(44);
-			// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\minijava2.g:1:263: ID
+			// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\MiniJava.g:1:263: ID
 			{
 			DebugLocation(1, 263);
 			mID(); if (state.failed) return;
@@ -3141,7 +3141,7 @@ public partial class minijava2Lexer : Antlr.Runtime.Lexer
 			break;
 		case 45:
 			DebugEnterAlt(45);
-			// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\minijava2.g:1:266: INTEGER
+			// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\MiniJava.g:1:266: INTEGER
 			{
 			DebugLocation(1, 266);
 			mINTEGER(); if (state.failed) return;
@@ -3150,7 +3150,7 @@ public partial class minijava2Lexer : Antlr.Runtime.Lexer
 			break;
 		case 46:
 			DebugEnterAlt(46);
-			// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\minijava2.g:1:274: FLOAT
+			// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\MiniJava.g:1:274: FLOAT
 			{
 			DebugLocation(1, 274);
 			mFLOAT(); if (state.failed) return;
@@ -3159,7 +3159,7 @@ public partial class minijava2Lexer : Antlr.Runtime.Lexer
 			break;
 		case 47:
 			DebugEnterAlt(47);
-			// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\minijava2.g:1:280: WHITESPACE
+			// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\MiniJava.g:1:280: WHITESPACE
 			{
 			DebugLocation(1, 280);
 			mWHITESPACE(); if (state.failed) return;
@@ -3168,7 +3168,7 @@ public partial class minijava2Lexer : Antlr.Runtime.Lexer
 			break;
 		case 48:
 			DebugEnterAlt(48);
-			// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\minijava2.g:1:291: LINE_COMMENT
+			// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\MiniJava.g:1:291: LINE_COMMENT
 			{
 			DebugLocation(1, 291);
 			mLINE_COMMENT(); if (state.failed) return;
@@ -3177,7 +3177,7 @@ public partial class minijava2Lexer : Antlr.Runtime.Lexer
 			break;
 		case 49:
 			DebugEnterAlt(49);
-			// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\minijava2.g:1:304: BLOCK_COMMENT
+			// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\MiniJava.g:1:304: BLOCK_COMMENT
 			{
 			DebugLocation(1, 304);
 			mBLOCK_COMMENT(); if (state.failed) return;
@@ -3189,20 +3189,20 @@ public partial class minijava2Lexer : Antlr.Runtime.Lexer
 
 	}
 
-	partial void EnterRule_synpred1_minijava2_fragment();
-	partial void LeaveRule_synpred1_minijava2_fragment();
+	partial void EnterRule_synpred1_MiniJava_fragment();
+	partial void LeaveRule_synpred1_MiniJava_fragment();
 
-	// $ANTLR start synpred1_minijava2
-	public void synpred1_minijava2_fragment()
+	// $ANTLR start synpred1_MiniJava
+	public void synpred1_MiniJava_fragment()
 	{
-		EnterRule_synpred1_minijava2_fragment();
-		EnterRule("synpred1_minijava2_fragment", 56);
-		TraceIn("synpred1_minijava2_fragment", 56);
+		EnterRule_synpred1_MiniJava_fragment();
+		EnterRule("synpred1_MiniJava_fragment", 56);
+		TraceIn("synpred1_MiniJava_fragment", 56);
 		try
 		{
-			// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\minijava2.g:893:3: ( 'System.out.println' ~ ( 'a' .. 'z' | 'A' .. 'Z' | DIGIT ) )
+			// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\MiniJava.g:893:3: ( 'System.out.println' ~ ( 'a' .. 'z' | 'A' .. 'Z' | DIGIT ) )
 			DebugEnterAlt(1);
-			// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\minijava2.g:893:4: 'System.out.println' ~ ( 'a' .. 'z' | 'A' .. 'Z' | DIGIT )
+			// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\MiniJava.g:893:4: 'System.out.println' ~ ( 'a' .. 'z' | 'A' .. 'Z' | DIGIT )
 			{
 			DebugLocation(893, 4);
 			Match("System.out.println"); if (state.failed) return;
@@ -3227,12 +3227,12 @@ public partial class minijava2Lexer : Antlr.Runtime.Lexer
 		}
 		finally
 		{
-			TraceOut("synpred1_minijava2_fragment", 56);
-			LeaveRule("synpred1_minijava2_fragment", 56);
-			LeaveRule_synpred1_minijava2_fragment();
+			TraceOut("synpred1_MiniJava_fragment", 56);
+			LeaveRule("synpred1_MiniJava_fragment", 56);
+			LeaveRule_synpred1_MiniJava_fragment();
 		}
 	}
-	// $ANTLR end synpred1_minijava2
+	// $ANTLR end synpred1_MiniJava
 
 	#region Synpreds
 	private bool EvaluatePredicate(System.Action fragment)

@@ -31,7 +31,7 @@ namespace  MiniJavaSyntax
 {
 [System.CodeDom.Compiler.GeneratedCode("ANTLR", "3.3.1.7705")]
 [System.CLSCompliant(false)]
-public partial class minijava2Parser : Antlr.Runtime.Parser
+public partial class MiniJavaParser : Antlr.Runtime.Parser
 {
 	internal static readonly string[] tokenNames = new string[] {
 		"<invalid>", "<EOR>", "<DOWN>", "<UP>", "ASSIGN", "BLOCK_COMMENT", "BOOL", "BOOLEAN", "CLASS", "CLASSDECL", "CLASSVARDECL", "CLASSVARDECLLIST", "COMMA", "DIGIT", "DIV", "DOT", "DOUBLE", "ELIST", "ELSE", "EQUAL", "EXPONENT", "EXTENDS", "FALSE", "FLOAT", "FORMALLIST", "HIDDEN", "ID", "IF", "INT", "INTEGER", "LAND", "LBRACK", "LCURLY", "LENGTH", "LESS", "LESSEQ", "LETTER", "LINE_COMMENT", "LNOT", "LOR", "LPAREN", "MAIN", "MAINCLASSDECL", "METHODDECL", "METHODDECLLIST", "METHOD_CALL", "MINUS", "MORE", "MOREEQ", "NEQUAL", "NEW", "NULL", "PLUS", "PRINT", "PRINT2", "PROGRAM", "PUBLIC", "RBRACK", "RCURLY", "RETURN", "RPAREN", "SEMI", "SLIST", "STAR", "STATIC", "STMT", "STRING", "THIS", "TRUE", "TYPE", "UNARY_MINUS", "VARDECL", "VOID", "WHILE", "WHITESPACE"
@@ -112,11 +112,11 @@ public partial class minijava2Parser : Antlr.Runtime.Parser
 	// delegates
 	// delegators
 
-	public minijava2Parser( ITokenStream input )
+	public MiniJavaParser( ITokenStream input )
 		: this( input, new RecognizerSharedState() )
 	{
 	}
-	public minijava2Parser(ITokenStream input, RecognizerSharedState state)
+	public MiniJavaParser(ITokenStream input, RecognizerSharedState state)
 		: base(input, state)
 	{
 		ITreeAdaptor treeAdaptor = default(ITreeAdaptor);
@@ -146,8 +146,8 @@ public partial class minijava2Parser : Antlr.Runtime.Parser
 		}
 	}
 
-	public override string[] TokenNames { get { return minijava2Parser.tokenNames; } }
-	public override string GrammarFileName { get { return "D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\minijava2.g"; } }
+	public override string[] TokenNames { get { return MiniJavaParser.tokenNames; } }
+	public override string GrammarFileName { get { return "D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\MiniJava.g"; } }
 
 
 
@@ -195,29 +195,29 @@ public partial class minijava2Parser : Antlr.Runtime.Parser
 		private CommonTree _tree;
 		public CommonTree Tree { get { return _tree; } set { _tree = value; } }
 		object IAstRuleReturnScope.Tree { get { return Tree; } }
-		public program_return(minijava2Parser grammar) {OnCreated(grammar);}
-		partial void OnCreated(minijava2Parser grammar);
+		public program_return(MiniJavaParser grammar) {OnCreated(grammar);}
+		partial void OnCreated(MiniJavaParser grammar);
 	}
 
 	partial void EnterRule_program();
 	partial void LeaveRule_program();
 
 	// $ANTLR start "program"
-	// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\minijava2.g:80:1: public program returns [NonTerm value] : mainClass= mainClassDecl classes= classDeclList EOF ;
+	// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\MiniJava.g:80:1: public program returns [NonTerm value] : mainClass= mainClassDecl classes= classDeclList EOF ;
 	[GrammarRule("program")]
-	public minijava2Parser.program_return program()
+	public MiniJavaParser.program_return program()
 	{
 		EnterRule_program();
 		EnterRule("program", 1);
 		TraceIn("program", 1);
-		minijava2Parser.program_return retval = new minijava2Parser.program_return(this);
+		MiniJavaParser.program_return retval = new MiniJavaParser.program_return(this);
 		retval.Start = (IToken)input.LT(1);
 
 		CommonTree root_0 = default(CommonTree);
 
 		IToken EOF1 = default(IToken);
-		minijava2Parser.mainClassDecl_return mainClass = default(minijava2Parser.mainClassDecl_return);
-		minijava2Parser.classDeclList_return classes = default(minijava2Parser.classDeclList_return);
+		MiniJavaParser.mainClassDecl_return mainClass = default(MiniJavaParser.mainClassDecl_return);
+		MiniJavaParser.classDeclList_return classes = default(MiniJavaParser.classDeclList_return);
 
 		CommonTree EOF1_tree = default(CommonTree);
 
@@ -225,9 +225,9 @@ public partial class minijava2Parser : Antlr.Runtime.Parser
 		DebugLocation(80, 1);
 		try
 		{
-			// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\minijava2.g:81:2: (mainClass= mainClassDecl classes= classDeclList EOF )
+			// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\MiniJava.g:81:2: (mainClass= mainClassDecl classes= classDeclList EOF )
 			DebugEnterAlt(1);
-			// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\minijava2.g:82:3: mainClass= mainClassDecl classes= classDeclList EOF
+			// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\MiniJava.g:82:3: mainClass= mainClassDecl classes= classDeclList EOF
 			{
 			root_0 = (CommonTree)adaptor.Nil();
 
@@ -292,27 +292,27 @@ public partial class minijava2Parser : Antlr.Runtime.Parser
 		private CommonTree _tree;
 		public CommonTree Tree { get { return _tree; } set { _tree = value; } }
 		object IAstRuleReturnScope.Tree { get { return Tree; } }
-		public classDeclList_return(minijava2Parser grammar) {OnCreated(grammar);}
-		partial void OnCreated(minijava2Parser grammar);
+		public classDeclList_return(MiniJavaParser grammar) {OnCreated(grammar);}
+		partial void OnCreated(MiniJavaParser grammar);
 	}
 
 	partial void EnterRule_classDeclList();
 	partial void LeaveRule_classDeclList();
 
 	// $ANTLR start "classDeclList"
-	// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\minijava2.g:96:1: classDeclList returns [ List<BaseSymbol> valueList ] : (classD= classDecl )* ;
+	// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\MiniJava.g:96:1: classDeclList returns [ List<BaseSymbol> valueList ] : (classD= classDecl )* ;
 	[GrammarRule("classDeclList")]
-	private minijava2Parser.classDeclList_return classDeclList()
+	private MiniJavaParser.classDeclList_return classDeclList()
 	{
 		EnterRule_classDeclList();
 		EnterRule("classDeclList", 2);
 		TraceIn("classDeclList", 2);
-		minijava2Parser.classDeclList_return retval = new minijava2Parser.classDeclList_return(this);
+		MiniJavaParser.classDeclList_return retval = new MiniJavaParser.classDeclList_return(this);
 		retval.Start = (IToken)input.LT(1);
 
 		CommonTree root_0 = default(CommonTree);
 
-		minijava2Parser.classDecl_return classD = default(minijava2Parser.classDecl_return);
+		MiniJavaParser.classDecl_return classD = default(MiniJavaParser.classDecl_return);
 
 
 
@@ -322,14 +322,14 @@ public partial class minijava2Parser : Antlr.Runtime.Parser
 		DebugLocation(96, 1);
 		try
 		{
-			// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\minijava2.g:101:2: ( (classD= classDecl )* )
+			// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\MiniJava.g:101:2: ( (classD= classDecl )* )
 			DebugEnterAlt(1);
-			// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\minijava2.g:102:3: (classD= classDecl )*
+			// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\MiniJava.g:102:3: (classD= classDecl )*
 			{
 			root_0 = (CommonTree)adaptor.Nil();
 
 			DebugLocation(102, 3);
-			// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\minijava2.g:102:3: (classD= classDecl )*
+			// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\MiniJava.g:102:3: (classD= classDecl )*
 			try { DebugEnterSubRule(1);
 			while (true)
 			{
@@ -348,7 +348,7 @@ public partial class minijava2Parser : Antlr.Runtime.Parser
 				{
 				case 1:
 					DebugEnterAlt(1);
-					// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\minijava2.g:102:5: classD= classDecl
+					// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\MiniJava.g:102:5: classD= classDecl
 					{
 					DebugLocation(102, 11);
 					PushFollow(Follow._classDecl_in_classDeclList204);
@@ -417,22 +417,22 @@ public partial class minijava2Parser : Antlr.Runtime.Parser
 		private CommonTree _tree;
 		public CommonTree Tree { get { return _tree; } set { _tree = value; } }
 		object IAstRuleReturnScope.Tree { get { return Tree; } }
-		public mainClassDecl_return(minijava2Parser grammar) {OnCreated(grammar);}
-		partial void OnCreated(minijava2Parser grammar);
+		public mainClassDecl_return(MiniJavaParser grammar) {OnCreated(grammar);}
+		partial void OnCreated(MiniJavaParser grammar);
 	}
 
 	partial void EnterRule_mainClassDecl();
 	partial void LeaveRule_mainClassDecl();
 
 	// $ANTLR start "mainClassDecl"
-	// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\minijava2.g:116:1: mainClassDecl returns [NonTerm value] : CLASS id= ID LCURLY PUBLIC STATIC VOID MAIN LPAREN STRING LBRACK RBRACK ID RPAREN LCURLY statement= stmtList RCURLY RCURLY ;
+	// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\MiniJava.g:116:1: mainClassDecl returns [NonTerm value] : CLASS id= ID LCURLY PUBLIC STATIC VOID MAIN LPAREN STRING LBRACK RBRACK ID RPAREN LCURLY statement= stmtList RCURLY RCURLY ;
 	[GrammarRule("mainClassDecl")]
-	private minijava2Parser.mainClassDecl_return mainClassDecl()
+	private MiniJavaParser.mainClassDecl_return mainClassDecl()
 	{
 		EnterRule_mainClassDecl();
 		EnterRule("mainClassDecl", 3);
 		TraceIn("mainClassDecl", 3);
-		minijava2Parser.mainClassDecl_return retval = new minijava2Parser.mainClassDecl_return(this);
+		MiniJavaParser.mainClassDecl_return retval = new MiniJavaParser.mainClassDecl_return(this);
 		retval.Start = (IToken)input.LT(1);
 
 		CommonTree root_0 = default(CommonTree);
@@ -453,7 +453,7 @@ public partial class minijava2Parser : Antlr.Runtime.Parser
 		IToken LCURLY14 = default(IToken);
 		IToken RCURLY15 = default(IToken);
 		IToken RCURLY16 = default(IToken);
-		minijava2Parser.stmtList_return statement = default(minijava2Parser.stmtList_return);
+		MiniJavaParser.stmtList_return statement = default(MiniJavaParser.stmtList_return);
 
 		CommonTree id_tree = default(CommonTree);
 		CommonTree CLASS2_tree = default(CommonTree);
@@ -476,9 +476,9 @@ public partial class minijava2Parser : Antlr.Runtime.Parser
 		DebugLocation(116, 1);
 		try
 		{
-			// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\minijava2.g:117:2: ( CLASS id= ID LCURLY PUBLIC STATIC VOID MAIN LPAREN STRING LBRACK RBRACK ID RPAREN LCURLY statement= stmtList RCURLY RCURLY )
+			// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\MiniJava.g:117:2: ( CLASS id= ID LCURLY PUBLIC STATIC VOID MAIN LPAREN STRING LBRACK RBRACK ID RPAREN LCURLY statement= stmtList RCURLY RCURLY )
 			DebugEnterAlt(1);
-			// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\minijava2.g:119:3: CLASS id= ID LCURLY PUBLIC STATIC VOID MAIN LPAREN STRING LBRACK RBRACK ID RPAREN LCURLY statement= stmtList RCURLY RCURLY
+			// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\MiniJava.g:119:3: CLASS id= ID LCURLY PUBLIC STATIC VOID MAIN LPAREN STRING LBRACK RBRACK ID RPAREN LCURLY statement= stmtList RCURLY RCURLY
 			{
 			root_0 = (CommonTree)adaptor.Nil();
 
@@ -571,27 +571,27 @@ public partial class minijava2Parser : Antlr.Runtime.Parser
 		private CommonTree _tree;
 		public CommonTree Tree { get { return _tree; } set { _tree = value; } }
 		object IAstRuleReturnScope.Tree { get { return Tree; } }
-		public stmtList_return(minijava2Parser grammar) {OnCreated(grammar);}
-		partial void OnCreated(minijava2Parser grammar);
+		public stmtList_return(MiniJavaParser grammar) {OnCreated(grammar);}
+		partial void OnCreated(MiniJavaParser grammar);
 	}
 
 	partial void EnterRule_stmtList();
 	partial void LeaveRule_stmtList();
 
 	// $ANTLR start "stmtList"
-	// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\minijava2.g:133:1: stmtList returns [ List<BaseSymbol> valueList ] : (statement= stmt )* ;
+	// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\MiniJava.g:133:1: stmtList returns [ List<BaseSymbol> valueList ] : (statement= stmt )* ;
 	[GrammarRule("stmtList")]
-	private minijava2Parser.stmtList_return stmtList()
+	private MiniJavaParser.stmtList_return stmtList()
 	{
 		EnterRule_stmtList();
 		EnterRule("stmtList", 4);
 		TraceIn("stmtList", 4);
-		minijava2Parser.stmtList_return retval = new minijava2Parser.stmtList_return(this);
+		MiniJavaParser.stmtList_return retval = new MiniJavaParser.stmtList_return(this);
 		retval.Start = (IToken)input.LT(1);
 
 		CommonTree root_0 = default(CommonTree);
 
-		minijava2Parser.stmt_return statement = default(minijava2Parser.stmt_return);
+		MiniJavaParser.stmt_return statement = default(MiniJavaParser.stmt_return);
 
 
 
@@ -601,14 +601,14 @@ public partial class minijava2Parser : Antlr.Runtime.Parser
 		DebugLocation(133, 1);
 		try
 		{
-			// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\minijava2.g:138:2: ( (statement= stmt )* )
+			// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\MiniJava.g:138:2: ( (statement= stmt )* )
 			DebugEnterAlt(1);
-			// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\minijava2.g:139:3: (statement= stmt )*
+			// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\MiniJava.g:139:3: (statement= stmt )*
 			{
 			root_0 = (CommonTree)adaptor.Nil();
 
 			DebugLocation(139, 3);
-			// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\minijava2.g:139:3: (statement= stmt )*
+			// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\MiniJava.g:139:3: (statement= stmt )*
 			try { DebugEnterSubRule(2);
 			while (true)
 			{
@@ -627,7 +627,7 @@ public partial class minijava2Parser : Antlr.Runtime.Parser
 				{
 				case 1:
 					DebugEnterAlt(1);
-					// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\minijava2.g:139:5: statement= stmt
+					// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\MiniJava.g:139:5: statement= stmt
 					{
 					DebugLocation(139, 15);
 					PushFollow(Follow._stmt_in_stmtList339);
@@ -696,27 +696,27 @@ public partial class minijava2Parser : Antlr.Runtime.Parser
 		private CommonTree _tree;
 		public CommonTree Tree { get { return _tree; } set { _tree = value; } }
 		object IAstRuleReturnScope.Tree { get { return Tree; } }
-		public classVarDeclList_return(minijava2Parser grammar) {OnCreated(grammar);}
-		partial void OnCreated(minijava2Parser grammar);
+		public classVarDeclList_return(MiniJavaParser grammar) {OnCreated(grammar);}
+		partial void OnCreated(MiniJavaParser grammar);
 	}
 
 	partial void EnterRule_classVarDeclList();
 	partial void LeaveRule_classVarDeclList();
 
 	// $ANTLR start "classVarDeclList"
-	// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\minijava2.g:153:1: classVarDeclList returns [ List<BaseSymbol> valueList ] : (classVar= classVarDecl )* ;
+	// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\MiniJava.g:153:1: classVarDeclList returns [ List<BaseSymbol> valueList ] : (classVar= classVarDecl )* ;
 	[GrammarRule("classVarDeclList")]
-	private minijava2Parser.classVarDeclList_return classVarDeclList()
+	private MiniJavaParser.classVarDeclList_return classVarDeclList()
 	{
 		EnterRule_classVarDeclList();
 		EnterRule("classVarDeclList", 5);
 		TraceIn("classVarDeclList", 5);
-		minijava2Parser.classVarDeclList_return retval = new minijava2Parser.classVarDeclList_return(this);
+		MiniJavaParser.classVarDeclList_return retval = new MiniJavaParser.classVarDeclList_return(this);
 		retval.Start = (IToken)input.LT(1);
 
 		CommonTree root_0 = default(CommonTree);
 
-		minijava2Parser.classVarDecl_return classVar = default(minijava2Parser.classVarDecl_return);
+		MiniJavaParser.classVarDecl_return classVar = default(MiniJavaParser.classVarDecl_return);
 
 
 
@@ -726,14 +726,14 @@ public partial class minijava2Parser : Antlr.Runtime.Parser
 		DebugLocation(153, 1);
 		try
 		{
-			// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\minijava2.g:158:2: ( (classVar= classVarDecl )* )
+			// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\MiniJava.g:158:2: ( (classVar= classVarDecl )* )
 			DebugEnterAlt(1);
-			// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\minijava2.g:159:3: (classVar= classVarDecl )*
+			// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\MiniJava.g:159:3: (classVar= classVarDecl )*
 			{
 			root_0 = (CommonTree)adaptor.Nil();
 
 			DebugLocation(159, 3);
-			// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\minijava2.g:159:3: (classVar= classVarDecl )*
+			// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\MiniJava.g:159:3: (classVar= classVarDecl )*
 			try { DebugEnterSubRule(3);
 			while (true)
 			{
@@ -752,7 +752,7 @@ public partial class minijava2Parser : Antlr.Runtime.Parser
 				{
 				case 1:
 					DebugEnterAlt(1);
-					// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\minijava2.g:159:5: classVar= classVarDecl
+					// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\MiniJava.g:159:5: classVar= classVarDecl
 					{
 					DebugLocation(159, 14);
 					PushFollow(Follow._classVarDecl_in_classVarDeclList384);
@@ -813,29 +813,29 @@ public partial class minijava2Parser : Antlr.Runtime.Parser
 		private CommonTree _tree;
 		public CommonTree Tree { get { return _tree; } set { _tree = value; } }
 		object IAstRuleReturnScope.Tree { get { return Tree; } }
-		public classVarDecl_return(minijava2Parser grammar) {OnCreated(grammar);}
-		partial void OnCreated(minijava2Parser grammar);
+		public classVarDecl_return(MiniJavaParser grammar) {OnCreated(grammar);}
+		partial void OnCreated(MiniJavaParser grammar);
 	}
 
 	partial void EnterRule_classVarDecl();
 	partial void LeaveRule_classVarDecl();
 
 	// $ANTLR start "classVarDecl"
-	// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\minijava2.g:174:1: classVarDecl returns [NonTerm value] : typeDecl= type id= ID SEMI ;
+	// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\MiniJava.g:174:1: classVarDecl returns [NonTerm value] : typeDecl= type id= ID SEMI ;
 	[GrammarRule("classVarDecl")]
-	private minijava2Parser.classVarDecl_return classVarDecl()
+	private MiniJavaParser.classVarDecl_return classVarDecl()
 	{
 		EnterRule_classVarDecl();
 		EnterRule("classVarDecl", 6);
 		TraceIn("classVarDecl", 6);
-		minijava2Parser.classVarDecl_return retval = new minijava2Parser.classVarDecl_return(this);
+		MiniJavaParser.classVarDecl_return retval = new MiniJavaParser.classVarDecl_return(this);
 		retval.Start = (IToken)input.LT(1);
 
 		CommonTree root_0 = default(CommonTree);
 
 		IToken id = default(IToken);
 		IToken SEMI17 = default(IToken);
-		minijava2Parser.type_return typeDecl = default(minijava2Parser.type_return);
+		MiniJavaParser.type_return typeDecl = default(MiniJavaParser.type_return);
 
 		CommonTree id_tree = default(CommonTree);
 		CommonTree SEMI17_tree = default(CommonTree);
@@ -844,9 +844,9 @@ public partial class minijava2Parser : Antlr.Runtime.Parser
 		DebugLocation(174, 1);
 		try
 		{
-			// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\minijava2.g:175:2: (typeDecl= type id= ID SEMI )
+			// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\MiniJava.g:175:2: (typeDecl= type id= ID SEMI )
 			DebugEnterAlt(1);
-			// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\minijava2.g:176:3: typeDecl= type id= ID SEMI
+			// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\MiniJava.g:176:3: typeDecl= type id= ID SEMI
 			{
 			root_0 = (CommonTree)adaptor.Nil();
 
@@ -905,22 +905,22 @@ public partial class minijava2Parser : Antlr.Runtime.Parser
 		private CommonTree _tree;
 		public CommonTree Tree { get { return _tree; } set { _tree = value; } }
 		object IAstRuleReturnScope.Tree { get { return Tree; } }
-		public extendsClause_return(minijava2Parser grammar) {OnCreated(grammar);}
-		partial void OnCreated(minijava2Parser grammar);
+		public extendsClause_return(MiniJavaParser grammar) {OnCreated(grammar);}
+		partial void OnCreated(MiniJavaParser grammar);
 	}
 
 	partial void EnterRule_extendsClause();
 	partial void LeaveRule_extendsClause();
 
 	// $ANTLR start "extendsClause"
-	// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\minijava2.g:185:1: extendsClause returns [NonTerm value] : ( EXTENDS id= ID |) ;
+	// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\MiniJava.g:185:1: extendsClause returns [NonTerm value] : ( EXTENDS id= ID |) ;
 	[GrammarRule("extendsClause")]
-	private minijava2Parser.extendsClause_return extendsClause()
+	private MiniJavaParser.extendsClause_return extendsClause()
 	{
 		EnterRule_extendsClause();
 		EnterRule("extendsClause", 7);
 		TraceIn("extendsClause", 7);
-		minijava2Parser.extendsClause_return retval = new minijava2Parser.extendsClause_return(this);
+		MiniJavaParser.extendsClause_return retval = new MiniJavaParser.extendsClause_return(this);
 		retval.Start = (IToken)input.LT(1);
 
 		CommonTree root_0 = default(CommonTree);
@@ -935,14 +935,14 @@ public partial class minijava2Parser : Antlr.Runtime.Parser
 		DebugLocation(185, 1);
 		try
 		{
-			// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\minijava2.g:186:2: ( ( EXTENDS id= ID |) )
+			// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\MiniJava.g:186:2: ( ( EXTENDS id= ID |) )
 			DebugEnterAlt(1);
-			// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\minijava2.g:187:3: ( EXTENDS id= ID |)
+			// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\MiniJava.g:187:3: ( EXTENDS id= ID |)
 			{
 			root_0 = (CommonTree)adaptor.Nil();
 
 			DebugLocation(187, 3);
-			// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\minijava2.g:187:3: ( EXTENDS id= ID |)
+			// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\MiniJava.g:187:3: ( EXTENDS id= ID |)
 			int alt4=2;
 			try { DebugEnterSubRule(4);
 			try { DebugEnterDecision(4, false);
@@ -967,7 +967,7 @@ public partial class minijava2Parser : Antlr.Runtime.Parser
 			{
 			case 1:
 				DebugEnterAlt(1);
-				// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\minijava2.g:187:5: EXTENDS id= ID
+				// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\MiniJava.g:187:5: EXTENDS id= ID
 				{
 				DebugLocation(187, 12);
 				EXTENDS18=(IToken)Match(input,EXTENDS,Follow._EXTENDS_in_extendsClause454); 
@@ -987,7 +987,7 @@ public partial class minijava2Parser : Antlr.Runtime.Parser
 				break;
 			case 2:
 				DebugEnterAlt(2);
-				// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\minijava2.g:195:3: 
+				// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\MiniJava.g:195:3: 
 				{
 				DebugLocation(195, 3);
 				 
@@ -1036,22 +1036,22 @@ public partial class minijava2Parser : Antlr.Runtime.Parser
 		private CommonTree _tree;
 		public CommonTree Tree { get { return _tree; } set { _tree = value; } }
 		object IAstRuleReturnScope.Tree { get { return Tree; } }
-		public classDecl_return(minijava2Parser grammar) {OnCreated(grammar);}
-		partial void OnCreated(minijava2Parser grammar);
+		public classDecl_return(MiniJavaParser grammar) {OnCreated(grammar);}
+		partial void OnCreated(MiniJavaParser grammar);
 	}
 
 	partial void EnterRule_classDecl();
 	partial void LeaveRule_classDecl();
 
 	// $ANTLR start "classDecl"
-	// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\minijava2.g:202:1: classDecl returns [ NonTerm value ] : CLASS id= ID extends= extendsClause LCURLY classVars= classVarDeclList methods= methodDeclList RCURLY ;
+	// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\MiniJava.g:202:1: classDecl returns [ NonTerm value ] : CLASS id= ID extends= extendsClause LCURLY classVars= classVarDeclList methods= methodDeclList RCURLY ;
 	[GrammarRule("classDecl")]
-	private minijava2Parser.classDecl_return classDecl()
+	private MiniJavaParser.classDecl_return classDecl()
 	{
 		EnterRule_classDecl();
 		EnterRule("classDecl", 8);
 		TraceIn("classDecl", 8);
-		minijava2Parser.classDecl_return retval = new minijava2Parser.classDecl_return(this);
+		MiniJavaParser.classDecl_return retval = new MiniJavaParser.classDecl_return(this);
 		retval.Start = (IToken)input.LT(1);
 
 		CommonTree root_0 = default(CommonTree);
@@ -1060,9 +1060,9 @@ public partial class minijava2Parser : Antlr.Runtime.Parser
 		IToken CLASS19 = default(IToken);
 		IToken LCURLY20 = default(IToken);
 		IToken RCURLY21 = default(IToken);
-		minijava2Parser.extendsClause_return extends = default(minijava2Parser.extendsClause_return);
-		minijava2Parser.classVarDeclList_return classVars = default(minijava2Parser.classVarDeclList_return);
-		minijava2Parser.methodDeclList_return methods = default(minijava2Parser.methodDeclList_return);
+		MiniJavaParser.extendsClause_return extends = default(MiniJavaParser.extendsClause_return);
+		MiniJavaParser.classVarDeclList_return classVars = default(MiniJavaParser.classVarDeclList_return);
+		MiniJavaParser.methodDeclList_return methods = default(MiniJavaParser.methodDeclList_return);
 
 		CommonTree id_tree = default(CommonTree);
 		CommonTree CLASS19_tree = default(CommonTree);
@@ -1073,9 +1073,9 @@ public partial class minijava2Parser : Antlr.Runtime.Parser
 		DebugLocation(202, 1);
 		try
 		{
-			// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\minijava2.g:203:2: ( CLASS id= ID extends= extendsClause LCURLY classVars= classVarDeclList methods= methodDeclList RCURLY )
+			// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\MiniJava.g:203:2: ( CLASS id= ID extends= extendsClause LCURLY classVars= classVarDeclList methods= methodDeclList RCURLY )
 			DebugEnterAlt(1);
-			// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\minijava2.g:206:3: CLASS id= ID extends= extendsClause LCURLY classVars= classVarDeclList methods= methodDeclList RCURLY
+			// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\MiniJava.g:206:3: CLASS id= ID extends= extendsClause LCURLY classVars= classVarDeclList methods= methodDeclList RCURLY
 			{
 			root_0 = (CommonTree)adaptor.Nil();
 
@@ -1157,22 +1157,22 @@ public partial class minijava2Parser : Antlr.Runtime.Parser
 		private CommonTree _tree;
 		public CommonTree Tree { get { return _tree; } set { _tree = value; } }
 		object IAstRuleReturnScope.Tree { get { return Tree; } }
-		public methodDecl_return(minijava2Parser grammar) {OnCreated(grammar);}
-		partial void OnCreated(minijava2Parser grammar);
+		public methodDecl_return(MiniJavaParser grammar) {OnCreated(grammar);}
+		partial void OnCreated(MiniJavaParser grammar);
 	}
 
 	partial void EnterRule_methodDecl();
 	partial void LeaveRule_methodDecl();
 
 	// $ANTLR start "methodDecl"
-	// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\minijava2.g:223:1: methodDecl returns [ NonTerm value ] : PUBLIC typeDecl= type id= ID LPAREN formals= formalList RPAREN LCURLY statements= stmtList RETURN expression= expr SEMI RCURLY ;
+	// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\MiniJava.g:223:1: methodDecl returns [ NonTerm value ] : PUBLIC typeDecl= type id= ID LPAREN formals= formalList RPAREN LCURLY statements= stmtList RETURN expression= expr SEMI RCURLY ;
 	[GrammarRule("methodDecl")]
-	private minijava2Parser.methodDecl_return methodDecl()
+	private MiniJavaParser.methodDecl_return methodDecl()
 	{
 		EnterRule_methodDecl();
 		EnterRule("methodDecl", 9);
 		TraceIn("methodDecl", 9);
-		minijava2Parser.methodDecl_return retval = new minijava2Parser.methodDecl_return(this);
+		MiniJavaParser.methodDecl_return retval = new MiniJavaParser.methodDecl_return(this);
 		retval.Start = (IToken)input.LT(1);
 
 		CommonTree root_0 = default(CommonTree);
@@ -1185,10 +1185,10 @@ public partial class minijava2Parser : Antlr.Runtime.Parser
 		IToken RETURN26 = default(IToken);
 		IToken SEMI27 = default(IToken);
 		IToken RCURLY28 = default(IToken);
-		minijava2Parser.type_return typeDecl = default(minijava2Parser.type_return);
-		minijava2Parser.formalList_return formals = default(minijava2Parser.formalList_return);
-		minijava2Parser.stmtList_return statements = default(minijava2Parser.stmtList_return);
-		minijava2Parser.expr_return expression = default(minijava2Parser.expr_return);
+		MiniJavaParser.type_return typeDecl = default(MiniJavaParser.type_return);
+		MiniJavaParser.formalList_return formals = default(MiniJavaParser.formalList_return);
+		MiniJavaParser.stmtList_return statements = default(MiniJavaParser.stmtList_return);
+		MiniJavaParser.expr_return expression = default(MiniJavaParser.expr_return);
 
 		CommonTree id_tree = default(CommonTree);
 		CommonTree PUBLIC22_tree = default(CommonTree);
@@ -1203,9 +1203,9 @@ public partial class minijava2Parser : Antlr.Runtime.Parser
 		DebugLocation(223, 1);
 		try
 		{
-			// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\minijava2.g:224:2: ( PUBLIC typeDecl= type id= ID LPAREN formals= formalList RPAREN LCURLY statements= stmtList RETURN expression= expr SEMI RCURLY )
+			// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\MiniJava.g:224:2: ( PUBLIC typeDecl= type id= ID LPAREN formals= formalList RPAREN LCURLY statements= stmtList RETURN expression= expr SEMI RCURLY )
 			DebugEnterAlt(1);
-			// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\minijava2.g:226:3: PUBLIC typeDecl= type id= ID LPAREN formals= formalList RPAREN LCURLY statements= stmtList RETURN expression= expr SEMI RCURLY
+			// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\MiniJava.g:226:3: PUBLIC typeDecl= type id= ID LPAREN formals= formalList RPAREN LCURLY statements= stmtList RETURN expression= expr SEMI RCURLY
 			{
 			root_0 = (CommonTree)adaptor.Nil();
 
@@ -1302,27 +1302,27 @@ public partial class minijava2Parser : Antlr.Runtime.Parser
 		private CommonTree _tree;
 		public CommonTree Tree { get { return _tree; } set { _tree = value; } }
 		object IAstRuleReturnScope.Tree { get { return Tree; } }
-		public methodDeclList_return(minijava2Parser grammar) {OnCreated(grammar);}
-		partial void OnCreated(minijava2Parser grammar);
+		public methodDeclList_return(MiniJavaParser grammar) {OnCreated(grammar);}
+		partial void OnCreated(MiniJavaParser grammar);
 	}
 
 	partial void EnterRule_methodDeclList();
 	partial void LeaveRule_methodDeclList();
 
 	// $ANTLR start "methodDeclList"
-	// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\minijava2.g:242:1: methodDeclList returns [ List<BaseSymbol> valueList ] : (method= methodDecl )* ;
+	// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\MiniJava.g:242:1: methodDeclList returns [ List<BaseSymbol> valueList ] : (method= methodDecl )* ;
 	[GrammarRule("methodDeclList")]
-	private minijava2Parser.methodDeclList_return methodDeclList()
+	private MiniJavaParser.methodDeclList_return methodDeclList()
 	{
 		EnterRule_methodDeclList();
 		EnterRule("methodDeclList", 10);
 		TraceIn("methodDeclList", 10);
-		minijava2Parser.methodDeclList_return retval = new minijava2Parser.methodDeclList_return(this);
+		MiniJavaParser.methodDeclList_return retval = new MiniJavaParser.methodDeclList_return(this);
 		retval.Start = (IToken)input.LT(1);
 
 		CommonTree root_0 = default(CommonTree);
 
-		minijava2Parser.methodDecl_return method = default(minijava2Parser.methodDecl_return);
+		MiniJavaParser.methodDecl_return method = default(MiniJavaParser.methodDecl_return);
 
 
 
@@ -1332,14 +1332,14 @@ public partial class minijava2Parser : Antlr.Runtime.Parser
 		DebugLocation(242, 1);
 		try
 		{
-			// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\minijava2.g:247:2: ( (method= methodDecl )* )
+			// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\MiniJava.g:247:2: ( (method= methodDecl )* )
 			DebugEnterAlt(1);
-			// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\minijava2.g:248:3: (method= methodDecl )*
+			// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\MiniJava.g:248:3: (method= methodDecl )*
 			{
 			root_0 = (CommonTree)adaptor.Nil();
 
 			DebugLocation(248, 3);
-			// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\minijava2.g:248:3: (method= methodDecl )*
+			// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\MiniJava.g:248:3: (method= methodDecl )*
 			try { DebugEnterSubRule(5);
 			while (true)
 			{
@@ -1358,7 +1358,7 @@ public partial class minijava2Parser : Antlr.Runtime.Parser
 				{
 				case 1:
 					DebugEnterAlt(1);
-					// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\minijava2.g:248:5: method= methodDecl
+					// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\MiniJava.g:248:5: method= methodDecl
 					{
 					DebugLocation(248, 12);
 					PushFollow(Follow._methodDecl_in_methodDeclList664);
@@ -1427,28 +1427,28 @@ public partial class minijava2Parser : Antlr.Runtime.Parser
 		private CommonTree _tree;
 		public CommonTree Tree { get { return _tree; } set { _tree = value; } }
 		object IAstRuleReturnScope.Tree { get { return Tree; } }
-		public formalList_return(minijava2Parser grammar) {OnCreated(grammar);}
-		partial void OnCreated(minijava2Parser grammar);
+		public formalList_return(MiniJavaParser grammar) {OnCreated(grammar);}
+		partial void OnCreated(MiniJavaParser grammar);
 	}
 
 	partial void EnterRule_formalList();
 	partial void LeaveRule_formalList();
 
 	// $ANTLR start "formalList"
-	// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\minijava2.g:263:1: formalList returns [ List<BaseSymbol> valueList ] : (formalDecl= formal ( COMMA formalDecl= formal )* )? ;
+	// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\MiniJava.g:263:1: formalList returns [ List<BaseSymbol> valueList ] : (formalDecl= formal ( COMMA formalDecl= formal )* )? ;
 	[GrammarRule("formalList")]
-	private minijava2Parser.formalList_return formalList()
+	private MiniJavaParser.formalList_return formalList()
 	{
 		EnterRule_formalList();
 		EnterRule("formalList", 11);
 		TraceIn("formalList", 11);
-		minijava2Parser.formalList_return retval = new minijava2Parser.formalList_return(this);
+		MiniJavaParser.formalList_return retval = new MiniJavaParser.formalList_return(this);
 		retval.Start = (IToken)input.LT(1);
 
 		CommonTree root_0 = default(CommonTree);
 
 		IToken COMMA29 = default(IToken);
-		minijava2Parser.formal_return formalDecl = default(minijava2Parser.formal_return);
+		MiniJavaParser.formal_return formalDecl = default(MiniJavaParser.formal_return);
 
 		CommonTree COMMA29_tree = default(CommonTree);
 
@@ -1459,14 +1459,14 @@ public partial class minijava2Parser : Antlr.Runtime.Parser
 		DebugLocation(263, 1);
 		try
 		{
-			// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\minijava2.g:268:2: ( (formalDecl= formal ( COMMA formalDecl= formal )* )? )
+			// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\MiniJava.g:268:2: ( (formalDecl= formal ( COMMA formalDecl= formal )* )? )
 			DebugEnterAlt(1);
-			// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\minijava2.g:269:3: (formalDecl= formal ( COMMA formalDecl= formal )* )?
+			// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\MiniJava.g:269:3: (formalDecl= formal ( COMMA formalDecl= formal )* )?
 			{
 			root_0 = (CommonTree)adaptor.Nil();
 
 			DebugLocation(269, 3);
-			// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\minijava2.g:269:3: (formalDecl= formal ( COMMA formalDecl= formal )* )?
+			// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\MiniJava.g:269:3: (formalDecl= formal ( COMMA formalDecl= formal )* )?
 			int alt7=2;
 			try { DebugEnterSubRule(7);
 			try { DebugEnterDecision(7, false);
@@ -1481,7 +1481,7 @@ public partial class minijava2Parser : Antlr.Runtime.Parser
 			{
 			case 1:
 				DebugEnterAlt(1);
-				// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\minijava2.g:269:5: formalDecl= formal ( COMMA formalDecl= formal )*
+				// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\MiniJava.g:269:5: formalDecl= formal ( COMMA formalDecl= formal )*
 				{
 				DebugLocation(269, 16);
 				PushFollow(Follow._formal_in_formalList710);
@@ -1494,7 +1494,7 @@ public partial class minijava2Parser : Antlr.Runtime.Parser
 							retval.valueList.Add(formalDecl.value);
 						
 				DebugLocation(273, 3);
-				// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\minijava2.g:273:3: ( COMMA formalDecl= formal )*
+				// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\MiniJava.g:273:3: ( COMMA formalDecl= formal )*
 				try { DebugEnterSubRule(6);
 				while (true)
 				{
@@ -1513,7 +1513,7 @@ public partial class minijava2Parser : Antlr.Runtime.Parser
 					{
 					case 1:
 						DebugEnterAlt(1);
-						// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\minijava2.g:273:5: COMMA formalDecl= formal
+						// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\MiniJava.g:273:5: COMMA formalDecl= formal
 						{
 						DebugLocation(273, 10);
 						COMMA29=(IToken)Match(input,COMMA,Follow._COMMA_in_formalList720); 
@@ -1588,36 +1588,36 @@ public partial class minijava2Parser : Antlr.Runtime.Parser
 		private CommonTree _tree;
 		public CommonTree Tree { get { return _tree; } set { _tree = value; } }
 		object IAstRuleReturnScope.Tree { get { return Tree; } }
-		public formal_return(minijava2Parser grammar) {OnCreated(grammar);}
-		partial void OnCreated(minijava2Parser grammar);
+		public formal_return(MiniJavaParser grammar) {OnCreated(grammar);}
+		partial void OnCreated(MiniJavaParser grammar);
 	}
 
 	partial void EnterRule_formal();
 	partial void LeaveRule_formal();
 
 	// $ANTLR start "formal"
-	// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\minijava2.g:284:1: formal returns [ NonTerm value ] : variable= varDecl ;
+	// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\MiniJava.g:284:1: formal returns [ NonTerm value ] : variable= varDecl ;
 	[GrammarRule("formal")]
-	private minijava2Parser.formal_return formal()
+	private MiniJavaParser.formal_return formal()
 	{
 		EnterRule_formal();
 		EnterRule("formal", 12);
 		TraceIn("formal", 12);
-		minijava2Parser.formal_return retval = new minijava2Parser.formal_return(this);
+		MiniJavaParser.formal_return retval = new MiniJavaParser.formal_return(this);
 		retval.Start = (IToken)input.LT(1);
 
 		CommonTree root_0 = default(CommonTree);
 
-		minijava2Parser.varDecl_return variable = default(minijava2Parser.varDecl_return);
+		MiniJavaParser.varDecl_return variable = default(MiniJavaParser.varDecl_return);
 
 
 		try { DebugEnterRule(GrammarFileName, "formal");
 		DebugLocation(284, 1);
 		try
 		{
-			// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\minijava2.g:285:2: (variable= varDecl )
+			// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\MiniJava.g:285:2: (variable= varDecl )
 			DebugEnterAlt(1);
-			// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\minijava2.g:286:3: variable= varDecl
+			// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\MiniJava.g:286:3: variable= varDecl
 			{
 			root_0 = (CommonTree)adaptor.Nil();
 
@@ -1666,22 +1666,22 @@ public partial class minijava2Parser : Antlr.Runtime.Parser
 		private CommonTree _tree;
 		public CommonTree Tree { get { return _tree; } set { _tree = value; } }
 		object IAstRuleReturnScope.Tree { get { return Tree; } }
-		public primitiveType_return(minijava2Parser grammar) {OnCreated(grammar);}
-		partial void OnCreated(minijava2Parser grammar);
+		public primitiveType_return(MiniJavaParser grammar) {OnCreated(grammar);}
+		partial void OnCreated(MiniJavaParser grammar);
 	}
 
 	partial void EnterRule_primitiveType();
 	partial void LeaveRule_primitiveType();
 
 	// $ANTLR start "primitiveType"
-	// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\minijava2.g:293:1: primitiveType returns [ BaseSymbol value ] : (token= ID | BOOLEAN | INT | DOUBLE );
+	// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\MiniJava.g:293:1: primitiveType returns [ BaseSymbol value ] : (token= ID | BOOLEAN | INT | DOUBLE );
 	[GrammarRule("primitiveType")]
-	private minijava2Parser.primitiveType_return primitiveType()
+	private MiniJavaParser.primitiveType_return primitiveType()
 	{
 		EnterRule_primitiveType();
 		EnterRule("primitiveType", 13);
 		TraceIn("primitiveType", 13);
-		minijava2Parser.primitiveType_return retval = new minijava2Parser.primitiveType_return(this);
+		MiniJavaParser.primitiveType_return retval = new MiniJavaParser.primitiveType_return(this);
 		retval.Start = (IToken)input.LT(1);
 
 		CommonTree root_0 = default(CommonTree);
@@ -1700,7 +1700,7 @@ public partial class minijava2Parser : Antlr.Runtime.Parser
 		DebugLocation(293, 1);
 		try
 		{
-			// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\minijava2.g:294:2: (token= ID | BOOLEAN | INT | DOUBLE )
+			// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\MiniJava.g:294:2: (token= ID | BOOLEAN | INT | DOUBLE )
 			int alt8=4;
 			try { DebugEnterDecision(8, false);
 			switch (input.LA(1))
@@ -1738,7 +1738,7 @@ public partial class minijava2Parser : Antlr.Runtime.Parser
 			{
 			case 1:
 				DebugEnterAlt(1);
-				// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\minijava2.g:295:3: token= ID
+				// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\MiniJava.g:295:3: token= ID
 				{
 				root_0 = (CommonTree)adaptor.Nil();
 
@@ -1756,7 +1756,7 @@ public partial class minijava2Parser : Antlr.Runtime.Parser
 				break;
 			case 2:
 				DebugEnterAlt(2);
-				// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\minijava2.g:300:3: BOOLEAN
+				// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\MiniJava.g:300:3: BOOLEAN
 				{
 				root_0 = (CommonTree)adaptor.Nil();
 
@@ -1774,7 +1774,7 @@ public partial class minijava2Parser : Antlr.Runtime.Parser
 				break;
 			case 3:
 				DebugEnterAlt(3);
-				// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\minijava2.g:305:3: INT
+				// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\MiniJava.g:305:3: INT
 				{
 				root_0 = (CommonTree)adaptor.Nil();
 
@@ -1792,7 +1792,7 @@ public partial class minijava2Parser : Antlr.Runtime.Parser
 				break;
 			case 4:
 				DebugEnterAlt(4);
-				// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\minijava2.g:310:3: DOUBLE
+				// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\MiniJava.g:310:3: DOUBLE
 				{
 				root_0 = (CommonTree)adaptor.Nil();
 
@@ -1842,29 +1842,29 @@ public partial class minijava2Parser : Antlr.Runtime.Parser
 		private CommonTree _tree;
 		public CommonTree Tree { get { return _tree; } set { _tree = value; } }
 		object IAstRuleReturnScope.Tree { get { return Tree; } }
-		public type_return(minijava2Parser grammar) {OnCreated(grammar);}
-		partial void OnCreated(minijava2Parser grammar);
+		public type_return(MiniJavaParser grammar) {OnCreated(grammar);}
+		partial void OnCreated(MiniJavaParser grammar);
 	}
 
 	partial void EnterRule_type();
 	partial void LeaveRule_type();
 
 	// $ANTLR start "type"
-	// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\minijava2.g:317:1: type returns [ BaseSymbol value ] : (typeDecl= primitiveType ( LBRACK RBRACK )* ) ;
+	// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\MiniJava.g:317:1: type returns [ BaseSymbol value ] : (typeDecl= primitiveType ( LBRACK RBRACK )* ) ;
 	[GrammarRule("type")]
-	private minijava2Parser.type_return type()
+	private MiniJavaParser.type_return type()
 	{
 		EnterRule_type();
 		EnterRule("type", 14);
 		TraceIn("type", 14);
-		minijava2Parser.type_return retval = new minijava2Parser.type_return(this);
+		MiniJavaParser.type_return retval = new MiniJavaParser.type_return(this);
 		retval.Start = (IToken)input.LT(1);
 
 		CommonTree root_0 = default(CommonTree);
 
 		IToken LBRACK33 = default(IToken);
 		IToken RBRACK34 = default(IToken);
-		minijava2Parser.primitiveType_return typeDecl = default(minijava2Parser.primitiveType_return);
+		MiniJavaParser.primitiveType_return typeDecl = default(MiniJavaParser.primitiveType_return);
 
 		CommonTree LBRACK33_tree = default(CommonTree);
 		CommonTree RBRACK34_tree = default(CommonTree);
@@ -1877,16 +1877,16 @@ public partial class minijava2Parser : Antlr.Runtime.Parser
 		DebugLocation(317, 1);
 		try
 		{
-			// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\minijava2.g:323:2: ( (typeDecl= primitiveType ( LBRACK RBRACK )* ) )
+			// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\MiniJava.g:323:2: ( (typeDecl= primitiveType ( LBRACK RBRACK )* ) )
 			DebugEnterAlt(1);
-			// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\minijava2.g:324:3: (typeDecl= primitiveType ( LBRACK RBRACK )* )
+			// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\MiniJava.g:324:3: (typeDecl= primitiveType ( LBRACK RBRACK )* )
 			{
 			root_0 = (CommonTree)adaptor.Nil();
 
 			DebugLocation(324, 3);
-			// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\minijava2.g:324:3: (typeDecl= primitiveType ( LBRACK RBRACK )* )
+			// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\MiniJava.g:324:3: (typeDecl= primitiveType ( LBRACK RBRACK )* )
 			DebugEnterAlt(1);
-			// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\minijava2.g:324:5: typeDecl= primitiveType ( LBRACK RBRACK )*
+			// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\MiniJava.g:324:5: typeDecl= primitiveType ( LBRACK RBRACK )*
 			{
 			DebugLocation(324, 14);
 			PushFollow(Follow._primitiveType_in_type867);
@@ -1899,7 +1899,7 @@ public partial class minijava2Parser : Antlr.Runtime.Parser
 					
 					
 			DebugLocation(328, 3);
-			// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\minijava2.g:328:3: ( LBRACK RBRACK )*
+			// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\MiniJava.g:328:3: ( LBRACK RBRACK )*
 			try { DebugEnterSubRule(9);
 			while (true)
 			{
@@ -1918,7 +1918,7 @@ public partial class minijava2Parser : Antlr.Runtime.Parser
 				{
 				case 1:
 					DebugEnterAlt(1);
-					// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\minijava2.g:328:5: LBRACK RBRACK
+					// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\MiniJava.g:328:5: LBRACK RBRACK
 					{
 					DebugLocation(328, 5);
 					LBRACK33=(IToken)Match(input,LBRACK,Follow._LBRACK_in_type877); 
@@ -1997,22 +1997,22 @@ public partial class minijava2Parser : Antlr.Runtime.Parser
 		private CommonTree _tree;
 		public CommonTree Tree { get { return _tree; } set { _tree = value; } }
 		object IAstRuleReturnScope.Tree { get { return Tree; } }
-		public constant_return(minijava2Parser grammar) {OnCreated(grammar);}
-		partial void OnCreated(minijava2Parser grammar);
+		public constant_return(MiniJavaParser grammar) {OnCreated(grammar);}
+		partial void OnCreated(MiniJavaParser grammar);
 	}
 
 	partial void EnterRule_constant();
 	partial void LeaveRule_constant();
 
 	// $ANTLR start "constant"
-	// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\minijava2.g:349:1: constant returns [ BaseSymbol value ] : (constantDecl= FLOAT |constantDecl= INTEGER |constantDecl= NULL |constantDecl= TRUE |constantDecl= FALSE );
+	// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\MiniJava.g:349:1: constant returns [ BaseSymbol value ] : (constantDecl= FLOAT |constantDecl= INTEGER |constantDecl= NULL |constantDecl= TRUE |constantDecl= FALSE );
 	[GrammarRule("constant")]
-	private minijava2Parser.constant_return constant()
+	private MiniJavaParser.constant_return constant()
 	{
 		EnterRule_constant();
 		EnterRule("constant", 15);
 		TraceIn("constant", 15);
-		minijava2Parser.constant_return retval = new minijava2Parser.constant_return(this);
+		MiniJavaParser.constant_return retval = new MiniJavaParser.constant_return(this);
 		retval.Start = (IToken)input.LT(1);
 
 		CommonTree root_0 = default(CommonTree);
@@ -2025,7 +2025,7 @@ public partial class minijava2Parser : Antlr.Runtime.Parser
 		DebugLocation(349, 1);
 		try
 		{
-			// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\minijava2.g:350:2: (constantDecl= FLOAT |constantDecl= INTEGER |constantDecl= NULL |constantDecl= TRUE |constantDecl= FALSE )
+			// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\MiniJava.g:350:2: (constantDecl= FLOAT |constantDecl= INTEGER |constantDecl= NULL |constantDecl= TRUE |constantDecl= FALSE )
 			int alt10=5;
 			try { DebugEnterDecision(10, false);
 			switch (input.LA(1))
@@ -2068,7 +2068,7 @@ public partial class minijava2Parser : Antlr.Runtime.Parser
 			{
 			case 1:
 				DebugEnterAlt(1);
-				// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\minijava2.g:351:3: constantDecl= FLOAT
+				// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\MiniJava.g:351:3: constantDecl= FLOAT
 				{
 				root_0 = (CommonTree)adaptor.Nil();
 
@@ -2086,7 +2086,7 @@ public partial class minijava2Parser : Antlr.Runtime.Parser
 				break;
 			case 2:
 				DebugEnterAlt(2);
-				// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\minijava2.g:356:3: constantDecl= INTEGER
+				// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\MiniJava.g:356:3: constantDecl= INTEGER
 				{
 				root_0 = (CommonTree)adaptor.Nil();
 
@@ -2104,7 +2104,7 @@ public partial class minijava2Parser : Antlr.Runtime.Parser
 				break;
 			case 3:
 				DebugEnterAlt(3);
-				// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\minijava2.g:361:3: constantDecl= NULL
+				// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\MiniJava.g:361:3: constantDecl= NULL
 				{
 				root_0 = (CommonTree)adaptor.Nil();
 
@@ -2122,7 +2122,7 @@ public partial class minijava2Parser : Antlr.Runtime.Parser
 				break;
 			case 4:
 				DebugEnterAlt(4);
-				// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\minijava2.g:366:3: constantDecl= TRUE
+				// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\MiniJava.g:366:3: constantDecl= TRUE
 				{
 				root_0 = (CommonTree)adaptor.Nil();
 
@@ -2140,7 +2140,7 @@ public partial class minijava2Parser : Antlr.Runtime.Parser
 				break;
 			case 5:
 				DebugEnterAlt(5);
-				// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\minijava2.g:372:3: constantDecl= FALSE
+				// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\MiniJava.g:372:3: constantDecl= FALSE
 				{
 				root_0 = (CommonTree)adaptor.Nil();
 
@@ -2190,41 +2190,41 @@ public partial class minijava2Parser : Antlr.Runtime.Parser
 		private CommonTree _tree;
 		public CommonTree Tree { get { return _tree; } set { _tree = value; } }
 		object IAstRuleReturnScope.Tree { get { return Tree; } }
-		public argList_return(minijava2Parser grammar) {OnCreated(grammar);}
-		partial void OnCreated(minijava2Parser grammar);
+		public argList_return(MiniJavaParser grammar) {OnCreated(grammar);}
+		partial void OnCreated(MiniJavaParser grammar);
 	}
 
 	partial void EnterRule_argList();
 	partial void LeaveRule_argList();
 
 	// $ANTLR start "argList"
-	// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\minijava2.g:381:1: argList returns [ List<BaseSymbol> valueList ] : (expressionListDecl= expressionList |) ;
+	// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\MiniJava.g:381:1: argList returns [ List<BaseSymbol> valueList ] : (expressionListDecl= expressionList |) ;
 	[GrammarRule("argList")]
-	private minijava2Parser.argList_return argList()
+	private MiniJavaParser.argList_return argList()
 	{
 		EnterRule_argList();
 		EnterRule("argList", 16);
 		TraceIn("argList", 16);
-		minijava2Parser.argList_return retval = new minijava2Parser.argList_return(this);
+		MiniJavaParser.argList_return retval = new MiniJavaParser.argList_return(this);
 		retval.Start = (IToken)input.LT(1);
 
 		CommonTree root_0 = default(CommonTree);
 
-		minijava2Parser.expressionList_return expressionListDecl = default(minijava2Parser.expressionList_return);
+		MiniJavaParser.expressionList_return expressionListDecl = default(MiniJavaParser.expressionList_return);
 
 
 		try { DebugEnterRule(GrammarFileName, "argList");
 		DebugLocation(381, 1);
 		try
 		{
-			// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\minijava2.g:382:2: ( (expressionListDecl= expressionList |) )
+			// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\MiniJava.g:382:2: ( (expressionListDecl= expressionList |) )
 			DebugEnterAlt(1);
-			// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\minijava2.g:383:3: (expressionListDecl= expressionList |)
+			// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\MiniJava.g:383:3: (expressionListDecl= expressionList |)
 			{
 			root_0 = (CommonTree)adaptor.Nil();
 
 			DebugLocation(383, 3);
-			// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\minijava2.g:383:3: (expressionListDecl= expressionList |)
+			// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\MiniJava.g:383:3: (expressionListDecl= expressionList |)
 			int alt11=2;
 			try { DebugEnterSubRule(11);
 			try { DebugEnterDecision(11, false);
@@ -2249,7 +2249,7 @@ public partial class minijava2Parser : Antlr.Runtime.Parser
 			{
 			case 1:
 				DebugEnterAlt(1);
-				// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\minijava2.g:383:5: expressionListDecl= expressionList
+				// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\MiniJava.g:383:5: expressionListDecl= expressionList
 				{
 				DebugLocation(383, 24);
 				PushFollow(Follow._expressionList_in_argList1022);
@@ -2266,7 +2266,7 @@ public partial class minijava2Parser : Antlr.Runtime.Parser
 				break;
 			case 2:
 				DebugEnterAlt(2);
-				// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\minijava2.g:389:3: 
+				// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\MiniJava.g:389:3: 
 				{
 				DebugLocation(389, 3);
 				 
@@ -2315,22 +2315,22 @@ public partial class minijava2Parser : Antlr.Runtime.Parser
 		private CommonTree _tree;
 		public CommonTree Tree { get { return _tree; } set { _tree = value; } }
 		object IAstRuleReturnScope.Tree { get { return Tree; } }
-		public stmt_return(minijava2Parser grammar) {OnCreated(grammar);}
-		partial void OnCreated(minijava2Parser grammar);
+		public stmt_return(MiniJavaParser grammar) {OnCreated(grammar);}
+		partial void OnCreated(MiniJavaParser grammar);
 	}
 
 	partial void EnterRule_stmt();
 	partial void LeaveRule_stmt();
 
 	// $ANTLR start "stmt"
-	// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\minijava2.g:397:1: stmt returns [ NonTerm value ] : ( LCURLY statementList= stmtList RCURLY | IF LPAREN expression= expr RPAREN statementIf= stmt ( ELSE statementElse= stmt )? | WHILE LPAREN expression= expr RPAREN statement= stmt | ( PRINT | PRINT2 ) LPAREN expression= expr RPAREN SEMI | (variable= varDecl ) ( ASSIGN expression= expr )? SEMI | (id= ID ) ( LBRACK expressionBracket= expr RBRACK )* ( ASSIGN expression= expr )? SEMI );
+	// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\MiniJava.g:397:1: stmt returns [ NonTerm value ] : ( LCURLY statementList= stmtList RCURLY | IF LPAREN expression= expr RPAREN statementIf= stmt ( ELSE statementElse= stmt )? | WHILE LPAREN expression= expr RPAREN statement= stmt | ( PRINT | PRINT2 ) LPAREN expression= expr RPAREN SEMI | (variable= varDecl ) ( ASSIGN expression= expr )? SEMI | (id= ID ) ( LBRACK expressionBracket= expr RBRACK )* ( ASSIGN expression= expr )? SEMI );
 	[GrammarRule("stmt")]
-	private minijava2Parser.stmt_return stmt()
+	private MiniJavaParser.stmt_return stmt()
 	{
 		EnterRule_stmt();
 		EnterRule("stmt", 17);
 		TraceIn("stmt", 17);
-		minijava2Parser.stmt_return retval = new minijava2Parser.stmt_return(this);
+		MiniJavaParser.stmt_return retval = new MiniJavaParser.stmt_return(this);
 		retval.Start = (IToken)input.LT(1);
 
 		CommonTree root_0 = default(CommonTree);
@@ -2356,13 +2356,13 @@ public partial class minijava2Parser : Antlr.Runtime.Parser
 		IToken RBRACK52 = default(IToken);
 		IToken ASSIGN53 = default(IToken);
 		IToken SEMI54 = default(IToken);
-		minijava2Parser.stmtList_return statementList = default(minijava2Parser.stmtList_return);
-		minijava2Parser.expr_return expression = default(minijava2Parser.expr_return);
-		minijava2Parser.stmt_return statementIf = default(minijava2Parser.stmt_return);
-		minijava2Parser.stmt_return statementElse = default(minijava2Parser.stmt_return);
-		minijava2Parser.stmt_return statement = default(minijava2Parser.stmt_return);
-		minijava2Parser.varDecl_return variable = default(minijava2Parser.varDecl_return);
-		minijava2Parser.expr_return expressionBracket = default(minijava2Parser.expr_return);
+		MiniJavaParser.stmtList_return statementList = default(MiniJavaParser.stmtList_return);
+		MiniJavaParser.expr_return expression = default(MiniJavaParser.expr_return);
+		MiniJavaParser.stmt_return statementIf = default(MiniJavaParser.stmt_return);
+		MiniJavaParser.stmt_return statementElse = default(MiniJavaParser.stmt_return);
+		MiniJavaParser.stmt_return statement = default(MiniJavaParser.stmt_return);
+		MiniJavaParser.varDecl_return variable = default(MiniJavaParser.varDecl_return);
+		MiniJavaParser.expr_return expressionBracket = default(MiniJavaParser.expr_return);
 
 		CommonTree id_tree = default(CommonTree);
 		CommonTree LCURLY35_tree = default(CommonTree);
@@ -2393,7 +2393,7 @@ public partial class minijava2Parser : Antlr.Runtime.Parser
 		DebugLocation(397, 1);
 		try
 		{
-			// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\minijava2.g:402:2: ( LCURLY statementList= stmtList RCURLY | IF LPAREN expression= expr RPAREN statementIf= stmt ( ELSE statementElse= stmt )? | WHILE LPAREN expression= expr RPAREN statement= stmt | ( PRINT | PRINT2 ) LPAREN expression= expr RPAREN SEMI | (variable= varDecl ) ( ASSIGN expression= expr )? SEMI | (id= ID ) ( LBRACK expressionBracket= expr RBRACK )* ( ASSIGN expression= expr )? SEMI )
+			// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\MiniJava.g:402:2: ( LCURLY statementList= stmtList RCURLY | IF LPAREN expression= expr RPAREN statementIf= stmt ( ELSE statementElse= stmt )? | WHILE LPAREN expression= expr RPAREN statement= stmt | ( PRINT | PRINT2 ) LPAREN expression= expr RPAREN SEMI | (variable= varDecl ) ( ASSIGN expression= expr )? SEMI | (id= ID ) ( LBRACK expressionBracket= expr RBRACK )* ( ASSIGN expression= expr )? SEMI )
 			int alt17=6;
 			try { DebugEnterDecision(17, false);
 			switch (input.LA(1))
@@ -2484,7 +2484,7 @@ public partial class minijava2Parser : Antlr.Runtime.Parser
 			{
 			case 1:
 				DebugEnterAlt(1);
-				// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\minijava2.g:403:3: LCURLY statementList= stmtList RCURLY
+				// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\MiniJava.g:403:3: LCURLY statementList= stmtList RCURLY
 				{
 				root_0 = (CommonTree)adaptor.Nil();
 
@@ -2507,7 +2507,7 @@ public partial class minijava2Parser : Antlr.Runtime.Parser
 				break;
 			case 2:
 				DebugEnterAlt(2);
-				// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\minijava2.g:408:3: IF LPAREN expression= expr RPAREN statementIf= stmt ( ELSE statementElse= stmt )?
+				// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\MiniJava.g:408:3: IF LPAREN expression= expr RPAREN statementIf= stmt ( ELSE statementElse= stmt )?
 				{
 				root_0 = (CommonTree)adaptor.Nil();
 
@@ -2533,7 +2533,7 @@ public partial class minijava2Parser : Antlr.Runtime.Parser
 
 				adaptor.AddChild(root_0, statementIf.Tree);
 				DebugLocation(408, 60);
-				// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\minijava2.g:408:60: ( ELSE statementElse= stmt )?
+				// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\MiniJava.g:408:60: ( ELSE statementElse= stmt )?
 				int alt12=2;
 				try { DebugEnterSubRule(12);
 				try { DebugEnterDecision(12, false);
@@ -2548,7 +2548,7 @@ public partial class minijava2Parser : Antlr.Runtime.Parser
 				{
 				case 1:
 					DebugEnterAlt(1);
-					// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\minijava2.g:408:61: ELSE statementElse= stmt
+					// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\MiniJava.g:408:61: ELSE statementElse= stmt
 					{
 					DebugLocation(408, 65);
 					ELSE40=(IToken)Match(input,ELSE,Follow._ELSE_in_stmt1114); 
@@ -2584,7 +2584,7 @@ public partial class minijava2Parser : Antlr.Runtime.Parser
 				break;
 			case 3:
 				DebugEnterAlt(3);
-				// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\minijava2.g:420:3: WHILE LPAREN expression= expr RPAREN statement= stmt
+				// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\MiniJava.g:420:3: WHILE LPAREN expression= expr RPAREN statement= stmt
 				{
 				root_0 = (CommonTree)adaptor.Nil();
 
@@ -2618,12 +2618,12 @@ public partial class minijava2Parser : Antlr.Runtime.Parser
 				break;
 			case 4:
 				DebugEnterAlt(4);
-				// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\minijava2.g:426:3: ( PRINT | PRINT2 ) LPAREN expression= expr RPAREN SEMI
+				// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\MiniJava.g:426:3: ( PRINT | PRINT2 ) LPAREN expression= expr RPAREN SEMI
 				{
 				root_0 = (CommonTree)adaptor.Nil();
 
 				DebugLocation(426, 3);
-				// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\minijava2.g:426:3: ( PRINT | PRINT2 )
+				// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\MiniJava.g:426:3: ( PRINT | PRINT2 )
 				int alt13=2;
 				try { DebugEnterSubRule(13);
 				try { DebugEnterDecision(13, false);
@@ -2648,7 +2648,7 @@ public partial class minijava2Parser : Antlr.Runtime.Parser
 				{
 				case 1:
 					DebugEnterAlt(1);
-					// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\minijava2.g:426:4: PRINT
+					// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\MiniJava.g:426:4: PRINT
 					{
 					DebugLocation(426, 9);
 					PRINT44=(IToken)Match(input,PRINT,Follow._PRINT_in_stmt1168); 
@@ -2660,7 +2660,7 @@ public partial class minijava2Parser : Antlr.Runtime.Parser
 					break;
 				case 2:
 					DebugEnterAlt(2);
-					// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\minijava2.g:426:13: PRINT2
+					// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\MiniJava.g:426:13: PRINT2
 					{
 					DebugLocation(426, 19);
 					PRINT245=(IToken)Match(input,PRINT2,Follow._PRINT2_in_stmt1173); 
@@ -2695,14 +2695,14 @@ public partial class minijava2Parser : Antlr.Runtime.Parser
 				break;
 			case 5:
 				DebugEnterAlt(5);
-				// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\minijava2.g:431:3: (variable= varDecl ) ( ASSIGN expression= expr )? SEMI
+				// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\MiniJava.g:431:3: (variable= varDecl ) ( ASSIGN expression= expr )? SEMI
 				{
 				root_0 = (CommonTree)adaptor.Nil();
 
 				DebugLocation(431, 3);
-				// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\minijava2.g:431:3: (variable= varDecl )
+				// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\MiniJava.g:431:3: (variable= varDecl )
 				DebugEnterAlt(1);
-				// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\minijava2.g:431:4: variable= varDecl
+				// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\MiniJava.g:431:4: variable= varDecl
 				{
 				DebugLocation(431, 13);
 				PushFollow(Follow._varDecl_in_stmt1207);
@@ -2714,7 +2714,7 @@ public partial class minijava2Parser : Antlr.Runtime.Parser
 				}
 
 				DebugLocation(431, 24);
-				// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\minijava2.g:431:24: ( ASSIGN expression= expr )?
+				// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\MiniJava.g:431:24: ( ASSIGN expression= expr )?
 				int alt14=2;
 				try { DebugEnterSubRule(14);
 				try { DebugEnterDecision(14, false);
@@ -2729,7 +2729,7 @@ public partial class minijava2Parser : Antlr.Runtime.Parser
 				{
 				case 1:
 					DebugEnterAlt(1);
-					// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\minijava2.g:431:25: ASSIGN expression= expr
+					// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\MiniJava.g:431:25: ASSIGN expression= expr
 					{
 					DebugLocation(431, 31);
 					ASSIGN49=(IToken)Match(input,ASSIGN,Follow._ASSIGN_in_stmt1211); 
@@ -2761,14 +2761,14 @@ public partial class minijava2Parser : Antlr.Runtime.Parser
 				break;
 			case 6:
 				DebugEnterAlt(6);
-				// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\minijava2.g:437:3: (id= ID ) ( LBRACK expressionBracket= expr RBRACK )* ( ASSIGN expression= expr )? SEMI
+				// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\MiniJava.g:437:3: (id= ID ) ( LBRACK expressionBracket= expr RBRACK )* ( ASSIGN expression= expr )? SEMI
 				{
 				root_0 = (CommonTree)adaptor.Nil();
 
 				DebugLocation(437, 3);
-				// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\minijava2.g:437:3: (id= ID )
+				// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\MiniJava.g:437:3: (id= ID )
 				DebugEnterAlt(1);
-				// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\minijava2.g:437:4: id= ID
+				// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\MiniJava.g:437:4: id= ID
 				{
 				DebugLocation(437, 7);
 				id=(IToken)Match(input,ID,Follow._ID_in_stmt1240); 
@@ -2779,7 +2779,7 @@ public partial class minijava2Parser : Antlr.Runtime.Parser
 				}
 
 				DebugLocation(438, 3);
-				// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\minijava2.g:438:3: ( LBRACK expressionBracket= expr RBRACK )*
+				// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\MiniJava.g:438:3: ( LBRACK expressionBracket= expr RBRACK )*
 				try { DebugEnterSubRule(15);
 				while (true)
 				{
@@ -2798,7 +2798,7 @@ public partial class minijava2Parser : Antlr.Runtime.Parser
 					{
 					case 1:
 						DebugEnterAlt(1);
-						// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\minijava2.g:439:4: LBRACK expressionBracket= expr RBRACK
+						// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\MiniJava.g:439:4: LBRACK expressionBracket= expr RBRACK
 						{
 						DebugLocation(439, 10);
 						LBRACK51=(IToken)Match(input,LBRACK,Follow._LBRACK_in_stmt1251); 
@@ -2829,7 +2829,7 @@ public partial class minijava2Parser : Antlr.Runtime.Parser
 				} finally { DebugExitSubRule(15); }
 
 				DebugLocation(443, 7);
-				// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\minijava2.g:443:7: ( ASSIGN expression= expr )?
+				// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\MiniJava.g:443:7: ( ASSIGN expression= expr )?
 				int alt16=2;
 				try { DebugEnterSubRule(16);
 				try { DebugEnterDecision(16, false);
@@ -2844,7 +2844,7 @@ public partial class minijava2Parser : Antlr.Runtime.Parser
 				{
 				case 1:
 					DebugEnterAlt(1);
-					// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\minijava2.g:443:8: ASSIGN expression= expr
+					// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\MiniJava.g:443:8: ASSIGN expression= expr
 					{
 					DebugLocation(443, 14);
 					ASSIGN53=(IToken)Match(input,ASSIGN,Follow._ASSIGN_in_stmt1275); 
@@ -2914,28 +2914,28 @@ public partial class minijava2Parser : Antlr.Runtime.Parser
 		private CommonTree _tree;
 		public CommonTree Tree { get { return _tree; } set { _tree = value; } }
 		object IAstRuleReturnScope.Tree { get { return Tree; } }
-		public varDecl_return(minijava2Parser grammar) {OnCreated(grammar);}
-		partial void OnCreated(minijava2Parser grammar);
+		public varDecl_return(MiniJavaParser grammar) {OnCreated(grammar);}
+		partial void OnCreated(MiniJavaParser grammar);
 	}
 
 	partial void EnterRule_varDecl();
 	partial void LeaveRule_varDecl();
 
 	// $ANTLR start "varDecl"
-	// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\minijava2.g:456:1: varDecl returns [ NonTerm value ] : typeDecl= type id= ID ;
+	// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\MiniJava.g:456:1: varDecl returns [ NonTerm value ] : typeDecl= type id= ID ;
 	[GrammarRule("varDecl")]
-	private minijava2Parser.varDecl_return varDecl()
+	private MiniJavaParser.varDecl_return varDecl()
 	{
 		EnterRule_varDecl();
 		EnterRule("varDecl", 18);
 		TraceIn("varDecl", 18);
-		minijava2Parser.varDecl_return retval = new minijava2Parser.varDecl_return(this);
+		MiniJavaParser.varDecl_return retval = new MiniJavaParser.varDecl_return(this);
 		retval.Start = (IToken)input.LT(1);
 
 		CommonTree root_0 = default(CommonTree);
 
 		IToken id = default(IToken);
-		minijava2Parser.type_return typeDecl = default(minijava2Parser.type_return);
+		MiniJavaParser.type_return typeDecl = default(MiniJavaParser.type_return);
 
 		CommonTree id_tree = default(CommonTree);
 
@@ -2943,9 +2943,9 @@ public partial class minijava2Parser : Antlr.Runtime.Parser
 		DebugLocation(456, 1);
 		try
 		{
-			// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\minijava2.g:457:2: (typeDecl= type id= ID )
+			// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\MiniJava.g:457:2: (typeDecl= type id= ID )
 			DebugEnterAlt(1);
-			// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\minijava2.g:458:3: typeDecl= type id= ID
+			// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\MiniJava.g:458:3: typeDecl= type id= ID
 			{
 			root_0 = (CommonTree)adaptor.Nil();
 
@@ -2999,36 +2999,36 @@ public partial class minijava2Parser : Antlr.Runtime.Parser
 		private CommonTree _tree;
 		public CommonTree Tree { get { return _tree; } set { _tree = value; } }
 		object IAstRuleReturnScope.Tree { get { return Tree; } }
-		public expr_return(minijava2Parser grammar) {OnCreated(grammar);}
-		partial void OnCreated(minijava2Parser grammar);
+		public expr_return(MiniJavaParser grammar) {OnCreated(grammar);}
+		partial void OnCreated(MiniJavaParser grammar);
 	}
 
 	partial void EnterRule_expr();
 	partial void LeaveRule_expr();
 
 	// $ANTLR start "expr"
-	// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\minijava2.g:477:1: expr returns [ BaseSymbol value ] : expression= logicalOrExpression ;
+	// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\MiniJava.g:477:1: expr returns [ BaseSymbol value ] : expression= logicalOrExpression ;
 	[GrammarRule("expr")]
-	private minijava2Parser.expr_return expr()
+	private MiniJavaParser.expr_return expr()
 	{
 		EnterRule_expr();
 		EnterRule("expr", 19);
 		TraceIn("expr", 19);
-		minijava2Parser.expr_return retval = new minijava2Parser.expr_return(this);
+		MiniJavaParser.expr_return retval = new MiniJavaParser.expr_return(this);
 		retval.Start = (IToken)input.LT(1);
 
 		CommonTree root_0 = default(CommonTree);
 
-		minijava2Parser.logicalOrExpression_return expression = default(minijava2Parser.logicalOrExpression_return);
+		MiniJavaParser.logicalOrExpression_return expression = default(MiniJavaParser.logicalOrExpression_return);
 
 
 		try { DebugEnterRule(GrammarFileName, "expr");
 		DebugLocation(477, 1);
 		try
 		{
-			// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\minijava2.g:478:2: (expression= logicalOrExpression )
+			// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\MiniJava.g:478:2: (expression= logicalOrExpression )
 			DebugEnterAlt(1);
-			// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\minijava2.g:479:3: expression= logicalOrExpression
+			// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\MiniJava.g:479:3: expression= logicalOrExpression
 			{
 			root_0 = (CommonTree)adaptor.Nil();
 
@@ -3077,28 +3077,28 @@ public partial class minijava2Parser : Antlr.Runtime.Parser
 		private CommonTree _tree;
 		public CommonTree Tree { get { return _tree; } set { _tree = value; } }
 		object IAstRuleReturnScope.Tree { get { return Tree; } }
-		public expressionList_return(minijava2Parser grammar) {OnCreated(grammar);}
-		partial void OnCreated(minijava2Parser grammar);
+		public expressionList_return(MiniJavaParser grammar) {OnCreated(grammar);}
+		partial void OnCreated(MiniJavaParser grammar);
 	}
 
 	partial void EnterRule_expressionList();
 	partial void LeaveRule_expressionList();
 
 	// $ANTLR start "expressionList"
-	// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\minijava2.g:485:1: expressionList returns [ List<BaseSymbol> valueList ] : expression= expr ( COMMA expression= expr )* ;
+	// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\MiniJava.g:485:1: expressionList returns [ List<BaseSymbol> valueList ] : expression= expr ( COMMA expression= expr )* ;
 	[GrammarRule("expressionList")]
-	private minijava2Parser.expressionList_return expressionList()
+	private MiniJavaParser.expressionList_return expressionList()
 	{
 		EnterRule_expressionList();
 		EnterRule("expressionList", 20);
 		TraceIn("expressionList", 20);
-		minijava2Parser.expressionList_return retval = new minijava2Parser.expressionList_return(this);
+		MiniJavaParser.expressionList_return retval = new MiniJavaParser.expressionList_return(this);
 		retval.Start = (IToken)input.LT(1);
 
 		CommonTree root_0 = default(CommonTree);
 
 		IToken COMMA55 = default(IToken);
-		minijava2Parser.expr_return expression = default(minijava2Parser.expr_return);
+		MiniJavaParser.expr_return expression = default(MiniJavaParser.expr_return);
 
 		CommonTree COMMA55_tree = default(CommonTree);
 
@@ -3109,9 +3109,9 @@ public partial class minijava2Parser : Antlr.Runtime.Parser
 		DebugLocation(485, 1);
 		try
 		{
-			// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\minijava2.g:490:2: (expression= expr ( COMMA expression= expr )* )
+			// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\MiniJava.g:490:2: (expression= expr ( COMMA expression= expr )* )
 			DebugEnterAlt(1);
-			// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\minijava2.g:491:3: expression= expr ( COMMA expression= expr )*
+			// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\MiniJava.g:491:3: expression= expr ( COMMA expression= expr )*
 			{
 			root_0 = (CommonTree)adaptor.Nil();
 
@@ -3126,7 +3126,7 @@ public partial class minijava2Parser : Antlr.Runtime.Parser
 						retval.valueList.Add(expression.value);
 					
 			DebugLocation(495, 3);
-			// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\minijava2.g:495:3: ( COMMA expression= expr )*
+			// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\MiniJava.g:495:3: ( COMMA expression= expr )*
 			try { DebugEnterSubRule(18);
 			while (true)
 			{
@@ -3145,7 +3145,7 @@ public partial class minijava2Parser : Antlr.Runtime.Parser
 				{
 				case 1:
 					DebugEnterAlt(1);
-					// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\minijava2.g:495:5: COMMA expression= expr
+					// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\MiniJava.g:495:5: COMMA expression= expr
 					{
 					DebugLocation(495, 10);
 					COMMA55=(IToken)Match(input,COMMA,Follow._COMMA_in_expressionList1403); 
@@ -3209,28 +3209,28 @@ public partial class minijava2Parser : Antlr.Runtime.Parser
 		private CommonTree _tree;
 		public CommonTree Tree { get { return _tree; } set { _tree = value; } }
 		object IAstRuleReturnScope.Tree { get { return Tree; } }
-		public logicalOrExpression_return(minijava2Parser grammar) {OnCreated(grammar);}
-		partial void OnCreated(minijava2Parser grammar);
+		public logicalOrExpression_return(MiniJavaParser grammar) {OnCreated(grammar);}
+		partial void OnCreated(MiniJavaParser grammar);
 	}
 
 	partial void EnterRule_logicalOrExpression();
 	partial void LeaveRule_logicalOrExpression();
 
 	// $ANTLR start "logicalOrExpression"
-	// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\minijava2.g:505:1: logicalOrExpression returns [ BaseSymbol value ] : expression= logicalAndExpression ( LOR expression= logicalAndExpression )* ;
+	// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\MiniJava.g:505:1: logicalOrExpression returns [ BaseSymbol value ] : expression= logicalAndExpression ( LOR expression= logicalAndExpression )* ;
 	[GrammarRule("logicalOrExpression")]
-	private minijava2Parser.logicalOrExpression_return logicalOrExpression()
+	private MiniJavaParser.logicalOrExpression_return logicalOrExpression()
 	{
 		EnterRule_logicalOrExpression();
 		EnterRule("logicalOrExpression", 21);
 		TraceIn("logicalOrExpression", 21);
-		minijava2Parser.logicalOrExpression_return retval = new minijava2Parser.logicalOrExpression_return(this);
+		MiniJavaParser.logicalOrExpression_return retval = new MiniJavaParser.logicalOrExpression_return(this);
 		retval.Start = (IToken)input.LT(1);
 
 		CommonTree root_0 = default(CommonTree);
 
 		IToken LOR56 = default(IToken);
-		minijava2Parser.logicalAndExpression_return expression = default(minijava2Parser.logicalAndExpression_return);
+		MiniJavaParser.logicalAndExpression_return expression = default(MiniJavaParser.logicalAndExpression_return);
 
 		CommonTree LOR56_tree = default(CommonTree);
 
@@ -3241,9 +3241,9 @@ public partial class minijava2Parser : Antlr.Runtime.Parser
 		DebugLocation(505, 1);
 		try
 		{
-			// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\minijava2.g:510:2: (expression= logicalAndExpression ( LOR expression= logicalAndExpression )* )
+			// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\MiniJava.g:510:2: (expression= logicalAndExpression ( LOR expression= logicalAndExpression )* )
 			DebugEnterAlt(1);
-			// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\minijava2.g:511:3: expression= logicalAndExpression ( LOR expression= logicalAndExpression )*
+			// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\MiniJava.g:511:3: expression= logicalAndExpression ( LOR expression= logicalAndExpression )*
 			{
 			root_0 = (CommonTree)adaptor.Nil();
 
@@ -3258,7 +3258,7 @@ public partial class minijava2Parser : Antlr.Runtime.Parser
 						valueList.Add(expression.value);
 					
 			DebugLocation(515, 3);
-			// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\minijava2.g:515:3: ( LOR expression= logicalAndExpression )*
+			// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\MiniJava.g:515:3: ( LOR expression= logicalAndExpression )*
 			try { DebugEnterSubRule(19);
 			while (true)
 			{
@@ -3277,7 +3277,7 @@ public partial class minijava2Parser : Antlr.Runtime.Parser
 				{
 				case 1:
 					DebugEnterAlt(1);
-					// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\minijava2.g:515:5: LOR expression= logicalAndExpression
+					// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\MiniJava.g:515:5: LOR expression= logicalAndExpression
 					{
 					DebugLocation(515, 8);
 					LOR56=(IToken)Match(input,LOR,Follow._LOR_in_logicalOrExpression1463); 
@@ -3355,28 +3355,28 @@ public partial class minijava2Parser : Antlr.Runtime.Parser
 		private CommonTree _tree;
 		public CommonTree Tree { get { return _tree; } set { _tree = value; } }
 		object IAstRuleReturnScope.Tree { get { return Tree; } }
-		public logicalAndExpression_return(minijava2Parser grammar) {OnCreated(grammar);}
-		partial void OnCreated(minijava2Parser grammar);
+		public logicalAndExpression_return(MiniJavaParser grammar) {OnCreated(grammar);}
+		partial void OnCreated(MiniJavaParser grammar);
 	}
 
 	partial void EnterRule_logicalAndExpression();
 	partial void LeaveRule_logicalAndExpression();
 
 	// $ANTLR start "logicalAndExpression"
-	// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\minijava2.g:534:1: logicalAndExpression returns [ BaseSymbol value ] : expression= equalityExpression ( LAND expression= equalityExpression )* ;
+	// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\MiniJava.g:534:1: logicalAndExpression returns [ BaseSymbol value ] : expression= equalityExpression ( LAND expression= equalityExpression )* ;
 	[GrammarRule("logicalAndExpression")]
-	private minijava2Parser.logicalAndExpression_return logicalAndExpression()
+	private MiniJavaParser.logicalAndExpression_return logicalAndExpression()
 	{
 		EnterRule_logicalAndExpression();
 		EnterRule("logicalAndExpression", 22);
 		TraceIn("logicalAndExpression", 22);
-		minijava2Parser.logicalAndExpression_return retval = new minijava2Parser.logicalAndExpression_return(this);
+		MiniJavaParser.logicalAndExpression_return retval = new MiniJavaParser.logicalAndExpression_return(this);
 		retval.Start = (IToken)input.LT(1);
 
 		CommonTree root_0 = default(CommonTree);
 
 		IToken LAND57 = default(IToken);
-		minijava2Parser.equalityExpression_return expression = default(minijava2Parser.equalityExpression_return);
+		MiniJavaParser.equalityExpression_return expression = default(MiniJavaParser.equalityExpression_return);
 
 		CommonTree LAND57_tree = default(CommonTree);
 
@@ -3387,9 +3387,9 @@ public partial class minijava2Parser : Antlr.Runtime.Parser
 		DebugLocation(534, 1);
 		try
 		{
-			// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\minijava2.g:539:2: (expression= equalityExpression ( LAND expression= equalityExpression )* )
+			// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\MiniJava.g:539:2: (expression= equalityExpression ( LAND expression= equalityExpression )* )
 			DebugEnterAlt(1);
-			// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\minijava2.g:540:3: expression= equalityExpression ( LAND expression= equalityExpression )*
+			// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\MiniJava.g:540:3: expression= equalityExpression ( LAND expression= equalityExpression )*
 			{
 			root_0 = (CommonTree)adaptor.Nil();
 
@@ -3404,7 +3404,7 @@ public partial class minijava2Parser : Antlr.Runtime.Parser
 						valueList.Add(expression.value);
 					
 			DebugLocation(544, 3);
-			// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\minijava2.g:544:3: ( LAND expression= equalityExpression )*
+			// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\MiniJava.g:544:3: ( LAND expression= equalityExpression )*
 			try { DebugEnterSubRule(20);
 			while (true)
 			{
@@ -3423,7 +3423,7 @@ public partial class minijava2Parser : Antlr.Runtime.Parser
 				{
 				case 1:
 					DebugEnterAlt(1);
-					// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\minijava2.g:544:5: LAND expression= equalityExpression
+					// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\MiniJava.g:544:5: LAND expression= equalityExpression
 					{
 					DebugLocation(544, 9);
 					LAND57=(IToken)Match(input,LAND,Follow._LAND_in_logicalAndExpression1524); 
@@ -3494,28 +3494,28 @@ public partial class minijava2Parser : Antlr.Runtime.Parser
 		private CommonTree _tree;
 		public CommonTree Tree { get { return _tree; } set { _tree = value; } }
 		object IAstRuleReturnScope.Tree { get { return Tree; } }
-		public equalityExpression_return(minijava2Parser grammar) {OnCreated(grammar);}
-		partial void OnCreated(minijava2Parser grammar);
+		public equalityExpression_return(MiniJavaParser grammar) {OnCreated(grammar);}
+		partial void OnCreated(MiniJavaParser grammar);
 	}
 
 	partial void EnterRule_equalityExpression();
 	partial void LeaveRule_equalityExpression();
 
 	// $ANTLR start "equalityExpression"
-	// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\minijava2.g:557:1: equalityExpression returns [ BaseSymbol value ] : expression= relationalExpression ( (token= EQUAL |token= NEQUAL ) expression= relationalExpression )? ;
+	// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\MiniJava.g:557:1: equalityExpression returns [ BaseSymbol value ] : expression= relationalExpression ( (token= EQUAL |token= NEQUAL ) expression= relationalExpression )? ;
 	[GrammarRule("equalityExpression")]
-	private minijava2Parser.equalityExpression_return equalityExpression()
+	private MiniJavaParser.equalityExpression_return equalityExpression()
 	{
 		EnterRule_equalityExpression();
 		EnterRule("equalityExpression", 23);
 		TraceIn("equalityExpression", 23);
-		minijava2Parser.equalityExpression_return retval = new minijava2Parser.equalityExpression_return(this);
+		MiniJavaParser.equalityExpression_return retval = new MiniJavaParser.equalityExpression_return(this);
 		retval.Start = (IToken)input.LT(1);
 
 		CommonTree root_0 = default(CommonTree);
 
 		IToken token = default(IToken);
-		minijava2Parser.relationalExpression_return expression = default(minijava2Parser.relationalExpression_return);
+		MiniJavaParser.relationalExpression_return expression = default(MiniJavaParser.relationalExpression_return);
 
 		CommonTree token_tree = default(CommonTree);
 
@@ -3527,9 +3527,9 @@ public partial class minijava2Parser : Antlr.Runtime.Parser
 		DebugLocation(557, 1);
 		try
 		{
-			// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\minijava2.g:563:2: (expression= relationalExpression ( (token= EQUAL |token= NEQUAL ) expression= relationalExpression )? )
+			// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\MiniJava.g:563:2: (expression= relationalExpression ( (token= EQUAL |token= NEQUAL ) expression= relationalExpression )? )
 			DebugEnterAlt(1);
-			// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\minijava2.g:564:3: expression= relationalExpression ( (token= EQUAL |token= NEQUAL ) expression= relationalExpression )?
+			// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\MiniJava.g:564:3: expression= relationalExpression ( (token= EQUAL |token= NEQUAL ) expression= relationalExpression )?
 			{
 			root_0 = (CommonTree)adaptor.Nil();
 
@@ -3544,7 +3544,7 @@ public partial class minijava2Parser : Antlr.Runtime.Parser
 						valueList.Add(expression.value);
 					
 			DebugLocation(568, 3);
-			// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\minijava2.g:568:3: ( (token= EQUAL |token= NEQUAL ) expression= relationalExpression )?
+			// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\MiniJava.g:568:3: ( (token= EQUAL |token= NEQUAL ) expression= relationalExpression )?
 			int alt22=2;
 			try { DebugEnterSubRule(22);
 			try { DebugEnterDecision(22, false);
@@ -3559,10 +3559,10 @@ public partial class minijava2Parser : Antlr.Runtime.Parser
 			{
 			case 1:
 				DebugEnterAlt(1);
-				// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\minijava2.g:568:5: (token= EQUAL |token= NEQUAL ) expression= relationalExpression
+				// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\MiniJava.g:568:5: (token= EQUAL |token= NEQUAL ) expression= relationalExpression
 				{
 				DebugLocation(568, 5);
-				// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\minijava2.g:568:5: (token= EQUAL |token= NEQUAL )
+				// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\MiniJava.g:568:5: (token= EQUAL |token= NEQUAL )
 				int alt21=2;
 				try { DebugEnterSubRule(21);
 				try { DebugEnterDecision(21, false);
@@ -3587,7 +3587,7 @@ public partial class minijava2Parser : Antlr.Runtime.Parser
 				{
 				case 1:
 					DebugEnterAlt(1);
-					// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\minijava2.g:568:6: token= EQUAL
+					// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\MiniJava.g:568:6: token= EQUAL
 					{
 					DebugLocation(568, 12);
 					token=(IToken)Match(input,EQUAL,Follow._EQUAL_in_equalityExpression1591); 
@@ -3599,7 +3599,7 @@ public partial class minijava2Parser : Antlr.Runtime.Parser
 					break;
 				case 2:
 					DebugEnterAlt(2);
-					// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\minijava2.g:568:23: token= NEQUAL
+					// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\MiniJava.g:568:23: token= NEQUAL
 					{
 					DebugLocation(568, 29);
 					token=(IToken)Match(input,NEQUAL,Follow._NEQUAL_in_equalityExpression1600); 
@@ -3670,28 +3670,28 @@ public partial class minijava2Parser : Antlr.Runtime.Parser
 		private CommonTree _tree;
 		public CommonTree Tree { get { return _tree; } set { _tree = value; } }
 		object IAstRuleReturnScope.Tree { get { return Tree; } }
-		public relationalExpression_return(minijava2Parser grammar) {OnCreated(grammar);}
-		partial void OnCreated(minijava2Parser grammar);
+		public relationalExpression_return(MiniJavaParser grammar) {OnCreated(grammar);}
+		partial void OnCreated(MiniJavaParser grammar);
 	}
 
 	partial void EnterRule_relationalExpression();
 	partial void LeaveRule_relationalExpression();
 
 	// $ANTLR start "relationalExpression"
-	// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\minijava2.g:580:1: relationalExpression returns [ BaseSymbol value ] : expression= additiveExpression ( (token= LESS |token= LESSEQ |token= MOREEQ |token= MORE ) expression= additiveExpression )* ;
+	// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\MiniJava.g:580:1: relationalExpression returns [ BaseSymbol value ] : expression= additiveExpression ( (token= LESS |token= LESSEQ |token= MOREEQ |token= MORE ) expression= additiveExpression )* ;
 	[GrammarRule("relationalExpression")]
-	private minijava2Parser.relationalExpression_return relationalExpression()
+	private MiniJavaParser.relationalExpression_return relationalExpression()
 	{
 		EnterRule_relationalExpression();
 		EnterRule("relationalExpression", 24);
 		TraceIn("relationalExpression", 24);
-		minijava2Parser.relationalExpression_return retval = new minijava2Parser.relationalExpression_return(this);
+		MiniJavaParser.relationalExpression_return retval = new MiniJavaParser.relationalExpression_return(this);
 		retval.Start = (IToken)input.LT(1);
 
 		CommonTree root_0 = default(CommonTree);
 
 		IToken token = default(IToken);
-		minijava2Parser.additiveExpression_return expression = default(minijava2Parser.additiveExpression_return);
+		MiniJavaParser.additiveExpression_return expression = default(MiniJavaParser.additiveExpression_return);
 
 		CommonTree token_tree = default(CommonTree);
 
@@ -3702,9 +3702,9 @@ public partial class minijava2Parser : Antlr.Runtime.Parser
 		DebugLocation(580, 1);
 		try
 		{
-			// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\minijava2.g:585:2: (expression= additiveExpression ( (token= LESS |token= LESSEQ |token= MOREEQ |token= MORE ) expression= additiveExpression )* )
+			// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\MiniJava.g:585:2: (expression= additiveExpression ( (token= LESS |token= LESSEQ |token= MOREEQ |token= MORE ) expression= additiveExpression )* )
 			DebugEnterAlt(1);
-			// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\minijava2.g:586:3: expression= additiveExpression ( (token= LESS |token= LESSEQ |token= MOREEQ |token= MORE ) expression= additiveExpression )*
+			// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\MiniJava.g:586:3: expression= additiveExpression ( (token= LESS |token= LESSEQ |token= MOREEQ |token= MORE ) expression= additiveExpression )*
 			{
 			root_0 = (CommonTree)adaptor.Nil();
 
@@ -3720,7 +3720,7 @@ public partial class minijava2Parser : Antlr.Runtime.Parser
 						retval.value = expression.value;
 					
 			DebugLocation(591, 3);
-			// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\minijava2.g:591:3: ( (token= LESS |token= LESSEQ |token= MOREEQ |token= MORE ) expression= additiveExpression )*
+			// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\MiniJava.g:591:3: ( (token= LESS |token= LESSEQ |token= MOREEQ |token= MORE ) expression= additiveExpression )*
 			try { DebugEnterSubRule(24);
 			while (true)
 			{
@@ -3739,10 +3739,10 @@ public partial class minijava2Parser : Antlr.Runtime.Parser
 				{
 				case 1:
 					DebugEnterAlt(1);
-					// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\minijava2.g:591:4: (token= LESS |token= LESSEQ |token= MOREEQ |token= MORE ) expression= additiveExpression
+					// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\MiniJava.g:591:4: (token= LESS |token= LESSEQ |token= MOREEQ |token= MORE ) expression= additiveExpression
 					{
 					DebugLocation(591, 4);
-					// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\minijava2.g:591:4: (token= LESS |token= LESSEQ |token= MOREEQ |token= MORE )
+					// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\MiniJava.g:591:4: (token= LESS |token= LESSEQ |token= MOREEQ |token= MORE )
 					int alt23=4;
 					try { DebugEnterSubRule(23);
 					try { DebugEnterDecision(23, false);
@@ -3781,7 +3781,7 @@ public partial class minijava2Parser : Antlr.Runtime.Parser
 					{
 					case 1:
 						DebugEnterAlt(1);
-						// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\minijava2.g:591:5: token= LESS
+						// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\MiniJava.g:591:5: token= LESS
 						{
 						DebugLocation(591, 11);
 						token=(IToken)Match(input,LESS,Follow._LESS_in_relationalExpression1666); 
@@ -3793,7 +3793,7 @@ public partial class minijava2Parser : Antlr.Runtime.Parser
 						break;
 					case 2:
 						DebugEnterAlt(2);
-						// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\minijava2.g:591:21: token= LESSEQ
+						// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\MiniJava.g:591:21: token= LESSEQ
 						{
 						DebugLocation(591, 27);
 						token=(IToken)Match(input,LESSEQ,Follow._LESSEQ_in_relationalExpression1675); 
@@ -3805,7 +3805,7 @@ public partial class minijava2Parser : Antlr.Runtime.Parser
 						break;
 					case 3:
 						DebugEnterAlt(3);
-						// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\minijava2.g:591:39: token= MOREEQ
+						// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\MiniJava.g:591:39: token= MOREEQ
 						{
 						DebugLocation(591, 45);
 						token=(IToken)Match(input,MOREEQ,Follow._MOREEQ_in_relationalExpression1684); 
@@ -3817,7 +3817,7 @@ public partial class minijava2Parser : Antlr.Runtime.Parser
 						break;
 					case 4:
 						DebugEnterAlt(4);
-						// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\minijava2.g:591:57: token= MORE
+						// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\MiniJava.g:591:57: token= MORE
 						{
 						DebugLocation(591, 63);
 						token=(IToken)Match(input,MORE,Follow._MORE_in_relationalExpression1693); 
@@ -3894,28 +3894,28 @@ public partial class minijava2Parser : Antlr.Runtime.Parser
 		private CommonTree _tree;
 		public CommonTree Tree { get { return _tree; } set { _tree = value; } }
 		object IAstRuleReturnScope.Tree { get { return Tree; } }
-		public additiveExpression_return(minijava2Parser grammar) {OnCreated(grammar);}
-		partial void OnCreated(minijava2Parser grammar);
+		public additiveExpression_return(MiniJavaParser grammar) {OnCreated(grammar);}
+		partial void OnCreated(MiniJavaParser grammar);
 	}
 
 	partial void EnterRule_additiveExpression();
 	partial void LeaveRule_additiveExpression();
 
 	// $ANTLR start "additiveExpression"
-	// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\minijava2.g:602:1: additiveExpression returns [ BaseSymbol value ] : expression= multiplicativeExpression ( (token= PLUS |token= MINUS ) expression= multiplicativeExpression )* ;
+	// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\MiniJava.g:602:1: additiveExpression returns [ BaseSymbol value ] : expression= multiplicativeExpression ( (token= PLUS |token= MINUS ) expression= multiplicativeExpression )* ;
 	[GrammarRule("additiveExpression")]
-	private minijava2Parser.additiveExpression_return additiveExpression()
+	private MiniJavaParser.additiveExpression_return additiveExpression()
 	{
 		EnterRule_additiveExpression();
 		EnterRule("additiveExpression", 25);
 		TraceIn("additiveExpression", 25);
-		minijava2Parser.additiveExpression_return retval = new minijava2Parser.additiveExpression_return(this);
+		MiniJavaParser.additiveExpression_return retval = new MiniJavaParser.additiveExpression_return(this);
 		retval.Start = (IToken)input.LT(1);
 
 		CommonTree root_0 = default(CommonTree);
 
 		IToken token = default(IToken);
-		minijava2Parser.multiplicativeExpression_return expression = default(minijava2Parser.multiplicativeExpression_return);
+		MiniJavaParser.multiplicativeExpression_return expression = default(MiniJavaParser.multiplicativeExpression_return);
 
 		CommonTree token_tree = default(CommonTree);
 
@@ -3926,9 +3926,9 @@ public partial class minijava2Parser : Antlr.Runtime.Parser
 		DebugLocation(602, 1);
 		try
 		{
-			// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\minijava2.g:607:2: (expression= multiplicativeExpression ( (token= PLUS |token= MINUS ) expression= multiplicativeExpression )* )
+			// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\MiniJava.g:607:2: (expression= multiplicativeExpression ( (token= PLUS |token= MINUS ) expression= multiplicativeExpression )* )
 			DebugEnterAlt(1);
-			// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\minijava2.g:608:3: expression= multiplicativeExpression ( (token= PLUS |token= MINUS ) expression= multiplicativeExpression )*
+			// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\MiniJava.g:608:3: expression= multiplicativeExpression ( (token= PLUS |token= MINUS ) expression= multiplicativeExpression )*
 			{
 			root_0 = (CommonTree)adaptor.Nil();
 
@@ -3943,7 +3943,7 @@ public partial class minijava2Parser : Antlr.Runtime.Parser
 						retval.value = expression.value;
 					
 			DebugLocation(612, 3);
-			// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\minijava2.g:612:3: ( (token= PLUS |token= MINUS ) expression= multiplicativeExpression )*
+			// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\MiniJava.g:612:3: ( (token= PLUS |token= MINUS ) expression= multiplicativeExpression )*
 			try { DebugEnterSubRule(26);
 			while (true)
 			{
@@ -3962,10 +3962,10 @@ public partial class minijava2Parser : Antlr.Runtime.Parser
 				{
 				case 1:
 					DebugEnterAlt(1);
-					// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\minijava2.g:612:4: (token= PLUS |token= MINUS ) expression= multiplicativeExpression
+					// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\MiniJava.g:612:4: (token= PLUS |token= MINUS ) expression= multiplicativeExpression
 					{
 					DebugLocation(612, 4);
-					// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\minijava2.g:612:4: (token= PLUS |token= MINUS )
+					// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\MiniJava.g:612:4: (token= PLUS |token= MINUS )
 					int alt25=2;
 					try { DebugEnterSubRule(25);
 					try { DebugEnterDecision(25, false);
@@ -3990,7 +3990,7 @@ public partial class minijava2Parser : Antlr.Runtime.Parser
 					{
 					case 1:
 						DebugEnterAlt(1);
-						// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\minijava2.g:612:5: token= PLUS
+						// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\MiniJava.g:612:5: token= PLUS
 						{
 						DebugLocation(612, 11);
 						token=(IToken)Match(input,PLUS,Follow._PLUS_in_additiveExpression1759); 
@@ -4002,7 +4002,7 @@ public partial class minijava2Parser : Antlr.Runtime.Parser
 						break;
 					case 2:
 						DebugEnterAlt(2);
-						// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\minijava2.g:612:21: token= MINUS
+						// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\MiniJava.g:612:21: token= MINUS
 						{
 						DebugLocation(612, 27);
 						token=(IToken)Match(input,MINUS,Follow._MINUS_in_additiveExpression1768); 
@@ -4075,28 +4075,28 @@ public partial class minijava2Parser : Antlr.Runtime.Parser
 		private CommonTree _tree;
 		public CommonTree Tree { get { return _tree; } set { _tree = value; } }
 		object IAstRuleReturnScope.Tree { get { return Tree; } }
-		public multiplicativeExpression_return(minijava2Parser grammar) {OnCreated(grammar);}
-		partial void OnCreated(minijava2Parser grammar);
+		public multiplicativeExpression_return(MiniJavaParser grammar) {OnCreated(grammar);}
+		partial void OnCreated(MiniJavaParser grammar);
 	}
 
 	partial void EnterRule_multiplicativeExpression();
 	partial void LeaveRule_multiplicativeExpression();
 
 	// $ANTLR start "multiplicativeExpression"
-	// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\minijava2.g:621:1: multiplicativeExpression returns [ BaseSymbol value ] : expression= decoratedExpression ( (token= STAR |token= DIV ) expression= decoratedExpression )* ;
+	// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\MiniJava.g:621:1: multiplicativeExpression returns [ BaseSymbol value ] : expression= decoratedExpression ( (token= STAR |token= DIV ) expression= decoratedExpression )* ;
 	[GrammarRule("multiplicativeExpression")]
-	private minijava2Parser.multiplicativeExpression_return multiplicativeExpression()
+	private MiniJavaParser.multiplicativeExpression_return multiplicativeExpression()
 	{
 		EnterRule_multiplicativeExpression();
 		EnterRule("multiplicativeExpression", 26);
 		TraceIn("multiplicativeExpression", 26);
-		minijava2Parser.multiplicativeExpression_return retval = new minijava2Parser.multiplicativeExpression_return(this);
+		MiniJavaParser.multiplicativeExpression_return retval = new MiniJavaParser.multiplicativeExpression_return(this);
 		retval.Start = (IToken)input.LT(1);
 
 		CommonTree root_0 = default(CommonTree);
 
 		IToken token = default(IToken);
-		minijava2Parser.decoratedExpression_return expression = default(minijava2Parser.decoratedExpression_return);
+		MiniJavaParser.decoratedExpression_return expression = default(MiniJavaParser.decoratedExpression_return);
 
 		CommonTree token_tree = default(CommonTree);
 
@@ -4107,9 +4107,9 @@ public partial class minijava2Parser : Antlr.Runtime.Parser
 		DebugLocation(621, 1);
 		try
 		{
-			// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\minijava2.g:626:2: (expression= decoratedExpression ( (token= STAR |token= DIV ) expression= decoratedExpression )* )
+			// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\MiniJava.g:626:2: (expression= decoratedExpression ( (token= STAR |token= DIV ) expression= decoratedExpression )* )
 			DebugEnterAlt(1);
-			// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\minijava2.g:627:3: expression= decoratedExpression ( (token= STAR |token= DIV ) expression= decoratedExpression )*
+			// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\MiniJava.g:627:3: expression= decoratedExpression ( (token= STAR |token= DIV ) expression= decoratedExpression )*
 			{
 			root_0 = (CommonTree)adaptor.Nil();
 
@@ -4124,7 +4124,7 @@ public partial class minijava2Parser : Antlr.Runtime.Parser
 						retval.value = expression.value;
 					
 			DebugLocation(631, 3);
-			// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\minijava2.g:631:3: ( (token= STAR |token= DIV ) expression= decoratedExpression )*
+			// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\MiniJava.g:631:3: ( (token= STAR |token= DIV ) expression= decoratedExpression )*
 			try { DebugEnterSubRule(28);
 			while (true)
 			{
@@ -4143,10 +4143,10 @@ public partial class minijava2Parser : Antlr.Runtime.Parser
 				{
 				case 1:
 					DebugEnterAlt(1);
-					// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\minijava2.g:631:4: (token= STAR |token= DIV ) expression= decoratedExpression
+					// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\MiniJava.g:631:4: (token= STAR |token= DIV ) expression= decoratedExpression
 					{
 					DebugLocation(631, 4);
-					// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\minijava2.g:631:4: (token= STAR |token= DIV )
+					// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\MiniJava.g:631:4: (token= STAR |token= DIV )
 					int alt27=2;
 					try { DebugEnterSubRule(27);
 					try { DebugEnterDecision(27, false);
@@ -4171,7 +4171,7 @@ public partial class minijava2Parser : Antlr.Runtime.Parser
 					{
 					case 1:
 						DebugEnterAlt(1);
-						// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\minijava2.g:631:5: token= STAR
+						// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\MiniJava.g:631:5: token= STAR
 						{
 						DebugLocation(631, 11);
 						token=(IToken)Match(input,STAR,Follow._STAR_in_multiplicativeExpression1833); 
@@ -4183,7 +4183,7 @@ public partial class minijava2Parser : Antlr.Runtime.Parser
 						break;
 					case 2:
 						DebugEnterAlt(2);
-						// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\minijava2.g:631:21: token= DIV
+						// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\MiniJava.g:631:21: token= DIV
 						{
 						DebugLocation(631, 27);
 						token=(IToken)Match(input,DIV,Follow._DIV_in_multiplicativeExpression1842); 
@@ -4256,22 +4256,22 @@ public partial class minijava2Parser : Antlr.Runtime.Parser
 		private CommonTree _tree;
 		public CommonTree Tree { get { return _tree; } set { _tree = value; } }
 		object IAstRuleReturnScope.Tree { get { return Tree; } }
-		public decoratedExpression_return(minijava2Parser grammar) {OnCreated(grammar);}
-		partial void OnCreated(minijava2Parser grammar);
+		public decoratedExpression_return(MiniJavaParser grammar) {OnCreated(grammar);}
+		partial void OnCreated(MiniJavaParser grammar);
 	}
 
 	partial void EnterRule_decoratedExpression();
 	partial void LeaveRule_decoratedExpression();
 
 	// $ANTLR start "decoratedExpression"
-	// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\minijava2.g:639:1: decoratedExpression returns [ BaseSymbol value ] : ( MINUS decoratedExpressionDecl= decoratedExpression | LNOT decoratedExpressionDecl= decoratedExpression |expression= primaryExpression ( ( DOT id= ID ( LPAREN argListDecl= argList RPAREN )? )? | ( LPAREN methodArgListDecl= argList RPAREN ) ) );
+	// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\MiniJava.g:639:1: decoratedExpression returns [ BaseSymbol value ] : ( MINUS decoratedExpressionDecl= decoratedExpression | LNOT decoratedExpressionDecl= decoratedExpression |expression= primaryExpression ( ( DOT id= ID ( LPAREN argListDecl= argList RPAREN )? )? | ( LPAREN methodArgListDecl= argList RPAREN ) ) );
 	[GrammarRule("decoratedExpression")]
-	private minijava2Parser.decoratedExpression_return decoratedExpression()
+	private MiniJavaParser.decoratedExpression_return decoratedExpression()
 	{
 		EnterRule_decoratedExpression();
 		EnterRule("decoratedExpression", 27);
 		TraceIn("decoratedExpression", 27);
-		minijava2Parser.decoratedExpression_return retval = new minijava2Parser.decoratedExpression_return(this);
+		MiniJavaParser.decoratedExpression_return retval = new MiniJavaParser.decoratedExpression_return(this);
 		retval.Start = (IToken)input.LT(1);
 
 		CommonTree root_0 = default(CommonTree);
@@ -4284,10 +4284,10 @@ public partial class minijava2Parser : Antlr.Runtime.Parser
 		IToken RPAREN62 = default(IToken);
 		IToken LPAREN63 = default(IToken);
 		IToken RPAREN64 = default(IToken);
-		minijava2Parser.decoratedExpression_return decoratedExpressionDecl = default(minijava2Parser.decoratedExpression_return);
-		minijava2Parser.primaryExpression_return expression = default(minijava2Parser.primaryExpression_return);
-		minijava2Parser.argList_return argListDecl = default(minijava2Parser.argList_return);
-		minijava2Parser.argList_return methodArgListDecl = default(minijava2Parser.argList_return);
+		MiniJavaParser.decoratedExpression_return decoratedExpressionDecl = default(MiniJavaParser.decoratedExpression_return);
+		MiniJavaParser.primaryExpression_return expression = default(MiniJavaParser.primaryExpression_return);
+		MiniJavaParser.argList_return argListDecl = default(MiniJavaParser.argList_return);
+		MiniJavaParser.argList_return methodArgListDecl = default(MiniJavaParser.argList_return);
 
 		CommonTree id_tree = default(CommonTree);
 		CommonTree MINUS58_tree = default(CommonTree);
@@ -4306,7 +4306,7 @@ public partial class minijava2Parser : Antlr.Runtime.Parser
 		DebugLocation(639, 1);
 		try
 		{
-			// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\minijava2.g:645:2: ( MINUS decoratedExpressionDecl= decoratedExpression | LNOT decoratedExpressionDecl= decoratedExpression |expression= primaryExpression ( ( DOT id= ID ( LPAREN argListDecl= argList RPAREN )? )? | ( LPAREN methodArgListDecl= argList RPAREN ) ) )
+			// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\MiniJava.g:645:2: ( MINUS decoratedExpressionDecl= decoratedExpression | LNOT decoratedExpressionDecl= decoratedExpression |expression= primaryExpression ( ( DOT id= ID ( LPAREN argListDecl= argList RPAREN )? )? | ( LPAREN methodArgListDecl= argList RPAREN ) ) )
 			int alt32=3;
 			try { DebugEnterDecision(32, false);
 			switch (input.LA(1))
@@ -4346,7 +4346,7 @@ public partial class minijava2Parser : Antlr.Runtime.Parser
 			{
 			case 1:
 				DebugEnterAlt(1);
-				// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\minijava2.g:650:3: MINUS decoratedExpressionDecl= decoratedExpression
+				// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\MiniJava.g:650:3: MINUS decoratedExpressionDecl= decoratedExpression
 				{
 				root_0 = (CommonTree)adaptor.Nil();
 
@@ -4370,7 +4370,7 @@ public partial class minijava2Parser : Antlr.Runtime.Parser
 				break;
 			case 2:
 				DebugEnterAlt(2);
-				// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\minijava2.g:655:3: LNOT decoratedExpressionDecl= decoratedExpression
+				// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\MiniJava.g:655:3: LNOT decoratedExpressionDecl= decoratedExpression
 				{
 				root_0 = (CommonTree)adaptor.Nil();
 
@@ -4394,7 +4394,7 @@ public partial class minijava2Parser : Antlr.Runtime.Parser
 				break;
 			case 3:
 				DebugEnterAlt(3);
-				// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\minijava2.g:660:3: expression= primaryExpression ( ( DOT id= ID ( LPAREN argListDecl= argList RPAREN )? )? | ( LPAREN methodArgListDecl= argList RPAREN ) )
+				// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\MiniJava.g:660:3: expression= primaryExpression ( ( DOT id= ID ( LPAREN argListDecl= argList RPAREN )? )? | ( LPAREN methodArgListDecl= argList RPAREN ) )
 				{
 				root_0 = (CommonTree)adaptor.Nil();
 
@@ -4405,7 +4405,7 @@ public partial class minijava2Parser : Antlr.Runtime.Parser
 
 				adaptor.AddChild(root_0, expression.Tree);
 				DebugLocation(662, 4);
-				// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\minijava2.g:662:4: ( ( DOT id= ID ( LPAREN argListDecl= argList RPAREN )? )? | ( LPAREN methodArgListDecl= argList RPAREN ) )
+				// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\MiniJava.g:662:4: ( ( DOT id= ID ( LPAREN argListDecl= argList RPAREN )? )? | ( LPAREN methodArgListDecl= argList RPAREN ) )
 				int alt31=2;
 				try { DebugEnterSubRule(31);
 				try { DebugEnterDecision(31, false);
@@ -4430,10 +4430,10 @@ public partial class minijava2Parser : Antlr.Runtime.Parser
 				{
 				case 1:
 					DebugEnterAlt(1);
-					// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\minijava2.g:662:5: ( DOT id= ID ( LPAREN argListDecl= argList RPAREN )? )?
+					// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\MiniJava.g:662:5: ( DOT id= ID ( LPAREN argListDecl= argList RPAREN )? )?
 					{
 					DebugLocation(662, 5);
-					// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\minijava2.g:662:5: ( DOT id= ID ( LPAREN argListDecl= argList RPAREN )? )?
+					// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\MiniJava.g:662:5: ( DOT id= ID ( LPAREN argListDecl= argList RPAREN )? )?
 					int alt30=2;
 					try { DebugEnterSubRule(30);
 					try { DebugEnterDecision(30, false);
@@ -4448,7 +4448,7 @@ public partial class minijava2Parser : Antlr.Runtime.Parser
 					{
 					case 1:
 						DebugEnterAlt(1);
-						// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\minijava2.g:662:7: DOT id= ID ( LPAREN argListDecl= argList RPAREN )?
+						// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\MiniJava.g:662:7: DOT id= ID ( LPAREN argListDecl= argList RPAREN )?
 						{
 						DebugLocation(662, 10);
 						DOT60=(IToken)Match(input,DOT,Follow._DOT_in_decoratedExpression1955); 
@@ -4461,7 +4461,7 @@ public partial class minijava2Parser : Antlr.Runtime.Parser
 						adaptor.AddChild(root_0, id_tree);
 
 						DebugLocation(663, 5);
-						// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\minijava2.g:663:5: ( LPAREN argListDecl= argList RPAREN )?
+						// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\MiniJava.g:663:5: ( LPAREN argListDecl= argList RPAREN )?
 						int alt29=2;
 						try { DebugEnterSubRule(29);
 						try { DebugEnterDecision(29, false);
@@ -4476,7 +4476,7 @@ public partial class minijava2Parser : Antlr.Runtime.Parser
 						{
 						case 1:
 							DebugEnterAlt(1);
-							// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\minijava2.g:663:7: LPAREN argListDecl= argList RPAREN
+							// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\MiniJava.g:663:7: LPAREN argListDecl= argList RPAREN
 							{
 							DebugLocation(663, 13);
 							LPAREN61=(IToken)Match(input,LPAREN,Follow._LPAREN_in_decoratedExpression1972); 
@@ -4550,12 +4550,12 @@ public partial class minijava2Parser : Antlr.Runtime.Parser
 					break;
 				case 2:
 					DebugEnterAlt(2);
-					// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\minijava2.g:707:4: ( LPAREN methodArgListDecl= argList RPAREN )
+					// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\MiniJava.g:707:4: ( LPAREN methodArgListDecl= argList RPAREN )
 					{
 					DebugLocation(707, 4);
-					// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\minijava2.g:707:4: ( LPAREN methodArgListDecl= argList RPAREN )
+					// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\MiniJava.g:707:4: ( LPAREN methodArgListDecl= argList RPAREN )
 					DebugEnterAlt(1);
-					// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\minijava2.g:707:6: LPAREN methodArgListDecl= argList RPAREN
+					// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\MiniJava.g:707:6: LPAREN methodArgListDecl= argList RPAREN
 					{
 					DebugLocation(707, 12);
 					LPAREN63=(IToken)Match(input,LPAREN,Follow._LPAREN_in_decoratedExpression2032); 
@@ -4630,22 +4630,22 @@ public partial class minijava2Parser : Antlr.Runtime.Parser
 		private CommonTree _tree;
 		public CommonTree Tree { get { return _tree; } set { _tree = value; } }
 		object IAstRuleReturnScope.Tree { get { return Tree; } }
-		public primaryExpression_return(minijava2Parser grammar) {OnCreated(grammar);}
-		partial void OnCreated(minijava2Parser grammar);
+		public primaryExpression_return(MiniJavaParser grammar) {OnCreated(grammar);}
+		partial void OnCreated(MiniJavaParser grammar);
 	}
 
 	partial void EnterRule_primaryExpression();
 	partial void LeaveRule_primaryExpression();
 
 	// $ANTLR start "primaryExpression"
-	// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\minijava2.g:728:1: primaryExpression returns [ BaseSymbol value ] : (token= ID ( LBRACK bracketExpression= logicalOrExpression RBRACK )* |constantDecl= constant | NEW typeDecl= primitiveType LPAREN RPAREN | NEW typeDecl= primitiveType ( LBRACK expressionDecl= expr RBRACK )+ | LPAREN expression= logicalOrExpression RPAREN );
+	// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\MiniJava.g:728:1: primaryExpression returns [ BaseSymbol value ] : (token= ID ( LBRACK bracketExpression= logicalOrExpression RBRACK )* |constantDecl= constant | NEW typeDecl= primitiveType LPAREN RPAREN | NEW typeDecl= primitiveType ( LBRACK expressionDecl= expr RBRACK )+ | LPAREN expression= logicalOrExpression RPAREN );
 	[GrammarRule("primaryExpression")]
-	private minijava2Parser.primaryExpression_return primaryExpression()
+	private MiniJavaParser.primaryExpression_return primaryExpression()
 	{
 		EnterRule_primaryExpression();
 		EnterRule("primaryExpression", 28);
 		TraceIn("primaryExpression", 28);
-		minijava2Parser.primaryExpression_return retval = new minijava2Parser.primaryExpression_return(this);
+		MiniJavaParser.primaryExpression_return retval = new MiniJavaParser.primaryExpression_return(this);
 		retval.Start = (IToken)input.LT(1);
 
 		CommonTree root_0 = default(CommonTree);
@@ -4661,11 +4661,11 @@ public partial class minijava2Parser : Antlr.Runtime.Parser
 		IToken RBRACK72 = default(IToken);
 		IToken LPAREN73 = default(IToken);
 		IToken RPAREN74 = default(IToken);
-		minijava2Parser.logicalOrExpression_return bracketExpression = default(minijava2Parser.logicalOrExpression_return);
-		minijava2Parser.constant_return constantDecl = default(minijava2Parser.constant_return);
-		minijava2Parser.primitiveType_return typeDecl = default(minijava2Parser.primitiveType_return);
-		minijava2Parser.expr_return expressionDecl = default(minijava2Parser.expr_return);
-		minijava2Parser.logicalOrExpression_return expression = default(minijava2Parser.logicalOrExpression_return);
+		MiniJavaParser.logicalOrExpression_return bracketExpression = default(MiniJavaParser.logicalOrExpression_return);
+		MiniJavaParser.constant_return constantDecl = default(MiniJavaParser.constant_return);
+		MiniJavaParser.primitiveType_return typeDecl = default(MiniJavaParser.primitiveType_return);
+		MiniJavaParser.expr_return expressionDecl = default(MiniJavaParser.expr_return);
+		MiniJavaParser.logicalOrExpression_return expression = default(MiniJavaParser.logicalOrExpression_return);
 
 		CommonTree token_tree = default(CommonTree);
 		CommonTree LBRACK65_tree = default(CommonTree);
@@ -4687,7 +4687,7 @@ public partial class minijava2Parser : Antlr.Runtime.Parser
 		DebugLocation(728, 1);
 		try
 		{
-			// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\minijava2.g:734:2: (token= ID ( LBRACK bracketExpression= logicalOrExpression RBRACK )* |constantDecl= constant | NEW typeDecl= primitiveType LPAREN RPAREN | NEW typeDecl= primitiveType ( LBRACK expressionDecl= expr RBRACK )+ | LPAREN expression= logicalOrExpression RPAREN )
+			// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\MiniJava.g:734:2: (token= ID ( LBRACK bracketExpression= logicalOrExpression RBRACK )* |constantDecl= constant | NEW typeDecl= primitiveType LPAREN RPAREN | NEW typeDecl= primitiveType ( LBRACK expressionDecl= expr RBRACK )+ | LPAREN expression= logicalOrExpression RPAREN )
 			int alt35=5;
 			try { DebugEnterDecision(35, false);
 			try
@@ -4704,7 +4704,7 @@ public partial class minijava2Parser : Antlr.Runtime.Parser
 			{
 			case 1:
 				DebugEnterAlt(1);
-				// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\minijava2.g:735:3: token= ID ( LBRACK bracketExpression= logicalOrExpression RBRACK )*
+				// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\MiniJava.g:735:3: token= ID ( LBRACK bracketExpression= logicalOrExpression RBRACK )*
 				{
 				root_0 = (CommonTree)adaptor.Nil();
 
@@ -4714,7 +4714,7 @@ public partial class minijava2Parser : Antlr.Runtime.Parser
 				adaptor.AddChild(root_0, token_tree);
 
 				DebugLocation(736, 3);
-				// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\minijava2.g:736:3: ( LBRACK bracketExpression= logicalOrExpression RBRACK )*
+				// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\MiniJava.g:736:3: ( LBRACK bracketExpression= logicalOrExpression RBRACK )*
 				try { DebugEnterSubRule(33);
 				while (true)
 				{
@@ -4733,7 +4733,7 @@ public partial class minijava2Parser : Antlr.Runtime.Parser
 					{
 					case 1:
 						DebugEnterAlt(1);
-						// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\minijava2.g:736:5: LBRACK bracketExpression= logicalOrExpression RBRACK
+						// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\MiniJava.g:736:5: LBRACK bracketExpression= logicalOrExpression RBRACK
 						{
 						DebugLocation(736, 11);
 						LBRACK65=(IToken)Match(input,LBRACK,Follow._LBRACK_in_primaryExpression2091); 
@@ -4780,7 +4780,7 @@ public partial class minijava2Parser : Antlr.Runtime.Parser
 				break;
 			case 2:
 				DebugEnterAlt(2);
-				// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\minijava2.g:758:3: constantDecl= constant
+				// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\MiniJava.g:758:3: constantDecl= constant
 				{
 				root_0 = (CommonTree)adaptor.Nil();
 
@@ -4799,7 +4799,7 @@ public partial class minijava2Parser : Antlr.Runtime.Parser
 				break;
 			case 3:
 				DebugEnterAlt(3);
-				// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\minijava2.g:763:3: NEW typeDecl= primitiveType LPAREN RPAREN
+				// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\MiniJava.g:763:3: NEW typeDecl= primitiveType LPAREN RPAREN
 				{
 				root_0 = (CommonTree)adaptor.Nil();
 
@@ -4828,7 +4828,7 @@ public partial class minijava2Parser : Antlr.Runtime.Parser
 				break;
 			case 4:
 				DebugEnterAlt(4);
-				// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\minijava2.g:769:3: NEW typeDecl= primitiveType ( LBRACK expressionDecl= expr RBRACK )+
+				// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\MiniJava.g:769:3: NEW typeDecl= primitiveType ( LBRACK expressionDecl= expr RBRACK )+
 				{
 				root_0 = (CommonTree)adaptor.Nil();
 
@@ -4844,7 +4844,7 @@ public partial class minijava2Parser : Antlr.Runtime.Parser
 
 				adaptor.AddChild(root_0, typeDecl.Tree);
 				DebugLocation(770, 3);
-				// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\minijava2.g:770:3: ( LBRACK expressionDecl= expr RBRACK )+
+				// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\MiniJava.g:770:3: ( LBRACK expressionDecl= expr RBRACK )+
 				int cnt34=0;
 				try { DebugEnterSubRule(34);
 				while (true)
@@ -4864,7 +4864,7 @@ public partial class minijava2Parser : Antlr.Runtime.Parser
 					{
 					case 1:
 						DebugEnterAlt(1);
-						// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\minijava2.g:770:5: LBRACK expressionDecl= expr RBRACK
+						// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\MiniJava.g:770:5: LBRACK expressionDecl= expr RBRACK
 						{
 						DebugLocation(770, 11);
 						LBRACK71=(IToken)Match(input,LBRACK,Follow._LBRACK_in_primaryExpression2182); 
@@ -4909,7 +4909,7 @@ public partial class minijava2Parser : Antlr.Runtime.Parser
 				break;
 			case 5:
 				DebugEnterAlt(5);
-				// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\minijava2.g:780:3: LPAREN expression= logicalOrExpression RPAREN
+				// D:\\University\\Конструирование компиляторов\\MiniJavaCompiler\\Project\\MiniJava.g:780:3: LPAREN expression= logicalOrExpression RPAREN
 				{
 				root_0 = (CommonTree)adaptor.Nil();
 
